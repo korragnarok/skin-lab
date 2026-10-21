@@ -967,7 +967,7 @@ window.PRODUCTS = [
    "mineral"
   ],
   "price": 9.86,
-  "link": "https://amzn.to/47vtG0c",
+  "link": "https://amzn.to/4ifJIjN",
   "ing": [
    "sunscreen"
   ],
