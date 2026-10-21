@@ -297,6 +297,8 @@ ol.steps li::before{font-family:var(--display);font-size:1.5rem}
 .bq{display:flex;flex-direction:column;gap:.45rem}
 .bq label{display:grid;grid-template-columns:1.2rem minmax(0,1fr);gap:.55rem;align-items:start;cursor:pointer;font-size:1rem;line-height:1.35}
 .bq input{width:1.1rem;height:1.1rem;margin:.15rem 0 0;accent-color:var(--accent)}
+.bsubmit{align-self:flex-start;font:inherit;font-size:1.1rem;color:var(--surface);background:var(--accent);border:var(--pen);border-radius:var(--sketch);padding:.5rem 1.1rem;cursor:pointer;box-shadow:2px 3px 0 rgba(43,33,27,.25)}
+.bsubmit:hover{background:var(--fg)}
 .bverdict{background:var(--surface);border:var(--pen);border-radius:var(--sketch);padding:1.1rem 1.2rem}
 .bverdict h3{font-size:1.9rem;margin:.2rem 0 .4rem}
 .bverdict p{margin:.4rem 0}
@@ -390,6 +392,7 @@ ol.steps li::before{font-family:var(--display);font-size:1.5rem}
         <legend>Any of these?</legend>
         <div class="bq" id="bq-flags"></div>
       </fieldset>
+      <button type="submit" class="bsubmit">See my result →</button>
     </form>
     <div class="result" id="bresult" aria-live="polite"></div>
   </div>
@@ -1110,12 +1113,12 @@ function barrierPicks(){
   return BGROUPS.map(([label,steps])=>[label, list.filter(p=>steps.includes(p.step)).sort((a,b)=>order[a.tier]-order[b.tier]||a.price-b.price)]).filter(([,l])=>l.length);
 }
 
-function renderBarrier(){
+function renderBarrier(submitted){
   const got = n => [...document.querySelectorAll(`input[name="${n}"]:checked`)].map(i=>i.value);
   const signs = got("bsign"), causes = got("bcause"), flag = got("bflag").length>0;
   const score = signs.reduce((s,v)=>s+BSIGNS.find(x=>x[0]===v)[2],0) + (causes.length && signs.length ? 1 : 0);
-  if(!signs.length && !causes.length && !flag){
-    $("#bresult").innerHTML = `<div class="bverdict"><span class="eyebrow">Your result</span><h3>Tap what sounds like you</h3><p>Your result and the products I'd use show up here.</p></div>`;
+  if(!submitted || (!signs.length && !causes.length && !flag)){
+    $("#bresult").innerHTML = `<div class="bverdict"><span class="eyebrow">Your result</span><h3>${submitted ? "Check at least one box" : "Check what sounds like you"}</h3><p>Then tap <b>See my result</b> to find out if your barrier needs some help, plus the products I'd use.</p></div>`;
     return;
   }
   let cls, title, msg;
@@ -1141,8 +1144,11 @@ function renderBarrier(){
     ${avoid}
     ${cls==="no" ? "" : `<p class="tagline" style="margin-top:1rem">This is a quick check for education, not a diagnosis or medical advice.</p>`}`;
 }
-$("#bquiz").addEventListener("change", renderBarrier);
-renderBarrier();
+$("#bquiz").addEventListener("submit", e=>{
+  e.preventDefault(); renderBarrier(true);
+  if(matchMedia("(max-width:860px)").matches) $("#bresult").scrollIntoView({behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto":"smooth", block:"start"});
+});
+renderBarrier(false);
 </script>
 
 </body>
