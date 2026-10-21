@@ -281,6 +281,14 @@ ol.steps li::before{font-family:var(--display);font-size:1.5rem}
 .t-basics{background:var(--surface)} .t-upgrade{background:var(--kraft)} .t-splurge{background:var(--fg)}
 .shop .tierdot{width:.6rem;height:.6rem}
 .nopick{margin:0;color:var(--muted);font-size:.9rem}
+.pickblock{display:flex;flex-direction:column;gap:.35rem;align-items:flex-start;max-width:100%}
+.swap{display:flex;flex-direction:column;gap:.15rem;font-size:.85rem;color:var(--muted);max-width:100%}
+.swap select{font:inherit;font-size:.95rem;color:var(--fg);background:rgba(255,255,255,.55);border:1.3px dashed var(--fg);border-radius:10px 14px 9px 13px;padding:.25rem .45rem;max-width:100%}
+.thumb{width:2.2rem;height:2.2rem;object-fit:contain;background:#fff;border:1.2px solid var(--fg);border-radius:6px;flex:none}
+.pcard.hasimg{display:grid;grid-template-columns:4.5rem minmax(0,1fr);gap:.8rem;align-items:start}
+.pbody{display:flex;flex-direction:column;gap:.3rem;min-width:0}
+.pimg{width:4.5rem;height:4.5rem;object-fit:contain;background:#fff;border:1.5px solid var(--fg);border-radius:8px;transform:rotate(-1.5deg)}
+.pcard:nth-child(even) .pimg{transform:rotate(1.5deg)}
 </style>
 <style>html{-webkit-text-size-adjust:100%}body{margin:0}img{max-width:100%}[hidden]{display:none!important}:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}</style>
 </head>
@@ -556,12 +564,11 @@ const SKIN_PREFS = {
   oily:["oily","acne","combination"], combination:["combination","oily","normal"], normal:["normal","combination","dry"],
   dry:["dry","normal"], sensitive:["sensitive","redness","dry"]
 };
-/* Best product for a step: right tier first, then the closest tier; skin match breaks ties. */
-function pick(step, opts={}){
+/* Products for a step, best first: right tier first, then the closest tier; skin match breaks ties. */
+function ranked(step, opts={}){
   const {tier="basics", skin=[], kind=null, prefer=null, avoid=null} = opts;
   let pool = PRODUCTS.filter(p=>p.step===step && (!kind || (Array.isArray(kind)?kind:[kind]).includes(p.kind)));
   if(avoid) pool = pool.filter(p=>!avoid(p));
-  if(!pool.length) return null;
   const score = p => {
     let s = -Math.abs(TIER_ORDER[p.tier]-TIER_ORDER[tier])*10;
     skin.forEach((k,i)=>{ if((p.skin||[]).includes(k)) s += 4 - Math.min(i,3); });
@@ -569,7 +576,18 @@ function pick(step, opts={}){
     if(prefer && prefer(p)) s += 6;
     return s;
   };
-  return pool.slice().sort((a,b)=>score(b)-score(a) || a.price-b.price)[0];
+  return pool.slice().sort((a,b)=>score(b)-score(a) || a.price-b.price);
+}
+const pick = (step, opts={}) => ranked(step, opts)[0] || null;
+
+/* The visitor's own swaps in the routine builder, remembered per step. */
+let SWAPS = (()=>{ try{ return JSON.parse(localStorage.getItem("korswaps")||"{}") || {}; }catch(e){ return {}; } })();
+function choose(step, opts={}){
+  const list = ranked(step, opts);
+  if(!list.length) return null;
+  const key = step + ":" + [].concat(opts.kind||"").join("+");
+  const mine = list.find(p=>p.name===SWAPS[key]);
+  return {prod: mine || list[0], alts: list, key, swapped: !!mine};
 }
 const productsFor = ingId => PRODUCTS.filter(p=>(p.ing||[]).includes(ingId));
 
@@ -582,7 +600,8 @@ const DAYS = ["Mon","Tue","Wed","Thu","Fri","Sat","Sun"];
 const $ = s => document.querySelector(s);
 const esc = s => String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 const money = n => "$" + (Number(n)%1 ? Number(n).toFixed(2) : Number(n));
-const shopLink = p => p ? `<a class="shop" href="${esc(p.link)}" target="_blank" rel="sponsored nofollow noopener"><span class="tierdot t-${p.tier}" title="${TIER_NAME[p.tier]}"></span><b>${esc(p.name)}</b><small>${TIER_NAME[p.tier]} · Amazon ↗</small></a>` : "";
+const thumb = (p, cls="thumb") => p.img ? `<img class="${cls}" src="${esc(p.img)}" alt="" loading="lazy" decoding="async">` : "";
+const shopLink = p => p ? `<a class="shop" href="${esc(p.link)}" target="_blank" rel="sponsored nofollow noopener">${p.img ? thumb(p) : `<span class="tierdot t-${p.tier}" title="${TIER_NAME[p.tier]}"></span>`}<b>${esc(p.name)}</b><small>${TIER_NAME[p.tier]} · Amazon ↗</small></a>` : "";
 const ingBtn = id => `<button type="button" class="ing-link" data-ing="${id}">${esc(BY[id].name)}</button>`;
 
 function chipGroup(el, name, opts, type, checked){
@@ -629,7 +648,7 @@ function buildRoutine(a){
   if(C.has("oiliness") && !sk.includes("oily")) sk.splice(1,0,"oily");
   if(C.has("dryness") && !sk.includes("dry")) sk.splice(1,0,"dry");
   if(C.has("redness")) sk.splice(1,0,"redness","sensitive");
-  const P = (stepKey, o={}) => pick(stepKey, Object.assign({tier, skin:sk}, o));
+  const P = (stepKey, o={}) => choose(stepKey, Object.assign({tier, skin:sk}, o));
   const am = [], pm = [], notes = [];
   const step = (label, why, ing, prod) => ({label, why, ing, prod});
   const gentleClean = () => P("cleanser",{kind:"gentle"});
@@ -737,14 +756,33 @@ function buildRoutine(a){
   return {am, pm, nights, ret, exf, notes, headline};
 }
 
+function swapper(sel){
+  if(!sel || sel.alts.length < 2) return "";
+  const groups = TIERS.map(([t,label])=>{
+    const items = sel.alts.filter(p=>p.tier===t);
+    return items.length ? `<optgroup label="${label}">${items.map(p=>`<option value="${esc(p.name)}"${p.name===sel.prod.name?" selected":""}>${esc(p.name)} · ${money(p.price)}/oz</option>`).join("")}</optgroup>` : "";
+  }).join("");
+  const id = "swap-" + sel.key.replace(/[^a-z0-9]+/gi,"-");
+  return `<label class="swap" for="${id}"><span>${sel.swapped ? "Your pick · change it" : `Choose a different one (${sel.alts.length - 1} more)`}</span>
+    <select id="${id}" data-swap="${esc(sel.key)}">${groups}</select></label>`;
+}
+const pickBlock = sel => sel ? `<div class="pickblock">${shopLink(sel.prod)}${swapper(sel)}</div>` : "";
 function renderSteps(list){
   return `<ol class="steps">${list.map(s=>`<li><div>
     <div class="step-name">${esc(s.label)}${s.ing?` · ${ingBtn(s.ing)}`:""}</div>
     <p class="step-why">${s.multi ? s.why : esc(s.why)}</p>
-    ${s.prod ? shopLink(s.prod) : ""}
-    ${s.multi && s.multi.length ? `<div class="prods">${s.multi.map(shopLink).join("")}</div>` : ""}
+    ${pickBlock(s.prod)}
+    ${s.multi && s.multi.length ? `<div class="prods">${s.multi.map(pickBlock).join("")}</div>` : ""}
   </div></li>`).join("")}</ol>`;
 }
+document.addEventListener("change",e=>{
+  const sel = e.target.closest("[data-swap]");
+  if(!sel) return;
+  SWAPS[sel.dataset.swap] = sel.value;
+  try{ localStorage.setItem("korswaps", JSON.stringify(SWAPS)); }catch(err){}
+  render();
+  const again = document.getElementById(sel.id); if(again) again.focus();
+});
 
 function render(){
   const a = answers();
@@ -796,12 +834,12 @@ $("#skin-filter").addEventListener("change",e=>{shopSkin=e.target.value;renderBo
 function pcard(p){
   const kind = KIND_LABEL[p.kind] || "";
   const tags = [kind, ...(p.tags||[])].filter(Boolean);
-  return `<li class="pcard">
+  return `<li class="pcard${p.img?" hasimg":""}">${thumb(p,"pimg")}<div class="pbody">
     <div class="prow"><span class="pname">${esc(p.name)}</span><span class="ppo">${money(p.price)}<small>/oz</small></span></div>
     ${tags.length ? `<div class="ptags">${tags.map(t=>`<span class="pill">${esc(t)}</span>`).join("")}</div>` : ""}
     ${p.note ? `<p class="pnote">${esc(p.note)}</p>` : ""}
     <a class="buy" href="${esc(p.link)}" target="_blank" rel="sponsored nofollow noopener">Shop on Amazon ↗</a>
-  </li>`;
+  </div></li>`;
 }
 function renderBoard(){
   try{ localStorage.setItem("korshop", JSON.stringify({step:shopStep, skin:shopSkin})); }catch(e){}
