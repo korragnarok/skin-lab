@@ -1040,7 +1040,8 @@ window.PRODUCTS = [
   "ing": [
    "vitc"
   ],
-  "note": "My pick: a better formula than the price suggests."
+  "note": "My pick: a better formula than the price suggests.",
+  "img": "img/prequel-vitamin-c.webp"
  },
  {
   "name": "Epii Pro Shot Vitamin C",
@@ -1052,7 +1053,8 @@ window.PRODUCTS = [
   "ing": [
    "vitc"
   ],
-  "note": "Small 20 ml bottle, about $25."
+  "note": "Small 20 ml bottle, about $25.",
+  "img": "img/epii-pro-shot-vitamin-c.webp"
  },
  {
   "name": "Dr. Rejuall Advanced Ceramide Cream",
@@ -1067,7 +1069,8 @@ window.PRODUCTS = [
   "link": "https://amzn.to/4sfl3R1",
   "ing": [
    "ceramides"
-  ]
+  ],
+  "img": "img/dr-rejuall-advanced-ceramide-cream.webp"
  },
  {
   "name": "SKIN1004 Biotica Enrich Cream",
@@ -1079,7 +1082,8 @@ window.PRODUCTS = [
    "sensitive"
   ],
   "price": 14.2,
-  "link": "https://amzn.to/4Ba25z8"
+  "link": "https://amzn.to/4Ba25z8",
+  "img": "img/skin1004-biotica-enrich-cream.webp"
  },
  {
   "name": "Epii Double Up Cream",
@@ -1091,7 +1095,8 @@ window.PRODUCTS = [
    "sensitive"
   ],
   "price": 14.79,
-  "link": "https://amzn.to/3VKP4Mt"
+  "link": "https://amzn.to/3VKP4Mt",
+  "img": "img/epii-double-up-cream.webp"
  },
  {
   "name": "Bioderma Sensibio AR Cream",
@@ -1102,7 +1107,8 @@ window.PRODUCTS = [
    "redness"
   ],
   "price": 23.07,
-  "link": "https://amzn.to/4jyCl9s"
+  "link": "https://amzn.to/4jyCl9s",
+  "img": "img/bioderma-sensibio-ar-cream.webp"
  },
  {
   "name": "Beauty of Joseon Tinted Mineral Dayscreen",
@@ -1120,7 +1126,8 @@ window.PRODUCTS = [
   "tags": [
    "Mineral",
    "K-beauty"
-  ]
+  ],
+  "img": "img/beauty-of-joseon-tinted-mineral-dayscreen.webp"
  },
  {
   "name": "Beauty of Joseon Relief Sun",
@@ -1136,7 +1143,8 @@ window.PRODUCTS = [
   ],
   "tags": [
    "K-beauty"
-  ]
+  ],
+  "img": "img/beauty-of-joseon-relief-sun.webp"
  },
  {
   "name": "Round Lab Birch Juice Sunscreen",
@@ -1152,7 +1160,8 @@ window.PRODUCTS = [
   ],
   "tags": [
    "K-beauty"
-  ]
+  ],
+  "img": "img/round-lab-birch-juice-sunscreen.webp"
  },
  {
   "name": "Haruharu Wonder Black Rice Sunscreen",
@@ -1168,7 +1177,8 @@ window.PRODUCTS = [
   ],
   "tags": [
    "K-beauty"
-  ]
+  ],
+  "img": "img/haruharu-wonder-black-rice-sunscreen.webp"
  },
  {
   "name": "COSRX The Niacinamide 15 Serum",
@@ -1181,7 +1191,8 @@ window.PRODUCTS = [
   "ing": [
    "niacinamide"
   ],
-  "note": "Strong at 15%. Only for very stubborn oily skin; skip it if you're sensitive or new to niacinamide."
+  "note": "Strong at 15%. Only for very stubborn oily skin; skip it if you're sensitive or new to niacinamide.",
+  "img": "img/cosrx-the-niacinamide-15-serum.webp"
  },
  {
   "name": "Cocokind Beginner Retinol Gel",
@@ -1194,7 +1205,8 @@ window.PRODUCTS = [
   "ing": [
    "retinol"
   ],
-  "note": "Made for first-time retinol users."
+  "note": "Made for first-time retinol users.",
+  "img": "img/cocokind-beginner-retinol-gel.webp"
  },
  {
   "name": "COSRX Retinol 0.1 Cream",
@@ -1206,7 +1218,8 @@ window.PRODUCTS = [
   "kind": "retinol",
   "ing": [
    "retinol"
-  ]
+  ],
+  "img": "img/cosrx-retinol-0-1-cream.webp"
  },
  {
   "name": "COSRX Retinol 0.3 Cream",
@@ -1218,7 +1231,8 @@ window.PRODUCTS = [
   "kind": "retinol",
   "ing": [
    "retinol"
-  ]
+  ],
+  "img": "img/cosrx-retinol-0-3-cream.webp"
  },
  {
   "name": "La Roche-Posay Retinol B3 Serum",
@@ -1231,7 +1245,8 @@ window.PRODUCTS = [
   "ing": [
    "retinol"
   ],
-  "note": "Also has niacinamide (vitamin B3) to calm skin."
+  "note": "Also has niacinamide (vitamin B3) to calm skin.",
+  "img": "img/la-roche-posay-retinol-b3-serum.webp"
  },
  {
   "name": "Prequel Retinal",
@@ -1243,7 +1258,8 @@ window.PRODUCTS = [
   "kind": "retinal",
   "ing": [
    "retinol"
-  ]
+  ],
+  "img": "img/prequel-retinal.webp"
  },
  {
   "name": "Remedy Retinal",
@@ -1255,7 +1271,8 @@ window.PRODUCTS = [
   "kind": "retinal",
   "ing": [
    "retinol"
-  ]
+  ],
+  "img": "img/remedy-retinal.webp"
  },
  {
   "name": "Celimax Vita-A Retinal Shot",
@@ -1267,7 +1284,8 @@ window.PRODUCTS = [
   "kind": "retinal",
   "ing": [
    "retinol"
-  ]
+  ],
+  "img": "img/celimax-vita-a-retinal-shot.webp"
  },
  {
   "name": "Tatcha The Camellia Cleansing Oil",
@@ -1278,7 +1296,8 @@ window.PRODUCTS = [
   ],
   "price": 9.8,
   "link": "https://amzn.to/4yztVT3",
-  "note": "Much cheaper per ounce in the 150 ml size."
+  "note": "Much cheaper per ounce in the 150 ml size.",
+  "img": "img/tatcha-the-camellia-cleansing-oil.webp"
  },
  {
   "name": "Dr. Jart+ Cicapair",
@@ -1293,7 +1312,8 @@ window.PRODUCTS = [
   "link": "https://amzn.to/4si8OmE",
   "ing": [
    "centella"
-  ]
+  ],
+  "img": "img/dr-jart-cicapair.webp"
  },
  {
   "name": "DRMTLGY Needle-less Growth Factor Serum",
@@ -1304,7 +1324,8 @@ window.PRODUCTS = [
   "link": "https://amzn.to/4Bh9wER",
   "ing": [
    "peptides"
-  ]
+  ],
+  "img": "img/drmtlgy-needle-less-growth-factor-serum.webp"
  },
  {
   "name": "Avène Vitamin C",
@@ -1315,7 +1336,8 @@ window.PRODUCTS = [
   "link": "https://amzn.to/4eidIKA",
   "ing": [
    "vitc"
-  ]
+  ],
+  "img": "img/avene-vitamin-c.webp"
  },
  {
   "name": "Tatcha Brightening Serum",
@@ -1326,7 +1348,8 @@ window.PRODUCTS = [
   "link": "https://amzn.to/4BjFf8n",
   "ing": [
    "vitc"
-  ]
+  ],
+  "img": "img/tatcha-brightening-serum.webp"
  },
  {
   "name": "Glow Aloe Barrier Cream",
@@ -1338,7 +1361,8 @@ window.PRODUCTS = [
    "sensitive"
   ],
   "price": 30.77,
-  "link": "https://amzn.to/4dRJj5I"
+  "link": "https://amzn.to/4dRJj5I",
+  "img": "img/glow-aloe-barrier-cream.webp"
  },
  {
   "name": "Tatcha The Dewy Skin Cream",
@@ -1349,7 +1373,8 @@ window.PRODUCTS = [
    "normal"
   ],
   "price": 43.5,
-  "link": "https://amzn.to/4BpPQyL"
+  "link": "https://amzn.to/4BpPQyL",
+  "img": "img/tatcha-the-dewy-skin-cream.webp"
  },
  {
   "name": "EltaMD UV Clear Broad-Spectrum",
@@ -1363,7 +1388,8 @@ window.PRODUCTS = [
   "ing": [
    "sunscreen"
   ],
-  "note": "Price is for the 0.5 oz size; bigger sizes cost less per ounce."
+  "note": "Price is for the 0.5 oz size; bigger sizes cost less per ounce.",
+  "img": "img/eltamd-uv-clear-broad-spectrum.webp"
  },
  {
   "name": "Shiseido Mineral Sunscreen",
@@ -1380,7 +1406,8 @@ window.PRODUCTS = [
   ],
   "tags": [
    "Mineral"
-  ]
+  ],
+  "img": "img/shiseido-mineral-sunscreen.webp"
  },
  {
   "name": "Kiehl's Mineral Sunscreen",
@@ -1397,7 +1424,8 @@ window.PRODUCTS = [
   ],
   "tags": [
    "Mineral"
-  ]
+  ],
+  "img": "img/kiehl-s-mineral-sunscreen.webp"
  },
  {
   "name": "Skinfix Targeted Brightening Serum",
@@ -1413,7 +1441,8 @@ window.PRODUCTS = [
   "tags": [
    "Gentle starter"
   ],
-  "note": "Uses tetrahexyldecyl ascorbate, a gentle form to start with."
+  "note": "Uses tetrahexyldecyl ascorbate, a gentle form to start with.",
+  "img": "img/skinfix-targeted-brightening-serum.webp"
  },
  {
   "name": "Medik8 C-Tetra Advanced",
@@ -1429,7 +1458,8 @@ window.PRODUCTS = [
   "tags": [
    "Gentle starter"
   ],
-  "note": "Uses tetrahexyldecyl ascorbate, a gentle form to start with."
+  "note": "Uses tetrahexyldecyl ascorbate, a gentle form to start with.",
+  "img": "img/medik8-c-tetra-advanced.webp"
  },
  {
   "name": "Medik8 Super C",
@@ -1445,7 +1475,8 @@ window.PRODUCTS = [
   "tags": [
    "Gentle starter"
   ],
-  "note": "Uses 3-O-ethyl ascorbic acid, a stable, gentle form."
+  "note": "Uses 3-O-ethyl ascorbic acid, a stable, gentle form.",
+  "img": "img/medik8-super-c.webp"
  },
  {
   "name": "RoC Retinol Capsules",
@@ -1458,7 +1489,8 @@ window.PRODUCTS = [
   "ing": [
    "retinol"
   ],
-  "note": "Single-use capsules keep the retinol fresh."
+  "note": "Single-use capsules keep the retinol fresh.",
+  "img": "img/roc-retinol-capsules.webp"
  },
  {
   "name": "Maelove Moonlight Advanced Retinal",
@@ -1470,7 +1502,8 @@ window.PRODUCTS = [
   "kind": "retinal",
   "ing": [
    "retinol"
-  ]
+  ],
+  "img": "img/maelove-moonlight-advanced-retinal.webp"
  },
  {
   "name": "Avène RetrinAL Intensive Corrective Cream",
@@ -1482,6 +1515,7 @@ window.PRODUCTS = [
   "kind": "retinal",
   "ing": [
    "retinol"
-  ]
+  ],
+  "img": "img/avene-retrinal-intensive-corrective-cream.webp"
  }
 ];
