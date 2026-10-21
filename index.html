@@ -298,6 +298,8 @@ ol.steps li::before{font-family:var(--display);font-size:1.5rem}
 .bq label{display:grid;grid-template-columns:1.2rem minmax(0,1fr);gap:.55rem;align-items:start;cursor:pointer;font-size:1rem;line-height:1.35}
 .bq input{width:1.1rem;height:1.1rem;margin:.15rem 0 0;accent-color:var(--accent)}
 @media (min-width:861px){#result .ampm{align-items:start}#result .ampm .col.fit{overflow-y:auto;overscroll-behavior:contain;scrollbar-width:thin}}
+@media (min-width:861px){#board .plist.fit{overflow-y:auto;overscroll-behavior:contain;scrollbar-width:thin;position:relative}}
+#board .plist .colmore{margin:0;bottom:0;padding:.6rem 0 .3rem;list-style:none}
 .colmore{position:sticky;bottom:-1.1rem;margin:0 -1.1rem -1.1rem;padding:.6rem 1.1rem .5rem;text-align:center;font-size:.85rem;color:var(--muted);background:linear-gradient(transparent,var(--surface) 45%)}
 .bsubmit{align-self:flex-start;font:inherit;font-size:1.1rem;color:var(--surface);background:var(--accent);border:var(--pen);border-radius:var(--sketch);padding:.5rem 1.1rem;cursor:pointer;box-shadow:2px 3px 0 rgba(43,33,27,.25)}
 .bsubmit:hover{background:var(--fg)}
@@ -1096,6 +1098,26 @@ new MutationObserver(()=>requestAnimationFrame(fitCols)).observe($("#result"),{c
 addEventListener("resize",()=>requestAnimationFrame(fitCols));
 document.fonts && document.fonts.ready.then(fitCols);
 fitCols();
+
+/* ---------- shop board: level the three tier columns ---------- */
+function fitBoard(){
+  const cols=[...document.querySelectorAll("#board .tiercol")];
+  cols.forEach(c=>{c.style.minHeight=""; const l=c.querySelector(".plist"); if(l){l.style.maxHeight="";l.classList.remove("fit");l.querySelector(".colmore")?.remove();}});
+  if(!matchMedia("(min-width:861px)").matches || cols.length<2) return;
+  const target=Math.max(480, Math.min(...cols.map(c=>c.getBoundingClientRect().height)));
+  cols.forEach(c=>{
+    const l=c.querySelector(".plist"), h=c.getBoundingClientRect().height;
+    if(h<target) c.style.minHeight=target+"px";
+    if(!l || h<=target+4) return;
+    l.style.maxHeight=(l.getBoundingClientRect().height-(h-target))+"px"; l.classList.add("fit");
+    const m=document.createElement("li"); m.className="colmore"; m.textContent="Scroll for more ↓"; l.appendChild(m);
+    l.addEventListener("scroll",()=>{ m.style.visibility = l.scrollTop+l.clientHeight>=l.scrollHeight-6 ? "hidden":"visible"; },{passive:true});
+  });
+}
+new MutationObserver(()=>requestAnimationFrame(fitBoard)).observe($("#board"),{childList:true});
+addEventListener("resize",()=>requestAnimationFrame(fitBoard));
+document.fonts && document.fonts.ready.then(fitBoard);
+fitBoard();
 
 /* ---------- barrier check ---------- */
 const BSIGNS = [
