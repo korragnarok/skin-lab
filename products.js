@@ -989,7 +989,8 @@ window.PRODUCTS = [
   "link": "https://amzn.to/3UDQoQP",
   "ing": [
    "panthenol"
-  ]
+  ],
+  "img": "img/avene-cicalfate.webp"
  },
  {
   "name": "Prequel Hypochlorous Spray",
@@ -1000,7 +1001,8 @@ window.PRODUCTS = [
    "sensitive"
   ],
   "price": 4.25,
-  "link": "https://amzn.to/4hXVPDh"
+  "link": "https://amzn.to/4hXVPDh",
+  "img": "img/prequel-hypochlorous-spray.webp"
  },
  {
   "name": "Tower 28 SOS Spray",
@@ -1012,7 +1014,8 @@ window.PRODUCTS = [
   ],
   "price": 12.0,
   "link": "https://amzn.to/47xBzSM",
-  "note": "Cheaper per ounce in the 4 oz size."
+  "note": "Cheaper per ounce in the 4 oz size.",
+  "img": "img/tower-28-sos-spray.webp"
  },
  {
   "name": "Remedy 15% Vitamin C Complex",
@@ -1028,7 +1031,8 @@ window.PRODUCTS = [
   "tags": [
    "Gentle starter"
   ],
-  "note": "Uses 3-O-ethyl ascorbic acid, a stable, gentle form."
+  "note": "Uses 3-O-ethyl ascorbic acid, a stable, gentle form.",
+  "img": "img/remedy-15-vitamin-c-complex.webp"
  },
  {
   "name": "Prequel Vitamin C",
