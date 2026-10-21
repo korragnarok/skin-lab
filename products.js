@@ -17,7 +17,8 @@ window.PRODUCTS = [
   "link": "https://amzn.to/3WhwAmM",
   "ing": [
    "ceramides"
-  ]
+  ],
+  "img": "img/cerave-moisturizing-cream.webp"
  },
  {
   "name": "Zeroid Intensive Cream",
@@ -31,7 +32,8 @@ window.PRODUCTS = [
   "link": "https://amzn.to/3WlvrdU",
   "ing": [
    "ceramides"
-  ]
+  ],
+  "img": "img/zeroid-intensive-cream.webp"
  },
  {
   "name": "CeraVe Ultra-Light Moisturizing Gel",
@@ -45,7 +47,8 @@ window.PRODUCTS = [
   "link": "https://amzn.to/3VXilUb",
   "tags": [
    "Fungal-acne safe"
-  ]
+  ],
+  "img": "img/cerave-ultra-light-moisturizing-gel.webp"
  },
  {
   "name": "Bubble Level Up Gel Moisturizer",
@@ -56,7 +59,8 @@ window.PRODUCTS = [
    "acne"
   ],
   "price": 8.86,
-  "link": "https://amzn.to/4jto1it"
+  "link": "https://amzn.to/4jto1it",
+  "img": "img/bubble-level-up-gel-moisturizer.webp"
  },
  {
   "name": "Aestura Hydro Soothing Cream",
@@ -67,7 +71,8 @@ window.PRODUCTS = [
    "acne"
   ],
   "price": 11.85,
-  "link": "https://amzn.to/4dSs58l"
+  "link": "https://amzn.to/4dSs58l",
+  "img": "img/aestura-hydro-soothing-cream.webp"
  },
  {
   "name": "Cocokind Electrolyte Water Cream",
@@ -82,7 +87,8 @@ window.PRODUCTS = [
   "tags": [
    "Fungal-acne safe",
    "No niacinamide"
-  ]
+  ],
+  "img": "img/cocokind-electrolyte-water-cream.webp"
  },
  {
   "name": "CeraVe Hydrating HA Water Gel",
@@ -99,7 +105,8 @@ window.PRODUCTS = [
   ],
   "tags": [
    "Fungal-acne safe"
-  ]
+  ],
+  "img": "img/cerave-hydrating-ha-water-gel.webp"
  },
  {
   "name": "Aveeno Calm + Restore Oat Gel Moisturizer",
@@ -114,7 +121,8 @@ window.PRODUCTS = [
   "tags": [
    "Fungal-acne safe",
    "No niacinamide"
-  ]
+  ],
+  "img": "img/aveeno-calm-restore-oat-gel-moisturizer.webp"
  },
  {
   "name": "Purito Oat-in Calming Gel Cream",
@@ -129,7 +137,8 @@ window.PRODUCTS = [
   "tags": [
    "Fungal-acne safe",
    "No niacinamide"
-  ]
+  ],
+  "img": "img/purito-oat-in-calming-gel-cream.webp"
  },
  {
   "name": "Prequel Multi-Quench Gel Cream",
@@ -140,7 +149,8 @@ window.PRODUCTS = [
    "acne"
   ],
   "price": 9.0,
-  "link": "https://amzn.to/4zKh01l"
+  "link": "https://amzn.to/4zKh01l",
+  "img": "img/prequel-multi-quench-gel-cream.webp"
  },
  {
   "name": "Vanicream Daily Facial Moisturizer",
@@ -151,7 +161,8 @@ window.PRODUCTS = [
    "normal"
   ],
   "price": 4.66,
-  "link": "https://amzn.to/3WDR2hN"
+  "link": "https://amzn.to/3WDR2hN",
+  "img": "img/vanicream-daily-facial-moisturizer.webp"
  },
  {
   "name": "La Roche-Posay Toleriane Double Repair Face Moisturizer",
@@ -162,7 +173,8 @@ window.PRODUCTS = [
    "normal"
   ],
   "price": 7.39,
-  "link": "https://amzn.to/4k8uBeo"
+  "link": "https://amzn.to/4k8uBeo",
+  "img": "img/la-roche-posay-toleriane-double-repair-face-moisturizer.webp"
  },
  {
   "name": "Aestura AtoBarrier 365 Cream",
@@ -176,7 +188,8 @@ window.PRODUCTS = [
   "link": "https://amzn.to/3TNxrLl",
   "ing": [
    "ceramides"
-  ]
+  ],
+  "img": "img/aestura-atobarrier-365-cream.webp"
  },
  {
   "name": "Purito Mighty Bamboo Panthenol Cream",
@@ -190,7 +203,8 @@ window.PRODUCTS = [
   "link": "https://amzn.to/4iwz4Gv",
   "ing": [
    "panthenol"
-  ]
+  ],
+  "img": "img/purito-mighty-bamboo-panthenol-cream.webp"
  },
  {
   "name": "Vanicream Moisturizing Cream",
@@ -204,7 +218,8 @@ window.PRODUCTS = [
   "link": "https://amzn.to/4sgQsm4",
   "tags": [
    "No niacinamide"
-  ]
+  ],
+  "img": "img/vanicream-moisturizing-cream.webp"
  },
  {
   "name": "La Roche-Posay Cicaplast Baume B5",
@@ -219,7 +234,8 @@ window.PRODUCTS = [
   "link": "https://amzn.to/4szAOCB",
   "ing": [
    "panthenol"
-  ]
+  ],
+  "img": "img/la-roche-posay-cicaplast-baume-b5.webp"
  },
  {
   "name": "The Ordinary Glycolic Acid 7% Toner",
@@ -234,7 +250,8 @@ window.PRODUCTS = [
   "link": "https://amzn.to/4BiTOJd",
   "ing": [
    "glycolic"
-  ]
+  ],
+  "img": "img/the-ordinary-glycolic-acid-7-toner.webp"
  },
  {
   "name": "Puracyn Hypochlorous Spray",
@@ -245,7 +262,8 @@ window.PRODUCTS = [
    "sensitive"
   ],
   "price": 3.0,
-  "link": "https://amzn.to/4eoORVr"
+  "link": "https://amzn.to/4eoORVr",
+  "img": "img/puracyn-hypochlorous-spray.webp"
  },
  {
   "name": "Peach Slices Hypochlorous Acid Spray",
@@ -256,7 +274,8 @@ window.PRODUCTS = [
    "sensitive"
   ],
   "price": 2.67,
-  "link": "https://amzn.to/4Bd09pP"
+  "link": "https://amzn.to/4Bd09pP",
+  "img": "img/peach-slices-hypochlorous-acid-spray.webp"
  },
  {
   "name": "CeraVe Foaming Cleanser",
@@ -268,7 +287,8 @@ window.PRODUCTS = [
   ],
   "price": 0.88,
   "link": "https://amzn.to/4BiKdlM",
-  "kind": "gentle"
+  "kind": "gentle",
+  "img": "img/cerave-foaming-cleanser.webp"
  },
  {
   "name": "Vanicream Foaming Cleanser",
@@ -280,7 +300,8 @@ window.PRODUCTS = [
   ],
   "price": 1.25,
   "link": "https://amzn.to/4BjE09e",
-  "kind": "gentle"
+  "kind": "gentle",
+  "img": "img/vanicream-foaming-cleanser.webp"
  },
  {
   "name": "La Roche-Posay Toleriane Purifying Foaming",
@@ -292,7 +313,8 @@ window.PRODUCTS = [
   ],
   "price": 2.37,
   "link": "https://amzn.to/3VZ0QCT",
-  "kind": "gentle"
+  "kind": "gentle",
+  "img": "img/la-roche-posay-toleriane-purifying-foaming.webp"
  },
  {
   "name": "Avène Cleanance Foaming Cleanser",
@@ -304,7 +326,8 @@ window.PRODUCTS = [
   ],
   "price": 1.52,
   "link": "https://amzn.to/4zF2Iz3",
-  "kind": "gentle"
+  "kind": "gentle",
+  "img": "img/avene-cleanance-foaming-cleanser.webp"
  },
  {
   "name": "La Roche-Posay Hydrating Gentle Cleanser",
@@ -317,7 +340,8 @@ window.PRODUCTS = [
   ],
   "price": 2.37,
   "link": "https://amzn.to/4i8WwIq",
-  "kind": "gentle"
+  "kind": "gentle",
+  "img": "img/la-roche-posay-hydrating-gentle-cleanser.webp"
  },
  {
   "name": "La Roche-Posay Toleriane Caring Wash",
@@ -330,7 +354,8 @@ window.PRODUCTS = [
   ],
   "price": 1.48,
   "link": "https://amzn.to/47xoadr",
-  "kind": "gentle"
+  "kind": "gentle",
+  "img": "img/la-roche-posay-toleriane-caring-wash.webp"
  },
  {
   "name": "Byoma Milk Cleanser",
@@ -343,7 +368,8 @@ window.PRODUCTS = [
   ],
   "price": 2.2,
   "link": "https://amzn.to/485Bo19",
-  "kind": "gentle"
+  "kind": "gentle",
+  "img": "img/byoma-milk-cleanser.webp"
  },
  {
   "name": "PanOxyl Acne Gel Wash",
@@ -360,7 +386,8 @@ window.PRODUCTS = [
   "ing": [
    "salicylic"
   ],
-  "note": "2% salicylic acid."
+  "note": "2% salicylic acid.",
+  "img": "img/panoxyl-acne-gel-wash.webp"
  },
  {
   "name": "Peach Slices Acne Clarifying Cleanser",
@@ -376,7 +403,8 @@ window.PRODUCTS = [
   "kind": "sa",
   "ing": [
    "salicylic"
-  ]
+  ],
+  "img": "img/peach-slices-acne-clarifying-cleanser.webp"
  },
  {
   "name": "CeraVe Renewing SA Cleanser",
@@ -392,7 +420,8 @@ window.PRODUCTS = [
   "kind": "sa",
   "ing": [
    "salicylic"
-  ]
+  ],
+  "img": "img/cerave-renewing-sa-cleanser.webp"
  },
  {
   "name": "Cetaphil Gentle Exfoliating SA Cleanser",
@@ -408,7 +437,8 @@ window.PRODUCTS = [
   "kind": "sa",
   "ing": [
    "salicylic"
-  ]
+  ],
+  "img": "img/cetaphil-gentle-exfoliating-sa-cleanser.webp"
  },
  {
   "name": "PanOxyl Creamy Wash",
@@ -422,7 +452,8 @@ window.PRODUCTS = [
   "kind": "bp",
   "ing": [
    "bp"
-  ]
+  ],
+  "img": "img/panoxyl-creamy-wash.webp"
  },
  {
   "name": "PanOxyl Foaming Wash",
@@ -436,7 +467,8 @@ window.PRODUCTS = [
   "kind": "bp",
   "ing": [
    "bp"
-  ]
+  ],
+  "img": "img/panoxyl-foaming-wash.webp"
  },
  {
   "name": "CeraVe Acne Foaming Cream Cleanser",
@@ -450,7 +482,8 @@ window.PRODUCTS = [
   "kind": "bp",
   "ing": [
    "bp"
-  ]
+  ],
+  "img": "img/cerave-acne-foaming-cream-cleanser.webp"
  },
  {
   "name": "Naturium The Revealer Sulfur Body Wash",
@@ -467,7 +500,8 @@ window.PRODUCTS = [
   "ing": [
    "sulfur"
   ],
-  "note": "A body wash. Great for chest and back; some people use it on the face too."
+  "note": "A body wash. Great for chest and back; some people use it on the face too.",
+  "img": "img/naturium-the-revealer-sulfur-body-wash.webp"
  },
  {
   "name": "Prequel Redness Reform Sulfur Cleanser",
@@ -483,7 +517,8 @@ window.PRODUCTS = [
   "kind": "sulfur",
   "ing": [
    "sulfur"
-  ]
+  ],
+  "img": "img/prequel-redness-reform-sulfur-cleanser.webp"
  },
  {
   "name": "Bioderma Sensibio H2O",
@@ -493,7 +528,8 @@ window.PRODUCTS = [
    "all"
   ],
   "price": 1.12,
-  "link": "https://amzn.to/4BgM7U3"
+  "link": "https://amzn.to/4BgM7U3",
+  "img": "img/bioderma-sensibio-h2o.webp"
  },
  {
   "name": "Garnier Micellar Water",
@@ -503,7 +539,8 @@ window.PRODUCTS = [
    "all"
   ],
   "price": 0.65,
-  "link": "https://amzn.to/4zNbafZ"
+  "link": "https://amzn.to/4zNbafZ",
+  "img": "img/garnier-micellar-water.webp"
  },
  {
   "name": "The INKEY List Oat Cleansing Balm",
@@ -513,7 +550,8 @@ window.PRODUCTS = [
    "all"
   ],
   "price": 3.35,
-  "link": "https://amzn.to/4i5txVZ"
+  "link": "https://amzn.to/4i5txVZ",
+  "img": "img/the-inkey-list-oat-cleansing-balm.webp"
  },
  {
   "name": "Haruharu Wonder Black Rice Cleansing Oil",
@@ -523,7 +561,8 @@ window.PRODUCTS = [
    "all"
   ],
   "price": 3.15,
-  "link": "https://amzn.to/48a1JuY"
+  "link": "https://amzn.to/48a1JuY",
+  "img": "img/haruharu-wonder-black-rice-cleansing-oil.webp"
  },
  {
   "name": "SKIN1004 Light Cleansing Oil",
@@ -533,7 +572,8 @@ window.PRODUCTS = [
    "all"
   ],
   "price": 2.66,
-  "link": "https://amzn.to/4ysJmMF"
+  "link": "https://amzn.to/4ysJmMF",
+  "img": "img/skin1004-light-cleansing-oil.webp"
  },
  {
   "name": "Prequel Cleansing Oil",
@@ -543,7 +583,8 @@ window.PRODUCTS = [
    "all"
   ],
   "price": 3.08,
-  "link": "https://amzn.to/4hXP6Ju"
+  "link": "https://amzn.to/4hXP6Ju",
+  "img": "img/prequel-cleansing-oil.webp"
  },
  {
   "name": "Orien Mugwort Zero Film Cleansing Oil",
@@ -553,7 +594,8 @@ window.PRODUCTS = [
    "all"
   ],
   "price": 2.65,
-  "link": "https://amzn.to/4yEcalv"
+  "link": "https://amzn.to/4yEcalv",
+  "img": "img/orien-mugwort-zero-film-cleansing-oil.webp"
  },
  {
   "name": "Biodance Collagen Oil Cleanser",
@@ -563,7 +605,8 @@ window.PRODUCTS = [
    "all"
   ],
   "price": 3.11,
-  "link": "https://amzn.to/4z1HTxS"
+  "link": "https://amzn.to/4z1HTxS",
+  "img": "img/biodance-collagen-oil-cleanser.webp"
  },
  {
   "name": "Differin Gel",
@@ -577,7 +620,8 @@ window.PRODUCTS = [
   "ing": [
    "adapalene"
   ],
-  "note": "Give it 12 weeks. Breakouts can flare before they improve."
+  "note": "Give it 12 weeks. Breakouts can flare before they improve.",
+  "img": "img/differin-gel.webp"
  },
  {
   "name": "Neutrogena Evenly Clear Adapalene",
@@ -591,7 +635,8 @@ window.PRODUCTS = [
   "ing": [
    "adapalene"
   ],
-  "note": "Same active as Differin Gel, for less."
+  "note": "Same active as Differin Gel, for less.",
+  "img": "img/neutrogena-evenly-clear-adapalene.webp"
  },
  {
   "name": "Differin Epiduo Acne Gel",
@@ -606,7 +651,8 @@ window.PRODUCTS = [
    "adapalene",
    "bp"
   ],
-  "note": "Adapalene plus benzoyl peroxide in one. Start every other night; it bleaches fabric."
+  "note": "Adapalene plus benzoyl peroxide in one. Start every other night; it bleaches fabric.",
+  "img": "img/differin-epiduo-acne-gel.webp"
  },
  {
   "name": "Aveeno Positively Radiant Vitamin C Serum",
@@ -617,7 +663,8 @@ window.PRODUCTS = [
   "link": "https://amzn.to/3UCWhxG",
   "ing": [
    "vitc"
-  ]
+  ],
+  "img": "img/aveeno-positively-radiant-vitamin-c-serum.webp"
  },
  {
   "name": "Bubble Vitamin C",
@@ -633,7 +680,8 @@ window.PRODUCTS = [
   "tags": [
    "Gentle starter"
   ],
-  "note": "Uses sodium ascorbyl phosphate, a gentle form to start with."
+  "note": "Uses sodium ascorbyl phosphate, a gentle form to start with.",
+  "img": "img/bubble-vitamin-c.webp"
  },
  {
   "name": "Vanicream Vitamin C",
@@ -649,7 +697,8 @@ window.PRODUCTS = [
   "tags": [
    "Gentle starter"
   ],
-  "note": "Uses tetrahexyldecyl ascorbate, a gentle form to start with."
+  "note": "Uses tetrahexyldecyl ascorbate, a gentle form to start with.",
+  "img": "img/vanicream-vitamin-c.webp"
  },
  {
   "name": "The Ordinary GF 15% Solution",
@@ -661,7 +710,8 @@ window.PRODUCTS = [
   "ing": [
    "peptides"
   ],
-  "note": "The budget growth factor pick."
+  "note": "The budget growth factor pick.",
+  "img": "img/the-ordinary-gf-15-solution.webp"
  },
  {
   "name": "SKIN1004 10% Niacinamide",
@@ -674,7 +724,8 @@ window.PRODUCTS = [
   "ing": [
    "niacinamide"
   ],
-  "note": "The gentler niacinamide pick."
+  "note": "The gentler niacinamide pick.",
+  "img": "img/skin1004-10-niacinamide.webp"
  },
  {
   "name": "Good Molecules Retinol",
@@ -686,7 +737,8 @@ window.PRODUCTS = [
   "kind": "retinol",
   "ing": [
    "retinol"
-  ]
+  ],
+  "img": "img/good-molecules-retinol.webp"
  },
  {
   "name": "SKIN1004 Retinol Boosting Shot",
@@ -698,7 +750,8 @@ window.PRODUCTS = [
   "kind": "retinol",
   "ing": [
    "retinol"
-  ]
+  ],
+  "img": "img/skin1004-retinol-boosting-shot.webp"
  },
  {
   "name": "Olay Retinol 24",
@@ -710,7 +763,8 @@ window.PRODUCTS = [
   "kind": "retinol",
   "ing": [
    "retinol"
-  ]
+  ],
+  "img": "img/olay-retinol-24.webp"
  },
  {
   "name": "CeraVe Resurfacing Retinol Serum",
@@ -722,7 +776,8 @@ window.PRODUCTS = [
   "kind": "retinol",
   "ing": [
    "retinol"
-  ]
+  ],
+  "img": "img/cerave-resurfacing-retinol-serum.webp"
  },
  {
   "name": "e.l.f. Youth Boosting Advanced Retinoid",
@@ -734,7 +789,8 @@ window.PRODUCTS = [
   "kind": "retinol",
   "ing": [
    "retinol"
-  ]
+  ],
+  "img": "img/e-l-f-youth-boosting-advanced-retinoid.webp"
  },
  {
   "name": "COSRX The Retinol 0.5 Oil",
@@ -747,7 +803,8 @@ window.PRODUCTS = [
   "ing": [
    "retinol"
   ],
-  "note": "0.5% is a mid strength. Not for your first retinol."
+  "note": "0.5% is a mid strength. Not for your first retinol.",
+  "img": "img/cosrx-the-retinol-0-5-oil.webp"
  },
  {
   "name": "Beauty of Joseon Retinal Eye Cream",
@@ -760,7 +817,8 @@ window.PRODUCTS = [
   "ing": [
    "retinol"
   ],
-  "note": "Made for the eye area."
+  "note": "Made for the eye area.",
+  "img": "img/beauty-of-joseon-retinal-eye-cream.webp"
  },
  {
   "name": "Naturium Retinal Serum 0.05%",
@@ -773,7 +831,8 @@ window.PRODUCTS = [
   "ing": [
    "retinol"
   ],
-  "note": "Lowest strength: a good first retinal."
+  "note": "Lowest strength: a good first retinal.",
+  "img": "img/naturium-retinal-serum-0-05.webp"
  },
  {
   "name": "Naturium Retinal 0.1%",
@@ -785,7 +844,8 @@ window.PRODUCTS = [
   "kind": "retinal",
   "ing": [
    "retinol"
-  ]
+  ],
+  "img": "img/naturium-retinal-0-1.webp"
  },
  {
   "name": "Naturium Retinal Cream 0.15%",
@@ -797,7 +857,8 @@ window.PRODUCTS = [
   "kind": "retinal",
   "ing": [
    "retinol"
-  ]
+  ],
+  "img": "img/naturium-retinal-cream-0-15.webp"
  },
  {
   "name": "Cetaphil Daily Moisturizer with Sunscreen",
@@ -811,7 +872,8 @@ window.PRODUCTS = [
   "link": "https://amzn.to/485RYhp",
   "ing": [
    "sunscreen"
-  ]
+  ],
+  "img": "img/cetaphil-daily-moisturizer-with-sunscreen.webp"
  },
  {
   "name": "CeraVe Ultra-Light Moisturizing Lotion with Sunscreen",
@@ -825,7 +887,8 @@ window.PRODUCTS = [
   "link": "https://amzn.to/4shiyh3",
   "ing": [
    "sunscreen"
-  ]
+  ],
+  "img": "img/cerave-ultra-light-moisturizing-lotion-with-sunscreen.webp"
  },
  {
   "name": "La Roche-Posay Anthelios Clear Skin",
@@ -839,7 +902,8 @@ window.PRODUCTS = [
   "link": "https://amzn.to/4ixJkhG",
   "ing": [
    "sunscreen"
-  ]
+  ],
+  "img": "img/la-roche-posay-anthelios-clear-skin.webp"
  },
  {
   "name": "Purito Daily Soft Touch Sunscreen",
@@ -856,7 +920,8 @@ window.PRODUCTS = [
   ],
   "tags": [
    "K-beauty"
-  ]
+  ],
+  "img": "img/purito-daily-soft-touch-sunscreen.webp"
  },
  {
   "name": "TIRTIR Hydro UV Shield",
@@ -872,7 +937,8 @@ window.PRODUCTS = [
   ],
   "tags": [
    "K-beauty"
-  ]
+  ],
+  "img": "img/tirtir-hydro-uv-shield.webp"
  },
  {
   "name": "CeraVe Invisible Mineral Sunscreen",
@@ -889,7 +955,8 @@ window.PRODUCTS = [
   ],
   "tags": [
    "Mineral"
-  ]
+  ],
+  "img": "img/cerave-invisible-mineral-sunscreen.webp"
  },
  {
   "name": "Neutrogena Ultra Clear Mineral",
@@ -906,7 +973,8 @@ window.PRODUCTS = [
   ],
   "tags": [
    "Mineral"
-  ]
+  ],
+  "img": "img/neutrogena-ultra-clear-mineral.webp"
  },
  {
   "name": "Avène Cicalfate+",
