@@ -1,0 +1,966 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta property="og:title" content="The House of Kor Skin Lab">
+<meta property="og:description" content="Skincare ingredients in plain words, a routine builder, and my product picks at every budget.">
+<title>The House of Kor Skin Lab</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Skincare ingredients explained, matched to skin concerns, plus a routine builder for your skin type.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Patrick+Hand&display=swap">
+<style>
+/* Layout: Take24 "Notebook" sketchbook — ruled paper with a spiral binding, pen-outlined boxes, kraft-paper accents. Single light theme by design. */
+:root{
+  --bg:#f3ead9; --surface:#f8f1e4; --sunk:#e8dcc7; --fg:#2b211b; --muted:#6e5a4a; --line:rgba(43,33,27,.28);
+  --accent:#7a5236; --accent-soft:#ead8c0; --amber:#9a4a3c; --amber-soft:#f1d9cc;
+  --kraft:#c9a47c; --kraft-2:#b98f66; --tape:rgba(214,186,140,.8);
+  --rule:rgba(120,140,160,.22); --margin:rgba(196,92,80,.32);
+  --good:#4f6b3a; --good-soft:#e2e4c8; --warn:#8a5a1c; --warn-soft:#f1dfbf; --bad:#9a3a2e; --bad-soft:#f1d3c9;
+  --display:"Caveat Brush","Patrick Hand","Comic Sans MS",cursive;
+  --body:"Patrick Hand","Comic Neue","Comic Sans MS",cursive;
+  --mono:"Patrick Hand","Comic Neue","Comic Sans MS",cursive;
+  --sketch:255px 12px 225px 14px/14px 225px 12px 255px;
+  --sketch-2:12px 225px 14px 255px/225px 14px 255px 12px;
+  --pen:1.8px solid var(--fg);
+  --r:10px; --margin-x:62px;
+}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+body{background:var(--bg);color:var(--fg);font-family:var(--body);font-size:16px;line-height:1.55;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--bg)}
+.wrap{max-width:1120px;margin:0 auto}
+a{color:var(--accent)}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:4px}
+h1,h2,h3{font-family:var(--display);font-weight:500;text-wrap:balance;margin:0;line-height:1.1}
+h2{font-size:clamp(1.9rem,4vw,2.6rem)}
+h3{font-size:1.3rem}
+.eyebrow{font-family:var(--mono);font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.lede{color:var(--muted);max-width:62ch;margin:.6rem 0 0}
+
+/* nav */
+nav.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:9;background:var(--bg);border-bottom:1px solid var(--line)}
+nav.top .wrap{display:flex;align-items:center;gap:1.2rem;min-height:58px;flex-wrap:wrap}
+.brand{font-family:var(--display);font-size:1.25rem;text-decoration:none;color:var(--fg);white-space:nowrap}
+.brand i{color:var(--accent)}
+nav.top ul{list-style:none;display:flex;gap:.2rem;margin:0 0 0 auto;padding:0;flex-wrap:wrap}
+nav.top a.l{display:block;padding:.4rem .7rem;border-radius:999px;text-decoration:none;color:var(--muted);font-weight:500;font-size:.92rem}
+nav.top a.l:hover{color:var(--fg);background:var(--sunk)}
+@media (max-width:640px){nav.top ul{margin:0;width:100%;overflow-x:auto;flex-wrap:nowrap;padding-bottom:.5rem}nav.top .wrap{gap:.3rem;padding-top:.5rem}}
+
+section{padding-block:3.2rem;border-bottom:1px solid var(--line)}
+section:last-of-type{border-bottom:0}
+.head{display:flex;flex-direction:column;gap:.2rem;margin-bottom:1.8rem}
+
+/* hero / builder */
+.hero h1{font-size:clamp(2.3rem,6.4vw,4.4rem);font-weight:500;letter-spacing:-.01em;max-width:15ch}
+.hero h1 em{color:var(--accent);font-style:italic}
+.builder{display:grid;grid-template-columns:minmax(0,340px) minmax(0,1fr);gap:2rem;margin-top:2.2rem;align-items:start}
+@media (max-width:860px){.builder{grid-template-columns:1fr}}
+.quiz{display:flex;flex-direction:column;gap:1.3rem;background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:1.3rem}
+fieldset{border:0;margin:0;padding:0;display:flex;flex-direction:column;gap:.55rem}
+legend{font-weight:600;font-size:.95rem;padding:0;margin-bottom:.5rem}
+legend small{font-weight:400;color:var(--muted)}
+.chips{display:flex;flex-wrap:wrap;gap:.4rem}
+.chip{position:relative}
+.chip input{position:absolute;opacity:0;inset:0;margin:0;cursor:pointer}
+.chip span{display:inline-block;padding:.38rem .75rem;border:1px solid var(--line);border-radius:999px;font-size:.9rem;background:var(--bg);color:var(--fg);transition:background .15s,border-color .15s}
+.chip input:checked + span{background:var(--accent);border-color:var(--accent);color:var(--surface)}
+.chip input:focus-visible + span{outline:2px solid var(--accent);outline-offset:2px}
+.chip:hover span{border-color:var(--accent)}
+.toggle{display:flex;align-items:center;gap:.6rem;font-size:.92rem;cursor:pointer}
+.toggle input{width:1.1rem;height:1.1rem;accent-color:var(--accent)}
+
+.result{min-width:0}
+.result-top{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;flex-wrap:wrap;margin-bottom:1rem}
+.result-top h3{font-size:1.6rem}
+.tagline{font-family:var(--mono);font-size:.78rem;color:var(--muted)}
+.ampm{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem}
+@media (max-width:640px){.ampm{grid-template-columns:1fr}}
+.col{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:1.1rem;min-width:0}
+.col h4{margin:0 0 .8rem;font-family:var(--mono);font-size:.75rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);display:flex;align-items:center;gap:.5rem}
+.col h4 .dot{width:.6rem;height:.6rem;border-radius:50%;background:var(--amber)}
+.col.pm h4 .dot{background:var(--accent)}
+ol.steps{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:.9rem;counter-reset:s}
+ol.steps li{counter-increment:s;display:grid;grid-template-columns:1.7rem minmax(0,1fr);gap:.6rem}
+ol.steps li::before{content:counter(s);font-family:var(--display);font-size:1.25rem;line-height:1.2;color:var(--muted)}
+.step-name{font-weight:600}
+.step-why{color:var(--muted);font-size:.88rem;margin:.1rem 0 .35rem}
+.ing-link{font:inherit;background:none;border:0;padding:0;color:var(--accent);text-decoration:underline;text-underline-offset:2px;cursor:pointer;font-weight:600}
+.shop{display:inline-flex;align-items:center;gap:.45rem;font-size:.85rem;text-decoration:none;color:var(--fg);border:1px solid var(--line);background:var(--bg);padding:.28rem .6rem;border-radius:6px;max-width:100%}
+.shop:hover{border-color:var(--amber)}
+.shop b{font-weight:500;overflow-wrap:anywhere}
+.shop small{font-family:var(--mono);font-size:.68rem;color:var(--amber);white-space:nowrap}
+
+.week{margin-top:1rem;background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:1.1rem}
+.week h4{margin:0 0 .3rem;font-family:var(--mono);font-size:.75rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.week p{margin:0 0 .8rem;color:var(--muted);font-size:.88rem}
+.nights{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:.35rem}
+.night{border-radius:8px;padding:.5rem .3rem;text-align:center;border:1px solid var(--line);min-width:0}
+.night .d{font-family:var(--mono);font-size:.7rem;color:var(--muted);display:block}
+.night .a{font-size:.78rem;font-weight:600;display:block;margin-top:.2rem;overflow-wrap:anywhere;line-height:1.2}
+.night.ret{background:var(--accent-soft);border-color:transparent}
+.night.ret .a{color:var(--accent)}
+.night.exf{background:var(--amber-soft);border-color:transparent}
+.night.exf .a{color:var(--amber)}
+.legend{display:flex;flex-wrap:wrap;gap:.4rem 1rem;margin-top:.8rem;font-size:.84rem;color:var(--muted)}
+.legend b{color:var(--fg);font-weight:600}
+
+.notes{margin-top:1rem;display:flex;flex-direction:column;gap:.5rem}
+.note{display:grid;grid-template-columns:auto minmax(0,1fr);gap:.6rem;font-size:.9rem;padding:.6rem .8rem;border-radius:8px;background:var(--sunk)}
+.note.warn{background:var(--warn-soft)}
+.note .k{font-family:var(--mono);font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;padding-top:.15rem;color:var(--muted)}
+.note.warn .k{color:var(--warn)}
+
+/* library */
+.tools{display:flex;flex-direction:column;gap:.8rem;margin-bottom:1.4rem}
+.search{width:100%;max-width:440px;font:inherit;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:var(--surface);color:var(--fg)}
+.count{font-family:var(--mono);font-size:.75rem;color:var(--muted)}
+.shelf{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,320px),1fr));gap:1rem;align-items:start}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);min-width:0;scroll-margin-top:84px}
+.card.flash{border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-soft)}
+.card summary{list-style:none;cursor:pointer;padding:1.1rem 1.1rem .95rem;display:flex;flex-direction:column;gap:.35rem}
+.card summary::-webkit-details-marker{display:none}
+.card .row{display:flex;justify-content:space-between;gap:.6rem;align-items:baseline}
+.card h3{font-size:1.35rem}
+.fam{font-family:var(--mono);font-size:.66rem;letter-spacing:.08em;text-transform:uppercase;color:var(--amber);white-space:nowrap}
+.inci{font-family:var(--mono);font-size:.75rem;color:var(--muted);overflow-wrap:anywhere}
+.does{margin:.2rem 0 0;font-size:.93rem}
+.meta{display:flex;flex-wrap:wrap;gap:.35rem;margin-top:.35rem}
+.pill{font-size:.75rem;padding:.12rem .5rem;border-radius:999px;background:var(--sunk);color:var(--fg);white-space:nowrap}
+.pill.m{font-family:var(--mono);font-size:.7rem}
+.more{font-size:.8rem;color:var(--accent);font-weight:600;margin-top:.2rem}
+.card[open] .more{display:none}
+.detail{padding:0 1.1rem 1.1rem;display:flex;flex-direction:column;gap:.75rem;border-top:1px dashed var(--line);padding-top:.9rem}
+.detail dl{margin:0;display:grid;grid-template-columns:minmax(0,7.5rem) minmax(0,1fr);gap:.4rem .8rem;font-size:.88rem}
+.detail dt{color:var(--muted)}
+.detail dd{margin:0}
+.preg-ok{color:var(--good)} .preg-ask{color:var(--warn)} .preg-avoid{color:var(--bad)}
+.tip{font-size:.88rem;background:var(--amber-soft);padding:.6rem .75rem;border-radius:8px}
+.prods{display:flex;flex-direction:column;gap:.4rem;align-items:flex-start}
+.empty{color:var(--muted);padding:2rem 0}
+
+/* concerns */
+.concerns{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,300px),1fr));gap:1rem}
+.concern{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:1.1rem;display:flex;flex-direction:column;gap:.5rem;min-width:0}
+.concern p{margin:0;font-size:.92rem;color:var(--muted)}
+.concern .lbl{font-family:var(--mono);font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-top:.3rem}
+.ingchips{display:flex;flex-wrap:wrap;gap:.35rem}
+.ingchip{font:inherit;font-size:.82rem;padding:.25rem .6rem;border-radius:999px;border:1px solid var(--accent);background:transparent;color:var(--accent);cursor:pointer}
+.ingchip.s{border-color:var(--line);color:var(--fg)}
+.ingchip:hover{background:var(--accent-soft)}
+.build-btn{align-self:flex-start;margin-top:.4rem;font:inherit;font-size:.85rem;font-weight:600;background:none;border:0;padding:0;color:var(--fg);text-decoration:underline;text-underline-offset:3px;cursor:pointer}
+
+/* mix */
+.mix{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);gap:.8rem;align-items:end;max-width:720px}
+.mix label{display:flex;flex-direction:column;gap:.3rem;font-size:.85rem;font-weight:600;min-width:0}
+.mix select{font:inherit;font-weight:400;padding:.6rem .7rem;border:1px solid var(--line);border-radius:8px;background:var(--surface);color:var(--fg);width:100%}
+.plus{font-family:var(--display);font-size:1.6rem;color:var(--muted);padding-bottom:.25rem}
+@media (max-width:520px){.mix{grid-template-columns:1fr}.plus{display:none}}
+.verdict{margin-top:1.2rem;max-width:720px;border-radius:var(--r);padding:1.1rem 1.2rem;border:1px solid var(--line);background:var(--surface)}
+.verdict .v{display:inline-block;font-family:var(--mono);font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;padding:.2rem .55rem;border-radius:999px;margin-bottom:.5rem}
+.v.great{background:var(--good-soft);color:var(--good)} .v.fine{background:var(--sunk);color:var(--fg)}
+.v.caution,.v.separate{background:var(--warn-soft);color:var(--warn)} .v.avoid{background:var(--bad-soft);color:var(--bad)}
+.verdict p{margin:0}
+.order{margin-top:2rem;max-width:720px}
+.order ol{margin:.6rem 0 0;padding-left:1.2rem;display:flex;flex-direction:column;gap:.3rem;font-size:.93rem}
+
+footer{padding-block:2.5rem 3rem;color:var(--muted);font-size:.85rem;display:flex;flex-direction:column;gap:.6rem}
+footer p{margin:0;max-width:75ch}
+footer .brand{font-size:1.1rem}
+
+/* ===== Notebook skin ===== */
+body{font-size:17.5px;
+  padding-left:max(84px,env(safe-area-inset-left,0px));
+  background:
+    linear-gradient(90deg,transparent 0 var(--margin-x),var(--margin) var(--margin-x) calc(var(--margin-x) + 1.5px),transparent calc(var(--margin-x) + 1.5px)),
+    repeating-linear-gradient(180deg,transparent 0 27px,var(--rule) 27px 28px),
+    radial-gradient(ellipse at 30% 20%,rgba(255,255,255,.55),transparent 60%),
+    var(--bg);}
+body::before{left:0;top:0;bottom:0;right:auto;width:30px;height:auto;z-index:11;pointer-events:none;
+  background:
+    radial-gradient(circle at 18px 50%,#2b211b 0 2.6px,transparent 3.2px) 0 0/30px 26px repeat-y,
+    radial-gradient(ellipse at 9px 50%,transparent 0 6px,#6f6f74 6.5px 8px,#3d3d42 8.5px 9.4px,transparent 10px) 0 0/30px 26px repeat-y}
+body::after{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--bg)}
+@media (max-width:768px){:root{--margin-x:38px} body{padding-left:max(46px,env(safe-area-inset-left,0px))}}
+
+h1,h2,h3{font-weight:400;letter-spacing:.2px}
+h2::after{content:" ♡";font-size:.75em;opacity:.8}
+.hero h1{line-height:1.02}
+.hero h1 em{font-style:normal;color:var(--fg);text-decoration:underline wavy var(--margin);text-decoration-thickness:2px;text-underline-offset:8px}
+.eyebrow,.col h4,.week h4,.note .k,.concern .lbl,.fam,.tagline,.count{letter-spacing:.04em;font-size:.9rem}
+.brand{font-family:var(--display);font-size:1.6rem;color:#141010}
+.brand i{font-style:normal;color:var(--accent)}
+footer .brand{font-size:1.4rem}
+
+nav.top{background:var(--bg);border-bottom:var(--pen)}
+nav.top a.l{font-size:1.05rem;color:var(--fg)}
+nav.top a.l:hover{background:var(--accent-soft)}
+section{border-bottom:2px dashed var(--line)}
+
+/* pen-outlined sketchy boxes */
+.quiz,.col,.week,.card,.concern,.verdict{
+  background:linear-gradient(rgba(255,255,255,.25),rgba(255,255,255,.25)),var(--surface);
+  border:var(--pen);border-radius:var(--sketch);box-shadow:2px 3px 0 rgba(43,33,27,.18)}
+.col:nth-child(even),.card:nth-child(even),.concern:nth-child(even){border-radius:var(--sketch-2)}
+.card:hover{box-shadow:3px 5px 0 rgba(43,33,27,.22)}
+.card.flash{border-color:var(--accent);box-shadow:0 0 0 4px var(--kraft)}
+.detail{border-top:1.5px dashed var(--line)}
+
+/* tape strips */
+.quiz,.week{position:relative}
+.quiz::before,.week::before{content:"";position:absolute;top:-8px;left:50%;width:64px;height:16px;background:var(--tape);
+  transform:translateX(-50%) rotate(-3deg);box-shadow:0 1px 1px rgba(0,0,0,.12)}
+.week::before{transform:translateX(-50%) rotate(4deg)}
+
+/* kraft paper result header */
+.result-top{background:var(--kraft);border:var(--pen);border-radius:var(--sketch-2);padding:.5rem 1rem;transform:rotate(-.5deg)}
+.result-top .tagline{color:var(--fg)}
+
+/* chips & buttons */
+.chip span{background:var(--surface);border:1.6px solid var(--fg);border-radius:var(--sketch);box-shadow:1.5px 2px 0 rgba(43,33,27,.2);font-size:1rem}
+.chip input:checked + span{background:var(--kraft);border-color:var(--fg);color:var(--fg)}
+.chip:hover span{border-color:var(--fg);background:var(--accent-soft)}
+.chip input:checked + span::before{content:"✓ "}
+.ingchip{border:1.6px solid var(--fg);border-radius:var(--sketch);color:var(--fg);background:var(--kraft);font-size:.95rem}
+.ingchip.s{background:var(--surface)}
+.ingchip:hover{background:var(--accent-soft)}
+.shop{border:1.5px solid var(--fg);border-radius:10px 14px 9px 13px;background:var(--surface);box-shadow:1.5px 2px 0 rgba(43,33,27,.18)}
+.shop:hover{background:var(--accent-soft);border-color:var(--fg)}
+.shop small{color:var(--amber);font-size:.8rem}
+.pill{border:1.3px solid var(--fg);border-radius:var(--sketch);background:transparent;font-size:.85rem}
+.pill.m{font-size:.85rem;background:var(--sunk)}
+.fam{color:var(--amber)}
+.inci{font-size:.9rem}
+.more{font-size:.95rem}
+.ing-link{color:var(--fg);text-decoration:underline wavy var(--margin);text-underline-offset:4px;font-weight:400}
+
+/* inputs: pen-on-paper fields */
+.search,.mix select{background:rgba(255,255,255,.55);border:1.5px solid var(--fg);border-radius:10px 14px 9px 13px;font-size:1.05rem}
+.toggle input{accent-color:var(--fg)}
+
+/* notes & schedule */
+.note{background:rgba(255,255,255,.45);border:1.3px dashed var(--line)}
+.note.warn{background:var(--warn-soft);border-color:var(--warn)}
+.night{border:1.5px solid var(--fg);border-radius:var(--sketch);background:var(--surface)}
+.night.ret{background:var(--kraft);border-color:var(--fg)}
+.night.ret .a{color:var(--fg)}
+.night.exf{background:var(--amber-soft);border-color:var(--fg)}
+.tip{background:var(--sunk);border-left:3px solid var(--kraft)}
+ol.steps li::before{font-family:var(--display);font-size:1.5rem}
+.verdict .v{border:1.3px solid var(--fg);border-radius:var(--sketch);font-size:.85rem}
+.plus{font-family:var(--display)}
+/* shop by budget */
+.skinrow .chip span{font-size:.92rem}
+.skinlbl{font-size:.95rem;color:var(--muted);align-self:center;margin-right:.2rem}
+.board{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.2rem;align-items:start}
+@media (max-width:860px){.board{grid-template-columns:1fr}}
+.tiercol{background:linear-gradient(rgba(255,255,255,.25),rgba(255,255,255,.25)),var(--surface);border:var(--pen);border-radius:var(--sketch);box-shadow:2px 3px 0 rgba(43,33,27,.18);padding:1rem 1.1rem;min-width:0}
+.tiercol:nth-child(2){border-radius:var(--sketch-2)}
+.tierhead{display:flex;justify-content:space-between;align-items:baseline;gap:.6rem;flex-wrap:wrap;padding-bottom:.6rem;border-bottom:2px dashed var(--line);margin-bottom:.4rem}
+.tierhead h3{font-size:1.7rem;display:flex;align-items:center;gap:.5rem}
+.band{font-size:.9rem;color:var(--muted)}
+.plist{list-style:none;margin:0;padding:0;display:flex;flex-direction:column}
+.pcard{padding:.75rem 0;border-bottom:1.3px dashed var(--line);display:flex;flex-direction:column;gap:.3rem}
+.pcard:last-child{border-bottom:0}
+.prow{display:flex;justify-content:space-between;gap:.6rem;align-items:baseline}
+.pname{font-weight:400;font-size:1.08rem;line-height:1.25;overflow-wrap:anywhere}
+.ppo{white-space:nowrap;font-size:.95rem;font-variant-numeric:tabular-nums}
+.ppo small{color:var(--muted)}
+.pnote{margin:0;font-size:.92rem;color:var(--muted)}
+.ptags{display:flex;flex-wrap:wrap;gap:.3rem}
+.buy{align-self:flex-start;display:inline-flex;align-items:center;gap:.35rem;text-decoration:none;color:var(--fg);background:var(--kraft);border:1.5px solid var(--fg);border-radius:var(--sketch);box-shadow:1.5px 2px 0 rgba(43,33,27,.2);padding:.2rem .7rem;font-size:.95rem}
+.buy:hover{background:var(--accent-soft)}
+.empty-col{color:var(--muted);font-size:.95rem;padding:.8rem 0;margin:0}
+.tierdot{display:inline-block;width:.75rem;height:.75rem;border-radius:50%;border:1.5px solid var(--fg);flex:none}
+.t-basics{background:var(--surface)} .t-upgrade{background:var(--kraft)} .t-splurge{background:var(--fg)}
+.shop .tierdot{width:.6rem;height:.6rem}
+.nopick{margin:0;color:var(--muted);font-size:.9rem}
+</style>
+<style>html{-webkit-text-size-adjust:100%}body{margin:0}img{max-width:100%}[hidden]{display:none!important}:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}</style>
+</head>
+<body>
+
+
+<nav class="top"><div class="wrap">
+  <a class="brand" href="#builder">The House of Kor <i>Skin Lab</i></a>
+  <ul>
+    <li><a class="l" href="#builder">Routine builder</a></li>
+    <li><a class="l" href="#shop">Shop by budget</a></li>
+    <li><a class="l" href="#ingredients">Ingredients</a></li>
+    <li><a class="l" href="#concerns">Skin concerns</a></li>
+    <li><a class="l" href="#mix">Can I mix?</a></li>
+  </ul>
+</div></nav>
+
+<main class="wrap">
+<section class="hero" id="builder">
+  <span class="eyebrow">The House of Kor · Skin Lab</span>
+  <h1>Build a routine that fits <em>your</em> skin.</h1>
+  <p class="lede">Answer six questions and get a morning and night routine built from products I actually recommend, the order to layer them in, and a weekly schedule for your actives. Tap any ingredient to learn what it does.</p>
+
+  <div class="builder">
+    <form class="quiz" id="quiz" autocomplete="off">
+      <fieldset>
+        <legend>1. Your skin type</legend>
+        <div class="chips" id="q-type"></div>
+      </fieldset>
+      <fieldset>
+        <legend>2. What do you want to work on? <small>(pick up to 3)</small></legend>
+        <div class="chips" id="q-concerns"></div>
+      </fieldset>
+      <fieldset>
+        <legend>3. Experience with actives</legend>
+        <div class="chips" id="q-level"></div>
+      </fieldset>
+      <fieldset>
+        <legend>4. Routine size</legend>
+        <div class="chips" id="q-size"></div>
+      </fieldset>
+      <fieldset>
+        <legend>5. Budget</legend>
+        <div class="chips" id="q-budget"></div>
+      </fieldset>
+      <fieldset>
+        <legend>6. Anything else</legend>
+        <label class="toggle" for="q-preg"><input type="checkbox" id="q-preg"> Pregnant, trying, or nursing</label>
+      </fieldset>
+    </form>
+
+    <div class="result" id="result" aria-live="polite"></div>
+  </div>
+</section>
+
+<section id="shop">
+  <div class="head">
+    <span class="eyebrow">Shop by budget</span>
+    <h2>My picks, three ways</h2>
+    <p class="lede">Every product here is one I researched and believe in. Tiers go by price per ounce, compared only within the same category, so a $20 vitamin C can be a Basic while a $20 cleanser is a splurge.</p>
+  </div>
+  <div class="tools">
+    <div class="chips" id="step-filter" aria-label="Product type"></div>
+    <div class="chips skinrow" id="skin-filter" aria-label="Skin type"></div>
+  </div>
+  <div class="board" id="board"></div>
+</section>
+
+<section id="ingredients">
+  <div class="head">
+    <span class="eyebrow">Ingredient library</span>
+    <h2>What's in the bottle</h2>
+    <p class="lede">Every ingredient here, with its label (INCI) name, the strength to look for, when to use it, and what not to stack it with.</p>
+  </div>
+  <div class="tools">
+    <input class="search" id="search" type="search" placeholder="Search ingredients, e.g. retinol or dark spots" aria-label="Search ingredients">
+    <div class="chips" id="fam-filter"></div>
+    <span class="count" id="count"></span>
+  </div>
+  <div class="shelf" id="shelf"></div>
+</section>
+
+<section id="concerns">
+  <div class="head">
+    <span class="eyebrow">Skin concerns</span>
+    <h2>Start with the problem</h2>
+    <p class="lede">The ingredients with the best track record for each concern. The first row is the heavy hitters; the second row supports them.</p>
+  </div>
+  <div class="concerns" id="concern-grid"></div>
+</section>
+
+<section id="mix">
+  <div class="head">
+    <span class="eyebrow">Mix checker</span>
+    <h2>Can I use these together?</h2>
+    <p class="lede">Pick two ingredients to see whether they layer well, need different times of day, or should be kept apart.</p>
+  </div>
+  <div class="mix">
+    <label for="mix-a">First ingredient<select id="mix-a"></select></label>
+    <span class="plus" aria-hidden="true">+</span>
+    <label for="mix-b">Second ingredient<select id="mix-b"></select></label>
+  </div>
+  <div class="verdict" id="verdict"></div>
+  <div class="order">
+    <span class="eyebrow">Layering order</span>
+    <ol>
+      <li>Cleanser</li>
+      <li>Toner or essence (thinnest, most watery)</li>
+      <li>Serums and treatments, thinnest to thickest</li>
+      <li>Eye cream</li>
+      <li>Moisturizer</li>
+      <li>Face oil or occlusive (night)</li>
+      <li>Sunscreen (morning, always last)</li>
+    </ol>
+  </div>
+</section>
+</main>
+
+<footer class="wrap">
+  <span class="brand">The House of Kor <i>Skin Lab</i></span>
+  <p><strong>Affiliate disclosure:</strong> As an Amazon Associate I earn from qualifying purchases. Product links on this page go to Amazon, and I may earn a small commission at no extra cost to you.</p>
+  <p>This guide is for general education, not medical advice. Patch test new products, and see a board-certified dermatologist for persistent acne, redness, rashes, or changing moles. If you're pregnant or nursing, check your routine with your doctor.</p>
+</footer>
+
+<script src="products.js"></script>
+<script>
+/* Products live in products.js (Kourtney's picks, with affiliate links). */
+const PRODUCTS = window.PRODUCTS || [];
+const TIERS = [["basics","The Basics"],["upgrade","The Upgrade"],["splurge","The Splurge"]];
+const TIER_NAME = Object.fromEntries(TIERS);
+const TIER_ORDER = {basics:0, upgrade:1, splurge:2};
+
+const CONCERNS = [
+  {id:"acne", name:"Acne & breakouts", short:"Acne",
+   what:"Clogged pores plus oil, bacteria, and inflammation. Shows up as blackheads, whiteheads, red bumps, or deeper cysts.",
+   hero:["salicylic","bp","adapalene","azelaic"], support:["niacinamide","mandelic","sulfur","centella"],
+   tip:"Deep, painful, or scarring acne needs a dermatologist. Prescription options work much faster."},
+  {id:"darkspots", name:"Dark spots & marks", short:"Dark spots",
+   what:"Extra pigment from sun damage, hormones, or leftover marks after breakouts (post-inflammatory hyperpigmentation).",
+   hero:["sunscreen","tranexamic","azelaic","vitc"], support:["niacinamide","arbutin","retinol","mandelic"],
+   tip:"Nothing fades spots if you skip sunscreen. Daily SPF is half the treatment."},
+  {id:"lines", name:"Fine lines & firmness", short:"Fine lines",
+   what:"Collagen slows down with age and sun exposure, so skin gets thinner, creases settle in, and bounce fades.",
+   hero:["retinol","sunscreen","vitc","peptides"], support:["bakuchiol","glycolic","ha","ceramides"],
+   tip:"Retinoids are the most studied topical for lines. Sunscreen prevents new ones."},
+  {id:"redness", name:"Redness & sensitivity", short:"Redness",
+   what:"Flushing, stinging, or visible redness, often from a weak barrier or rosacea-prone skin.",
+   hero:["azelaic","niacinamide","centella","ceramides"], support:["panthenol","sunscreen","squalane"],
+   tip:"Persistent flushing, bumps, or visible vessels can be rosacea. A dermatologist can confirm and treat it."},
+  {id:"dryness", name:"Dryness & dehydration", short:"Dryness",
+   what:"Dry skin lacks oil; dehydrated skin lacks water. Both feel tight, look dull, and can flake.",
+   hero:["ha","ceramides","petrolatum","squalane"], support:["lactic","panthenol","snail"],
+   tip:"Apply hydrating serums to damp skin, then seal them in with moisturizer."},
+  {id:"texture", name:"Texture & pores", short:"Texture & pores",
+   what:"Rough patches, bumps, and pores that look bigger when they fill with oil and dead skin.",
+   hero:["salicylic","retinol","glycolic","niacinamide"], support:["lactic","mandelic","adapalene"],
+   tip:"You can't shrink pores permanently, but keeping them clear makes them look smaller."},
+  {id:"dullness", name:"Dullness & uneven tone", short:"Dullness",
+   what:"Built-up dead skin and uneven pigment scatter light instead of reflecting it.",
+   hero:["vitc","glycolic","lactic","niacinamide"], support:["arbutin","snail","retinol"],
+   tip:"Gentle, regular exfoliation beats a harsh scrub once in a while."},
+  {id:"oiliness", name:"Oiliness & shine", short:"Oiliness",
+   what:"Overactive oil glands, usually strongest in the T-zone. Often goes with breakouts and visible pores.",
+   hero:["niacinamide","salicylic"], support:["sulfur","adapalene","ha"],
+   tip:"Stripping oil with harsh cleansers often makes skin produce more. Keep moisturizing."},
+  {id:"barrier", name:"Damaged barrier", short:"Barrier repair",
+   what:"Over-exfoliated or irritated skin that stings, feels tight, and reacts to everything.",
+   hero:["ceramides","panthenol","centella","petrolatum"], support:["squalane","ha","niacinamide"],
+   tip:"Stop all acids and retinoids for 1–2 weeks. Cleanse, moisturize, and sunscreen only."}
+];
+
+const FAMS = ["Retinoids","Exfoliants","Acne fighters","Brighteners","Antioxidants","Hydrators","Barrier & repair","Sunscreen"];
+
+const ING = [
+ {id:"retinol", name:"Retinol", inci:"Retinol", fam:"Retinoids", grp:"retinoid",
+  does:"Speeds up cell turnover to smooth texture, soften fine lines, fade marks, and keep pores clear.",
+  good:["lines","texture","darkspots","acne","dullness"], pct:"0.1–1%", when:"PM", preg:"avoid",
+  tip:"Use a pea-size amount for your whole face, on dry skin. Expect dryness or flaking for the first 4–8 weeks."},
+ {id:"adapalene", name:"Adapalene", inci:"Adapalene 0.1%", fam:"Retinoids", grp:"retinoid",
+  does:"An over-the-counter retinoid made for acne. Keeps pores from clogging and calms breakouts.",
+  good:["acne","texture","darkspots","oiliness"], pct:"0.1%", when:"PM", preg:"avoid",
+  tip:"Give it 12 weeks. Breakouts can get worse for the first few weeks before they improve."},
+ {id:"bakuchiol", name:"Bakuchiol", inci:"Bakuchiol", fam:"Retinoids", grp:null,
+  does:"A plant extract studied as a gentler alternative to retinol for fine lines and uneven tone.",
+  good:["lines","dullness","texture"], pct:"0.5–1%", when:"AM or PM", preg:"ask",
+  tip:"A good pick if retinoids irritate you. It doesn't make skin sun-sensitive the way retinol can."},
+ {id:"glycolic", name:"Glycolic Acid", inci:"Glycolic Acid (AHA)", fam:"Exfoliants", grp:"aha",
+  does:"The smallest AHA. Dissolves the glue between dead skin cells for brighter, smoother skin.",
+  good:["dullness","texture","darkspots","lines"], pct:"5–10% leave-on", when:"PM", preg:"ok",
+  tip:"The strongest AHA and the most likely to sting. Never on the same night as a retinoid."},
+ {id:"lactic", name:"Lactic Acid", inci:"Lactic Acid (AHA)", fam:"Exfoliants", grp:"aha",
+  does:"A gentler AHA that exfoliates while pulling moisture into the skin.",
+  good:["dullness","dryness","texture","darkspots"], pct:"5–10%", when:"PM", preg:"ok",
+  tip:"The best first exfoliant for dry or normal skin."},
+ {id:"mandelic", name:"Mandelic Acid", inci:"Mandelic Acid (AHA)", fam:"Exfoliants", grp:"aha",
+  does:"A large AHA that absorbs slowly, so it exfoliates with less sting. Helps acne and dark marks.",
+  good:["acne","darkspots","texture"], pct:"5–12%", when:"PM", preg:"ok",
+  tip:"Often the best exfoliant for sensitive skin and for deeper skin tones prone to dark marks."},
+ {id:"salicylic", name:"Salicylic Acid", inci:"Salicylic Acid (BHA)", fam:"Exfoliants", grp:"bha",
+  does:"Oil-soluble, so it gets inside pores to clear blackheads and calm breakouts.",
+  good:["acne","texture","oiliness"], pct:"0.5–2%", when:"AM or PM", preg:"ask",
+  tip:"Great for the T-zone and blackheads. Can be drying on cheeks, so apply where you need it."},
+ {id:"azelaic", name:"Azelaic Acid", inci:"Azelaic Acid", fam:"Acne fighters", grp:null,
+  does:"Calms redness, fights acne bacteria, and fades dark marks. Gentle enough for most skin types.",
+  good:["acne","darkspots","redness","texture"], pct:"10% OTC · 15–20% Rx", when:"AM or PM", preg:"ok",
+  tip:"Can tingle the first week. One of the few actives that suits acne, redness, and pregnancy."},
+ {id:"bp", name:"Benzoyl Peroxide", inci:"Benzoyl Peroxide", fam:"Acne fighters", grp:"bp",
+  does:"Kills acne-causing bacteria fast. Best for red, inflamed breakouts.",
+  good:["acne"], pct:"2.5–10%", when:"AM", preg:"ask",
+  tip:"It bleaches fabric, so use white towels and pillowcases. A wash left on 1–2 minutes, then rinsed, is the gentlest way to use it."},
+ {id:"sulfur", name:"Sulfur", inci:"Sulfur", fam:"Acne fighters", grp:null,
+  does:"Absorbs oil and dries out breakouts. Common in spot treatments and masks.",
+  good:["acne","oiliness"], pct:"3–10%", when:"PM", preg:"ask",
+  tip:"Spot-treat only. It has a smell and can dry out the skin around the blemish."},
+ {id:"niacinamide", name:"Niacinamide", inci:"Niacinamide (Vitamin B3)", fam:"Brighteners", grp:null,
+  does:"Calms redness, evens tone, strengthens the barrier, and helps skin regulate oil.",
+  good:["acne","darkspots","redness","texture","oiliness","barrier"], pct:"2–10%", when:"AM or PM", preg:"ok",
+  tip:"Start around 4–5% if you're sensitive. Some people find 10% stings."},
+ {id:"tranexamic", name:"Tranexamic Acid", inci:"Tranexamic Acid", fam:"Brighteners", grp:null,
+  does:"Interrupts the signals that trigger pigment. Good for stubborn dark spots and melasma-type patches.",
+  good:["darkspots"], pct:"2–5%", when:"AM or PM", preg:"ask",
+  tip:"Pairs well with niacinamide and sunscreen. Give it 8–12 weeks."},
+ {id:"arbutin", name:"Alpha Arbutin", inci:"Alpha-Arbutin", fam:"Brighteners", grp:null,
+  does:"Slows the enzyme that makes pigment, so dark spots fade gradually.",
+  good:["darkspots","dullness"], pct:"1–2%", when:"AM or PM", preg:"ask",
+  tip:"Gentle and easy to layer under other serums."},
+ {id:"vitc", name:"Vitamin C", inci:"L-Ascorbic Acid", fam:"Antioxidants", grp:"vitc",
+  does:"Neutralizes damage from sun and pollution, fades dark spots, and supports collagen.",
+  good:["darkspots","dullness","lines"], pct:"10–20%", when:"AM", preg:"ok",
+  tip:"Keep it away from light and air. If it turns dark orange or brown, it has oxidized and stopped working."},
+ {id:"ha", name:"Hyaluronic Acid", inci:"Sodium Hyaluronate", fam:"Hydrators", grp:null,
+  does:"A humectant that holds water in the skin for plumper, bouncier hydration.",
+  good:["dryness","lines","barrier"], pct:"0.1–2%", when:"AM or PM", preg:"ok",
+  tip:"Apply to damp skin and seal it with moisturizer, especially in dry or cold weather."},
+ {id:"snail", name:"Snail Mucin", inci:"Snail Secretion Filtrate", fam:"Hydrators", grp:null,
+  does:"A lightweight, hydrating essence that helps skin recover and look less dull.",
+  good:["dryness","dullness","barrier"], pct:"Up to 96%", when:"AM or PM", preg:"ok",
+  tip:"It's thin, so apply it right after cleansing and before serums."},
+ {id:"ceramides", name:"Ceramides", inci:"Ceramide NP · AP · EOP", fam:"Barrier & repair", grp:null,
+  does:"The fats that hold your skin barrier together. They lock moisture in and keep irritants out.",
+  good:["dryness","barrier","redness"], pct:"Look for 3+ ceramides", when:"AM or PM", preg:"ok",
+  tip:"Your best friend while you start retinoids or exfoliants."},
+ {id:"peptides", name:"Peptides", inci:"Palmitoyl Tripeptide-1, Acetyl Hexapeptide-8", fam:"Barrier & repair", grp:null,
+  does:"Short chains of amino acids that signal skin to support firmness and repair.",
+  good:["lines","barrier"], pct:"Varies by peptide", when:"AM or PM", preg:"ok",
+  tip:"Gentle enough for daily use, including on retinoid nights."},
+ {id:"centella", name:"Centella Asiatica", inci:"Centella Asiatica Extract (Cica)", fam:"Barrier & repair", grp:null,
+  does:"A soothing plant extract that calms irritation and helps skin heal.",
+  good:["redness","barrier","acne"], pct:"Varies", when:"AM or PM", preg:"ok",
+  tip:"Reach for it when skin feels angry after too much exfoliating."},
+ {id:"panthenol", name:"Panthenol", inci:"Panthenol (Vitamin B5)", fam:"Barrier & repair", grp:null,
+  does:"Hydrates and soothes, helping irritated or over-treated skin recover.",
+  good:["barrier","dryness","redness"], pct:"1–5%", when:"AM or PM", preg:"ok",
+  tip:"Look for it in recovery balms for dry patches and around the nose."},
+ {id:"squalane", name:"Squalane", inci:"Squalane", fam:"Barrier & repair", grp:null,
+  does:"A lightweight oil similar to your skin's own oil. Softens and seals in moisture.",
+  good:["dryness","barrier"], pct:"100% as an oil", when:"AM or PM", preg:"ok",
+  tip:"Press a few drops over moisturizer on dry patches. Unlikely to clog pores for most people."},
+ {id:"petrolatum", name:"Petrolatum", inci:"Petrolatum", fam:"Barrier & repair", grp:null,
+  does:"The most effective occlusive. Forms a seal that cuts water loss from the skin.",
+  good:["dryness","barrier"], pct:"Thin layer, last step", when:"PM", preg:"ok",
+  tip:"\"Slugging\" means a thin layer as your last step at night. Skip it on breakout-prone areas."},
+ {id:"sunscreen", name:"Sunscreen", inci:"Zinc Oxide · Avobenzone · Homosalate", fam:"Sunscreen", grp:"spf",
+  does:"Blocks UVA and UVB rays. The single most effective step against dark spots and early aging.",
+  good:["darkspots","lines","redness","dullness"], pct:"SPF 30+ broad spectrum", when:"AM", preg:"ok",
+  tip:"Use about two finger-lengths for face and neck. Reapply every 2 hours when you're outside."}
+];
+const BY = Object.fromEntries(ING.map(i=>[i.id,i]));
+const PREG = {ok:["Generally considered fine","preg-ok"], ask:["Ask your doctor first","preg-ask"], avoid:["Avoid while pregnant or nursing","preg-avoid"]};
+
+/* ---------- product matching ---------- */
+const SKIN_PREFS = {
+  oily:["oily","acne","combination"], combination:["combination","oily","normal"], normal:["normal","combination","dry"],
+  dry:["dry","normal"], sensitive:["sensitive","redness","dry"]
+};
+/* Best product for a step: right tier first, then the closest tier; skin match breaks ties. */
+function pick(step, opts={}){
+  const {tier="basics", skin=[], kind=null, prefer=null, avoid=null} = opts;
+  let pool = PRODUCTS.filter(p=>p.step===step && (!kind || (Array.isArray(kind)?kind:[kind]).includes(p.kind)));
+  if(avoid) pool = pool.filter(p=>!avoid(p));
+  if(!pool.length) return null;
+  const score = p => {
+    let s = -Math.abs(TIER_ORDER[p.tier]-TIER_ORDER[tier])*10;
+    skin.forEach((k,i)=>{ if((p.skin||[]).includes(k)) s += 4 - Math.min(i,3); });
+    if((p.skin||[]).includes("all")) s += 2;
+    if(prefer && prefer(p)) s += 6;
+    return s;
+  };
+  return pool.slice().sort((a,b)=>score(b)-score(a) || a.price-b.price)[0];
+}
+const productsFor = ingId => PRODUCTS.filter(p=>(p.ing||[]).includes(ingId));
+
+const TYPES = [["oily","Oily"],["combination","Combination"],["normal","Normal"],["dry","Dry"],["sensitive","Sensitive"]];
+const LEVELS = [["new","Brand new"],["some","Used a few"],["pro","Experienced"]];
+const SIZES = [["simple","Keep it simple"],["full","Full routine"]];
+const DAYS = ["Mon","Tue","Wed","Thu","Fri","Sat","Sun"];
+
+/* ---------- helpers ---------- */
+const $ = s => document.querySelector(s);
+const esc = s => String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const money = n => "$" + (Number(n)%1 ? Number(n).toFixed(2) : Number(n));
+const shopLink = p => p ? `<a class="shop" href="${esc(p.link)}" target="_blank" rel="sponsored nofollow noopener"><span class="tierdot t-${p.tier}" title="${TIER_NAME[p.tier]}"></span><b>${esc(p.name)}</b><small>${TIER_NAME[p.tier]} · Amazon ↗</small></a>` : "";
+const ingBtn = id => `<button type="button" class="ing-link" data-ing="${id}">${esc(BY[id].name)}</button>`;
+
+function chipGroup(el, name, opts, type, checked){
+  el.innerHTML = opts.map(([v,l])=>`<label class="chip"><input type="${type}" name="${name}" id="${name}-${v}" value="${v}" ${checked.includes(v)?"checked":""}><span>${esc(l)}</span></label>`).join("");
+}
+
+/* ---------- quiz ---------- */
+const saved = (()=>{try{return JSON.parse(localStorage.getItem("korskin")||"null")}catch(e){return null}})();
+const start = Object.assign({type:"combination", concerns:["acne","darkspots"], level:"new", size:"full", budget:"basics", preg:false}, saved||{});
+chipGroup($("#q-budget"),"budget",TIERS,"radio",[start.budget]);
+
+chipGroup($("#q-type"),"type",TYPES,"radio",[start.type]);
+chipGroup($("#q-concerns"),"concern",CONCERNS.filter(c=>c.id!=="barrier").map(c=>[c.id,c.short]).concat([["barrier","Irritated skin"]]),"checkbox",start.concerns);
+chipGroup($("#q-level"),"level",LEVELS,"radio",[start.level]);
+chipGroup($("#q-size"),"size",SIZES,"radio",[start.size]);
+$("#q-preg").checked = !!start.preg;
+
+function answers(){
+  return {
+    type: $('input[name="type"]:checked')?.value || "normal",
+    concerns: [...document.querySelectorAll('input[name="concern"]:checked')].map(i=>i.value),
+    level: $('input[name="level"]:checked')?.value || "new",
+    size: $('input[name="size"]:checked')?.value || "full",
+    budget: $('input[name="budget"]:checked')?.value || "basics",
+    preg: $("#q-preg").checked
+  };
+}
+
+$("#quiz").addEventListener("change", e=>{
+  if(e.target.name==="concern"){
+    const on = document.querySelectorAll('input[name="concern"]:checked');
+    if(on.length>3){ e.target.checked=false; }
+  }
+  render();
+});
+$("#quiz").addEventListener("submit", e=>e.preventDefault());
+
+/* ---------- routine logic ---------- */
+function buildRoutine(a){
+  const C = new Set(a.concerns), T = a.type, sens = T==="sensitive" || C.has("barrier");
+  const simple = a.size==="simple", tier = a.budget;
+  const sk = [...SKIN_PREFS[T]];
+  if(C.has("acne")) sk.unshift("acne");
+  if(C.has("oiliness") && !sk.includes("oily")) sk.splice(1,0,"oily");
+  if(C.has("dryness") && !sk.includes("dry")) sk.splice(1,0,"dry");
+  if(C.has("redness")) sk.splice(1,0,"redness","sensitive");
+  const P = (stepKey, o={}) => pick(stepKey, Object.assign({tier, skin:sk}, o));
+  const am = [], pm = [], notes = [];
+  const step = (label, why, ing, prod) => ({label, why, ing, prod});
+  const gentleClean = () => P("cleanser",{kind:"gentle"});
+
+  // Barrier mode: no actives at all
+  if(C.has("barrier")){
+    const soft = ["sensitive","dry","redness"];
+    am.push(step("Cleanse","Lukewarm water and a gentle, non-foaming wash.",null,P("cleanser",{kind:"gentle",skin:soft})));
+    am.push(step("Moisturize","Ceramides patch the barrier back together.","ceramides",P("moisturizer",{skin:soft})));
+    am.push(step("Sunscreen","Mineral filters are least likely to sting.","sunscreen",P("sunscreen",{skin:["mineral","sensitive"]})));
+    pm.push(step("Cleanse","Same gentle wash. Skip scrubs and brushes.",null,P("cleanser",{kind:"gentle",skin:soft})));
+    if(!simple) pm.push(step("Calm","A hypochlorous mist soothes angry, irritated skin.",null,P("mist")));
+    pm.push(step("Moisturize","A rich layer to cut overnight water loss.","ceramides",P("moisturizer",{skin:["dry","sensitive"]})));
+    pm.push(step("Seal","A thin layer of repair balm on the driest spots.","panthenol",P("repair")));
+    notes.push(["Reset","Pause all acids, retinoids, vitamin C, and scrubs for 1–2 weeks. Bring actives back one at a time once skin stops stinging."]);
+    if(C.size>1) notes.push(["Then","Once your skin calms down, uncheck Irritated skin to see a routine for your other goals."]);
+    notes.push(["See a pro","If stinging, rash, or peeling lasts more than two weeks, see a dermatologist."]);
+    return {am, pm, nights:Array(7).fill("rec"), ret:null, exf:null, notes, headline:"Barrier repair mode · "+TIER_NAME[tier]};
+  }
+
+  // Pick actives
+  const wantsRet = ["lines","texture","acne","darkspots","dullness","oiliness"].some(c=>C.has(c));
+  let ret = null;
+  if(wantsRet){
+    if(a.preg) ret = "bakuchiol";
+    else ret = (C.has("acne") || C.has("oiliness")) ? "adapalene" : "retinol";
+  }
+  let exf = null;
+  if(["acne","texture","dullness","darkspots","oiliness","lines"].some(c=>C.has(c))){
+    if(sens) exf = "mandelic";
+    else if((C.has("acne")||C.has("texture")||C.has("oiliness")) && T!=="dry") exf = a.preg ? "mandelic" : "salicylic";
+    else if(T==="dry") exf = "lactic";
+    else if(C.has("darkspots") && !C.has("dullness")) exf = "mandelic";
+    else exf = "glycolic";
+  }
+  const useC = ["darkspots","dullness","lines"].some(c=>C.has(c)) && !sens;
+  const useNia = ["acne","oiliness","texture","redness"].some(c=>C.has(c)) || (C.has("darkspots") && sens);
+  const useAz = C.has("redness") || (C.has("acne") && a.preg) || (C.has("darkspots") && sens && C.has("acne"));
+  const useTxa = C.has("darkspots") && !simple;
+  const useHA = C.has("dryness") || T==="dry";
+
+  const easy = sens || a.level==="new";
+  const vitcP = () => P("vitc",{skin:[], prefer: easy ? (p=>p.kind==="gentle") : null});
+  const niaP = () => P("niacinamide",{skin:[], avoid: (easy || T!=="oily") ? (p=>p.kind==="strong") : null});
+  const retProd = ret==="adapalene" ? P("acne",{skin:[], prefer:p=>!(p.ing||[]).includes("bp")})
+    : ret==="retinol" ? P("retinoid",{skin:[], kind: a.level==="pro" ? ["retinol","retinal"] : "retinol",
+        prefer: a.level==="new" ? (p=>/Beginner|first|Lowest|0\.05|0\.1\b/i.test(p.name+" "+(p.note||""))) : null,
+        avoid: a.level==="new" ? (p=>/0\.5|0\.3/.test(p.name)) : null})
+    : null;
+  const exfProd = exf==="salicylic" ? P("cleanser",{kind:"sa"}) : exf==="glycolic" ? P("exfoliant",{skin:[]}) : null;
+
+  // AM
+  am.push(step("Cleanse", T==="dry" ? "A splash of water is enough if your skin feels tight in the morning." : "Clears overnight oil without stripping.", null, gentleClean()));
+  if(C.has("acne") && !a.preg && !simple){
+    am.push(step("Acne boost (2–3 mornings a week)","Swap in a benzoyl peroxide wash. Leave it on 1–2 minutes, then rinse.","bp",P("cleanser",{kind:"bp"})));
+  }
+  if(simple){
+    const pk = useC ? "vitc" : useNia ? "niacinamide" : useAz ? "azelaic" : useHA ? "ha" : null;
+    if(pk) am.push(step("Treat", BY[pk].does, pk, pk==="vitc" ? vitcP() : pk==="niacinamide" ? niaP() : null));
+  } else {
+    if(useHA) am.push(step("Hydrate","On damp skin, before anything thicker.","ha",null));
+    if(useC) am.push(step("Antioxidant","Brightens and adds backup to your sunscreen.","vitc",vitcP()));
+    if(useNia) am.push(step("Treat","Evens tone and keeps oil and redness in check.","niacinamide",niaP()));
+    if(useTxa) am.push(step("Spot fader","Targets stubborn pigment alongside niacinamide.","tranexamic",null));
+    if(useAz) am.push(step("Calm & clear","Azelaic acid handles redness, bumps, and marks at once.","azelaic",null));
+  }
+  am.push(step("Moisturize","Hydration that suits your skin type.",null,P("moisturizer")));
+  am.push(step("Sunscreen","Every morning, rain or shine. The last step, always.","sunscreen",P("sunscreen",{skin: sens ? ["mineral","sensitive"] : sk})));
+
+  // PM
+  if(!simple) pm.push(step("First cleanse","Melts sunscreen and makeup so your cleanser can do its job.",null,P("remover",{skin:[]})));
+  pm.push(step(simple ? "Cleanse" : "Second cleanse", simple ? "Wash off the day; double up if you wore sunscreen or makeup." : (exf==="salicylic" ? "Your regular cleanser. On exfoliant nights, use the salicylic acid cleanser below instead." : "Your regular cleanser."), null, gentleClean()));
+  if(!simple && useHA) pm.push(step("Hydrate","On damp skin to prep for actives.","ha",null));
+  if(ret||exf){
+    const parts = [ret && ingBtn(ret), exf && ingBtn(exf)].filter(Boolean).join(" or ");
+    pm.push({label:"Tonight's active", why:`${parts}, depending on the night. Follow the weekly schedule below.`, ing:null, prod:null, multi:[retProd,exfProd].filter(Boolean)});
+  }
+  if(!simple && C.has("lines")) pm.push(step("Repair","Growth factors and peptides support firmness and are gentle enough for any night.","peptides",P("treatment",{skin:[]})));
+  pm.push(step("Moisturize", ret ? "Buffers your active and cuts dryness." : "Locks everything in overnight.", "ceramides", P("moisturizer",{skin: T==="oily" ? sk : ["dry",...sk]})));
+  if(!simple && (T==="dry" || C.has("dryness")) && !C.has("acne")) pm.push(step("Seal (optional)","A thin layer of repair balm on dry areas.","panthenol",P("repair",{skin:[]})));
+
+  // Weekly schedule
+  let retN = 0, exfN = 0;
+  const L = a.level;
+  if(ret){ retN = {new:2,some:3,pro:4}[L]; if(sens) retN = Math.max(1,retN-1); if(ret==="bakuchiol") retN = {new:4,some:5,pro:5}[L]; }
+  if(exf){ exfN = ret ? {new:1,some:1,pro:2}[L] : {new:2,some:2,pro:3}[L]; if(sens) exfN = Math.min(exfN,1); }
+  const nights = Array(7).fill("rec");
+  const retPos = {1:[2],2:[0,3],3:[0,2,4],4:[0,2,4,6],5:[0,1,3,4,6]}[retN] || [];
+  retPos.forEach(i=>nights[i]="ret");
+  const pref = ret ? [5,1,3,6,2] : [1,4,6,2,0];
+  let placed=0; for(const i of pref){ if(placed>=exfN) break; if(nights[i]==="rec"){ nights[i]="exf"; placed++; } }
+
+  // Notes
+  notes.unshift(["Go slow","Add one new active at a time, about two weeks apart. Patch test on your jaw for 2–3 days first."]);
+  if(ret && ret!=="bakuchiol") notes.push(["Retinoid tip","Use a pea-size amount on dry skin. Dryness or a few extra breakouts in weeks 2–8 are normal. If it stings, apply moisturizer first."]);
+  if(exf) notes.push(["Sun sensitivity","Exfoliants and retinoids make skin more sensitive to the sun. Daily sunscreen is non-negotiable."]);
+  if(useC && C.has("acne")) notes.push(["Don't stack",`Keep benzoyl peroxide and vitamin C apart. BP breaks vitamin C down, so use them on different mornings.`]);
+  if(a.preg) notes.push(["Pregnancy","Retinoids and leave-on salicylic acid are left out. Azelaic acid, lactic and mandelic acids, and sunscreen are common swaps. Please run your routine by your OB or midwife."]);
+  if(C.has("acne")) notes.push(["See a pro","If breakouts are deep, painful, or leave scars, a dermatologist can prescribe stronger options."]);
+  if(C.has("redness")) notes.push(["See a pro","Persistent flushing or bumps can be rosacea, which a dermatologist can treat."]);
+
+  const tn = TYPES.find(t=>t[0]===T)[1].toLowerCase();
+  const cn = a.concerns.map(c=>CONCERNS.find(x=>x.id===c).short.toLowerCase());
+  const headline = `For ${tn} skin${cn.length?` focused on ${cn.join(", ").replace(/, ([^,]*)$/," & $1")}`:""} · ${TIER_NAME[tier]}`;
+  return {am, pm, nights, ret, exf, notes, headline};
+}
+
+function renderSteps(list){
+  return `<ol class="steps">${list.map(s=>`<li><div>
+    <div class="step-name">${esc(s.label)}${s.ing?` · ${ingBtn(s.ing)}`:""}</div>
+    <p class="step-why">${s.multi ? s.why : esc(s.why)}</p>
+    ${s.prod ? shopLink(s.prod) : ""}
+    ${s.multi && s.multi.length ? `<div class="prods">${s.multi.map(shopLink).join("")}</div>` : ""}
+  </div></li>`).join("")}</ol>`;
+}
+
+function render(){
+  const a = answers();
+  try{ localStorage.setItem("korskin", JSON.stringify(a)); }catch(e){}
+  const r = buildRoutine(a);
+  const label = {ret: r.ret ? BY[r.ret].name : "", exf: r.exf ? BY[r.exf].name : "", rec:"Recovery"};
+  const short = {ret: r.ret ? (r.ret==="bakuchiol"?"Bakuchiol":"Retinoid") : "", exf:"Exfoliate", rec:"Recovery"};
+  $("#result").innerHTML = `
+    <div class="result-top"><h3>Your routine</h3><span class="tagline">${esc(r.headline)}</span></div>
+    <div class="ampm">
+      <div class="col"><h4><span class="dot"></span>Morning</h4>${renderSteps(r.am)}</div>
+      <div class="col pm"><h4><span class="dot"></span>Night</h4>${renderSteps(r.pm)}</div>
+    </div>
+    ${(r.ret||r.exf) ? `<div class="week">
+      <h4>Your week of nights</h4>
+      <p>Actives never share a night. Recovery nights are cleanse, moisturize, done.</p>
+      <div class="nights">${r.nights.map((n,i)=>`<div class="night ${n}"><span class="d">${DAYS[i]}</span><span class="a">${short[n]}</span></div>`).join("")}</div>
+      <div class="legend">${r.ret?`<span><b>${short.ret}:</b> ${esc(label.ret)}</span>`:""}${r.exf?`<span><b>Exfoliate:</b> ${esc(label.exf)}</span>`:""}<span><b>Recovery:</b> moisturizer only</span></div>
+    </div>` : ""}
+    <div class="notes">${r.notes.map(([k,t])=>`<div class="note ${/Don't|Pregnancy|See a pro|Reset/.test(k)?"warn":""}"><span class="k">${esc(k)}</span><span>${esc(t)}</span></div>`).join("")}</div>`;
+}
+
+/* ---------- shop by budget ---------- */
+const STEPS = [
+  ["cleanser","Cleansers",[4,8]], ["remover","Makeup removers",[4,8]], ["moisturizer","Moisturizers",[12,25]],
+  ["sunscreen","Sunscreen",[10,25]], ["vitc","Vitamin C",[25,45]], ["retinoid","Retinol & retinal",[25,45]],
+  ["niacinamide","Niacinamide",[25,45]], ["acne","Acne treatments",[25,45]], ["exfoliant","Exfoliants",[4,10]],
+  ["repair","Repair balms",[12,25]], ["mist","Hypochlorous mists",[4,10]], ["treatment","Growth factor serums",[25,45]]
+].filter(([k])=>PRODUCTS.some(p=>p.step===k));
+const STEP_FOR_ING = {retinol:"retinoid", adapalene:"acne", glycolic:"exfoliant", salicylic:"cleanser", bp:"cleanser", sulfur:"cleanser",
+  niacinamide:"niacinamide", vitc:"vitc", ha:"moisturizer", ceramides:"moisturizer", peptides:"treatment", centella:"repair", panthenol:"repair", sunscreen:"sunscreen"};
+const SKINS = [
+  ["any","Any skin", ()=>true],
+  ["oily","Oily or acne-prone", p=>(p.skin||[]).some(k=>["oily","acne","all"].includes(k))],
+  ["combination","Combination", p=>(p.skin||[]).some(k=>["combination","all"].includes(k))],
+  ["dry","Dry", p=>(p.skin||[]).some(k=>["dry","all"].includes(k))],
+  ["sensitive","Sensitive or red", p=>(p.skin||[]).some(k=>["sensitive","redness","all"].includes(k))],
+  ["fungal","Fungal-acne safe", p=>(p.tags||[]).includes("Fungal-acne safe")]
+];
+const KIND_LABEL = {sa:"Salicylic acid", bp:"Benzoyl peroxide", sulfur:"Sulfur", retinol:"Retinol", retinal:"Retinal", gentle:"", strong:"Strong"};
+let shopStep = "moisturizer", shopSkin = "any";
+try{ const st = JSON.parse(localStorage.getItem("korshop")||"null"); if(st){ if(STEPS.some(s=>s[0]===st.step)) shopStep = st.step; if(SKINS.some(s=>s[0]===st.skin)) shopSkin = st.skin; } }catch(e){}
+chipGroup($("#step-filter"),"shopstep",STEPS.map(([k,l])=>[k,l]),"radio",[shopStep]);
+chipGroup($("#skin-filter"),"shopskin",SKINS.map(([k,l])=>[k,l]),"radio",[shopSkin]);
+$("#skin-filter").insertAdjacentHTML("afterbegin",`<span class="skinlbl">Skin type:</span>`);
+$("#step-filter").addEventListener("change",e=>{shopStep=e.target.value;renderBoard();});
+$("#skin-filter").addEventListener("change",e=>{shopSkin=e.target.value;renderBoard();});
+
+function pcard(p){
+  const kind = KIND_LABEL[p.kind] || "";
+  const tags = [kind, ...(p.tags||[])].filter(Boolean);
+  return `<li class="pcard">
+    <div class="prow"><span class="pname">${esc(p.name)}</span><span class="ppo">${money(p.price)}<small>/oz</small></span></div>
+    ${tags.length ? `<div class="ptags">${tags.map(t=>`<span class="pill">${esc(t)}</span>`).join("")}</div>` : ""}
+    ${p.note ? `<p class="pnote">${esc(p.note)}</p>` : ""}
+    <a class="buy" href="${esc(p.link)}" target="_blank" rel="sponsored nofollow noopener">Shop on Amazon ↗</a>
+  </li>`;
+}
+function renderBoard(){
+  try{ localStorage.setItem("korshop", JSON.stringify({step:shopStep, skin:shopSkin})); }catch(e){}
+  const [, , [lo,hi]] = STEPS.find(s=>s[0]===shopStep);
+  const bands = {basics:`under ${money(lo)}/oz`, upgrade:`${money(lo)}–${money(hi)}/oz`, splurge:`${money(hi)}+/oz`};
+  const skinFn = SKINS.find(s=>s[0]===shopSkin)[2];
+  $("#board").innerHTML = TIERS.map(([t,label])=>{
+    const list = PRODUCTS.filter(p=>p.step===shopStep && p.tier===t && skinFn(p)).sort((a,b)=>a.price-b.price);
+    return `<div class="tiercol">
+      <div class="tierhead"><h3><span class="tierdot t-${t}"></span>${label}</h3><span class="band">${bands[t]}</span></div>
+      ${list.length ? `<ul class="plist">${list.map(pcard).join("")}</ul>` : `<p class="empty-col">No pick in this tier yet.</p>`}
+    </div>`;
+  }).join("");
+}
+function openShop(stepKey){
+  if(STEPS.some(s=>s[0]===stepKey)){ shopStep = stepKey; const r=document.getElementById("shopstep-"+stepKey); if(r) r.checked=true; }
+  renderBoard();
+  $("#shop").scrollIntoView({behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto":"smooth"});
+}
+document.addEventListener("click",e=>{ const b=e.target.closest("[data-shop]"); if(b){ e.preventDefault(); openShop(b.dataset.shop); } });
+
+/* ---------- ingredient library ---------- */
+let famFilter = "All";
+chipGroup($("#fam-filter"),"fam",[["All","All"],...FAMS.map(f=>[f,f])],"radio",["All"]);
+$("#fam-filter").addEventListener("change",e=>{famFilter=e.target.value;renderShelf();});
+$("#search").addEventListener("input",renderShelf);
+
+function card(i){
+  const goods = i.good.map(g=>CONCERNS.find(c=>c.id===g)?.short).filter(Boolean);
+  const [pt,pc] = PREG[i.preg];
+  return `<details class="card" id="ing-${i.id}">
+    <summary>
+      <div class="row"><h3>${esc(i.name)}</h3><span class="fam">${esc(i.fam)}</span></div>
+      <span class="inci">${esc(i.inci)}</span>
+      <p class="does">${esc(i.does)}</p>
+      <div class="meta"><span class="pill m">${esc(i.pct)}</span><span class="pill m">${esc(i.when)}</span>${goods.map(g=>`<span class="pill">${esc(g)}</span>`).join("")}</div>
+      <span class="more">Details & products</span>
+    </summary>
+    <div class="detail">
+      <div class="tip">${esc(i.tip)}</div>
+      <dl>
+        <dt>Strength</dt><dd>${esc(i.pct)}</dd>
+        <dt>When</dt><dd>${esc(i.when)}</dd>
+        <dt>Pregnancy</dt><dd class="${pc}">${pt}</dd>
+        ${mixSummary(i)}
+      </dl>
+      ${ingProducts(i.id)}
+    </div>
+  </details>`;
+}
+function ingProducts(id){
+  const list = productsFor(id);
+  if(!list.length) return `<p class="nopick">No product picks for this one yet.</p>`;
+  const byTier = TIERS.map(([t])=>list.filter(p=>p.tier===t).sort((a,b)=>a.price-b.price)[0]).filter(Boolean);
+  const more = list.length > byTier.length ? `<button type="button" class="build-btn" data-shop="${esc(STEP_FOR_ING[id]||"")}">See all ${list.length} picks →</button>` : "";
+  return `<div class="prods">${byTier.map(shopLink).join("")}</div>${more}`;
+}
+function mixSummary(i){
+  const others = ING.filter(o=>o.id!==i.id);
+  const great = others.filter(o=>mix(i.id,o.id).v==="great").slice(0,4).map(o=>o.name);
+  const apart = others.filter(o=>["separate","avoid","caution"].includes(mix(i.id,o.id).v)).map(o=>o.name);
+  return `${great.length?`<dt>Pairs well</dt><dd>${esc(great.join(", "))}</dd>`:""}${apart.length?`<dt>Keep apart</dt><dd>${esc(apart.join(", "))}</dd>`:""}`;
+}
+function renderShelf(){
+  const q = $("#search").value.trim().toLowerCase();
+  const list = ING.filter(i=>{
+    if(famFilter!=="All" && i.fam!==famFilter) return false;
+    if(!q) return true;
+    const hay = [i.name,i.inci,i.fam,i.does,...i.good.map(g=>CONCERNS.find(c=>c.id===g)?.name||"")].join(" ").toLowerCase();
+    return hay.includes(q);
+  });
+  $("#shelf").innerHTML = list.length ? list.map(card).join("") : `<p class="empty">No ingredients match "${esc(q)}". Try a concern like "dark spots" or a name like "niacinamide".</p>`;
+  $("#count").textContent = `${list.length} of ${ING.length} ingredients`;
+}
+
+function openIng(id){
+  famFilter="All"; const r=$("#fam-All"); if(r) r.checked=true;
+  $("#search").value=""; renderShelf();
+  const el = document.getElementById("ing-"+id);
+  if(!el) return;
+  el.open = true;
+  el.scrollIntoView({behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto":"smooth", block:"start"});
+  el.classList.add("flash"); setTimeout(()=>el.classList.remove("flash"),1600);
+}
+document.addEventListener("click",e=>{
+  const b = e.target.closest("[data-ing]");
+  if(b){ e.preventDefault(); openIng(b.dataset.ing); }
+  const c = e.target.closest("[data-build]");
+  if(c){
+    document.querySelectorAll('input[name="concern"]').forEach(i=>i.checked = i.value===c.dataset.build);
+    render(); $("#builder").scrollIntoView({behavior:"smooth"});
+  }
+});
+
+/* ---------- concerns ---------- */
+$("#concern-grid").innerHTML = CONCERNS.map(c=>`<article class="concern">
+  <h3>${esc(c.name)}</h3>
+  <p>${esc(c.what)}</p>
+  <span class="lbl">Heavy hitters</span>
+  <div class="ingchips">${c.hero.map(id=>`<button type="button" class="ingchip" data-ing="${id}">${esc(BY[id].name)}</button>`).join("")}</div>
+  <span class="lbl">Supporting</span>
+  <div class="ingchips">${c.support.map(id=>`<button type="button" class="ingchip s" data-ing="${id}">${esc(BY[id].name)}</button>`).join("")}</div>
+  <p style="color:var(--fg);font-size:.86rem;margin-top:.3rem">${esc(c.tip)}</p>
+  <button type="button" class="build-btn" data-build="${c.id}">Build a routine for this →</button>
+</article>`).join("");
+
+/* ---------- mix checker ---------- */
+const GROUP_RULES = {
+  "aha|retinoid":["separate","Use them on different nights. Together they over-exfoliate and irritate."],
+  "bha|retinoid":["separate","Use them on different nights. Layering both usually leads to dryness and peeling."],
+  "bp|retinoid":["separate","Use benzoyl peroxide in the morning and the retinoid at night. BP can break down some retinoids, and together they're very drying."],
+  "retinoid|vitc":["separate","Vitamin C in the morning, retinoid at night. Each works best on that schedule."],
+  "aha|vitc":["separate","Both are acidic, so layering them raises irritation. Vitamin C in the morning, acids at night."],
+  "bha|vitc":["separate","Both are acidic, so layering them raises irritation. Vitamin C in the morning, acids at night."],
+  "bp|vitc":["avoid","Benzoyl peroxide oxidizes vitamin C so it stops working. Keep them on different days or times."],
+  "aha|bha":["caution","Fine in a single product formulated with both. Layering two separate exfoliants is too much for most skin."],
+  "aha|bp":["caution","Both are drying. Alternate days, or use a BP wash and rinse it off."],
+  "bha|bp":["caution","Both are drying. Alternate days, or use a BP wash and rinse it off."],
+  "aha|aha":["caution","Pick one AHA. Doubling up doesn't add benefit, just irritation."],
+  "retinoid|retinoid":["avoid","Use one retinoid at a time."],
+  "spf|vitc":["great","A classic morning pair. Vitamin C adds antioxidant backup to your sunscreen."]
+};
+const PAIR_RULES = {
+  "niacinamide|vitc":["great","Safe to layer. The old warning came from studies using pure ingredients at high heat, not modern skincare."],
+  "adapalene|niacinamide":["great","Niacinamide calms the redness and dryness adapalene can cause."],
+  "niacinamide|retinol":["great","Niacinamide calms the redness and dryness retinol can cause."],
+  "azelaic|niacinamide":["great","A strong team for redness, acne, and dark marks."],
+  "niacinamide|tranexamic":["great","Both fade pigment through different pathways. A top pair for dark spots."],
+  "ceramides|retinol":["great","Ceramides buffer retinol and help your barrier through the adjustment period."],
+  "adapalene|ceramides":["great","Ceramides buffer adapalene and help your barrier through the adjustment period."],
+  "ha|retinol":["great","Hyaluronic acid adds hydration that offsets retinol dryness."],
+  "peptides|retinol":["great","A strong anti-aging pair, and gentle enough to layer."],
+  "azelaic|retinol":["fine","Usually fine together. Start them on different nights to see how your skin reacts."],
+  "niacinamide|salicylic":["great","A good team for oily, breakout-prone skin and clogged pores."],
+  "glycolic|ha":["great","Hyaluronic acid replaces moisture an exfoliant can take away."],
+  "lactic|ha":["great","Hyaluronic acid adds even more hydration to a gentle AHA."],
+  "bakuchiol|retinol":["fine","Some formulas combine them. Bakuchiol may help skin tolerate retinol."]
+};
+const SOFT = new Set(["ha","snail","ceramides","peptides","centella","panthenol","squalane","petrolatum","niacinamide"]);
+function mix(a,b){
+  if(a===b) return {v:"fine", t:"That's the same ingredient. Pick a second one to compare."};
+  const k=[a,b].sort().join("|"); if(PAIR_RULES[k]) return {v:PAIR_RULES[k][0], t:PAIR_RULES[k][1]};
+  const ga=BY[a].grp, gb=BY[b].grp;
+  if(ga && gb){ const g=[ga,gb].sort().join("|"); if(GROUP_RULES[g]) return {v:GROUP_RULES[g][0], t:GROUP_RULES[g][1]}; }
+  if(SOFT.has(a)||SOFT.has(b)) return {v:"great", t:"Layer away. Hydrating and barrier ingredients pair with almost everything and make actives easier to tolerate."};
+  return {v:"fine", t:"No known conflict. Apply thinnest to thickest, and patch test if both are new to you."};
+}
+const VLABEL = {great:"Great together", fine:"Fine to layer", caution:"Use caution", separate:"Use at different times", avoid:"Keep apart"};
+const opts = ING.map(i=>`<option value="${i.id}">${esc(i.name)}</option>`).join("");
+$("#mix-a").innerHTML = opts; $("#mix-b").innerHTML = opts;
+$("#mix-a").value="retinol"; $("#mix-b").value="vitc";
+function renderMix(){
+  const a=$("#mix-a").value, b=$("#mix-b").value, r=mix(a,b);
+  $("#verdict").innerHTML = `<span class="v ${r.v}">${VLABEL[r.v]}</span><p><strong>${esc(BY[a].name)} + ${esc(BY[b].name)}.</strong> ${esc(r.t)}</p>`;
+}
+$("#mix-a").addEventListener("change",renderMix); $("#mix-b").addEventListener("change",renderMix);
+
+render(); renderBoard(); renderShelf(); renderMix();
+</script>
+
+</body>
+</html>
