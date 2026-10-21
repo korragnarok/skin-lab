@@ -250,7 +250,8 @@ ol.steps li::before{font-family:var(--display);font-size:1.5rem}
 .skinrow .chip span{font-size:.92rem}
 .skinlbl{font-size:.95rem;color:var(--muted);align-self:center;margin-right:.2rem}
 .board{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.2rem;align-items:start}
-@media (max-width:860px){.board{grid-template-columns:1fr}}
+.board.two{grid-template-columns:repeat(2,minmax(0,1fr))}
+@media (max-width:860px){.board,.board.two{grid-template-columns:1fr}}
 .tiercol{background:linear-gradient(rgba(255,255,255,.25),rgba(255,255,255,.25)),var(--surface);border:var(--pen);border-radius:var(--sketch);box-shadow:2px 3px 0 rgba(43,33,27,.18);padding:1rem 1.1rem;min-width:0}
 .tiercol:nth-child(2){border-radius:var(--sketch-2)}
 .tierhead{display:flex;justify-content:space-between;align-items:baseline;gap:.6rem;flex-wrap:wrap;padding-bottom:.6rem;border-bottom:2px dashed var(--line);margin-bottom:.4rem}
@@ -411,7 +412,7 @@ ol.steps li::before{font-family:var(--display);font-size:1.5rem}
   <div class="head">
     <span class="eyebrow">Shop by budget</span>
     <h2>My picks, three ways</h2>
-    <p class="lede">Every product here is one I researched and believe in. Tiers go by price per ounce, compared only within the same category, so a $20 vitamin C can be a Basic while a $20 cleanser is a splurge.</p>
+    <p class="lede">Every product here is one I researched and believe in. Tiers go by price per ounce, compared only within the same category, so a $20 vitamin C can be a Basic while a $3 cleanser is an Upgrade. Cleansers stop at the Upgrade tier, since paying more for something you rinse off doesn't buy you much.</p>
   </div>
   <div class="tools">
     <div class="chips" id="step-filter" aria-label="Product type"></div>
@@ -881,7 +882,7 @@ function render(){
 
 /* ---------- shop by budget ---------- */
 const STEPS = [
-  ["cleanser","Cleansers",[4,8]], ["remover","Makeup removers",[4,8]], ["moisturizer","Moisturizers",[12,25]],
+  ["cleanser","Cleansers",[2,null]], ["remover","Makeup removers",[4,8]], ["moisturizer","Moisturizers",[12,25]],
   ["sunscreen","Sunscreen",[10,25]], ["vitc","Vitamin C",[25,45]], ["retinoid","Retinol & retinal",[25,45]],
   ["niacinamide","Niacinamide",[25,45]], ["spotfader","Dark spot serums",[25,45]], ["acne","Acne treatments",[25,45]], ["exfoliant","Exfoliants",[4,10]],
   ["repair","Repair balms",[12,25]], ["mist","Hypochlorous mists",[4,10]], ["treatment","Growth factor serums",[25,45]]
@@ -923,9 +924,10 @@ function pcard(p){
 function renderBoard(){
   try{ localStorage.setItem("korshop", JSON.stringify({step:shopStep, skin:shopSkin})); }catch(e){}
   const [, , [lo,hi]] = STEPS.find(s=>s[0]===shopStep);
-  const bands = {basics:`under ${money(lo)}/oz`, upgrade:`${money(lo)}–${money(hi)}/oz`, splurge:`${money(hi)}+/oz`};
+  const bands = hi==null ? {basics:`under ${money(lo)}/oz`, upgrade:`${money(lo)}+/oz`} : {basics:`under ${money(lo)}/oz`, upgrade:`${money(lo)}–${money(hi)}/oz`, splurge:`${money(hi)}+/oz`};
   const skinFn = SKINS.find(s=>s[0]===shopSkin)[2];
-  $("#board").innerHTML = TIERS.map(([t,label])=>{
+  $("#board").classList.toggle("two", hi==null);
+  $("#board").innerHTML = TIERS.filter(([t])=>bands[t]).map(([t,label])=>{
     const list = PRODUCTS.filter(p=>p.step===shopStep && p.tier===t && skinFn(p)).sort((a,b)=>a.price-b.price);
     return `<div class="tiercol">
       <div class="tierhead"><h3><span class="tierdot t-${t}"></span>${label}</h3><span class="band">${bands[t]}</span></div>

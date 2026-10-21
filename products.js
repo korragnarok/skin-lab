@@ -429,7 +429,7 @@ window.PRODUCTS = [
  },
  {
   "name": "La Roche-Posay Toleriane Purifying Foaming",
-  "tier": "basics",
+  "tier": "upgrade",
   "step": "cleanser",
   "skin": [
    "oily",
@@ -457,7 +457,7 @@ window.PRODUCTS = [
  },
  {
   "name": "La Roche-Posay Hydrating Gentle Cleanser",
-  "tier": "basics",
+  "tier": "upgrade",
   "step": "cleanser",
   "skin": [
    "dry",
@@ -487,7 +487,7 @@ window.PRODUCTS = [
  },
  {
   "name": "Byoma Milk Cleanser",
-  "tier": "basics",
+  "tier": "upgrade",
   "step": "cleanser",
   "skin": [
    "dry",
@@ -521,7 +521,7 @@ window.PRODUCTS = [
  },
  {
   "name": "Peach Slices Acne Clarifying Cleanser",
-  "tier": "basics",
+  "tier": "upgrade",
   "step": "cleanser",
   "skin": [
    "oily",
@@ -607,7 +607,7 @@ window.PRODUCTS = [
  },
  {
   "name": "CeraVe Acne Foaming Cream Cleanser",
-  "tier": "basics",
+  "tier": "upgrade",
   "step": "cleanser",
   "skin": [
    "acne"
@@ -642,7 +642,7 @@ window.PRODUCTS = [
  },
  {
   "name": "Prequel Redness Reform Sulfur Cleanser",
-  "tier": "basics",
+  "tier": "upgrade",
   "step": "cleanser",
   "skin": [
    "acne",
