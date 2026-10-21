@@ -176,18 +176,9 @@ footer .brand{font-size:1.1rem}
 
 /* ===== Notebook skin ===== */
 body{font-size:17.5px;
-  padding-left:max(84px,env(safe-area-inset-left,0px));
-  background:
-    linear-gradient(90deg,transparent 0 var(--margin-x),var(--margin) var(--margin-x) calc(var(--margin-x) + 1.5px),transparent calc(var(--margin-x) + 1.5px)),
-    repeating-linear-gradient(180deg,transparent 0 27px,var(--rule) 27px 28px),
-    radial-gradient(ellipse at 30% 20%,rgba(255,255,255,.55),transparent 60%),
-    var(--bg);}
-body::before{left:0;top:0;bottom:0;right:auto;width:30px;height:auto;z-index:11;pointer-events:none;
-  background:
-    radial-gradient(circle at 18px 50%,#2b211b 0 2.6px,transparent 3.2px) 0 0/30px 26px repeat-y,
-    radial-gradient(ellipse at 9px 50%,transparent 0 6px,#6f6f74 6.5px 8px,#3d3d42 8.5px 9.4px,transparent 10px) 0 0/30px 26px repeat-y}
+  background:radial-gradient(ellipse at 30% 20%,rgba(255,255,255,.55),transparent 60%) fixed,var(--bg);}
+body::before{display:none}
 body::after{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--bg)}
-@media (max-width:768px){:root{--margin-x:38px} body{padding-left:max(46px,env(safe-area-inset-left,0px))}}
 
 h1,h2,h3{font-weight:400;letter-spacing:.2px}
 h2::after{content:" ♡";font-size:.75em;opacity:.8}
