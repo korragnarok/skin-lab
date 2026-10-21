@@ -294,6 +294,26 @@ ol.steps li::before{font-family:var(--display);font-size:1.5rem}
 .inglist summary{cursor:pointer;color:var(--fg);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;width:max-content}
 .inglist p{margin:.3rem 0;line-height:1.4;overflow-wrap:anywhere}
 .inglist a{font-size:.8rem}
+.bq{display:flex;flex-direction:column;gap:.45rem}
+.bq label{display:grid;grid-template-columns:1.2rem minmax(0,1fr);gap:.55rem;align-items:start;cursor:pointer;font-size:1rem;line-height:1.35}
+.bq input{width:1.1rem;height:1.1rem;margin:.15rem 0 0;accent-color:var(--accent)}
+.bverdict{background:var(--surface);border:var(--pen);border-radius:var(--sketch);padding:1.1rem 1.2rem}
+.bverdict h3{font-size:1.9rem;margin:.2rem 0 .4rem}
+.bverdict p{margin:.4rem 0}
+.bverdict.yes{background:var(--amber-soft)}
+.bverdict.maybe{background:var(--warn-soft)}
+.bverdict.no{background:var(--good-soft)}
+.bverdict.doc{background:var(--bad-soft)}
+.bplan{margin:.6rem 0 0;padding-left:1.2rem}
+.bplan li{margin:.25rem 0}
+.bsub{margin:1.4rem 0 .6rem;font-size:1.6rem}
+.bgroups{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,280px),1fr));gap:1rem;align-items:start}
+.bgroups .tiercol h4{margin:0 0 .3rem;font-family:var(--display);font-weight:500;font-size:1.4rem}
+.avoid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,260px),1fr));gap:.7rem;margin:0;padding:0;list-style:none}
+.avoid li{background:var(--surface);border:1.5px solid var(--fg);border-radius:var(--sketch-2);padding:.7rem .9rem}
+.avoid li:nth-child(even){border-radius:var(--sketch)}
+.avoid b{display:block;font-weight:600;color:var(--bad)}
+.avoid small{display:block;color:var(--muted);font-size:.9rem;line-height:1.35;margin-top:.15rem}
 </style>
 <style>html{-webkit-text-size-adjust:100%}body{margin:0}img{max-width:100%}[hidden]{display:none!important}:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}</style>
 </head>
@@ -304,6 +324,7 @@ ol.steps li::before{font-family:var(--display);font-size:1.5rem}
   <a class="brand" href="#builder">The House of Kor <i>Skin Lab</i></a>
   <ul>
     <li><a class="l" href="#builder">Routine builder</a></li>
+    <li><a class="l" href="#barrier">Barrier check</a></li>
     <li><a class="l" href="#shop">Shop by budget</a></li>
     <li><a class="l" href="#ingredients">Ingredients</a></li>
     <li><a class="l" href="#concerns">Skin concerns</a></li>
@@ -346,6 +367,31 @@ ol.steps li::before{font-family:var(--display);font-size:1.5rem}
     </form>
 
     <div class="result" id="result" aria-live="polite"></div>
+  </div>
+</section>
+
+<section id="barrier">
+  <div class="head">
+    <span class="eyebrow">Barrier check</span>
+    <h2>Is my skin barrier damaged?</h2>
+    <p class="lede">Your skin barrier is the outermost layer of your skin. It keeps moisture in and irritants out. Tap everything that sounds like you.</p>
+  </div>
+  <div class="builder">
+    <form class="quiz" id="bquiz" autocomplete="off">
+      <fieldset>
+        <legend>How has your skin felt lately?</legend>
+        <div class="bq" id="bq-signs"></div>
+      </fieldset>
+      <fieldset>
+        <legend>In the last few weeks, have you… <small>(optional)</small></legend>
+        <div class="bq" id="bq-causes"></div>
+      </fieldset>
+      <fieldset>
+        <legend>Any of these?</legend>
+        <div class="bq" id="bq-flags"></div>
+      </fieldset>
+    </form>
+    <div class="result" id="bresult" aria-live="polite"></div>
   </div>
 </section>
 
@@ -1019,6 +1065,84 @@ function renderMix(){
 $("#mix-a").addEventListener("change",renderMix); $("#mix-b").addEventListener("change",renderMix);
 
 render(); renderBoard(); renderShelf(); renderMix();
+
+/* ---------- barrier check ---------- */
+const BSIGNS = [
+  ["sting","Products sting or burn, even gentle ones like moisturizer",2],
+  ["sudden","Products you've used for a while suddenly irritate you",2],
+  ["tight","Skin feels tight, especially after washing",1],
+  ["red","Redness that's new or getting worse",1],
+  ["flake","Flaking, peeling, or rough dry patches",1],
+  ["shiny","Skin looks shiny or tight, but feels dry",1],
+  ["bumps","More breakouts or tiny bumps than usual",1],
+];
+const BCAUSES = [
+  ["exf","Used acids, scrubs, peels, or toner pads often"],
+  ["ret","Started or upped a retinoid"],
+  ["many","Layered several new actives at once"],
+  ["wash","Used a harsh or foaming cleanser, or washed more than twice a day"],
+  ["hot","Taken a lot of hot showers, or been in cold, dry, or windy weather"],
+];
+const BFLAGS = [["doc","Rash, swelling, blisters, oozing, or burning that won't calm down"]];
+const BAVOID = [
+  ["Exfoliating acids","Glycolic, lactic, mandelic, and salicylic acid. Pause them until your skin calms down."],
+  ["Retinoids","Retinol, retinal, adapalene, and tretinoin. Pause them, then ease back in slowly."],
+  ["Scrubs and toner pads","Anything gritty or anything you rub across your face."],
+  ["Fragrance","Listed as fragrance or parfum. Linalool, limonene, and citral are fragrance ingredients too."],
+  ["Essential oils","Lavender, peppermint, eucalyptus, citrus, and tea tree oil."],
+  ["Drying alcohol","Alcohol denat. or SD alcohol high on the list. Fatty alcohols like cetyl and cetearyl alcohol are fine."],
+  ["Harsh cleansers","Sodium lauryl sulfate (SLS) and true soaps like sodium tallowate or sodium cocoate."],
+  ["Strong vitamin C","L-ascorbic acid at 15% or more. Bring it back once your skin feels normal."],
+  ["Benzoyl peroxide","Very drying. Pause it unless your doctor told you to keep using it."],
+  ["Menthol and cooling toners","Menthol, camphor, and witch hazel toners that feel tingly."],
+];
+const BGROUPS = [["Cleanse",["cleanser","remover"]],["Repair",["moisturizer","repair","mist","treatment"]],["Protect",["sunscreen"]]];
+const ckList = (arr,name)=>arr.map(([v,t])=>`<label><input type="checkbox" name="${name}" value="${v}"><span>${esc(t)}</span></label>`).join("");
+$("#bq-signs").innerHTML = ckList(BSIGNS,"bsign");
+$("#bq-causes").innerHTML = ckList(BCAUSES,"bcause");
+$("#bq-flags").innerHTML = ckList(BFLAGS,"bflag");
+
+function barrierPicks(){
+  const gentle = p => !(p.flags||[]).some(f=>f==="fragrance"||f==="eo"||f==="alcohol"||f==="retinoid");
+  let list = PRODUCTS.filter(p=>p.barrier);
+  if(!list.length) list = PRODUCTS.filter(p=>["moisturizer","repair"].includes(p.step) && (p.ing||[]).some(i=>i==="ceramides"||i==="panthenol") && gentle(p));
+  const order = {basics:0,upgrade:1,splurge:2};
+  return BGROUPS.map(([label,steps])=>[label, list.filter(p=>steps.includes(p.step)).sort((a,b)=>order[a.tier]-order[b.tier]||a.price-b.price)]).filter(([,l])=>l.length);
+}
+
+function renderBarrier(){
+  const got = n => [...document.querySelectorAll(`input[name="${n}"]:checked`)].map(i=>i.value);
+  const signs = got("bsign"), causes = got("bcause"), flag = got("bflag").length>0;
+  const score = signs.reduce((s,v)=>s+BSIGNS.find(x=>x[0]===v)[2],0) + (causes.length && signs.length ? 1 : 0);
+  if(!signs.length && !causes.length && !flag){
+    $("#bresult").innerHTML = `<div class="bverdict"><span class="eyebrow">Your result</span><h3>Tap what sounds like you</h3><p>Your result and the products I'd use show up here.</p></div>`;
+    return;
+  }
+  let cls, title, msg;
+  if(flag){ cls="doc"; title="See a dermatologist"; msg="A rash, swelling, blisters, oozing, or burning that won't calm down needs a doctor. Stick to a gentle cleanser and a plain, fragrance-free moisturizer until you're seen."; }
+  else if(score>=4){ cls="yes"; title="Sounds like your barrier is damaged"; msg="The fix is mostly about being gentle and keeping things simple."; }
+  else if(score>=2){ cls="maybe"; title="Your barrier might be stressed"; msg="It's not a full-on flare, but your skin is asking you to ease up. A week or two of the routine below usually helps."; }
+  else { cls="no"; title="Your barrier sounds pretty healthy"; msg=causes.length ? "No major signs, but what you've been doing can wear it down over time. Keep an eye out for stinging or tightness." : "No major signs of damage. Keep your routine gentle and keep wearing sunscreen."; }
+
+  const plan = cls==="no" ? "" : `<ul class="bplan">
+    <li><b>Cleanse gently</b> with a low-pH gel or cream cleanser and lukewarm water.</li>
+    <li><b>Pause exfoliation and actives</b> like retinoids and strong vitamin C.</li>
+    <li><b>Moisturize</b> with a fragrance-free barrier cream, and reapply when your skin feels tight.</li>
+    <li><b>Wear sunscreen</b> every morning. Mineral formulas tend to be gentler on irritated skin.</li>
+    <li><b>Give it 2–4 weeks.</b> If it isn't improving, see a dermatologist.</li>
+  </ul>`;
+
+  const picks = cls==="no" ? [] : barrierPicks();
+  const avoid = cls==="no" ? "" : `<h3 class="bsub">Ingredients to avoid while you heal</h3>
+    <ul class="avoid">${BAVOID.map(([n,t])=>`<li><b>${esc(n)}</b><small>${esc(t)}</small></li>`).join("")}</ul>`;
+
+  $("#bresult").innerHTML = `<div class="bverdict ${cls}"><span class="eyebrow">Your result</span><h3>${title}</h3><p>${esc(msg)}</p>${plan}</div>
+    ${picks.length ? `<h3 class="bsub">What I'd use to repair it</h3><div class="bgroups">${picks.map(([label,l])=>`<div class="tiercol"><h4>${label}</h4><ul class="plist">${l.map(p=>pcard(p).replace('<span class="pname">',`<span class="pname"><span class="tierdot t-${p.tier}" title="${TIER_NAME[p.tier]}"></span> `)).join("")}</ul></div>`).join("")}</div>` : ""}
+    ${avoid}
+    ${cls==="no" ? "" : `<p class="tagline" style="margin-top:1rem">This is a quick check for education, not a diagnosis or medical advice.</p>`}`;
+}
+$("#bquiz").addEventListener("change", renderBarrier);
+renderBarrier();
 </script>
 
 </body>
