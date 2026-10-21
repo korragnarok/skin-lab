@@ -959,7 +959,7 @@ window.PRODUCTS = [
   "img": "img/cerave-invisible-mineral-sunscreen.webp"
  },
  {
-  "name": "Neutrogena Ultra Clear Mineral",
+  "name": "Neutrogena Ultra Sheer Mineral",
   "tier": "basics",
   "step": "sunscreen",
   "skin": [
@@ -974,7 +974,7 @@ window.PRODUCTS = [
   "tags": [
    "Mineral"
   ],
-  "img": "img/neutrogena-ultra-clear-mineral.webp"
+  "img": "img/neutrogena-ultra-sheer-mineral.webp"
  },
  {
   "name": "Avène Cicalfate+",
