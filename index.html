@@ -925,8 +925,9 @@ function renderBoard(){
   try{ localStorage.setItem("korshop", JSON.stringify({step:shopStep, skin:shopSkin})); }catch(e){}
   const [, , [lo,hi]] = STEPS.find(s=>s[0]===shopStep);
   const bands = hi==null ? {basics:`under ${money(lo)}/oz`, upgrade:`${money(lo)}+/oz`} : {basics:`under ${money(lo)}/oz`, upgrade:`${money(lo)}–${money(hi)}/oz`, splurge:`${money(hi)}+/oz`};
+  if(hi==null && PRODUCTS.some(p=>p.step===shopStep && p.tier==="splurge")) bands.splurge = "my splurge pick";
   const skinFn = SKINS.find(s=>s[0]===shopSkin)[2];
-  $("#board").classList.toggle("two", hi==null);
+  $("#board").classList.toggle("two", !bands.splurge);
   $("#board").innerHTML = TIERS.filter(([t])=>bands[t]).map(([t,label])=>{
     const list = PRODUCTS.filter(p=>p.step===shopStep && p.tier===t && skinFn(p)).sort((a,b)=>a.price-b.price);
     return `<div class="tiercol">
