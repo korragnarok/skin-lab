@@ -1534,7 +1534,8 @@ window.PRODUCTS = [
   "ing": [
    "tranexamic"
   ],
-  "note": "Tranexamic acid, kojic acid and niacinamide together. Patch test if you're sensitive."
+  "note": "Tranexamic acid, kojic acid and niacinamide together. Patch test if you're sensitive.",
+  "img": "img/naturium-tranexamic-topical-acid-5.webp"
  },
  {
   "name": "Celimax Pore + Dark Spot Brightening Cream",
@@ -1545,7 +1546,8 @@ window.PRODUCTS = [
    "combination"
   ],
   "price": 16,
-  "link": "https://amzn.to/4BiMaia"
+  "link": "https://amzn.to/4BiMaia",
+  "img": "img/celimax-pore-dark-spot-brightening-cream.webp"
  },
  {
   "name": "COSRX Alpha-Arbutin Discoloration Care Serum",
@@ -1558,7 +1560,8 @@ window.PRODUCTS = [
   "link": "https://amzn.to/3VZJbLk",
   "ing": [
    "arbutin"
-  ]
+  ],
+  "img": "img/cosrx-alpha-arbutin-discoloration-care-serum.webp"
  },
  {
   "name": "SKIN1004 Tone Balancing Capsule Cream",
@@ -1571,7 +1574,8 @@ window.PRODUCTS = [
   ],
   "price": 8.31,
   "link": "https://amzn.to/4k8Eb0Q",
-  "note": "A creamy, gentle everyday brightener."
+  "note": "A creamy, gentle everyday brightener.",
+  "img": "img/skin1004-tone-balancing-capsule-cream.webp"
  },
  {
   "name": "Paula's Choice Discoloration Repair Serum",
@@ -1584,6 +1588,7 @@ window.PRODUCTS = [
   "link": "https://amzn.to/4Bk7LGX",
   "ing": [
    "tranexamic"
-  ]
+  ],
+  "img": "img/paula-s-choice-discoloration-repair-serum.webp"
  }
 ];
