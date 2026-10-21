@@ -309,8 +309,13 @@ ol.steps li::before{font-family:var(--display);font-size:1.5rem}
 .bplan{margin:.6rem 0 0;padding-left:1.2rem}
 .bplan li{margin:.25rem 0}
 .bsub{margin:1.4rem 0 .6rem;font-size:1.6rem}
-.bgroups{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,280px),1fr));gap:1rem;align-items:start}
+.bgroups{display:flex;flex-direction:column;gap:1rem}
 .bgroups .tiercol h4{margin:0 0 .3rem;font-family:var(--display);font-weight:500;font-size:1.4rem}
+.bgroups .plist{flex-direction:row;overflow-x:auto;scroll-snap-type:x proximity;gap:1rem;padding:0 0 .6rem;scrollbar-width:thin;-webkit-overflow-scrolling:touch}
+.bgroups .pcard{flex:0 0 min(85%,280px);scroll-snap-align:start;border-bottom:0;border-right:1.3px dashed var(--line);padding:.5rem 1rem .5rem 0}
+.bgroups .pcard:last-child{border-right:0}
+@media (max-width:640px){.bgroups .pcard.hasimg{grid-template-columns:1fr;gap:.5rem}}
+.bscroll{margin:-.1rem 0 .3rem;font-size:.85rem;color:var(--muted)}
 .avoid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,260px),1fr));gap:.7rem;margin:0;padding:0;list-style:none}
 .avoid li{background:var(--surface);border:1.5px solid var(--fg);border-radius:var(--sketch-2);padding:.7rem .9rem}
 .avoid li:nth-child(even){border-radius:var(--sketch)}
@@ -1140,7 +1145,7 @@ function renderBarrier(submitted){
     <ul class="avoid">${BAVOID.map(([n,t])=>`<li><b>${esc(n)}</b><small>${esc(t)}</small></li>`).join("")}</ul>`;
 
   $("#bresult").innerHTML = `<div class="bverdict ${cls}"><span class="eyebrow">Your result</span><h3>${title}</h3><p>${esc(msg)}</p>${plan}</div>
-    ${picks.length ? `<h3 class="bsub">What I'd use to repair it</h3><div class="bgroups">${picks.map(([label,l])=>`<div class="tiercol"><h4>${label}</h4><ul class="plist">${l.map(p=>pcard(p).replace('<span class="pname">',`<span class="pname"><span class="tierdot t-${p.tier}" title="${TIER_NAME[p.tier]}"></span> `)).join("")}</ul></div>`).join("")}</div>` : ""}
+    ${picks.length ? `<h3 class="bsub">What I'd use to repair it</h3><div class="bgroups">${picks.map(([label,l])=>`<div class="tiercol"><h4>${label}</h4>${l.length>2?`<p class="bscroll">Swipe or scroll for more →</p>`:""}<ul class="plist">${l.map(p=>pcard(p).replace('<span class="pname">',`<span class="pname"><span class="tierdot t-${p.tier}" title="${TIER_NAME[p.tier]}"></span> `)).join("")}</ul></div>`).join("")}</div>` : ""}
     ${avoid}
     ${cls==="no" ? "" : `<p class="tagline" style="margin-top:1rem">This is a quick check for education, not a diagnosis or medical advice.</p>`}`;
 }
