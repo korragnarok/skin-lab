@@ -300,6 +300,9 @@ ol.steps li::before{font-family:var(--display);font-size:1.5rem}
 @media (min-width:861px){#result .ampm{align-items:start}#result .ampm .col.fit{overflow-y:auto;overscroll-behavior:contain;scrollbar-width:thin}}
 @media (min-width:861px){#board .plist.fit{overflow-y:auto;overscroll-behavior:contain;scrollbar-width:thin;position:relative}}
 #board .plist .colmore{margin:0;bottom:0;padding:.6rem 0 .3rem;list-style:none}
+.leftcol{min-width:0}
+#qnotes .notes{margin-top:1.2rem}
+#qnotes .note{grid-template-columns:1fr;gap:.15rem}
 .colmore{position:sticky;bottom:-1.1rem;margin:0 -1.1rem -1.1rem;padding:.6rem 1.1rem .5rem;text-align:center;font-size:.85rem;color:var(--muted);background:linear-gradient(transparent,var(--surface) 45%)}
 .bsubmit{align-self:flex-start;font:inherit;font-size:1.1rem;color:var(--surface);background:var(--accent);border:var(--pen);border-radius:var(--sketch);padding:.5rem 1.1rem;cursor:pointer;box-shadow:2px 3px 0 rgba(43,33,27,.25)}
 .bsubmit:hover{background:var(--fg)}
@@ -352,6 +355,7 @@ ol.steps li::before{font-family:var(--display);font-size:1.5rem}
   <p class="lede">Answer six questions and get a morning and night routine built from products I actually recommend, the order to layer them in, and a weekly schedule for your actives. Tap any ingredient to learn what it does.</p>
 
   <div class="builder">
+    <div class="leftcol">
     <form class="quiz" id="quiz" autocomplete="off">
       <fieldset>
         <legend>1. Your skin type</legend>
@@ -378,6 +382,8 @@ ol.steps li::before{font-family:var(--display);font-size:1.5rem}
         <label class="toggle" for="q-preg"><input type="checkbox" id="q-preg"> Pregnant, trying, or nursing</label>
       </fieldset>
     </form>
+    <div id="qnotes"></div>
+    </div>
 
     <div class="result" id="result" aria-live="polite"></div>
   </div>
@@ -1083,6 +1089,10 @@ render(); renderBoard(); renderShelf(); renderMix();
 
 /* ---------- builder: keep AM/PM boxes level with the quiz ---------- */
 function fitCols(){
+  const wide=matchMedia("(min-width:861px)").matches;
+  const fresh=document.querySelector("#result .notes"), parked=document.querySelector("#qnotes .notes");
+  if(wide){ if(fresh) $("#qnotes").replaceChildren(fresh); else if(parked && !$("#result").children.length) $("#qnotes").replaceChildren(); }
+  else if(parked){ $("#result").appendChild(parked); }
   const quiz=$("#quiz"), amp=document.querySelector("#result .ampm");
   if(!quiz||!amp) return;
   const cols=[...amp.querySelectorAll(".col")];
