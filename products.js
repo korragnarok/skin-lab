@@ -1,7 +1,7 @@
 /* The House of Kor Skin Lab — product list.
    Edit this file to add, remove or change products.
    tier: basics | upgrade | splurge
-   step: cleanser | remover | exfoliant | mist | vitc | niacinamide | retinoid | acne | treatment | moisturizer | repair | sunscreen
+   step: cleanser | remover | exfoliant | mist | vitc | niacinamide | spotfader | retinoid | acne | treatment | moisturizer | repair | sunscreen
    price: price per ounce in dollars
    link: your Amazon affiliate link */
 window.PRODUCTS = [
@@ -1521,5 +1521,69 @@ window.PRODUCTS = [
    "retinol"
   ],
   "img": "img/avene-retrinal-intensive-corrective-cream.webp"
+ },
+ {
+  "name": "Naturium Tranexamic Topical Acid 5%",
+  "tier": "basics",
+  "step": "spotfader",
+  "skin": [
+   "all"
+  ],
+  "price": 18,
+  "link": "https://amzn.to/4jsYINt",
+  "ing": [
+   "tranexamic"
+  ],
+  "note": "Tranexamic acid, kojic acid and niacinamide together. Patch test if you're sensitive."
+ },
+ {
+  "name": "Celimax Pore + Dark Spot Brightening Cream",
+  "tier": "basics",
+  "step": "spotfader",
+  "skin": [
+   "oily",
+   "combination"
+  ],
+  "price": 16,
+  "link": "https://amzn.to/4BiMaia"
+ },
+ {
+  "name": "COSRX Alpha-Arbutin Discoloration Care Serum",
+  "tier": "basics",
+  "step": "spotfader",
+  "skin": [
+   "all"
+  ],
+  "price": 3.81,
+  "link": "https://amzn.to/3VZJbLk",
+  "ing": [
+   "arbutin"
+  ]
+ },
+ {
+  "name": "SKIN1004 Tone Balancing Capsule Cream",
+  "tier": "basics",
+  "step": "spotfader",
+  "skin": [
+   "dry",
+   "normal",
+   "sensitive"
+  ],
+  "price": 8.31,
+  "link": "https://amzn.to/4k8Eb0Q",
+  "note": "A creamy, gentle everyday brightener."
+ },
+ {
+  "name": "Paula's Choice Discoloration Repair Serum",
+  "tier": "splurge",
+  "step": "spotfader",
+  "skin": [
+   "all"
+  ],
+  "price": 59,
+  "link": "https://amzn.to/4Bk7LGX",
+  "ing": [
+   "tranexamic"
+  ]
  }
 ];

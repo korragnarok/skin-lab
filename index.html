@@ -712,7 +712,7 @@ function buildRoutine(a){
     if(useHA) am.push(step("Hydrate","On damp skin, before anything thicker.","ha",null));
     if(useC) am.push(step("Antioxidant","Brightens and adds backup to your sunscreen.","vitc",vitcP()));
     if(useNia) am.push(step("Treat","Evens tone and keeps oil and redness in check.","niacinamide",niaP()));
-    if(useTxa) am.push(step("Spot fader","Targets stubborn pigment alongside niacinamide.","tranexamic",null));
+    if(useTxa) am.push(step("Spot fader","Targets stubborn dark spots alongside niacinamide.","tranexamic",P("spotfader",{skin:[], prefer:p=>(p.ing||[]).includes("tranexamic"), avoid: sens ? (p=>/Naturium Tranexamic/.test(p.name)) : null})));
     if(useAz) am.push(step("Calm & clear","Azelaic acid handles redness, bumps, and marks at once.","azelaic",null));
   }
   am.push(step("Moisturize","Hydration that suits your skin type.",null,P("moisturizer")));
@@ -809,11 +809,11 @@ function render(){
 const STEPS = [
   ["cleanser","Cleansers",[4,8]], ["remover","Makeup removers",[4,8]], ["moisturizer","Moisturizers",[12,25]],
   ["sunscreen","Sunscreen",[10,25]], ["vitc","Vitamin C",[25,45]], ["retinoid","Retinol & retinal",[25,45]],
-  ["niacinamide","Niacinamide",[25,45]], ["acne","Acne treatments",[25,45]], ["exfoliant","Exfoliants",[4,10]],
+  ["niacinamide","Niacinamide",[25,45]], ["spotfader","Dark spot serums",[25,45]], ["acne","Acne treatments",[25,45]], ["exfoliant","Exfoliants",[4,10]],
   ["repair","Repair balms",[12,25]], ["mist","Hypochlorous mists",[4,10]], ["treatment","Growth factor serums",[25,45]]
 ].filter(([k])=>PRODUCTS.some(p=>p.step===k));
 const STEP_FOR_ING = {retinol:"retinoid", adapalene:"acne", glycolic:"exfoliant", salicylic:"cleanser", bp:"cleanser", sulfur:"cleanser",
-  niacinamide:"niacinamide", vitc:"vitc", ha:"moisturizer", ceramides:"moisturizer", peptides:"treatment", centella:"repair", panthenol:"repair", sunscreen:"sunscreen"};
+  niacinamide:"niacinamide", tranexamic:"spotfader", arbutin:"spotfader", vitc:"vitc", ha:"moisturizer", ceramides:"moisturizer", peptides:"treatment", centella:"repair", panthenol:"repair", sunscreen:"sunscreen"};
 const SKINS = [
   ["any","Any skin", ()=>true],
   ["oily","Oily or acne-prone", p=>(p.skin||[]).some(k=>["oily","acne","all"].includes(k))],

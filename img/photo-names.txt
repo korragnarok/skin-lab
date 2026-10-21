@@ -131,3 +131,10 @@ SUNSCREEN
   round-lab-birch-juice-sunscreen.jpg    (Round Lab Birch Juice Sunscreen)
   shiseido-mineral-sunscreen.jpg    (Shiseido Mineral Sunscreen)
   tirtir-hydro-uv-shield.jpg    (TIRTIR Hydro UV Shield)
+
+DARK SPOT SERUMS
+  naturium-tranexamic-topical-acid-5.jpg    (Naturium Tranexamic Topical Acid 5%)
+  celimax-pore-dark-spot-brightening-cream.jpg    (Celimax Pore + Dark Spot Brightening Cream)
+  cosrx-alpha-arbutin-discoloration-care-serum.jpg    (COSRX Alpha-Arbutin Discoloration Care Serum)
+  skin1004-tone-balancing-capsule-cream.jpg    (SKIN1004 Tone Balancing Capsule Cream)
+  paula-s-choice-discoloration-repair-serum.jpg    (Paula's Choice Discoloration Repair Serum)
