@@ -289,6 +289,11 @@ ol.steps li::before{font-family:var(--display);font-size:1.5rem}
 .pbody{display:flex;flex-direction:column;gap:.3rem;min-width:0}
 .pimg{width:4.5rem;height:4.5rem;object-fit:contain;background:#fff;border:1.5px solid var(--fg);border-radius:8px;transform:rotate(-1.5deg)}
 .pcard:nth-child(even) .pimg{transform:rotate(1.5deg)}
+.pwarn{display:block;font-size:.85rem;color:var(--warn);line-height:1.3}
+.inglist{font-size:.85rem;color:var(--muted)}
+.inglist summary{cursor:pointer;color:var(--fg);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;width:max-content}
+.inglist p{margin:.3rem 0;line-height:1.4;overflow-wrap:anywhere}
+.inglist a{font-size:.8rem}
 </style>
 <style>html{-webkit-text-size-adjust:100%}body{margin:0}img{max-width:100%}[hidden]{display:none!important}:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}</style>
 </head>
@@ -583,7 +588,8 @@ const pick = (step, opts={}) => ranked(step, opts)[0] || null;
 /* The visitor's own swaps in the routine builder, remembered per step. */
 let SWAPS = (()=>{ try{ return JSON.parse(localStorage.getItem("korswaps")||"{}") || {}; }catch(e){ return {}; } })();
 function choose(step, opts={}){
-  const list = ranked(step, opts);
+  let list = ranked(step, opts);
+  if(!list.length && opts.avoid) list = ranked(step, Object.assign({}, opts, {avoid:null}));
   if(!list.length) return null;
   const key = step + ":" + [].concat(opts.kind||"").join("+");
   const mine = list.find(p=>p.name===SWAPS[key]);
@@ -648,7 +654,16 @@ function buildRoutine(a){
   if(C.has("oiliness") && !sk.includes("oily")) sk.splice(1,0,"oily");
   if(C.has("dryness") && !sk.includes("dry")) sk.splice(1,0,"dry");
   if(C.has("redness")) sk.splice(1,0,"redness","sensitive");
-  const P = (stepKey, o={}) => choose(stepKey, Object.assign({tier, skin:sk}, o));
+  const touchy = sens || C.has("redness");
+  const acneish = C.has("acne") || T==="oily";
+  const baseAvoid = p => (touchy && (p.flags||[]).some(f=>f==="fragrance"||f==="eo")) || (a.preg && (p.flags||[]).includes("retinoid") && p.step!=="retinoid");
+  const P = (stepKey, o={}) => {
+    const own = o.avoid;
+    const avoid = p => baseAvoid(p) || (own ? own(p) : false);
+    const ownPrefer = o.prefer;
+    const prefer = (acneish && ["moisturizer","sunscreen"].includes(stepKey)) ? (p => !(p.flags||[]).includes("heavy") || (ownPrefer ? ownPrefer(p) : false)) : ownPrefer;
+    return choose(stepKey, Object.assign({tier, skin:sk}, o, {avoid, prefer}));
+  };
   const am = [], pm = [], notes = [];
   const step = (label, why, ing, prod) => ({label, why, ing, prod});
   const gentleClean = () => P("cleanser",{kind:"gentle"});
@@ -766,7 +781,8 @@ function swapper(sel){
   return `<label class="swap" for="${id}"><span>${sel.swapped ? "Your pick · change it" : `Choose a different one (${sel.alts.length - 1} more)`}</span>
     <select id="${id}" data-swap="${esc(sel.key)}">${groups}</select></label>`;
 }
-const pickBlock = sel => sel ? `<div class="pickblock">${shopLink(sel.prod)}${swapper(sel)}</div>` : "";
+const warnLine = p => (p && p.warn && p.warn.length) ? `<span class="pwarn">${p.warn.map(esc).join(" · ")}</span>` : "";
+const pickBlock = sel => sel ? `<div class="pickblock">${shopLink(sel.prod)}${warnLine(sel.prod)}${swapper(sel)}</div>` : "";
 function renderSteps(list){
   return `<ol class="steps">${list.map(s=>`<li><div>
     <div class="step-name">${esc(s.label)}${s.ing?` · ${ingBtn(s.ing)}`:""}</div>
@@ -819,8 +835,11 @@ const SKINS = [
   ["oily","Oily or acne-prone", p=>(p.skin||[]).some(k=>["oily","acne","all"].includes(k))],
   ["combination","Combination", p=>(p.skin||[]).some(k=>["combination","all"].includes(k))],
   ["dry","Dry", p=>(p.skin||[]).some(k=>["dry","all"].includes(k))],
-  ["sensitive","Sensitive or red", p=>(p.skin||[]).some(k=>["sensitive","redness","all"].includes(k))],
-  ["fungal","Fungal-acne safe", p=>(p.tags||[]).includes("Fungal-acne safe")]
+  ["sensitive","Sensitive or red", p=>(p.skin||[]).some(k=>["sensitive","redness","all"].includes(k)) && !(p.flags||[]).some(f=>f==="fragrance"||f==="eo")],
+  ["fungal","Fungal-acne safe", p=>(p.tags||[]).includes("Fungal-acne safe")],
+  ["nofrag","Fragrance-free", p=>!!p.ingredients && !(p.flags||[]).some(f=>f==="fragrance"||f==="eo")],
+  ["noniacin","Niacinamide-free", p=>!!p.ingredients && !p.niacinamide],
+  ["preg","Pregnancy-friendly", p=>!(p.flags||[]).includes("retinoid") && !(p.ing||[]).includes("adapalene")]
 ];
 const KIND_LABEL = {sa:"Salicylic acid", bp:"Benzoyl peroxide", sulfur:"Sulfur", retinol:"Retinol", retinal:"Retinal", gentle:"", strong:"Strong"};
 let shopStep = "moisturizer", shopSkin = "any";
@@ -838,6 +857,8 @@ function pcard(p){
     <div class="prow"><span class="pname">${esc(p.name)}</span><span class="ppo">${money(p.price)}<small>/oz</small></span></div>
     ${tags.length ? `<div class="ptags">${tags.map(t=>`<span class="pill">${esc(t)}</span>`).join("")}</div>` : ""}
     ${p.note ? `<p class="pnote">${esc(p.note)}</p>` : ""}
+    ${warnLine(p)}
+    ${p.ingredients ? `<details class="inglist"><summary>Ingredients</summary><p>${esc(p.ingredients)}</p>${p.ingSource && p.ingSource.startsWith("http") ? `<a href="${esc(p.ingSource)}" target="_blank" rel="noopener">Source</a>` : ""}</details>` : ""}
     <a class="buy" href="${esc(p.link)}" target="_blank" rel="sponsored nofollow noopener">Shop on Amazon ↗</a>
   </div></li>`;
 }
