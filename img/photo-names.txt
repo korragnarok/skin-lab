@@ -1,0 +1,133 @@
+Photo file names for The House of Kor Skin Lab
+Save each photo with exactly this name (.jpg, .png or .webp all work) and put them in the img folder.
+Square photos on a plain background look best.
+
+CLEANSERS
+  avene-cleanance-foaming-cleanser.jpg    (Avène Cleanance Foaming Cleanser)
+  byoma-milk-cleanser.jpg    (Byoma Milk Cleanser)
+  cerave-acne-foaming-cream-cleanser.jpg    (CeraVe Acne Foaming Cream Cleanser)
+  cerave-foaming-cleanser.jpg    (CeraVe Foaming Cleanser)
+  cerave-renewing-sa-cleanser.jpg    (CeraVe Renewing SA Cleanser)
+  cetaphil-gentle-exfoliating-sa-cleanser.jpg    (Cetaphil Gentle Exfoliating SA Cleanser)
+  la-roche-posay-hydrating-gentle-cleanser.jpg    (La Roche-Posay Hydrating Gentle Cleanser)
+  la-roche-posay-toleriane-caring-wash.jpg    (La Roche-Posay Toleriane Caring Wash)
+  la-roche-posay-toleriane-purifying-foaming.jpg    (La Roche-Posay Toleriane Purifying Foaming)
+  naturium-the-revealer-sulfur-body-wash.jpg    (Naturium The Revealer Sulfur Body Wash)
+  panoxyl-acne-gel-wash.jpg    (PanOxyl Acne Gel Wash)
+  panoxyl-creamy-wash.jpg    (PanOxyl Creamy Wash)
+  panoxyl-foaming-wash.jpg    (PanOxyl Foaming Wash)
+  peach-slices-acne-clarifying-cleanser.jpg    (Peach Slices Acne Clarifying Cleanser)
+  prequel-redness-reform-sulfur-cleanser.jpg    (Prequel Redness Reform Sulfur Cleanser)
+  vanicream-foaming-cleanser.jpg    (Vanicream Foaming Cleanser)
+
+MAKEUP REMOVERS
+  biodance-collagen-oil-cleanser.jpg    (Biodance Collagen Oil Cleanser)
+  bioderma-sensibio-h2o.jpg    (Bioderma Sensibio H2O)
+  garnier-micellar-water.jpg    (Garnier Micellar Water)
+  haruharu-wonder-black-rice-cleansing-oil.jpg    (Haruharu Wonder Black Rice Cleansing Oil)
+  orien-mugwort-zero-film-cleansing-oil.jpg    (Orien Mugwort Zero Film Cleansing Oil)
+  prequel-cleansing-oil.jpg    (Prequel Cleansing Oil)
+  skin1004-light-cleansing-oil.jpg    (SKIN1004 Light Cleansing Oil)
+  tatcha-the-camellia-cleansing-oil.jpg    (Tatcha The Camellia Cleansing Oil)
+  the-inkey-list-oat-cleansing-balm.jpg    (The INKEY List Oat Cleansing Balm)
+
+EXFOLIANTS
+  the-ordinary-glycolic-acid-7-toner.jpg    (The Ordinary Glycolic Acid 7% Toner)
+
+HYPOCHLOROUS MISTS
+  peach-slices-hypochlorous-acid-spray.jpg    (Peach Slices Hypochlorous Acid Spray)
+  prequel-hypochlorous-spray.jpg    (Prequel Hypochlorous Spray)
+  puracyn-hypochlorous-spray.jpg    (Puracyn Hypochlorous Spray)
+  tower-28-sos-spray.jpg    (Tower 28 SOS Spray)
+
+VITAMIN C
+  aveeno-positively-radiant-vitamin-c-serum.jpg    (Aveeno Positively Radiant Vitamin C Serum)
+  avene-vitamin-c.jpg    (Avène Vitamin C)
+  bubble-vitamin-c.jpg    (Bubble Vitamin C)
+  epii-pro-shot-vitamin-c.jpg    (Epii Pro Shot Vitamin C)
+  medik8-c-tetra-advanced.jpg    (Medik8 C-Tetra Advanced)
+  medik8-super-c.jpg    (Medik8 Super C)
+  prequel-vitamin-c.jpg    (Prequel Vitamin C)
+  remedy-15-vitamin-c-complex.jpg    (Remedy 15% Vitamin C Complex)
+  skinfix-targeted-brightening-serum.jpg    (Skinfix Targeted Brightening Serum)
+  tatcha-brightening-serum.jpg    (Tatcha Brightening Serum)
+  vanicream-vitamin-c.jpg    (Vanicream Vitamin C)
+
+NIACINAMIDE
+  cosrx-the-niacinamide-15-serum.jpg    (COSRX The Niacinamide 15 Serum)
+  skin1004-10-niacinamide.jpg    (SKIN1004 10% Niacinamide)
+
+RETINOL & RETINAL
+  avene-retrinal-intensive-corrective-cream.jpg    (Avène RetrinAL Intensive Corrective Cream)
+  beauty-of-joseon-retinal-eye-cream.jpg    (Beauty of Joseon Retinal Eye Cream)
+  cosrx-retinol-0-1-cream.jpg    (COSRX Retinol 0.1 Cream)
+  cosrx-retinol-0-3-cream.jpg    (COSRX Retinol 0.3 Cream)
+  cosrx-the-retinol-0-5-oil.jpg    (COSRX The Retinol 0.5 Oil)
+  celimax-vita-a-retinal-shot.jpg    (Celimax Vita-A Retinal Shot)
+  cerave-resurfacing-retinol-serum.jpg    (CeraVe Resurfacing Retinol Serum)
+  cocokind-beginner-retinol-gel.jpg    (Cocokind Beginner Retinol Gel)
+  good-molecules-retinol.jpg    (Good Molecules Retinol)
+  la-roche-posay-retinol-b3-serum.jpg    (La Roche-Posay Retinol B3 Serum)
+  maelove-moonlight-advanced-retinal.jpg    (Maelove Moonlight Advanced Retinal)
+  naturium-retinal-0-1.jpg    (Naturium Retinal 0.1%)
+  naturium-retinal-cream-0-15.jpg    (Naturium Retinal Cream 0.15%)
+  naturium-retinal-serum-0-05.jpg    (Naturium Retinal Serum 0.05%)
+  olay-retinol-24.jpg    (Olay Retinol 24)
+  prequel-retinal.jpg    (Prequel Retinal)
+  remedy-retinal.jpg    (Remedy Retinal)
+  roc-retinol-capsules.jpg    (RoC Retinol Capsules)
+  skin1004-retinol-boosting-shot.jpg    (SKIN1004 Retinol Boosting Shot)
+  e-l-f-youth-boosting-advanced-retinoid.jpg    (e.l.f. Youth Boosting Advanced Retinoid)
+
+ACNE TREATMENTS
+  differin-epiduo-acne-gel.jpg    (Differin Epiduo Acne Gel)
+  differin-gel.jpg    (Differin Gel)
+  neutrogena-evenly-clear-adapalene.jpg    (Neutrogena Evenly Clear Adapalene)
+
+GROWTH FACTOR SERUMS
+  drmtlgy-needle-less-growth-factor-serum.jpg    (DRMTLGY Needle-less Growth Factor Serum)
+  the-ordinary-gf-15-solution.jpg    (The Ordinary GF 15% Solution)
+
+MOISTURIZERS
+  aestura-atobarrier-365-cream.jpg    (Aestura AtoBarrier 365 Cream)
+  aestura-hydro-soothing-cream.jpg    (Aestura Hydro Soothing Cream)
+  aveeno-calm-restore-oat-gel-moisturizer.jpg    (Aveeno Calm + Restore Oat Gel Moisturizer)
+  bioderma-sensibio-ar-cream.jpg    (Bioderma Sensibio AR Cream)
+  bubble-level-up-gel-moisturizer.jpg    (Bubble Level Up Gel Moisturizer)
+  cerave-hydrating-ha-water-gel.jpg    (CeraVe Hydrating HA Water Gel)
+  cerave-moisturizing-cream.jpg    (CeraVe Moisturizing Cream)
+  cerave-ultra-light-moisturizing-gel.jpg    (CeraVe Ultra-Light Moisturizing Gel)
+  cocokind-electrolyte-water-cream.jpg    (Cocokind Electrolyte Water Cream)
+  dr-rejuall-advanced-ceramide-cream.jpg    (Dr. Rejuall Advanced Ceramide Cream)
+  epii-double-up-cream.jpg    (Epii Double Up Cream)
+  glow-aloe-barrier-cream.jpg    (Glow Aloe Barrier Cream)
+  la-roche-posay-toleriane-double-repair-face-moisturizer.jpg    (La Roche-Posay Toleriane Double Repair Face Moisturizer)
+  prequel-multi-quench-gel-cream.jpg    (Prequel Multi-Quench Gel Cream)
+  purito-mighty-bamboo-panthenol-cream.jpg    (Purito Mighty Bamboo Panthenol Cream)
+  purito-oat-in-calming-gel-cream.jpg    (Purito Oat-in Calming Gel Cream)
+  skin1004-biotica-enrich-cream.jpg    (SKIN1004 Biotica Enrich Cream)
+  tatcha-the-dewy-skin-cream.jpg    (Tatcha The Dewy Skin Cream)
+  vanicream-daily-facial-moisturizer.jpg    (Vanicream Daily Facial Moisturizer)
+  vanicream-moisturizing-cream.jpg    (Vanicream Moisturizing Cream)
+  zeroid-intensive-cream.jpg    (Zeroid Intensive Cream)
+
+REPAIR BALMS
+  avene-cicalfate.jpg    (Avène Cicalfate+)
+  dr-jart-cicapair.jpg    (Dr. Jart+ Cicapair)
+  la-roche-posay-cicaplast-baume-b5.jpg    (La Roche-Posay Cicaplast Baume B5)
+
+SUNSCREEN
+  beauty-of-joseon-relief-sun.jpg    (Beauty of Joseon Relief Sun)
+  beauty-of-joseon-tinted-mineral-dayscreen.jpg    (Beauty of Joseon Tinted Mineral Dayscreen)
+  cerave-invisible-mineral-sunscreen.jpg    (CeraVe Invisible Mineral Sunscreen)
+  cerave-ultra-light-moisturizing-lotion-with-sunscreen.jpg    (CeraVe Ultra-Light Moisturizing Lotion with Sunscreen)
+  cetaphil-daily-moisturizer-with-sunscreen.jpg    (Cetaphil Daily Moisturizer with Sunscreen)
+  eltamd-uv-clear-broad-spectrum.jpg    (EltaMD UV Clear Broad-Spectrum)
+  haruharu-wonder-black-rice-sunscreen.jpg    (Haruharu Wonder Black Rice Sunscreen)
+  kiehl-s-mineral-sunscreen.jpg    (Kiehl's Mineral Sunscreen)
+  la-roche-posay-anthelios-clear-skin.jpg    (La Roche-Posay Anthelios Clear Skin)
+  neutrogena-ultra-clear-mineral.jpg    (Neutrogena Ultra Clear Mineral)
+  purito-daily-soft-touch-sunscreen.jpg    (Purito Daily Soft Touch Sunscreen)
+  round-lab-birch-juice-sunscreen.jpg    (Round Lab Birch Juice Sunscreen)
+  shiseido-mineral-sunscreen.jpg    (Shiseido Mineral Sunscreen)
+  tirtir-hydro-uv-shield.jpg    (TIRTIR Hydro UV Shield)
