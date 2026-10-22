@@ -298,6 +298,23 @@ ol.steps li::before{font-family:var(--display);font-size:1.5rem}
 .multi{margin-top:.5rem}
 .multitag{display:block;font-weight:700;font-size:.92rem}
 .multiwhy{display:block;color:var(--muted);font-size:.85rem;margin:.05rem 0 .3rem}
+.weekgrid{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:.45rem;align-items:start}
+.wday{display:flex;flex-direction:column;gap:.35rem;min-width:0}
+.wsteps{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:.3rem;counter-reset:w}
+.wstep{counter-increment:w;border:1.2px solid var(--line);border-radius:8px;background:var(--surface);padding:.3rem .4rem;font-size:.78rem;line-height:1.25;min-width:0}
+.wstep b{display:block;font-weight:700;overflow-wrap:anywhere}
+.wstep b::before{content:counter(w) ". ";color:var(--muted);font-weight:400}
+.wstep small{display:block;color:var(--muted);font-size:.72rem;margin-top:.1rem;overflow-wrap:anywhere}
+.wstep.wret{background:var(--kraft);border-color:var(--fg)}
+.wstep.wret small{color:var(--fg)}
+.wstep.wexf{background:var(--amber-soft);border-color:var(--fg)}
+.wscroll{display:none}
+@media (max-width:860px){
+  .weekgrid{display:flex;overflow-x:auto;scroll-snap-type:x proximity;padding-bottom:.4rem}
+  .wday{flex:0 0 140px;scroll-snap-align:start}
+  .wscroll{display:block;font-size:.85rem;color:var(--muted);margin:.2rem 0 0}
+}
+@media print{ .weekgrid{display:grid!important;grid-template-columns:repeat(7,1fr)!important} .wday{flex:none!important} .wscroll{display:none!important} .wstep{font-size:7.5pt} }
 .savebar{display:flex;flex-wrap:wrap;align-items:center;gap:.6rem;margin:-.2rem 0 1rem}
 .savebtn{font:inherit;font-size:.95rem;color:var(--fg);background:var(--surface);border:var(--pen);border-radius:var(--sketch);padding:.35rem .9rem;cursor:pointer;box-shadow:2px 2px 0 rgba(43,33,27,.18)}
 .savebtn:hover{background:var(--accent-soft)}
@@ -867,6 +884,7 @@ function buildRoutine(a){
   if(!simple) pm.push(step("First cleanse","Melts sunscreen and makeup so your cleanser can do its job.",null,P("remover",{skin:[]})));
   pm.push(step(simple ? "Cleanse" : "Second cleanse", simple ? "Wash off the day; double up if you wore sunscreen or makeup." : (exf==="salicylic" ? "Your regular cleanser. On exfoliant nights, use the salicylic acid cleanser below instead." : "Your regular cleanser."), null, gentleClean()));
   if(!simple && useHA) pm.push(step("Hydrate","On damp skin to prep for actives.","ha",null));
+  if(useTxa && txaPM) pm.push(step("Spot fader", (useThia && thiaOK) ? "Tranexamic acid works on pigment from a different angle than thiamidol. Apply it right after cleansing and let it dry before anything else." : "Same tranexamic acid as the morning. Apply it right after cleansing and let it dry before anything else.","tranexamic",txaP()));
   if(ret||exf){
     const parts = [ret && ingBtn(ret), exf && ingBtn(exf)].filter(Boolean).join(" or ");
     pm.push({label:"Tonight's active", why:`${parts}, depending on the night. Follow the weekly schedule below.`, ing:null, prod:null, multi:[
@@ -874,7 +892,6 @@ function buildRoutine(a){
       exfProd && {sel:exfProd, tag:"Exfoliant nights · "+BY[exf].name, why:BY[exf].does+(exf==="salicylic" ? " Use this wash in place of your regular cleanser on those nights." : "")}
     ].filter(Boolean)});
   }
-  if(useTxa && txaPM) pm.push(step("Spot fader", (useThia && thiaOK) ? "Tranexamic acid works on pigment from a different angle than thiamidol. Use it after cleansing, before moisturizer." : "Same tranexamic acid as the morning. Apply after cleansing, before moisturizer.","tranexamic",txaP()));
   if(!simple && C.has("lines")) pm.push(step("Repair","Growth factors and peptides support firmness and are gentle enough for any night.","peptides",P("treatment",{skin:[]})));
   pm.push(step("Moisturize", ret ? "Buffers your active and cuts dryness." : "Locks everything in overnight.", "ceramides", P("moisturizer",{skin: T==="oily" ? sk : ["dry",...sk]})));
   if(!simple && (T==="dry" || C.has("dryness")) && !C.has("acne")) pm.push(step("Seal (optional)","A thin layer of repair balm on dry areas.","panthenol",P("repair",{skin:[]})));
@@ -904,7 +921,7 @@ function buildRoutine(a){
   const tn = TYPES.find(t=>t[0]===T)[1].toLowerCase();
   const cn = a.concerns.map(c=>CONCERNS.find(x=>x.id===c).short.toLowerCase());
   const headline = `For ${tn} skin${cn.length?` focused on ${cn.join(", ").replace(/, ([^,]*)$/," & $1")}`:""} · ${TIER_NAME[tier]}${a.kbeauty?" · K-beauty":""}`;
-  return {am, pm, nights, ret, exf, notes, headline};
+  return {am, pm, nights, ret, exf, notes, headline, retSel: retProd, exfSel: exfProd};
 }
 
 function swapper(sel){
@@ -957,9 +974,13 @@ function render(){
     </div>
     ${(r.ret||r.exf) ? `<div class="week">
       <h4>Your week of nights</h4>
-      <p>Actives never share a night. Recovery nights are cleanse, moisturize, done.</p>
-      <div class="nights">${r.nights.map((n,i)=>`<div class="night ${n}"><span class="d">${DAYS[i]}</span><span class="a">${short[n]}</span></div>`).join("")}</div>
-      <div class="legend">${r.ret?`<span><b>${short.ret}:</b> ${esc(label.ret)}</span>`:""}${r.exf?`<span><b>Exfoliate:</b> ${esc(label.exf)}</span>`:""}<span><b>Recovery:</b> moisturizer only</span></div>
+      <p>Your night routine, step by step, for each day. Actives never share a night, and recovery nights skip them so your skin can rest.</p>
+      <div class="weekgrid">${r.nights.map((n,i)=>`<div class="wday">
+        <div class="night ${n}"><span class="d">${DAYS[i]}</span><span class="a">${short[n]}</span></div>
+        <ol class="wsteps">${nightPlan(r,n).map(st=>`<li class="wstep${st.active?" w"+n:""}"><b>${esc(st.name)}</b>${st.prod?`<small>${esc(st.prod.name)}</small>`:""}</li>`).join("")}</ol>
+      </div>`).join("")}</div>
+      ${r.nights.length > 0 ? `<p class="wscroll">Swipe to see the whole week →</p>` : ""}
+      <div class="legend">${r.ret?`<span><b>${short.ret}:</b> ${esc(label.ret)}</span>`:""}${r.exf?`<span><b>Exfoliate:</b> ${esc(label.exf)}</span>`:""}<span><b>Recovery:</b> no active, just the basics</span></div>
     </div>` : ""}
     <div class="notes">${r.notes.map(([k,t])=>`<div class="note ${/Don't|Pregnancy|See a pro|Reset/.test(k)?"warn":""}"><span class="k">${esc(k)}</span><span>${esc(t)}</span></div>`).join("")}</div>`;
 }
@@ -1168,6 +1189,26 @@ function renderMix(){
 $("#mix-a").addEventListener("change",renderMix); $("#mix-b").addEventListener("change",renderMix);
 
 render(); renderBoard(); renderShelf(); renderMix();
+
+/* ---------- the night routine for one day of the week ---------- */
+function nightPlan(r, kind){
+  const out = [];
+  const retP = r.retSel ? r.retSel.prod : null, exfP = r.exfSel ? r.exfSel.prod : null;
+  const saWash = r.exf==="salicylic";
+  for(const s of r.pm){
+    const prod = s.prod ? s.prod.prod : null;
+    if(s.label==="Tonight's active"){
+      if(kind==="ret") out.push({name: r.ret==="bakuchiol" ? "Bakuchiol" : BY[r.ret].name, prod: retP, active:true});
+      if(kind==="exf" && !saWash) out.push({name: BY[r.exf].name, prod: exfP, active:true});
+      continue;
+    }
+    if(kind==="exf" && saWash && /^(Second cleanse|Cleanse)$/.test(s.label)){
+      out.push({name:"Salicylic acid wash", prod: exfP, active:true}); continue;
+    }
+    out.push({name: s.label.replace(/ \(optional\)$/," (optional)"), prod});
+  }
+  return out;
+}
 
 /* ---------- save / share the routine ---------- */
 function routineLink(){
