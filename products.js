@@ -28,7 +28,8 @@ window.PRODUCTS = [
   "ingSource": "Kourtney",
   "fit": {
    "oily": "maybe",
-   "combination": "dry"
+   "combination": "dry",
+   "dry": "yes"
   },
   "warn": [
    "Combination skin: use on dry areas only"
@@ -65,7 +66,8 @@ window.PRODUCTS = [
   ],
   "fit": {
    "oily": "no",
-   "combination": "no"
+   "combination": "no",
+   "dry": "yes"
   }
  },
  {
@@ -88,7 +90,8 @@ window.PRODUCTS = [
   "ingSource": "Kourtney",
   "fit": {
    "oily": "yes",
-   "combination": "yes"
+   "combination": "yes",
+   "dry": "maybe"
   }
  },
  {
@@ -109,7 +112,8 @@ window.PRODUCTS = [
   "tags": [],
   "fit": {
    "oily": "yes",
-   "combination": "yes"
+   "combination": "yes",
+   "dry": "maybe"
   }
  },
  {
@@ -132,7 +136,8 @@ window.PRODUCTS = [
   "ingSource": "Kourtney",
   "fit": {
    "oily": "yes",
-   "combination": "yes"
+   "combination": "yes",
+   "dry": "maybe"
   }
  },
  {
@@ -156,7 +161,8 @@ window.PRODUCTS = [
   "ingSource": "Kourtney",
   "fit": {
    "oily": "yes",
-   "combination": "yes"
+   "combination": "yes",
+   "dry": "maybe"
   }
  },
  {
@@ -182,7 +188,8 @@ window.PRODUCTS = [
   "ingSource": "Kourtney",
   "fit": {
    "oily": "yes",
-   "combination": "yes"
+   "combination": "yes",
+   "dry": "maybe"
   }
  },
  {
@@ -205,7 +212,8 @@ window.PRODUCTS = [
   "ingSource": "Kourtney",
   "fit": {
    "oily": "yes",
-   "combination": "yes"
+   "combination": "yes",
+   "dry": "maybe"
   }
  },
  {
@@ -229,7 +237,8 @@ window.PRODUCTS = [
   "ingSource": "Kourtney",
   "fit": {
    "oily": "yes",
-   "combination": "yes"
+   "combination": "yes",
+   "dry": "maybe"
   }
  },
  {
@@ -252,7 +261,8 @@ window.PRODUCTS = [
   "ingSource": "Kourtney",
   "fit": {
    "oily": "yes",
-   "combination": "yes"
+   "combination": "yes",
+   "dry": "maybe"
   }
  },
  {
@@ -275,7 +285,8 @@ window.PRODUCTS = [
   "ingSource": "Kourtney",
   "fit": {
    "oily": "yes",
-   "combination": "yes"
+   "combination": "yes",
+   "dry": "yes"
   }
  },
  {
@@ -301,7 +312,8 @@ window.PRODUCTS = [
   "tags": [],
   "fit": {
    "oily": "maybe",
-   "combination": "yes"
+   "combination": "yes",
+   "dry": "yes"
   }
  },
  {
@@ -325,7 +337,8 @@ window.PRODUCTS = [
   "tags": [],
   "fit": {
    "oily": "maybe",
-   "combination": "yes"
+   "combination": "yes",
+   "dry": "yes"
   }
  },
  {
@@ -351,7 +364,8 @@ window.PRODUCTS = [
   "ingSource": "Kourtney",
   "fit": {
    "oily": "maybe",
-   "combination": "yes"
+   "combination": "yes",
+   "dry": "yes"
   }
  },
  {
@@ -374,7 +388,8 @@ window.PRODUCTS = [
   "ingSource": "Kourtney",
   "fit": {
    "oily": "maybe",
-   "combination": "dry"
+   "combination": "dry",
+   "dry": "yes"
   },
   "warn": [
    "Combination skin: use on dry areas only"
@@ -413,7 +428,8 @@ window.PRODUCTS = [
   ],
   "fit": {
    "oily": "no",
-   "combination": "dry"
+   "combination": "dry",
+   "dry": "yes"
   }
  },
  {
@@ -440,7 +456,8 @@ window.PRODUCTS = [
   ],
   "fit": {
    "oily": "yes",
-   "combination": "yes"
+   "combination": "yes",
+   "dry": "yes"
   }
  },
  {
@@ -464,7 +481,8 @@ window.PRODUCTS = [
   "ingSource": "Kourtney",
   "fit": {
    "oily": "yes",
-   "combination": "yes"
+   "combination": "yes",
+   "dry": "yes"
   }
  },
  {
@@ -486,7 +504,8 @@ window.PRODUCTS = [
   "niacinamide": true,
   "fit": {
    "oily": "yes",
-   "combination": "yes"
+   "combination": "yes",
+   "dry": "maybe"
   }
  },
  {
@@ -511,7 +530,8 @@ window.PRODUCTS = [
   "niacinamide": false,
   "fit": {
    "oily": "yes",
-   "combination": "yes"
+   "combination": "yes",
+   "dry": "yes"
   }
  },
  {
@@ -533,7 +553,8 @@ window.PRODUCTS = [
   "niacinamide": true,
   "fit": {
    "oily": "yes",
-   "combination": "yes"
+   "combination": "yes",
+   "dry": "maybe"
   }
  },
  {
@@ -555,7 +576,8 @@ window.PRODUCTS = [
   "niacinamide": true,
   "fit": {
    "oily": "yes",
-   "combination": "yes"
+   "combination": "yes",
+   "dry": "yes"
   }
  },
  {
@@ -578,7 +600,8 @@ window.PRODUCTS = [
   "niacinamide": true,
   "fit": {
    "oily": "yes",
-   "combination": "yes"
+   "combination": "yes",
+   "dry": "yes"
   }
  },
  {
@@ -603,7 +626,8 @@ window.PRODUCTS = [
   "niacinamide": false,
   "fit": {
    "oily": "yes",
-   "combination": "yes"
+   "combination": "yes",
+   "dry": "yes"
   }
  },
  {
@@ -632,7 +656,8 @@ window.PRODUCTS = [
   "niacinamide": false,
   "fit": {
    "oily": "yes",
-   "combination": "yes"
+   "combination": "yes",
+   "dry": "no"
   }
  },
  {
@@ -661,7 +686,8 @@ window.PRODUCTS = [
   "niacinamide": false,
   "fit": {
    "oily": "yes",
-   "combination": "yes"
+   "combination": "yes",
+   "dry": "no"
   }
  },
  {
@@ -687,7 +713,8 @@ window.PRODUCTS = [
   "niacinamide": true,
   "fit": {
    "oily": "yes",
-   "combination": "yes"
+   "combination": "yes",
+   "dry": "maybe"
   }
  },
  {
@@ -713,7 +740,8 @@ window.PRODUCTS = [
   "niacinamide": true,
   "fit": {
    "oily": "yes",
-   "combination": "yes"
+   "combination": "yes",
+   "dry": "maybe"
   }
  },
  {
@@ -739,7 +767,8 @@ window.PRODUCTS = [
   "niacinamide": false,
   "fit": {
    "oily": "yes",
-   "combination": "yes"
+   "combination": "yes",
+   "dry": "maybe"
   }
  },
  {
@@ -765,7 +794,8 @@ window.PRODUCTS = [
   "niacinamide": false,
   "fit": {
    "oily": "yes",
-   "combination": "yes"
+   "combination": "yes",
+   "dry": "no"
   }
  },
  {
@@ -791,7 +821,8 @@ window.PRODUCTS = [
   "niacinamide": true,
   "fit": {
    "oily": "yes",
-   "combination": "yes"
+   "combination": "yes",
+   "dry": "no"
   }
  },
  {
@@ -820,7 +851,8 @@ window.PRODUCTS = [
   "niacinamide": false,
   "fit": {
    "oily": "yes",
-   "combination": "yes"
+   "combination": "yes",
+   "dry": "maybe"
   }
  },
  {
@@ -848,7 +880,8 @@ window.PRODUCTS = [
   "niacinamide": false,
   "fit": {
    "oily": "yes",
-   "combination": "yes"
+   "combination": "yes",
+   "dry": "maybe"
   }
  },
  {
@@ -871,7 +904,8 @@ window.PRODUCTS = [
   "niacinamide": false,
   "fit": {
    "oily": "yes",
-   "combination": "yes"
+   "combination": "yes",
+   "dry": "yes"
   }
  },
  {
@@ -894,7 +928,8 @@ window.PRODUCTS = [
   "niacinamide": false,
   "fit": {
    "oily": "yes",
-   "combination": "yes"
+   "combination": "yes",
+   "dry": "yes"
   }
  },
  {
@@ -916,7 +951,8 @@ window.PRODUCTS = [
   "niacinamide": false,
   "fit": {
    "oily": "yes",
-   "combination": "yes"
+   "combination": "yes",
+   "dry": "yes"
   }
  },
  {
@@ -938,7 +974,8 @@ window.PRODUCTS = [
   "niacinamide": false,
   "fit": {
    "oily": "yes",
-   "combination": "yes"
+   "combination": "yes",
+   "dry": "yes"
   }
  },
  {
@@ -967,7 +1004,8 @@ window.PRODUCTS = [
   "niacinamide": false,
   "fit": {
    "oily": "yes",
-   "combination": "yes"
+   "combination": "yes",
+   "dry": "yes"
   }
  },
  {
@@ -989,7 +1027,8 @@ window.PRODUCTS = [
   "niacinamide": false,
   "fit": {
    "oily": "yes",
-   "combination": "yes"
+   "combination": "yes",
+   "dry": "yes"
   }
  },
  {
@@ -1016,7 +1055,8 @@ window.PRODUCTS = [
   "niacinamide": false,
   "fit": {
    "oily": "yes",
-   "combination": "yes"
+   "combination": "yes",
+   "dry": "yes"
   }
  },
  {
@@ -1038,7 +1078,8 @@ window.PRODUCTS = [
   "niacinamide": false,
   "fit": {
    "oily": "yes",
-   "combination": "yes"
+   "combination": "yes",
+   "dry": "yes"
   }
  },
  {
@@ -1070,7 +1111,8 @@ window.PRODUCTS = [
   "ingSource": "Kourtney",
   "fit": {
    "oily": "yes",
-   "combination": "yes"
+   "combination": "yes",
+   "dry": "yes"
   }
  },
  {
@@ -1102,7 +1144,8 @@ window.PRODUCTS = [
   "ingSource": "Kourtney",
   "fit": {
    "oily": "yes",
-   "combination": "yes"
+   "combination": "yes",
+   "dry": "yes"
   }
  },
  {
@@ -1134,7 +1177,8 @@ window.PRODUCTS = [
   ],
   "fit": {
    "oily": "yes",
-   "combination": "yes"
+   "combination": "yes",
+   "dry": "maybe"
   }
  },
  {
@@ -1160,7 +1204,8 @@ window.PRODUCTS = [
   "tags": [],
   "fit": {
    "oily": "maybe",
-   "combination": "yes"
+   "combination": "yes",
+   "dry": "yes"
   }
  },
  {
@@ -1185,7 +1230,8 @@ window.PRODUCTS = [
   "ingSource": "Kourtney",
   "fit": {
    "oily": "yes",
-   "combination": "yes"
+   "combination": "yes",
+   "dry": "yes"
   }
  },
  {
@@ -1211,7 +1257,8 @@ window.PRODUCTS = [
   "ingSource": "Kourtney",
   "fit": {
    "oily": "yes",
-   "combination": "yes"
+   "combination": "yes",
+   "dry": "yes"
   }
  },
  {
@@ -1236,7 +1283,8 @@ window.PRODUCTS = [
   "ingSource": "Kourtney",
   "fit": {
    "oily": "yes",
-   "combination": "yes"
+   "combination": "yes",
+   "dry": "yes"
   }
  },
  {
@@ -1261,7 +1309,8 @@ window.PRODUCTS = [
   "ingSource": "Kourtney",
   "fit": {
    "oily": "yes",
-   "combination": "yes"
+   "combination": "yes",
+   "dry": "yes"
   }
  },
  {
@@ -1290,7 +1339,8 @@ window.PRODUCTS = [
   ],
   "fit": {
    "oily": "yes",
-   "combination": "yes"
+   "combination": "yes",
+   "dry": "yes"
   }
  },
  {
@@ -1319,7 +1369,8 @@ window.PRODUCTS = [
   ],
   "fit": {
    "oily": "yes",
-   "combination": "yes"
+   "combination": "yes",
+   "dry": "yes"
   }
  },
  {
@@ -1348,7 +1399,8 @@ window.PRODUCTS = [
   "tags": [],
   "fit": {
    "oily": "maybe",
-   "combination": "yes"
+   "combination": "yes",
+   "dry": "yes"
   }
  },
  {
@@ -1377,7 +1429,8 @@ window.PRODUCTS = [
   "tags": [],
   "fit": {
    "oily": "yes",
-   "combination": "yes"
+   "combination": "yes",
+   "dry": "yes"
   }
  },
  {
@@ -1406,7 +1459,8 @@ window.PRODUCTS = [
   ],
   "fit": {
    "oily": "yes",
-   "combination": "yes"
+   "combination": "yes",
+   "dry": "yes"
   }
  },
  {
@@ -1441,7 +1495,8 @@ window.PRODUCTS = [
   ],
   "fit": {
    "oily": "no",
-   "combination": "no"
+   "combination": "no",
+   "dry": "yes"
   }
  },
  {
@@ -1471,7 +1526,8 @@ window.PRODUCTS = [
   "tags": [],
   "fit": {
    "oily": "yes",
-   "combination": "yes"
+   "combination": "yes",
+   "dry": "yes"
   }
  },
  {
@@ -1501,7 +1557,8 @@ window.PRODUCTS = [
   ],
   "fit": {
    "oily": "yes",
-   "combination": "yes"
+   "combination": "yes",
+   "dry": "yes"
   }
  },
  {
@@ -1530,7 +1587,8 @@ window.PRODUCTS = [
   ],
   "fit": {
    "oily": "yes",
-   "combination": "yes"
+   "combination": "yes",
+   "dry": "yes"
   }
  },
  {
@@ -1559,7 +1617,8 @@ window.PRODUCTS = [
   ],
   "fit": {
    "oily": "yes",
-   "combination": "yes"
+   "combination": "yes",
+   "dry": "yes"
   }
  },
  {
@@ -1585,7 +1644,8 @@ window.PRODUCTS = [
   ],
   "fit": {
    "oily": "yes",
-   "combination": "yes"
+   "combination": "yes",
+   "dry": "yes"
   }
  },
  {
@@ -1611,7 +1671,8 @@ window.PRODUCTS = [
   "ingSource": "Kourtney",
   "fit": {
    "oily": "yes",
-   "combination": "yes"
+   "combination": "yes",
+   "dry": "yes"
   }
  },
  {
@@ -1642,7 +1703,8 @@ window.PRODUCTS = [
   "ingSource": "Kourtney",
   "fit": {
    "oily": "yes",
-   "combination": "yes"
+   "combination": "yes",
+   "dry": "maybe"
   }
  },
  {
@@ -1672,7 +1734,8 @@ window.PRODUCTS = [
   "ingSource": "Kourtney",
   "fit": {
    "oily": "yes",
-   "combination": "yes"
+   "combination": "yes",
+   "dry": "yes"
   }
  },
  {
@@ -1703,7 +1766,8 @@ window.PRODUCTS = [
   "ingSource": "Kourtney",
   "fit": {
    "oily": "yes",
-   "combination": "yes"
+   "combination": "yes",
+   "dry": "yes"
   }
  },
  {
@@ -1729,7 +1793,8 @@ window.PRODUCTS = [
   "ingSource": "Kourtney",
   "fit": {
    "oily": "yes",
-   "combination": "yes"
+   "combination": "yes",
+   "dry": "yes"
   }
  },
  {
@@ -1756,7 +1821,8 @@ window.PRODUCTS = [
   "ingSource": "Kourtney",
   "fit": {
    "oily": "yes",
-   "combination": "yes"
+   "combination": "yes",
+   "dry": "yes"
   }
  },
  {
@@ -1789,7 +1855,8 @@ window.PRODUCTS = [
   "ingSource": "Kourtney",
   "fit": {
    "oily": "maybe",
-   "combination": "dry"
+   "combination": "dry",
+   "dry": "yes"
   }
  },
  {
@@ -1813,7 +1880,8 @@ window.PRODUCTS = [
   "ingSource": "Kourtney",
   "fit": {
    "oily": "yes",
-   "combination": "yes"
+   "combination": "yes",
+   "dry": "yes"
   }
  },
  {
@@ -1838,7 +1906,8 @@ window.PRODUCTS = [
   "ingSource": "Kourtney",
   "fit": {
    "oily": "yes",
-   "combination": "yes"
+   "combination": "yes",
+   "dry": "yes"
   }
  },
  {
@@ -1864,7 +1933,8 @@ window.PRODUCTS = [
   "ingSource": "Kourtney",
   "fit": {
    "oily": "yes",
-   "combination": "yes"
+   "combination": "yes",
+   "dry": "yes"
   }
  },
  {
@@ -1888,7 +1958,8 @@ window.PRODUCTS = [
   "ingSource": "Kourtney",
   "fit": {
    "oily": "yes",
-   "combination": "yes"
+   "combination": "yes",
+   "dry": "yes"
   }
  },
  {
@@ -1910,7 +1981,8 @@ window.PRODUCTS = [
   "tags": [],
   "fit": {
    "oily": "yes",
-   "combination": "yes"
+   "combination": "yes",
+   "dry": "yes"
   }
  },
  {
@@ -1940,7 +2012,8 @@ window.PRODUCTS = [
   "tags": [],
   "fit": {
    "oily": "yes",
-   "combination": "yes"
+   "combination": "yes",
+   "dry": "yes"
   }
  },
  {
@@ -1967,7 +2040,8 @@ window.PRODUCTS = [
   "tags": [],
   "fit": {
    "oily": "yes",
-   "combination": "yes"
+   "combination": "yes",
+   "dry": "yes"
   }
  },
  {
@@ -1994,7 +2068,8 @@ window.PRODUCTS = [
   "tags": [],
   "fit": {
    "oily": "yes",
-   "combination": "yes"
+   "combination": "yes",
+   "dry": "yes"
   }
  },
  {
@@ -2022,7 +2097,8 @@ window.PRODUCTS = [
   "ingSource": "Kourtney",
   "fit": {
    "oily": "maybe",
-   "combination": "yes"
+   "combination": "yes",
+   "dry": "yes"
   }
  },
  {
@@ -2051,7 +2127,8 @@ window.PRODUCTS = [
   "ingSource": "Kourtney",
   "fit": {
    "oily": "yes",
-   "combination": "yes"
+   "combination": "yes",
+   "dry": "yes"
   }
  },
  {
@@ -2079,7 +2156,8 @@ window.PRODUCTS = [
   "ingSource": "Kourtney",
   "fit": {
    "oily": "yes",
-   "combination": "yes"
+   "combination": "yes",
+   "dry": "yes"
   }
  },
  {
@@ -2109,7 +2187,8 @@ window.PRODUCTS = [
   "ingSource": "Kourtney",
   "fit": {
    "oily": "maybe",
-   "combination": "yes"
+   "combination": "yes",
+   "dry": "yes"
   }
  },
  {
@@ -2137,7 +2216,8 @@ window.PRODUCTS = [
   "ingSource": "Kourtney",
   "fit": {
    "oily": "yes",
-   "combination": "yes"
+   "combination": "yes",
+   "dry": "yes"
   }
  },
  {
@@ -2162,7 +2242,8 @@ window.PRODUCTS = [
   "ingSource": "Kourtney",
   "fit": {
    "oily": "yes",
-   "combination": "yes"
+   "combination": "yes",
+   "dry": "yes"
   }
  },
  {
@@ -2194,7 +2275,8 @@ window.PRODUCTS = [
   ],
   "fit": {
    "oily": "yes",
-   "combination": "yes"
+   "combination": "yes",
+   "dry": "yes"
   }
  },
  {
@@ -2229,7 +2311,8 @@ window.PRODUCTS = [
   ],
   "fit": {
    "oily": "no",
-   "combination": "dry"
+   "combination": "dry",
+   "dry": "yes"
   }
  },
  {
@@ -2264,7 +2347,8 @@ window.PRODUCTS = [
   ],
   "fit": {
    "oily": "no",
-   "combination": "dry"
+   "combination": "dry",
+   "dry": "yes"
   }
  },
  {
@@ -2298,7 +2382,8 @@ window.PRODUCTS = [
   "tags": [],
   "fit": {
    "oily": "maybe",
-   "combination": "yes"
+   "combination": "yes",
+   "dry": "maybe"
   }
  },
  {
@@ -2327,7 +2412,8 @@ window.PRODUCTS = [
   ],
   "fit": {
    "oily": "yes",
-   "combination": "yes"
+   "combination": "yes",
+   "dry": "yes"
   }
  },
  {
@@ -2356,7 +2442,8 @@ window.PRODUCTS = [
   ],
   "fit": {
    "oily": "maybe",
-   "combination": "yes"
+   "combination": "yes",
+   "dry": "yes"
   }
  },
  {
@@ -2383,7 +2470,8 @@ window.PRODUCTS = [
   "tags": [],
   "fit": {
    "oily": "yes",
-   "combination": "yes"
+   "combination": "yes",
+   "dry": "yes"
   }
  },
  {
@@ -2411,7 +2499,8 @@ window.PRODUCTS = [
   "niacinamide": false,
   "fit": {
    "oily": "yes",
-   "combination": "yes"
+   "combination": "yes",
+   "dry": "yes"
   }
  },
  {
@@ -2445,7 +2534,8 @@ window.PRODUCTS = [
   ],
   "fit": {
    "oily": "no",
-   "combination": "dry"
+   "combination": "dry",
+   "dry": "yes"
   }
  },
  {
@@ -2468,7 +2558,8 @@ window.PRODUCTS = [
   ],
   "fit": {
    "oily": "yes",
-   "combination": "yes"
+   "combination": "yes",
+   "dry": "yes"
   }
  },
  {
@@ -2494,7 +2585,8 @@ window.PRODUCTS = [
   "tags": [],
   "fit": {
    "oily": "yes",
-   "combination": "yes"
+   "combination": "yes",
+   "dry": "yes"
   }
  },
  {
@@ -2524,7 +2616,8 @@ window.PRODUCTS = [
   ],
   "fit": {
    "oily": "yes",
-   "combination": "yes"
+   "combination": "yes",
+   "dry": "yes"
   }
  },
  {
@@ -2558,7 +2651,8 @@ window.PRODUCTS = [
   ],
   "fit": {
    "oily": "no",
-   "combination": "dry"
+   "combination": "dry",
+   "dry": "yes"
   }
  },
  {
@@ -2582,7 +2676,8 @@ window.PRODUCTS = [
   "tags": [],
   "fit": {
    "oily": "yes",
-   "combination": "yes"
+   "combination": "yes",
+   "dry": "yes"
   }
  },
  {
@@ -2609,7 +2704,8 @@ window.PRODUCTS = [
   "ingSource": "Kourtney",
   "fit": {
    "oily": "yes",
-   "combination": "yes"
+   "combination": "yes",
+   "dry": "yes"
   }
  },
  {
@@ -2640,7 +2736,8 @@ window.PRODUCTS = [
   "ingSource": "Kourtney",
   "fit": {
    "oily": "yes",
-   "combination": "yes"
+   "combination": "yes",
+   "dry": "yes"
   }
  },
  {
@@ -2666,7 +2763,8 @@ window.PRODUCTS = [
   "ingSource": "Kourtney",
   "fit": {
    "oily": "yes",
-   "combination": "yes"
+   "combination": "yes",
+   "dry": "yes"
   }
  },
  {
@@ -2699,7 +2797,8 @@ window.PRODUCTS = [
   "ingSource": "Kourtney",
   "fit": {
    "oily": "yes",
-   "combination": "yes"
+   "combination": "yes",
+   "dry": "yes"
   }
  },
  {
@@ -2726,7 +2825,8 @@ window.PRODUCTS = [
   "ingSource": "Kourtney",
   "fit": {
    "oily": "yes",
-   "combination": "yes"
+   "combination": "yes",
+   "dry": "yes"
   }
  },
  {
@@ -2762,7 +2862,8 @@ window.PRODUCTS = [
   ],
   "fit": {
    "oily": "no",
-   "combination": "dry"
+   "combination": "dry",
+   "dry": "yes"
   }
  },
  {
@@ -2791,7 +2892,8 @@ window.PRODUCTS = [
   "tags": [],
   "fit": {
    "oily": "yes",
-   "combination": "yes"
+   "combination": "yes",
+   "dry": "yes"
   }
  },
  {
@@ -2824,7 +2926,8 @@ window.PRODUCTS = [
   ],
   "fit": {
    "oily": "no",
-   "combination": "dry"
+   "combination": "dry",
+   "dry": "yes"
   }
  },
  {
@@ -2850,7 +2953,8 @@ window.PRODUCTS = [
   "ingSource": "Kourtney",
   "fit": {
    "oily": "yes",
-   "combination": "yes"
+   "combination": "yes",
+   "dry": "yes"
   }
  },
  {
@@ -2871,7 +2975,8 @@ window.PRODUCTS = [
   "tags": [],
   "fit": {
    "oily": "yes",
-   "combination": "yes"
+   "combination": "yes",
+   "dry": "yes"
   }
  },
  {
@@ -2896,7 +3001,8 @@ window.PRODUCTS = [
   "ingSource": "Kourtney",
   "fit": {
    "oily": "yes",
-   "combination": "yes"
+   "combination": "yes",
+   "dry": "yes"
   }
  },
  {
@@ -2921,7 +3027,8 @@ window.PRODUCTS = [
   ],
   "fit": {
    "oily": "yes",
-   "combination": "yes"
+   "combination": "yes",
+   "dry": "yes"
   }
  },
  {
@@ -2949,7 +3056,8 @@ window.PRODUCTS = [
   "tags": [],
   "fit": {
    "oily": "yes",
-   "combination": "yes"
+   "combination": "yes",
+   "dry": "yes"
   }
  }
 ];
