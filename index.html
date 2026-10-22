@@ -372,6 +372,7 @@ ol.steps li::before{font-family:var(--display);font-size:1.5rem}
       <fieldset>
         <legend>6. Anything else</legend>
         <label class="toggle" for="q-preg"><input type="checkbox" id="q-preg"> Pregnant, trying, or nursing</label>
+        <label class="toggle" for="q-kbeauty"><input type="checkbox" id="q-kbeauty"> K-beauty products only</label>
       </fieldset>
     </form>
     <div id="qnotes"></div>
@@ -646,13 +647,20 @@ const pick = (step, opts={}) => ranked(step, opts)[0] || null;
 
 /* The visitor's own swaps in the routine builder, remembered per step. */
 let SWAPS = (()=>{ try{ return JSON.parse(localStorage.getItem("korswaps")||"{}") || {}; }catch(e){ return {}; } })();
+let KONLY = false;
+const isK = p => (p.tags||[]).includes("K-beauty");
 function choose(step, opts={}){
   let list = ranked(step, opts);
   if(!list.length && opts.avoid) list = ranked(step, Object.assign({}, opts, {avoid:null}));
   if(!list.length) return null;
+  let noK = false;
+  if(KONLY){
+    let k = list.filter(isK);
+    if(k.length) list = k; else noK = true;
+  }
   const key = step + ":" + [].concat(opts.kind||"").join("+");
   const mine = list.find(p=>p.name===SWAPS[key]);
-  return {prod: mine || list[0], alts: list, key, swapped: !!mine};
+  return {prod: mine || list[0], alts: list, key, swapped: !!mine, noK};
 }
 const productsFor = ingId => PRODUCTS.filter(p=>(p.ing||[]).includes(ingId));
 
@@ -683,6 +691,7 @@ chipGroup($("#q-concerns"),"concern",CONCERNS.filter(c=>c.id!=="barrier").map(c=
 chipGroup($("#q-level"),"level",LEVELS,"radio",[start.level]);
 chipGroup($("#q-size"),"size",SIZES,"radio",[start.size]);
 $("#q-preg").checked = !!start.preg;
+$("#q-kbeauty").checked = !!start.kbeauty;
 
 function answers(){
   return {
@@ -691,7 +700,8 @@ function answers(){
     level: $('input[name="level"]:checked')?.value || "new",
     size: $('input[name="size"]:checked')?.value || "full",
     budget: $('input[name="budget"]:checked')?.value || "basics",
-    preg: $("#q-preg").checked
+    preg: $("#q-preg").checked,
+    kbeauty: $("#q-kbeauty").checked
   };
 }
 
@@ -706,6 +716,7 @@ $("#quiz").addEventListener("submit", e=>e.preventDefault());
 
 /* ---------- routine logic ---------- */
 function buildRoutine(a){
+  KONLY = !!a.kbeauty;
   const C = new Set(a.concerns), T = a.type, sens = T==="sensitive" || C.has("barrier");
   const simple = a.size==="simple", tier = a.budget;
   const sk = [...SKIN_PREFS[T]];
@@ -747,7 +758,7 @@ function buildRoutine(a){
     notes.push(["Reset","Pause all acids, retinoids, vitamin C, and scrubs for 1–2 weeks. Bring actives back one at a time once skin stops stinging."]);
     if(C.size>1) notes.push(["Then","Once your skin calms down, uncheck Irritated skin to see a routine for your other goals."]);
     notes.push(["See a pro","If stinging, rash, or peeling lasts more than two weeks, see a dermatologist."]);
-    return {am, pm, nights:Array(7).fill("rec"), ret:null, exf:null, notes, headline:"Barrier repair mode · "+TIER_NAME[tier]};
+    return {am, pm, nights:Array(7).fill("rec"), ret:null, exf:null, notes, headline:"Barrier repair mode · "+TIER_NAME[tier]+(a.kbeauty?" · K-beauty":"")};
   }
 
   // Pick actives
@@ -833,7 +844,7 @@ function buildRoutine(a){
 
   const tn = TYPES.find(t=>t[0]===T)[1].toLowerCase();
   const cn = a.concerns.map(c=>CONCERNS.find(x=>x.id===c).short.toLowerCase());
-  const headline = `For ${tn} skin${cn.length?` focused on ${cn.join(", ").replace(/, ([^,]*)$/," & $1")}`:""} · ${TIER_NAME[tier]}`;
+  const headline = `For ${tn} skin${cn.length?` focused on ${cn.join(", ").replace(/, ([^,]*)$/," & $1")}`:""} · ${TIER_NAME[tier]}${a.kbeauty?" · K-beauty":""}`;
   return {am, pm, nights, ret, exf, notes, headline};
 }
 
@@ -848,7 +859,7 @@ function swapper(sel){
     <select id="${id}" data-swap="${esc(sel.key)}">${groups}</select></label>`;
 }
 const warnLine = p => (p && p.warn && p.warn.length) ? `<span class="pwarn">${p.warn.map(esc).join(" · ")}</span>` : "";
-const pickBlock = sel => sel ? `<div class="pickblock">${shopLink(sel.prod)}${warnLine(sel.prod)}${swapper(sel)}</div>` : "";
+const pickBlock = sel => sel ? `<div class="pickblock">${shopLink(sel.prod)}${sel.noK ? `<span class="pwarn">No K-beauty pick for this step yet</span>` : ""}${warnLine(sel.prod)}${swapper(sel)}</div>` : "";
 function renderSteps(list){
   return `<ol class="steps">${list.map(s=>`<li><div>
     <div class="step-name">${esc(s.label)}${s.ing?` · ${ingBtn(s.ing)}`:""}</div>
