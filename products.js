@@ -379,7 +379,8 @@ window.PRODUCTS = [
    "preg": "yes"
   },
   "warn": [
-   "Not for acne-prone skin"
+   "Not for acne-prone skin",
+   "Combination skin: use on dry areas only"
   ]
  },
  {
