@@ -343,6 +343,46 @@ window.PRODUCTS = [
   ]
  },
  {
+  "name": "Prequel Barrier Therapy Moisturizer",
+  "tier": "basics",
+  "step": "moisturizer",
+  "skin": [
+   "dry",
+   "sensitive"
+  ],
+  "price": 3.31,
+  "link": "https://link.amazon/B0fZCt7p0",
+  "ing": [
+   "ceramides"
+  ],
+  "note": "Ceramides plus 1% colloidal oatmeal for barrier repair.",
+  "tags": [
+   "Niacinamide-free"
+  ],
+  "avoid": [
+   "acne"
+  ],
+  "ingredients": "Colloidal Oatmeal (1.0%), Water (Aqua), Carthamus Tinctorius Seed Oil, Cetyl Alcohol, Glycerin, Butyrospermum Parkii Butter, Caprylic/Capric Triglyceride, Dimethicone, C10-18 Triglycerides, Allantoin, Adenosine, Cetearyl Olivate, Sorbitan Olivate, Ceramide AP, Ceramide EOS, Ceramide EOP, Ceramide NP, Ceramide NS, Cholesterol, Caprooyl Phytosphingosine, Caprooyl Sphingosine, Glycolipids, Phospholipids, Sodium Stearoyl Glutamate, Behenic Acid, Ceteareth-25, Glycine Soja Oil, Glycine Soja Sterols, Ascorbyl Palmitate, Tocopherol, Lecithin, Glyceryl Stearate, Glyceryl Oleate, Carbomer, Caprylyl Glycol, Hydroxyacetophenone, Phenoxyethanol, Ethylhexylglycerin, 1,2-Hexanediol, Tocopheryl Acetate, Tetrasodium Glutamate Diacetate, Sodium Chloride, Sodium Hydroxide, Citric Acid",
+  "ingSource": "Kourtney",
+  "flags": [
+   "heavy"
+  ],
+  "niacinamide": false,
+  "fit": {
+   "oily": "no",
+   "combination": "dry",
+   "dry": "yes",
+   "sensitive": "yes",
+   "fungal": "no",
+   "nofrag": "yes",
+   "noniacin": "yes",
+   "preg": "yes"
+  },
+  "warn": [
+   "Not for acne-prone skin"
+  ]
+ },
+ {
   "name": "Vanicream Daily Facial Moisturizer",
   "tier": "basics",
   "step": "moisturizer",
