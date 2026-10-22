@@ -444,9 +444,7 @@ window.PRODUCTS = [
    "panthenol"
   ],
   "img": "img/purito-mighty-bamboo-panthenol-cream.webp",
-  "tags": [
-   "Fungal-acne safe"
-  ],
+  "tags": [],
   "flags": [],
   "niacinamide": true,
   "ingredients": "Water, Panthenol (10%), Squalane, Butylene Glycol, 1, 2-Hexanediol, Niacinamide, Bambusa Vulgaris Extract (3, 497 ppm), Hydrolyzed Jojoba Esters, Acrylates/C10-30 Alkyl Acrylate Crosspolymer, Ammonium Acryloyldimethyltaurate/VP Copolymer, Hydroxyacetophenone, Tromethamine, Dipotassium Glycyrrhizate, Ethylhexylglycerin, Xanthan Gum, Disodium EDTA, Sodium Hyaluronate, Madecassoside, Asiaticoside, Asiatic Acid, Madecassic Acid, Copper Tripeptide-1",
@@ -456,7 +454,7 @@ window.PRODUCTS = [
    "combination": "yes",
    "dry": "yes",
    "sensitive": "yes",
-   "fungal": "yes",
+   "fungal": "maybe",
    "nofrag": "yes",
    "noniacin": "no",
    "preg": "yes"
@@ -1691,7 +1689,7 @@ window.PRODUCTS = [
    "retinoid"
   ],
   "niacinamide": true,
-  "ingredients": "water dimethicone glycerin distarch phosphate dimethicone crosspolymer retinol, retinyl propionate, niacinamide, palmitoyl dipeptide-7, palmitoyl pentapeptide-4, tripeptide-3, carnosine, hydroxyacetophenone, butylene glycol, c13-14 isoalkane, dimethiconol, laureth-4, laureth-7, disodium edta, polyacrylamide, acrylates/c10-30 alkyl acrylate crosspolymer, phenoxyethanol, titanium dioxide vitamin b3, triple collagen peptide",
+  "ingredients": "Water, Dimethicone, Glycerin, Distarch Phosphate, Dimethicone Crosspolymer, Retinol, retinyl propionate, niacinamide, palmitoyl dipeptide-7, palmitoyl pentapeptide-4, tripeptide-3, carnosine, hydroxyacetophenone, butylene glycol, c13-14 isoalkane, dimethiconol, laureth-4, laureth-7, disodium edta, polyacrylamide, acrylates/c10-30 alkyl acrylate crosspolymer, phenoxyethanol, titanium dioxide vitamin b3, triple collagen peptide",
   "ingSource": "Kourtney",
   "tags": [],
   "fit": {
