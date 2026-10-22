@@ -45,14 +45,17 @@ window.PRODUCTS = [
    "Niacinamide-free"
   ],
   "warn": [
-   "May feel heavy on acne-prone skin"
+   "Not for acne-prone skin"
   ],
   "flags": [
    "heavy"
   ],
   "niacinamide": false,
   "ingredients": "Water, Glycerin, Propanediol, Theobroma Cacao (Cocoa) Seed Butter, Cetearyl Alcohol, Cocoglycerides, Butyrospermum Parkii (Shea) Butter, Polyglyceryl-10 Distearate, Sorbitan Stearate, Panthenol, Glyceryl Stearate, Squalane, 1, 2-Hexanediol, Camellia Oleifera Seed Oil, Caprylyl Methicone, Dimethicone, Stearic Acid, Phytosterols, Tocopheryl Acetate, Caprylyl Glycol, Euphorbia Cerifera (Candelilla) Wax, Myristoyl/Palmitoyl Oxostearamide/Arachamide MEA, Zinc Gluconate, Allantoin, Methyl Caprooyl Tyrosinate, Xanthan Gum, Disodium EDTA, Madecassoside, Tetra carboxymethyl Palmitoyl Dipeptide-12",
-  "ingSource": "Kourtney"
+  "ingSource": "Kourtney",
+  "avoid": [
+   "acne"
+  ]
  },
  {
   "name": "CeraVe Ultra-Light Moisturizing Gel",
@@ -330,14 +333,17 @@ window.PRODUCTS = [
    "Niacinamide-free"
   ],
   "warn": [
-   "May feel heavy on acne-prone skin"
+   "Not for acne-prone skin"
   ],
   "flags": [
    "heavy"
   ],
   "niacinamide": false,
   "ingredients": "DIMETHICONE, WATER, HYDROGENATED POLYISOBUTENE, DIMETHICONE, GLYCERIN, BUTYROSPERMUM PARKII (SHEA) BUTTER, PANTHENOL, ZEA MAYS (CORN) STARCH, PROPANEDIOL, BUTYLENE GLYCOL, CETYL PEG/PPG-10/1 DIMETHICONE, TRIHYDROXYSTEARIN, CENTELLA ASIATICA LEAF EXTRACT, POLYM NIA SONCHIFOLIA ROOT JUICE, ZINC GLUCONATE, MADECASSOSIDE, MANGANESE GLUCONATE, ALPHA-GLUCAN OLIGOSACCHARIDE, SILICA, ALUMINUM HYDROXIDE, MAGNESIUM SULFATE, MANNOSE, CAPRYLOYL GLYCINE, VITREOSCILLA FERMENT, CITRIC ACID, TRISODIUM ETHYLENEDIAMINE DISUCCINATE, LACTOBACILLUS, ACETYLATED GLYCOL STEARATE, MALTODEXTRIN, PENTYLENE GLYCOL, POLYGLYCERYL-4 ISOSTEARATE, TOCOPHEROL, PENTAERYTHRITYL TETRA-DI-T-BUTYL HYDROXYHYDROCINNAMATE, PHENOXYETHANOL, TITANIUM DIOXIDE",
-  "ingSource": "Kourtney"
+  "ingSource": "Kourtney",
+  "avoid": [
+   "acne"
+  ]
  },
  {
   "name": "The Ordinary Glycolic Acid 7% Toner",
@@ -1194,7 +1200,7 @@ window.PRODUCTS = [
   "note": "0.5% is a mid strength. Not for your first retinol.",
   "img": "img/cosrx-the-retinol-0-5-oil.webp",
   "warn": [
-   "May feel heavy on acne-prone skin",
+   "Not for acne-prone skin",
    "Skip if pregnant or nursing"
   ],
   "flags": [
@@ -1206,6 +1212,9 @@ window.PRODUCTS = [
   "ingSource": "Kourtney",
   "tags": [
    "Niacinamide-free"
+  ],
+  "avoid": [
+   "acne"
   ]
  },
  {
@@ -1865,7 +1874,7 @@ window.PRODUCTS = [
   ],
   "img": "img/cosrx-retinol-0-1-cream.webp",
   "warn": [
-   "May feel heavy on acne-prone skin",
+   "Not for acne-prone skin",
    "Skip if pregnant or nursing"
   ],
   "flags": [
@@ -1877,6 +1886,9 @@ window.PRODUCTS = [
   "ingSource": "Kourtney",
   "tags": [
    "Niacinamide-free"
+  ],
+  "avoid": [
+   "acne"
   ]
  },
  {
@@ -1892,7 +1904,7 @@ window.PRODUCTS = [
   ],
   "img": "img/cosrx-retinol-0-3-cream.webp",
   "warn": [
-   "May feel heavy on acne-prone skin",
+   "Not for acne-prone skin",
    "Skip if pregnant or nursing"
   ],
   "flags": [
@@ -1904,6 +1916,9 @@ window.PRODUCTS = [
   "ingSource": "Kourtney",
   "tags": [
    "Niacinamide-free"
+  ],
+  "avoid": [
+   "acne"
   ]
  },
  {
@@ -2049,7 +2064,7 @@ window.PRODUCTS = [
   ],
   "img": "img/dr-jart-cicapair.webp",
   "warn": [
-   "May feel heavy on acne-prone skin"
+   "Not for acne-prone skin"
   ],
   "flags": [
    "heavy"
@@ -2057,7 +2072,10 @@ window.PRODUCTS = [
   "niacinamide": true,
   "ingredients": "WATER\\AQUA\\EAU, DIPROPYLENE GLYCOL, CETEARYL ALCOHOL, PROPANEDIOL, POLYGLYCERYL-3 METHYLGLUCOSE DISTEARATE, PHYTOSTERYL ISOSTEARYL DIMER DILINOLEATE, BUTYLENE GLYCOL, CAPRYLIC/CAPRIC TRIGLYCERIDE, BUTYROSPERMUM PARKII (SHEA) BUTTER, DICAPRYLYL ETHER, NIACINAMIDE, GLYCERYL STEARATE SE, PENTYLENE GLYCOL, SYNTHETIC BEESWAX, DIGLYCERIN, CETYL ETHYLHEXANOATE, VINYL DIMETHICONE, 1, 2-HEXANEDIOL, MACADAMIA INTEGRIFOLIA SEED OIL, THEOBROMA CACAO (COCOA) EXTRACT, CENTELLA ASIATICA LEAF EXTRACT, CETEARYL OLIVATE, GLYCERIN, ALLANTOIN, ASIATICOSIDE, MADECASSIC ACID, ASIATIC ACID, ADENOSINE, POLYGLYCERYL-4 OLEATE, SODIUM STEAROYL GLUTAMATE, PALMITOYL TRIPEPTIDE-8, SORBITAN OLIVATE, HYDROXYETHYL ACRYLATE/SODIUM ACRYLOYLDIMETHYL TAURATE COPOLYMER, XANTHAN GUM, SODIUM SURFACTIN, CARBOMER, TROMETHAMINE, ISOPENTYLDIOL, DEXTRIN, DEXTRAN, SORBITAN ISOSTEARATE, TRISODIUM ETHYLENEDIAMINE DISUCCINATE, TOCOPHEROL, PHENOXYETHANOL, YELLOW 5 (CI 19140), BLUE 1 (CI 42090)",
   "ingSource": "Kourtney",
-  "tags": []
+  "tags": [],
+  "avoid": [
+   "acne"
+  ]
  },
  {
   "name": "DRMTLGY Needle-less Growth Factor Serum",
@@ -2141,8 +2159,8 @@ window.PRODUCTS = [
    "Niacinamide-free"
   ],
   "warn": [
-   "Contains fragrance",
-   "May feel heavy on acne-prone skin"
+   "Not for acne-prone skin",
+   "Contains fragrance"
   ],
   "flags": [
    "fragrance",
@@ -2150,7 +2168,10 @@ window.PRODUCTS = [
   ],
   "niacinamide": false,
   "ingredients": "Aqua/Water/Eau, Saccharomyces/Rice Ferment Filtrate, Glycerin, Propanediol, Dimethicone, Squalane, Diisostearyl Malate, Behenyl Alcohol, Myristyl Myristate, Dipentaerythrityl Hexahydroxystearate, Bis-Diglyceryl Polyacyladipate-2, Tridecyl Trimellitate, Inositol, Sorbitan Tristearate, Beheneth-20, Camellia Sinensis Leaf Extract, Cladosiphon Okamuranus Extract, Chondrus Crispus Extract, Betaphycus Gelatinum Extract, Oryza Sativa (Rice) Bran Extract, Panax Ginseng Root Extract, Origanum Majorana Leaf Extract, Thymus Serpyllum Extract, Malva Sylvestris (Mallow) Flower Extract, Sodium Hyaluronate, Gold, Sericin, Phytosteryl Macadamiate, Tocopherol, Hydroxyethyl Acrylate/Sodium Acryloyldimethyl Taurate Copolymer, Sorbitan Isostearate, Polysorbate 60, Butylene Glycol, Dimethicone/Vinyl Dimethicone Crosspolymer, Sodium Benzoate, Gluconolactone, Ethylhexylglycerin, Parfum/Fragrance, Alcohol, Phenoxyethanol, Citral, Limonene, Linalool, Mica, Tin Oxide, Titanium Dioxide (Ci 77891), Violet 2 (Ci 60725)",
-  "ingSource": "Kourtney"
+  "ingSource": "Kourtney",
+  "avoid": [
+   "acne"
+  ]
  },
  {
   "name": "EltaMD UV Clear Broad-Spectrum",
@@ -2310,7 +2331,7 @@ window.PRODUCTS = [
   "note": "Single-use capsules keep the retinol fresh.",
   "img": "img/roc-retinol-capsules.webp",
   "warn": [
-   "May feel heavy on acne-prone skin",
+   "Not for acne-prone skin",
    "Skip if pregnant or nursing"
   ],
   "flags": [
@@ -2322,6 +2343,9 @@ window.PRODUCTS = [
   "ingSource": "Kourtney",
   "tags": [
    "Niacinamide-free"
+  ],
+  "avoid": [
+   "acne"
   ]
  },
  {
@@ -2362,7 +2386,7 @@ window.PRODUCTS = [
   ],
   "img": "img/avene-retrinal-intensive-corrective-cream.webp",
   "warn": [
-   "May feel heavy on acne-prone skin",
+   "Not for acne-prone skin",
    "Skip if pregnant or nursing"
   ],
   "flags": [
@@ -2372,7 +2396,10 @@ window.PRODUCTS = [
   "niacinamide": true,
   "ingredients": "Avene Thermal Spring Water (Avene Aqua), Caprylic/Capric Triglyceride, Glycerin, Squalane, Butyrospermum Parkii (Shea) Butter (Butyrospermum Parkii Butter), Carthamus Tinctorius (Safflower) Seed Oil (Carthamus Tinctorius Seed Oil), Pentaerythrityl Tetracaprylate/Tetracaprate, Cetearyl Alcohol, Behenyl Alcohol, Niacinamide, C20-22 Alkyl Phosphate, C20-22 Alcohols, Acacia Senegal Gum, Adenosine, Cetearyl Glucoside, Helianthus Annuus (Sunflower) Seed Oil (Helianthus Annuus Seed Oil), Red 33 (Ci 17200), Retinal, Sodium Benzoate, Sodium Hyaluronate, Sodium Hydroxide, Terminalia Chebula Fruit Extract, Tocopherol, Tocopheryl Glucoside, Xanthan Gum",
   "ingSource": "Kourtney",
-  "tags": []
+  "tags": [],
+  "avoid": [
+   "acne"
+  ]
  },
  {
   "name": "Naturium Tranexamic Topical Acid 5%",
