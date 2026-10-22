@@ -55,7 +55,8 @@ window.PRODUCTS = [
   ],
   "img": "img/zeroid-intensive-cream.webp",
   "tags": [
-   "Niacinamide-free"
+   "Niacinamide-free",
+   "K-beauty"
   ],
   "warn": [
    "Not for acne-prone skin"
@@ -154,7 +155,8 @@ window.PRODUCTS = [
   "link": "https://amzn.to/4dSs58l",
   "img": "img/aestura-hydro-soothing-cream.webp",
   "tags": [
-   "Niacinamide-free"
+   "Niacinamide-free",
+   "K-beauty"
   ],
   "flags": [],
   "niacinamide": false,
@@ -286,7 +288,8 @@ window.PRODUCTS = [
   "link": "https://amzn.to/4k6yrEO",
   "tags": [
    "Niacinamide-free",
-   "Fungal-acne safe"
+   "Fungal-acne safe",
+   "K-beauty"
   ],
   "img": "img/purito-oat-in-calming-gel-cream.webp",
   "flags": [],
@@ -418,7 +421,9 @@ window.PRODUCTS = [
   "niacinamide": true,
   "ingredients": "Water / Aqua / Eau, Butylene Glycol, Glycerin, Butylene Glycol Dicaprylate/Dicaprate, Cetyl Ethylhexanoate, Squalane, Pentaerythrityl Tetraisostearate, Dicaprylyl Carbonate, Behenyl Alcohol, Dimethicone, Hydroxypropyl Bispalmitamide Mea, Stearic Acid, Betaine, Mannitol, C14-22 Alcohols, Palmitic Acid, Hydroxypropyl Bislauramide Mea, Arachidyl Alcohol, Cholesterol, Polyacrylate-13, C12-20 Alkyl Glucoside, Allantoin, Arachidyl Glucoside, Niacinamide, Ceramide Np, Glyceryl Caprylate, Ethylhexylglycerin, Hydrogenated Polyisobutene, Carbomer, Tromethamine, Dimethiconol, Polyglyceryl-10 Laurate, Hydrogenated Lecithin, Ethylhexyl Palmitate, Acrylates/Ammonium Methacrylate Copolymer, Sorbitan Isostearate, Silica, Phytosphingosine, Sphingolipids, Arachidic Acid, Tocopherol, Oleic Acid",
   "ingSource": "Kourtney",
-  "tags": [],
+  "tags": [
+   "K-beauty"
+  ],
   "fit": {
    "oily": "maybe",
    "combination": "yes",
@@ -444,7 +449,9 @@ window.PRODUCTS = [
    "panthenol"
   ],
   "img": "img/purito-mighty-bamboo-panthenol-cream.webp",
-  "tags": [],
+  "tags": [
+   "K-beauty"
+  ],
   "flags": [],
   "niacinamide": true,
   "ingredients": "Water, Panthenol (10%), Squalane, Butylene Glycol, 1, 2-Hexanediol, Niacinamide, Bambusa Vulgaris Extract (3, 497 ppm), Hydrolyzed Jojoba Esters, Acrylates/C10-30 Alkyl Acrylate Crosspolymer, Ammonium Acryloyldimethyltaurate/VP Copolymer, Hydroxyacetophenone, Tromethamine, Dipotassium Glycyrrhizate, Ethylhexylglycerin, Xanthan Gum, Disodium EDTA, Sodium Hyaluronate, Madecassoside, Asiaticoside, Asiatic Acid, Madecassic Acid, Copper Tripeptide-1",
@@ -1181,7 +1188,8 @@ window.PRODUCTS = [
   "link": "https://amzn.to/48a1JuY",
   "img": "img/haruharu-wonder-black-rice-cleansing-oil.webp",
   "tags": [
-   "Niacinamide-free"
+   "Niacinamide-free",
+   "K-beauty"
   ],
   "ingredients": "Oryza Sativa (Rice) Bran Oil, Caprylic/Capric Triglyceride, Helianthus Annuus (Sunflower) Seed Oil, Olea Europaea (Olive) Fruit Oil, Sorbeth-30 Tetraoleate, Simmondsia Chinensis (Jojoba) Seed Oil, Macadamia Integrifolia Seed Oil, Tocopherol, Ethylhexylglycerin",
   "ingSource": "Kourtney",
@@ -1209,7 +1217,8 @@ window.PRODUCTS = [
   "link": "https://amzn.to/4ysJmMF",
   "img": "img/skin1004-light-cleansing-oil.webp",
   "tags": [
-   "Niacinamide-free"
+   "Niacinamide-free",
+   "K-beauty"
   ],
   "ingredients": "Ethylhexyl Stearate, Cetyl Ethylhexanoate, Sorbeth-30 Tetraoleate, Caprylic/Capric Triglyceride, Citrus Aurantium Bergamia (Bergamot) Fruit Oil, Centella Asiatica Extract, Simmondsia Chinensis (Jojoba) Seed Oil, Olea Europaea (Olive) Fruit Oil, Helianthus Annuus (Sunflower) Seed Oil, Ethylhexylglycerin, Pelargonium Graveolens Flower Oil, Rosa Damascena Flower Oil, Limonene, Linalool",
   "ingSource": "Kourtney",
@@ -1272,7 +1281,8 @@ window.PRODUCTS = [
   "link": "https://amzn.to/4yEcalv",
   "img": "img/orien-mugwort-zero-film-cleansing-oil.webp",
   "tags": [
-   "Niacinamide-free"
+   "Niacinamide-free",
+   "K-beauty"
   ],
   "ingredients": "Ethylhexyl Palmitate, Cetyl Ethylhexanoate, Sorbeth-30 Tetraoleate, Water, Fragrance, Caprylyl Glycol, Butylene Glycol, Artemisia Capillaris Extract, Centella Asiatica Extract, Argania Spinosa Kernel Oil, Helianthus Annuus (Sunflower) Seed Oil, Simmondsia Chinensis (Jojoba) Seed Oil",
   "ingSource": "Kourtney",
@@ -1305,7 +1315,8 @@ window.PRODUCTS = [
   "link": "https://amzn.to/4z1HTxS",
   "img": "img/biodance-collagen-oil-cleanser.webp",
   "tags": [
-   "Niacinamide-free"
+   "Niacinamide-free",
+   "K-beauty"
   ],
   "ingredients": "Ethylhexyl Palmitate, Cetyl Ethylhexanoate, Polyglyceryl-10 Diisostearate, Polyglyceryl-6 Dicaprate, Sorbitan Sesquioleate, Polyglyceryl-2 Laurate, Water, Pyrus Communis (Pear) Fruit Extract, Rosa Damascena Flower Water, Iris Florentina Root Extract, Cucumis Melo (Melon) Seed Extract, Hedera Helix (Ivy) Leaf/Stem Extract, Caprylyl Glycol, Vitis Vinifera (Grape) Seed Oil, Helianthus Annuus (Sunflower) Seed Oil, Simmondsia Chinensis (Jojoba) Seed Oil, Ethylhexylglycerin, 1, 2-Hexanediol, Butylene Glycol, Collagen Extract, Acetyl Hexapeptide-8, Tocopherol, Oligopeptide-1, Copper Tripeptide-1, Palmitoyl Pentapeptide-4, Palmitoyl Tripeptide-5, Tripeptide-1, Hexapeptide-9, Palmitoyl Tripeptide-38, Pentapeptide-4, Hexapeptide-12",
   "ingSource": "Kourtney",
@@ -1578,7 +1589,8 @@ window.PRODUCTS = [
   "note": "The gentler niacinamide pick.",
   "img": "img/skin1004-10-niacinamide.webp",
   "tags": [
-   "Fungal-acne safe"
+   "Fungal-acne safe",
+   "K-beauty"
   ],
   "flags": [],
   "niacinamide": true,
@@ -1654,7 +1666,8 @@ window.PRODUCTS = [
   "ingredients": "Water, Glycerin, 1, 2-Hexanediol, Cetearyl Olivate, Squalane, Sorbitan Olivate, Carbomer, Retinol, Caprylic/Capric Triglyceride, Hippophae Rhamnoides Fruit Extract, Tromethamine, Phaseolus Radiatus Seed Extract, Hydrogenated Lecithin, Inulin Lauryl Carbamate, Sodium Polyacrylate, Retinal, Hydrolyzed Sponge, Adenosine, Sodium Hyaluronate, Disodium EDTA, Tocopheryl Acetate, Pentaerythrityl Tetra-di-t-butyl Hydroxyhydrocinnamate, Ethylhexylglycerin, Rosmarinus Officinalis (Rosemary) Leaf Extract, Panthenol, Madecassoside, Centella Asiatica Extract",
   "ingSource": "Kourtney",
   "tags": [
-   "Niacinamide-free"
+   "Niacinamide-free",
+   "K-beauty"
   ],
   "fit": {
    "oily": "yes",
@@ -1801,7 +1814,8 @@ window.PRODUCTS = [
   "ingredients": "Squalane, Glycine Soja (soybean) Oil, Di-c12-13 Alkyl Malate, Retinol(0.5%), Caprylic/capric Triglyceride, BHT, Tocotrienols, Tocopherol, Elaeis Guineensis (palm) Oil, Hydroxymethoxyphenyl Decanone",
   "ingSource": "Kourtney",
   "tags": [
-   "Niacinamide-free"
+   "Niacinamide-free",
+   "K-beauty"
   ],
   "avoid": [
    "acne"
@@ -1842,7 +1856,9 @@ window.PRODUCTS = [
   "niacinamide": true,
   "ingredients": "Water, Glycerin, Dipropylene Glycol, Caprylic/Capric Triglyceride, 1, 2-Hexanediol, Butylene Glycol Dicaprylate/Dicaprate, Niacinamide, Pentaerythrityl Tetraethylhexanoate, Cetearyl Alcohol, Cetearyl Olivate, Sorbitan Olivate, Butylene Glycol, Hydrogenated Lecithin, Panax Ginseng Root Extract, Carbomer, Glyceryl Stearate, Tromethamine, Macadamia Ternifolia Seed Oil, Ethylhexylglycerin, Adenosine, Cholesterol, Dextrin, Polyglyceryl-10 Oleate, Theobroma Cacao (Cocoa) Extract, Disodium EDTA, Brassica Campestris (Rapeseed) Sterols, Phytosteryl/Behenyl/Octyldodecyl Lauroyl Glutamate, Retinal, Silica, Aluminum/Magnesium Hydroxide Stearate, Sodium Hyaluronate, Tocopherol, Potassium Cetyl Phosphate, Pentaerythrityl Tetra-di-t-butyl Hydroxyhydrocinnamate, Ceramide NP, Palmitoyl Tripeptide-5",
   "ingSource": "Kourtney",
-  "tags": [],
+  "tags": [
+   "K-beauty"
+  ],
   "fit": {
    "oily": "yes",
    "combination": "yes",
@@ -2078,8 +2094,8 @@ window.PRODUCTS = [
    "sunscreen"
   ],
   "tags": [
-   "K-beauty",
-   "Niacinamide-free"
+   "Niacinamide-free",
+   "K-beauty"
   ],
   "img": "img/purito-daily-soft-touch-sunscreen.webp",
   "warn": [
@@ -2113,8 +2129,8 @@ window.PRODUCTS = [
    "sunscreen"
   ],
   "tags": [
-   "K-beauty",
-   "Niacinamide-free"
+   "Niacinamide-free",
+   "K-beauty"
   ],
   "img": "img/tirtir-hydro-uv-shield.webp",
   "warn": [
@@ -2383,7 +2399,9 @@ window.PRODUCTS = [
   "niacinamide": true,
   "ingredients": "Water, 3-O-Ethyl Ascorbic Acid, Glycerin, Dipropylene Glycol, Hydrogenated Poly(C6-14 Olefin), 1, 2-Hexanediol, Caffeine, Ethylhexyl Stearate, Niacinamide, Cetyl Ethylhexanoate, Butylene Glycol, Glyceryl Stearate SE, Panthenol, Tranexamic Acid, Glutathione, Nonapeptide-1, Cynanchum Atratum Extract, Sodium Hyaluronate, Tremella Fuciformis (Mushroom) Extract, Acrylates/C10-30 Alkyl Acrylate Crosspolymer, Tocopheryl Acetate, Sodium Acrylate/Sodium Acryloyldimethyl Taurate Copolymer, Ferulic Acid, Isohexadecane, Melia Azadirachta Leaf Extract, Sodium Polyacryloyldimethyl Taurate, Melia Azadirachta Flower Extract, Curcuma Longa (Turmeric) Root Extract, Hydrogenated Lecithin, Disodium Edta, Ethylhexylglycerin, Sodium Stearoyl Glutamate, Adenosine, Sorbitan Oleate, Ocimum Sanctum Leaf Extract, Xanthan Gum, Centella Asiatica Extract, Ficus Carica (Fig) Fruit Extract, Ceramide NP, Corallina Officinalis Extract, Pentaerythrityl Distearate, Citric Acid, Polysorbate 80, Tocopherol",
   "ingSource": "Kourtney",
-  "tags": [],
+  "tags": [
+   "K-beauty"
+  ],
   "fit": {
    "oily": "yes",
    "combination": "yes",
@@ -2419,7 +2437,9 @@ window.PRODUCTS = [
   "niacinamide": true,
   "ingredients": "Water (Aqua/Eau), Dimethicone, Butylene Glycol, Glycerin, Squalane, Hydrogenated Polydecene, Niacinamide, Panthenol, Propanediol, Sorbitol, Trimethylpentaphenyl Trisiloxane, Cetyl PEG/PPG-10/1 Dimethicone, 1, 2-Hexanediol, Tapioca Starch, Candida Bombicola/Glucose/Methyl Rapeseedate Ferment, Butyrospermum Parkii (Shea) Butter, Limnanthes Alba (Meadowfoam) Seed Oil, Macadamia Ternifolia Seed Oil, Hydrolyzed Collagen Extract, Caprylic/Capric Triglyceride, Magnesium Sulfate, Caprylyl Glycol, Trehalose, Ethylhexylglycerin, Allantoin, Beta-Sitosterol, Adenosine, Trisodium Ethylenediamine Disuccinate, Phytosterols, Biosaccharide Gum-1, Madecassoside, Ceramide NP, Pentaerythrityl Tetra-di-t-butyl Hydroxyhydrocinnamate, Triisopropanolamine, Tocopherol, PEG-10 Dimethicone, Cetearyl Alcohol",
   "ingSource": "Kourtney",
-  "tags": [],
+  "tags": [
+   "K-beauty"
+  ],
   "fit": {
    "oily": "yes",
    "combination": "yes",
@@ -2452,7 +2472,9 @@ window.PRODUCTS = [
   "niacinamide": true,
   "ingredients": "Water, Glycerin, Diglycerin, 1, 2-Hexanediol, Butylene Glycol, Niacinamide, Polyglyceryl-3 Distearate, Caprylic/Capric Triglyceride, Neopentyl Glycol Diheptanoate, Hydrogenated Poly(C6-14 Olefin), Isostearyl Isostearate, Pentaerythrityl Tetraisostearate, Heptyl Undecylenate, Bis-Diglyceryl Polyacyladipate-2, Glyceryl Stearate, C14-22 Alcohols, Centella Asiatica Extract(6, 108 ppm), Butyrospermum Parkii (Shea) Butter, Cetearyl Alcohol, Polyglyceryl-2 Stearate, Sodium Acrylate/Sodium Acryloyldimethyl Taurate Copolymer, Glyceryl Stearate Citrate, Arginine, Stearyl Alcohol, Polyisobutene, C12-20 Alkyl Glucoside, Squalane, Sodium Polyacrylate, Acrylates/C10-30 Alkyl Acrylate Crosspolymer, Carbomer, Sodium Surfactin, Hydroxystearic Acid, Ethylhexylglycerin, Adenosine, Hydrogenated Lecithin, Sorbitan Oleate, Caprylyl/Capryl Glucoside, Macadamia Ternifolia Seed Oil, Sodium Hyaluronate, Moringa Oleifera Seed Oil, Sodium Phytate, Ceramide NP, Dextrin, Theobroma Cacao (Cocoa) Extract, Glyceryl Acrylate/Acrylic Acid Copolymer, Polyglyceryl-10 Myristate, Phytosphingosine, Stearic Acid, Lactobacillus Ferment(10 ppm), Madecassic Acid(8ppm), Asiaticoside(8 ppm), Sucrose Distearate, Asiatic Acid(4 ppm), Phytosterols, Lauric Acid, Polyglutamic Acid",
   "ingSource": "Kourtney",
-  "tags": [],
+  "tags": [
+   "K-beauty"
+  ],
   "fit": {
    "oily": "yes",
    "combination": "yes",
@@ -2485,7 +2507,9 @@ window.PRODUCTS = [
   "niacinamide": true,
   "ingredients": "[Inner] Water, Squalane, Butylene Glycol, Glycerin, Vinyl Dimethicone, 1, 2-Hexanediol, Dipropylene Glycol, Methylpropanediol, Niacinamide, Propanediol, Betaine, Ectoin, Panthenol, Sodium Hyaluronate, Cetearyl Olivate, Sorbitan Olivate, Melia Azadirachta Flower Extract, Melia Azadirachta Leaf Extract, Coccinia Indica Fruit Extract, Adenosine, Ammonium Acryloyldimethyltaurate/Vp Copolymer, Acrylates/C10-30 Alkyl Acrylate Crosspolymer, Disodium Edta, Solanum Melongena (Eggplant) Fruit Extract, Ocimum Sanctum Leaf Extract, Corallina Officinalis Extract, Curcuma Longa (Turmeric) Root Extract, Ethylhexylglycerin, Polyquaternium-51, Sodium Stearoyl Glutamate, Tromethamine, Aniba Rosodora (Rosewood) Wood Oil [Outer] Water, Squalane, Glycerin, Panthenol, 1, 2-Hexanediol, Niacinamide, Ammonium Acryloyldimethyltaurate/Vp Copolymer, Sodium Hyaluronate, Allantoin, Betaine, Adenosine, Acrylates/C10-30 Alkyl Acrylate Crosspolymer, Tromethamine, Ethylhexylglycerin",
   "ingSource": "Kourtney",
-  "tags": [],
+  "tags": [
+   "K-beauty"
+  ],
   "fit": {
    "oily": "yes",
    "combination": "yes",
@@ -2546,9 +2570,9 @@ window.PRODUCTS = [
   ],
   "tags": [
    "Mineral",
-   "K-beauty",
    "Niacinamide-free",
-   "Fungal-acne safe"
+   "Fungal-acne safe",
+   "K-beauty"
   ],
   "img": "img/beauty-of-joseon-tinted-mineral-dayscreen.webp",
   "flags": [],
@@ -2684,7 +2708,8 @@ window.PRODUCTS = [
   "note": "Strong at 15%. Only for very stubborn oily skin; skip it if you're sensitive or new to niacinamide.",
   "img": "img/cosrx-the-niacinamide-15-serum.webp",
   "tags": [
-   "Fungal-acne safe"
+   "Fungal-acne safe",
+   "K-beauty"
   ],
   "flags": [],
   "niacinamide": true,
@@ -2766,7 +2791,8 @@ window.PRODUCTS = [
   "ingredients": "Water, Caprylic/capric Triglyceride, Propanediol, Glycerin, Tocopheryl Acetate, Cetearyl Alcohol, Trehalose, Panthenol, Butyrospermum Parkii (shea) Butter, Glycine Soja (soybean) Oil, Ammonium Acryloyldimethyltaurate/vp Copolymer, Dimethicone, Glyceryl Polymethacrylate, Helianthus Annuus (sunflower) Seed Oil, Polyglyceryl-10 Stearate, Hydrogenated Lecithin, Hydroxyethyl Acrylate/sodium Acryloyldimethyl Taurate Copolymer, Carbomer, Tromethamine, Glyceryl Stearate, Polysilicone-11, Sodium Sulfite, Tocopherol, Daucus Carota Sativa (carrot) Root Extract, Retinol(0.1%), Allantoin, Glyceryl Caprylate, Oryza Sativa (rice) Bran Wax, Tocotrienols, Stearic Acid, Polyglyceryl-3 Methylglucose Distearate, Palmitic Acid, Disodium EDTA, Ethylhexylglycerin, Adenosine, Sorbitan Isostearate, Elaeis Guineensis (palm) Oil, BHT, Beta-carotene, Myristic Acid, Lauric Acid, Ascorbic Acid, Limnanthes Alba (meadowfoam) Seed Oil, 3-o-ethyl Ascorbic Acid, Glutathione, Sodium Hyaluronate, 1, 2-hexanediol, Hydrolyzed Hyaluronic Acid, Sodium Hyaluronate Crosspolymer, Hyaluronic Acid, Sodium Acetylated Hyaluronate",
   "ingSource": "Kourtney",
   "tags": [
-   "Niacinamide-free"
+   "Niacinamide-free",
+   "K-beauty"
   ],
   "avoid": [
    "acne"
@@ -2808,7 +2834,8 @@ window.PRODUCTS = [
   "ingredients": "Water, Caprylic/Capric Triglyceride, Butylene Glycol, Glycerin, Glycine Soja (Soybean) Oil, Tocopherol, Tocopheryl Acetate, Cetearyl Alcohol, Trehalose, Panthenol, Butyrospermum Parkii (Shea) Butter, Ammonium Acryloyldimethyltaurate/VP Copolymer, Dimethicone, Glyceryl Polymethacrylate, Polyglyceryl-10 Stearate, Hydrogenated Lecithin, Helianthus Annuus (Sunflower) Seed Oil, Hydroxyethyl Acrylate/Sodium Acryloyldimethyl Taurate Copolymer, Carbomer, Retinol(0.3%), Tromethamine, Glyceryl Stearate, Polysilicone-11, Sodium Sulfite, Daucus Carota Sativa (Carrot) Root Extract, Allantoin, Glyceryl Caprylate, Propanediol, Oryza Sativa (Rice) Bran Wax, Tocotrienols, Stearic Acid, Polyglyceryl-3 Methylglucose Distearate, Palmitic Acid, Ethylhexylglycerin, Disodium EDTA, Adenosine, Sodium Hyaluronate, Sorbitan Isostearate, 1, 2-Hexanediol, Elaeis Guineensis (Palm) Oil, Hydrolyzed Hyaluronic Acid, Beta-Carotene, Sodium Hyaluronate Crosspolymer, Myristic Acid, Hyaluronic Acid, Lauric Acid, Sodium Acetylated Hyaluronate, Ascorbic Acid, Limnanthes Alba (Meadowfoam) Seed Oil, 3-O-Ethyl Ascorbic Acid, Glutathione",
   "ingSource": "Kourtney",
   "tags": [
-   "Niacinamide-free"
+   "Niacinamide-free",
+   "K-beauty"
   ],
   "avoid": [
    "acne"
@@ -2958,7 +2985,9 @@ window.PRODUCTS = [
   "niacinamide": true,
   "ingredients": "Water, Butylene Glycol, Glycerin, Caprylic/Capric Triglyceride, Cetearyl Alcohol, Niacinamide, Diisostearyl Malate, 1, 2-Hexanediol, Polypropylsilsesquioxane, Panthenol, Cetearyl Olivate, Cetearyl Glucoside, Sorbitan Olivate, Hydroxyethyl Acrylate/Sodium Acryloyldimethyl Taurate Copolymer, Lecithin, Carbomer, Arginine, Dimethicone/Vinyl Dimethicone Crosspolymer, Tocopherol, Retinal, Xanthan Gum, Ethylhexylglycerin, Adenosine, Sorbitan Isostearate, Sodium Lactate, Hydrolyzed Sponge, Disodium EDTA, Polysorbate 20, Ascorbic Acid, Glucose, Palmitoyl Tripeptide-1, Palmitoyl Tetrapeptide-7",
   "ingSource": "Kourtney",
-  "tags": [],
+  "tags": [
+   "K-beauty"
+  ],
   "fit": {
    "oily": "yes",
    "combination": "yes",
@@ -3029,7 +3058,9 @@ window.PRODUCTS = [
   "niacinamide": true,
   "ingredients": "WATER\\AQUA\\EAU, DIPROPYLENE GLYCOL, CETEARYL ALCOHOL, PROPANEDIOL, POLYGLYCERYL-3 METHYLGLUCOSE DISTEARATE, PHYTOSTERYL ISOSTEARYL DIMER DILINOLEATE, BUTYLENE GLYCOL, CAPRYLIC/CAPRIC TRIGLYCERIDE, BUTYROSPERMUM PARKII (SHEA) BUTTER, DICAPRYLYL ETHER, NIACINAMIDE, GLYCERYL STEARATE SE, PENTYLENE GLYCOL, SYNTHETIC BEESWAX, DIGLYCERIN, CETYL ETHYLHEXANOATE, VINYL DIMETHICONE, 1, 2-HEXANEDIOL, MACADAMIA INTEGRIFOLIA SEED OIL, THEOBROMA CACAO (COCOA) EXTRACT, CENTELLA ASIATICA LEAF EXTRACT, CETEARYL OLIVATE, GLYCERIN, ALLANTOIN, ASIATICOSIDE, MADECASSIC ACID, ASIATIC ACID, ADENOSINE, POLYGLYCERYL-4 OLEATE, SODIUM STEAROYL GLUTAMATE, PALMITOYL TRIPEPTIDE-8, SORBITAN OLIVATE, HYDROXYETHYL ACRYLATE/SODIUM ACRYLOYLDIMETHYL TAURATE COPOLYMER, XANTHAN GUM, SODIUM SURFACTIN, CARBOMER, TROMETHAMINE, ISOPENTYLDIOL, DEXTRIN, DEXTRAN, SORBITAN ISOSTEARATE, TRISODIUM ETHYLENEDIAMINE DISUCCINATE, TOCOPHEROL, PHENOXYETHANOL, YELLOW 5 (CI 19140), BLUE 1 (CI 42090)",
   "ingSource": "Kourtney",
-  "tags": [],
+  "tags": [
+   "K-beauty"
+  ],
   "avoid": [
    "acne"
   ],
@@ -3553,7 +3584,9 @@ window.PRODUCTS = [
   "niacinamide": true,
   "ingredients": "Water, Glycerin, Butylene Glycol, Niacinamide, Tranexamic Acid, 1, 2-Hexanediol, Methylpropanediol, Vinyl Dimethicone, Glycereth-26, Isononyl Isononanoate, Propanediol, Cetearyl Olivate, Sorbitan Olivate, Polysorbate 20, Sodium Acrylate/Sodium Acryloyldimethyl Taurate Copolymer, Isohexadecane, Hydroxyethyl Acrylate/Sodium Acryloyldimethyl Taurate Copolymer, Ammonium Acryloyldimethyltaurate/VP Copolymer, Ethylhexylglycerin, Eriobotrya Japonica Leaf Extract, Polysorbate 80, Disodium EDTA, Carbomer, Sorbitan Oleate, Mentha Viridis (Spearmint) Extract, Tromethamine, Sorbitan Isostearate, Polysorbate 60, Bisabolol, Sodium Hyaluronate, Tocopherol",
   "ingSource": "Kourtney",
-  "tags": [],
+  "tags": [
+   "K-beauty"
+  ],
   "fit": {
    "oily": "yes",
    "combination": "yes",
@@ -3579,7 +3612,8 @@ window.PRODUCTS = [
   ],
   "img": "img/cosrx-alpha-arbutin-discoloration-care-serum.webp",
   "tags": [
-   "Fungal-acne safe"
+   "Fungal-acne safe",
+   "K-beauty"
   ],
   "flags": [],
   "niacinamide": true,
@@ -3614,7 +3648,8 @@ window.PRODUCTS = [
   "ingredients": "Water, Butylene Glycol, Niacinamide, Glycerin, Tranexamic Acid, 1, 2-Hexanediol, Betaine, Centella Asiatica Extract, Zea Mays (Corn) Starch, Xanthan Gum, Microcrystalline Cellulose, Mannitol, Panthenol, Pentylene Glycol, Ethylhexylglycerin, Hydroxyethylcellulose, Madecassoside, Acrylates/C10-30 Alkyl Acrylate Crosspolymer, Arginine, Hydrogenated Lecithin, Xylitylglucoside, Anhydroxylitol, Xylitol, Glucose, 3-O-Ethyl Ascorbic Acid, Lactobacillus Fermen",
   "ingSource": "Kourtney",
   "tags": [
-   "Fungal-acne safe"
+   "Fungal-acne safe",
+   "K-beauty"
   ],
   "fit": {
    "oily": "yes",

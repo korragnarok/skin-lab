@@ -906,6 +906,7 @@ const SKINS = [
   ["fungal","Fungal-acne safe", p=>(p.tags||[]).includes("Fungal-acne safe")],
   ["nofrag","Fragrance-free", p=>p.fit && p.fit.nofrag ? p.fit.nofrag==="yes" : (!!p.ingredients && !(p.flags||[]).some(f=>f==="fragrance"||f==="eo"))],
   ["noniacin","Niacinamide-free", p=>p.fit && p.fit.noniacin ? p.fit.noniacin==="yes" : (!!p.ingredients && !p.niacinamide)],
+  ["kbeauty","K-beauty", p=>(p.tags||[]).includes("K-beauty")],
   ["preg","Pregnancy-friendly", p=>p.fit && p.fit.preg ? p.fit.preg==="yes" : (!(p.flags||[]).includes("retinoid") && !(p.ing||[]).includes("adapalene"))]
 ];
 const KIND_LABEL = {sa:"Salicylic acid", bp:"Benzoyl peroxide", sulfur:"Sulfur", retinol:"Retinol", retinal:"Retinal", gentle:"", strong:"Strong"};
@@ -913,7 +914,7 @@ let shopStep = "moisturizer", shopSkin = "any";
 try{ const st = JSON.parse(localStorage.getItem("korshop")||"null"); if(st){ if(STEPS.some(s=>s[0]===st.step)) shopStep = st.step; if(SKINS.some(s=>s[0]===st.skin)) shopSkin = st.skin; } }catch(e){}
 chipGroup($("#step-filter"),"shopstep",STEPS.map(([k,l])=>[k,l]),"radio",[shopStep]);
 chipGroup($("#skin-filter"),"shopskin",SKINS.map(([k,l])=>[k,l]),"radio",[shopSkin]);
-$("#skin-filter").insertAdjacentHTML("afterbegin",`<span class="skinlbl">Skin type:</span>`);
+$("#skin-filter").insertAdjacentHTML("afterbegin",`<span class="skinlbl">Filter:</span>`);
 $("#step-filter").addEventListener("change",e=>{shopStep=e.target.value;renderBoard();});
 $("#skin-filter").addEventListener("change",e=>{shopSkin=e.target.value;renderBoard();});
 
