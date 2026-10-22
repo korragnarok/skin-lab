@@ -1022,6 +1022,43 @@ window.PRODUCTS = [
   "note": "Mild: the acids are low on the list. More of a smoothing serum than a strong exfoliant."
  },
  {
+  "name": "DRMTLGY Lactic Acid 12% Refining Serum",
+  "tier": "splurge",
+  "step": "exfoliant",
+  "skin": [
+   "normal",
+   "combination",
+   "oily",
+   "dry"
+  ],
+  "price": 62,
+  "link": "https://link.amazon/B08e8jASA",
+  "ing": [
+   "lactic",
+   "mandelic"
+  ],
+  "flags": [
+   "eo"
+  ],
+  "niacinamide": false,
+  "ingredients": "Water/aqua/eau, Lactic Acid, Neopentyl Glycol Dicaprylate/dicaprate, Glycerin, Caprylic/capric Triglyceride, Hydrogenated Soybean Oil, Apple (pyrus Malus) Fruit Extract, Sodium Hydroxide, Beheneth-5, Polyglyceryl-3 Stearate, Sodium Acrylates Copolymer, Phenoxyethanol, Sclerotium Gum, Hydrogenated Polyisobutene, Gluconolactone, Mandelic Acid, Bisabolol, Tocopheryl Acetate, Hydrogenated Soy Polyglycerides, Sunflower (helianthus Annuus) Seed Oil, Phospholipids, Polyglyceryl-10 Stearate, Nopal Cactus (opuntia Ficus-indica) Extract, Allantoin, Licorice (glycyrrhiza Glabra) Root Extract, Ethylhexylglycerin, Lactobionic Acid, Sodium Hyaluronate Crosspolymer, Disodium EDTA, Brewer's Yeast (saccharomyces Cerevisiae) Extract, Lemongrass (cymbopogon Schoenanthus) Oil, Dipotassium Glycyrrhizate, C15-23 Alkane",
+  "ingSource": "Kourtney",
+  "tags": [
+   "Niacinamide-free"
+  ],
+  "warn": [],
+  "fit": {
+   "oily": "yes",
+   "combination": "yes",
+   "dry": "yes",
+   "sensitive": "no",
+   "fungal": "no",
+   "nofrag": "no",
+   "noniacin": "yes",
+   "preg": "yes"
+  }
+ },
+ {
   "name": "Peach Slices Hypochlorous Acid Spray",
   "tier": "basics",
   "step": "mist",
