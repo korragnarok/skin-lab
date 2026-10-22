@@ -617,6 +617,44 @@ window.PRODUCTS = [
   }
  },
  {
+  "name": "Byoma Brightening Toner",
+  "tier": "basics",
+  "step": "exfoliant",
+  "skin": [
+   "normal",
+   "combination",
+   "oily",
+   "dry",
+   "sensitive"
+  ],
+  "price": 2.83,
+  "link": "https://link.amazon/B0gpy6pQz",
+  "ing": [
+   "lactic",
+   "mandelic"
+  ],
+  "flags": [],
+  "niacinamide": false,
+  "ingredients": "Water, Dipropylene Glycol, Sodium Lactate, Lactic Acid, Glycerin, Diglycerin, 1,2-Hexanediol, Urea, Salix Alba (Willow) Bark Extract, Ceramide NP, Mandelic Acid, Benzoic Acid, Sphingolipids, Sodium Phytate, Betula Alba Juice, Tocopherol, Benzaldehyde, Ethylhexylglycerin, Polyglyceryl-10 Laurate",
+  "ingSource": "Kourtney",
+  "tags": [
+   "Niacinamide-free"
+  ],
+  "warn": [
+   "Sensitive skin: start 2–3 times a week"
+  ],
+  "fit": {
+   "oily": "yes",
+   "combination": "yes",
+   "dry": "yes",
+   "sensitive": "slow",
+   "fungal": "maybe",
+   "nofrag": "maybe",
+   "noniacin": "yes",
+   "preg": "yes"
+  }
+ },
+ {
   "name": "Peach Slices Hypochlorous Acid Spray",
   "tier": "basics",
   "step": "mist",
