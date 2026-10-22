@@ -655,6 +655,43 @@ window.PRODUCTS = [
   }
  },
  {
+  "step": "exfoliant",
+  "flags": [],
+  "ingSource": "Kourtney",
+  "warn": [],
+  "name": "Good Molecules Glycolic Exfoliating Toner",
+  "tier": "basics",
+  "skin": [
+   "normal",
+   "combination",
+   "oily",
+   "dry"
+  ],
+  "price": 3.5,
+  "link": "https://link.amazon/B0cJxnNvD",
+  "ing": [
+   "glycolic",
+   "salicylic",
+   "niacinamide"
+  ],
+  "niacinamide": true,
+  "ingredients": "Water, Dipropylene Glycol, Glycolic Acid, Propanediol, Sodium Citrate, 1,2-Hexanediol, Glycerin, Galactomyces Ferment Filtrate, Butylene Glycol, Salicylic Acid, Pentylene Glycol, Niacinamide, Aloe Barbadensis Leaf Extract, Tricholoma Matsutake Extract, Ethylhexylglycerin, Rhododendron Chrysanthum Leaf Extract, Hydrolyzed Cicer Seed Extract, Trisodium Ethylenediamine Disuccinate, Sodium Hyaluronate, Hydrolyzed Hyaluronic Acid, Hyaluronic Acid",
+  "note": "3.5% glycolic + 0.2% salicylic acid.",
+  "tags": [
+   "Fungal-acne safe"
+  ],
+  "fit": {
+   "oily": "yes",
+   "combination": "yes",
+   "dry": "yes",
+   "sensitive": "no",
+   "fungal": "yes",
+   "nofrag": "yes",
+   "noniacin": "no",
+   "preg": "yes"
+  }
+ },
+ {
   "name": "Good Molecules Mandelic Acid Serum",
   "tier": "upgrade",
   "step": "exfoliant",
@@ -1054,6 +1091,84 @@ window.PRODUCTS = [
    "sensitive": "no",
    "fungal": "no",
    "nofrag": "no",
+   "noniacin": "yes",
+   "preg": "yes"
+  }
+ },
+ {
+  "step": "exfoliant",
+  "flags": [],
+  "ingSource": "Kourtney",
+  "warn": [
+   "Sensitive skin: start 2–3 times a week"
+  ],
+  "name": "CeraVe Renewing Nightly Exfoliating Treatment",
+  "tier": "splurge",
+  "skin": [
+   "normal",
+   "combination",
+   "oily",
+   "dry",
+   "sensitive"
+  ],
+  "price": 14.01,
+  "link": "https://link.amazon/B03tv53p3",
+  "ing": [
+   "glycolic",
+   "lactic",
+   "ceramides"
+  ],
+  "niacinamide": false,
+  "ingredients": "Aqua / Water / Eau, Glycerin, Cetearyl Ethylhexanoate, Cetearyl Alcohol, Dimethicone, Glycolic Acid, Lactic Acid, Sodium Hydroxide, Dipotassium Glycyrrhizate, Polyacrylate Crosspolymer-6, Ceramide NP, Ceramide AP, Ceramide EOP, Carbomer, Cetearyl Glucoside, Behentrimonium Methosulfate, Triethyl Citrate, Sodium Hyaluronate, Sodium Lauroyl Lactylate, Cholesterol, Phenoxyethanol, Phenylethyl Resorcinol, Isopropyl Myristate, Caprylyl Glycol, Citric Acid, Trisodium Ethylenediamine Disuccinate, Xanthan Gum, Phytosphingosine, Benzoic Acid",
+  "note": "A creamy overnight exfoliant with ceramides, so it doubles as a night moisturizer.",
+  "tags": [
+   "Niacinamide-free"
+  ],
+  "fit": {
+   "oily": "yes",
+   "combination": "yes",
+   "dry": "yes",
+   "sensitive": "slow",
+   "fungal": "no",
+   "nofrag": "yes",
+   "noniacin": "yes",
+   "preg": "yes"
+  }
+ },
+ {
+  "step": "exfoliant",
+  "flags": [],
+  "ingSource": "Kourtney",
+  "warn": [
+   "Contains drying alcohol"
+  ],
+  "name": "La Roche-Posay Glycolic B5 10% Serum",
+  "tier": "splurge",
+  "skin": [
+   "normal",
+   "combination",
+   "oily"
+  ],
+  "price": 44.97,
+  "link": "https://link.amazon/B0bpYa4Ty",
+  "ing": [
+   "glycolic",
+   "tranexamic",
+   "panthenol"
+  ],
+  "niacinamide": false,
+  "ingredients": "Aqua / Water, Alcohol Denat., Glycolic Acid, Propylene Glycol, Potassium Hydroxide, Ammonium Polyacryloyldimethyl Taurate, Tranexamic Acid, Kojic Acid, C12-13 Alkyl Lactate, Hydroxyethylcellulose, Trisodium Ethylenediamine Disuccinate, Panthenol, Capryloyl Salicylic Acid, Disodium EDTA",
+  "note": "10% glycolic plus tranexamic and kojic acid for dark spots.",
+  "tags": [
+   "Niacinamide-free"
+  ],
+  "fit": {
+   "oily": "yes",
+   "combination": "yes",
+   "dry": "maybe",
+   "sensitive": "no",
+   "fungal": "maybe",
+   "nofrag": "yes",
    "noniacin": "yes",
    "preg": "yes"
   }
