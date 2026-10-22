@@ -31,7 +31,8 @@ window.PRODUCTS = [
    "combination": "dry",
    "dry": "yes",
    "sensitive": "yes",
-   "fungal": "no"
+   "fungal": "no",
+   "nofrag": "yes"
   },
   "warn": [
    "Combination skin: use on dry areas only"
@@ -71,7 +72,8 @@ window.PRODUCTS = [
    "combination": "no",
    "dry": "yes",
    "sensitive": "yes",
-   "fungal": "no"
+   "fungal": "no",
+   "nofrag": "yes"
   }
  },
  {
@@ -97,7 +99,8 @@ window.PRODUCTS = [
    "combination": "yes",
    "dry": "layer",
    "sensitive": "yes",
-   "fungal": "yes"
+   "fungal": "yes",
+   "nofrag": "yes"
   },
   "warn": [
    "Dry skin: layer a cream on top"
@@ -124,7 +127,8 @@ window.PRODUCTS = [
    "combination": "yes",
    "dry": "layer",
    "sensitive": "yes",
-   "fungal": "no"
+   "fungal": "no",
+   "nofrag": "yes"
   },
   "warn": [
    "Dry skin: layer a cream on top"
@@ -153,7 +157,8 @@ window.PRODUCTS = [
    "combination": "yes",
    "dry": "layer",
    "sensitive": "yes",
-   "fungal": "no"
+   "fungal": "no",
+   "nofrag": "yes"
   },
   "warn": [
    "Dry skin: layer a cream on top"
@@ -183,7 +188,8 @@ window.PRODUCTS = [
    "combination": "yes",
    "dry": "layer",
    "sensitive": "yes",
-   "fungal": "yes"
+   "fungal": "yes",
+   "nofrag": "yes"
   },
   "warn": [
    "Dry skin: layer a cream on top"
@@ -215,7 +221,8 @@ window.PRODUCTS = [
    "combination": "yes",
    "dry": "layer",
    "sensitive": "yes",
-   "fungal": "yes"
+   "fungal": "yes",
+   "nofrag": "yes"
   },
   "warn": [
    "Dry skin: layer a cream on top"
@@ -244,7 +251,8 @@ window.PRODUCTS = [
    "combination": "yes",
    "dry": "layer",
    "sensitive": "yes",
-   "fungal": "no"
+   "fungal": "no",
+   "nofrag": "yes"
   },
   "warn": [
    "Dry skin: layer a cream on top"
@@ -274,7 +282,8 @@ window.PRODUCTS = [
    "combination": "yes",
    "dry": "layer",
    "sensitive": "yes",
-   "fungal": "yes"
+   "fungal": "yes",
+   "nofrag": "yes"
   },
   "warn": [
    "Dry skin: layer a cream on top"
@@ -303,7 +312,8 @@ window.PRODUCTS = [
    "combination": "yes",
    "dry": "layer",
    "sensitive": "yes",
-   "fungal": "maybe"
+   "fungal": "maybe",
+   "nofrag": "yes"
   },
   "warn": [
    "Dry skin: layer a cream on top"
@@ -332,7 +342,8 @@ window.PRODUCTS = [
    "combination": "yes",
    "dry": "yes",
    "sensitive": "yes",
-   "fungal": "no"
+   "fungal": "no",
+   "nofrag": "yes"
   }
  },
  {
@@ -361,7 +372,8 @@ window.PRODUCTS = [
    "combination": "yes",
    "dry": "yes",
    "sensitive": "yes",
-   "fungal": "no"
+   "fungal": "no",
+   "nofrag": "yes"
   }
  },
  {
@@ -388,7 +400,8 @@ window.PRODUCTS = [
    "combination": "yes",
    "dry": "yes",
    "sensitive": "yes",
-   "fungal": "no"
+   "fungal": "no",
+   "nofrag": "yes"
   }
  },
  {
@@ -417,7 +430,8 @@ window.PRODUCTS = [
    "combination": "yes",
    "dry": "yes",
    "sensitive": "yes",
-   "fungal": "yes"
+   "fungal": "yes",
+   "nofrag": "yes"
   }
  },
  {
@@ -443,7 +457,8 @@ window.PRODUCTS = [
    "combination": "dry",
    "dry": "yes",
    "sensitive": "yes",
-   "fungal": "no"
+   "fungal": "no",
+   "nofrag": "yes"
   },
   "warn": [
    "Combination skin: use on dry areas only"
@@ -485,7 +500,8 @@ window.PRODUCTS = [
    "combination": "dry",
    "dry": "yes",
    "sensitive": "yes",
-   "fungal": "no"
+   "fungal": "no",
+   "nofrag": "yes"
   }
  },
  {
@@ -515,7 +531,8 @@ window.PRODUCTS = [
    "combination": "yes",
    "dry": "yes",
    "sensitive": "no",
-   "fungal": "maybe"
+   "fungal": "maybe",
+   "nofrag": "maybe"
   }
  },
  {
@@ -542,7 +559,8 @@ window.PRODUCTS = [
    "combination": "yes",
    "dry": "yes",
    "sensitive": "yes",
-   "fungal": "yes"
+   "fungal": "yes",
+   "nofrag": "yes"
   }
  },
  {
@@ -567,7 +585,8 @@ window.PRODUCTS = [
    "combination": "yes",
    "dry": "maybe",
    "sensitive": "yes",
-   "fungal": "maybe"
+   "fungal": "maybe",
+   "nofrag": "yes"
   }
  },
  {
@@ -595,7 +614,8 @@ window.PRODUCTS = [
    "combination": "yes",
    "dry": "yes",
    "sensitive": "yes",
-   "fungal": "yes"
+   "fungal": "yes",
+   "nofrag": "yes"
   }
  },
  {
@@ -620,7 +640,8 @@ window.PRODUCTS = [
    "combination": "yes",
    "dry": "maybe",
    "sensitive": "yes",
-   "fungal": "maybe"
+   "fungal": "maybe",
+   "nofrag": "yes"
   }
  },
  {
@@ -645,7 +666,8 @@ window.PRODUCTS = [
    "combination": "yes",
    "dry": "yes",
    "sensitive": "yes",
-   "fungal": "maybe"
+   "fungal": "maybe",
+   "nofrag": "yes"
   }
  },
  {
@@ -671,7 +693,8 @@ window.PRODUCTS = [
    "combination": "yes",
    "dry": "yes",
    "sensitive": "yes",
-   "fungal": "maybe"
+   "fungal": "maybe",
+   "nofrag": "yes"
   }
  },
  {
@@ -699,7 +722,8 @@ window.PRODUCTS = [
    "combination": "yes",
    "dry": "yes",
    "sensitive": "yes",
-   "fungal": "maybe"
+   "fungal": "maybe",
+   "nofrag": "yes"
   }
  },
  {
@@ -731,7 +755,8 @@ window.PRODUCTS = [
    "combination": "yes",
    "dry": "no",
    "sensitive": "maybe",
-   "fungal": "maybe"
+   "fungal": "maybe",
+   "nofrag": "yes"
   }
  },
  {
@@ -763,7 +788,8 @@ window.PRODUCTS = [
    "combination": "yes",
    "dry": "no",
    "sensitive": "maybe",
-   "fungal": "yes"
+   "fungal": "yes",
+   "nofrag": "yes"
   }
  },
  {
@@ -792,7 +818,8 @@ window.PRODUCTS = [
    "combination": "yes",
    "dry": "maybe",
    "sensitive": "slow",
-   "fungal": "maybe"
+   "fungal": "maybe",
+   "nofrag": "yes"
   },
   "warn": [
    "Sensitive skin: start 2–3 times a week"
@@ -824,7 +851,8 @@ window.PRODUCTS = [
    "combination": "yes",
    "dry": "maybe",
    "sensitive": "slow",
-   "fungal": "maybe"
+   "fungal": "maybe",
+   "nofrag": "yes"
   },
   "warn": [
    "Sensitive skin: start 2–3 times a week"
@@ -856,7 +884,8 @@ window.PRODUCTS = [
    "combination": "yes",
    "dry": "maybe",
    "sensitive": "slow",
-   "fungal": "maybe"
+   "fungal": "maybe",
+   "nofrag": "yes"
   },
   "warn": [
    "Sensitive skin: start 2–3 times a week"
@@ -888,7 +917,8 @@ window.PRODUCTS = [
    "combination": "yes",
    "dry": "no",
    "sensitive": "no",
-   "fungal": "maybe"
+   "fungal": "maybe",
+   "nofrag": "yes"
   }
  },
  {
@@ -917,7 +947,8 @@ window.PRODUCTS = [
    "combination": "yes",
    "dry": "no",
    "sensitive": "maybe",
-   "fungal": "yes"
+   "fungal": "yes",
+   "nofrag": "yes"
   }
  },
  {
@@ -951,7 +982,8 @@ window.PRODUCTS = [
    "combination": "yes",
    "dry": "maybe",
    "sensitive": "yes",
-   "fungal": "helps"
+   "fungal": "helps",
+   "nofrag": "yes"
   }
  },
  {
@@ -984,7 +1016,8 @@ window.PRODUCTS = [
    "combination": "yes",
    "dry": "maybe",
    "sensitive": "yes",
-   "fungal": "helps"
+   "fungal": "helps",
+   "nofrag": "yes"
   }
  },
  {
@@ -1010,7 +1043,8 @@ window.PRODUCTS = [
    "combination": "yes",
    "dry": "yes",
    "sensitive": "yes",
-   "fungal": "yes"
+   "fungal": "yes",
+   "nofrag": "yes"
   }
  },
  {
@@ -1036,7 +1070,8 @@ window.PRODUCTS = [
    "combination": "yes",
    "dry": "yes",
    "sensitive": "yes",
-   "fungal": "yes"
+   "fungal": "yes",
+   "nofrag": "yes"
   }
  },
  {
@@ -1061,7 +1096,8 @@ window.PRODUCTS = [
    "combination": "yes",
    "dry": "yes",
    "sensitive": "yes",
-   "fungal": "no"
+   "fungal": "no",
+   "nofrag": "yes"
   }
  },
  {
@@ -1086,7 +1122,8 @@ window.PRODUCTS = [
    "combination": "yes",
    "dry": "yes",
    "sensitive": "yes",
-   "fungal": "no"
+   "fungal": "no",
+   "nofrag": "yes"
   }
  },
  {
@@ -1118,7 +1155,8 @@ window.PRODUCTS = [
    "combination": "yes",
    "dry": "yes",
    "sensitive": "maybe",
-   "fungal": "no"
+   "fungal": "no",
+   "nofrag": "no"
   }
  },
  {
@@ -1143,7 +1181,8 @@ window.PRODUCTS = [
    "combination": "yes",
    "dry": "yes",
    "sensitive": "yes",
-   "fungal": "no"
+   "fungal": "no",
+   "nofrag": "yes"
   }
  },
  {
@@ -1173,7 +1212,8 @@ window.PRODUCTS = [
    "combination": "yes",
    "dry": "yes",
    "sensitive": "maybe",
-   "fungal": "no"
+   "fungal": "no",
+   "nofrag": "no"
   }
  },
  {
@@ -1198,7 +1238,8 @@ window.PRODUCTS = [
    "combination": "yes",
    "dry": "yes",
    "sensitive": "yes",
-   "fungal": "no"
+   "fungal": "no",
+   "nofrag": "maybe"
   }
  },
  {
@@ -1234,7 +1275,8 @@ window.PRODUCTS = [
    "combination": "yes",
    "dry": "yes",
    "sensitive": "slow",
-   "fungal": "yes"
+   "fungal": "yes",
+   "nofrag": "yes"
   }
  },
  {
@@ -1270,7 +1312,8 @@ window.PRODUCTS = [
    "combination": "yes",
    "dry": "yes",
    "sensitive": "slow",
-   "fungal": "yes"
+   "fungal": "yes",
+   "nofrag": "yes"
   }
  },
  {
@@ -1305,7 +1348,8 @@ window.PRODUCTS = [
    "combination": "yes",
    "dry": "maybe",
    "sensitive": "no",
-   "fungal": "no"
+   "fungal": "no",
+   "nofrag": "yes"
   }
  },
  {
@@ -1334,7 +1378,8 @@ window.PRODUCTS = [
    "combination": "yes",
    "dry": "yes",
    "sensitive": "yes",
-   "fungal": "no"
+   "fungal": "no",
+   "nofrag": "yes"
   }
  },
  {
@@ -1362,7 +1407,8 @@ window.PRODUCTS = [
    "combination": "yes",
    "dry": "yes",
    "sensitive": "yes",
-   "fungal": "no"
+   "fungal": "no",
+   "nofrag": "yes"
   }
  },
  {
@@ -1391,7 +1437,8 @@ window.PRODUCTS = [
    "combination": "yes",
    "dry": "yes",
    "sensitive": "yes",
-   "fungal": "no"
+   "fungal": "no",
+   "nofrag": "yes"
   }
  },
  {
@@ -1419,7 +1466,8 @@ window.PRODUCTS = [
    "combination": "yes",
    "dry": "yes",
    "sensitive": "yes",
-   "fungal": "yes"
+   "fungal": "yes",
+   "nofrag": "yes"
   }
  },
  {
@@ -1447,7 +1495,8 @@ window.PRODUCTS = [
    "combination": "yes",
    "dry": "yes",
    "sensitive": "yes",
-   "fungal": "yes"
+   "fungal": "yes",
+   "nofrag": "yes"
   }
  },
  {
@@ -1480,7 +1529,8 @@ window.PRODUCTS = [
    "combination": "yes",
    "dry": "yes",
    "sensitive": "slow",
-   "fungal": "no"
+   "fungal": "no",
+   "nofrag": "yes"
   }
  },
  {
@@ -1513,7 +1563,8 @@ window.PRODUCTS = [
    "combination": "yes",
    "dry": "yes",
    "sensitive": "slow",
-   "fungal": "no"
+   "fungal": "no",
+   "nofrag": "yes"
   }
  },
  {
@@ -1546,7 +1597,8 @@ window.PRODUCTS = [
    "combination": "yes",
    "dry": "yes",
    "sensitive": "slow",
-   "fungal": "no"
+   "fungal": "no",
+   "nofrag": "yes"
   }
  },
  {
@@ -1579,7 +1631,8 @@ window.PRODUCTS = [
    "combination": "yes",
    "dry": "yes",
    "sensitive": "slow",
-   "fungal": "no"
+   "fungal": "no",
+   "nofrag": "yes"
   }
  },
  {
@@ -1612,7 +1665,8 @@ window.PRODUCTS = [
    "combination": "yes",
    "dry": "yes",
    "sensitive": "slow",
-   "fungal": "no"
+   "fungal": "no",
+   "nofrag": "yes"
   }
  },
  {
@@ -1651,7 +1705,8 @@ window.PRODUCTS = [
    "combination": "no",
    "dry": "yes",
    "sensitive": "slow",
-   "fungal": "no"
+   "fungal": "no",
+   "nofrag": "yes"
   }
  },
  {
@@ -1685,7 +1740,8 @@ window.PRODUCTS = [
    "combination": "yes",
    "dry": "yes",
    "sensitive": "slow",
-   "fungal": "no"
+   "fungal": "no",
+   "nofrag": "yes"
   }
  },
  {
@@ -1719,7 +1775,8 @@ window.PRODUCTS = [
    "combination": "yes",
    "dry": "yes",
    "sensitive": "slow",
-   "fungal": "no"
+   "fungal": "no",
+   "nofrag": "yes"
   }
  },
  {
@@ -1752,7 +1809,8 @@ window.PRODUCTS = [
    "combination": "yes",
    "dry": "yes",
    "sensitive": "slow",
-   "fungal": "no"
+   "fungal": "no",
+   "nofrag": "yes"
   }
  },
  {
@@ -1785,7 +1843,8 @@ window.PRODUCTS = [
    "combination": "yes",
    "dry": "yes",
    "sensitive": "slow",
-   "fungal": "no"
+   "fungal": "no",
+   "nofrag": "yes"
   }
  },
  {
@@ -1814,7 +1873,8 @@ window.PRODUCTS = [
    "combination": "yes",
    "dry": "yes",
    "sensitive": "yes",
-   "fungal": "no"
+   "fungal": "no",
+   "nofrag": "yes"
   }
  },
  {
@@ -1843,7 +1903,8 @@ window.PRODUCTS = [
    "combination": "yes",
    "dry": "yes",
    "sensitive": "yes",
-   "fungal": "no"
+   "fungal": "no",
+   "nofrag": "yes"
   }
  },
  {
@@ -1877,7 +1938,8 @@ window.PRODUCTS = [
    "combination": "yes",
    "dry": "maybe",
    "sensitive": "yes",
-   "fungal": "no"
+   "fungal": "no",
+   "nofrag": "yes"
   }
  },
  {
@@ -1910,7 +1972,8 @@ window.PRODUCTS = [
    "combination": "yes",
    "dry": "yes",
    "sensitive": "yes",
-   "fungal": "no"
+   "fungal": "no",
+   "nofrag": "yes"
   }
  },
  {
@@ -1944,7 +2007,8 @@ window.PRODUCTS = [
    "combination": "yes",
    "dry": "yes",
    "sensitive": "no",
-   "fungal": "no"
+   "fungal": "no",
+   "nofrag": "no"
   }
  },
  {
@@ -1973,7 +2037,8 @@ window.PRODUCTS = [
    "combination": "yes",
    "dry": "yes",
    "sensitive": "yes",
-   "fungal": "no"
+   "fungal": "no",
+   "nofrag": "yes"
   }
  },
  {
@@ -2003,7 +2068,8 @@ window.PRODUCTS = [
    "combination": "yes",
    "dry": "yes",
    "sensitive": "yes",
-   "fungal": "no"
+   "fungal": "no",
+   "nofrag": "yes"
   }
  },
  {
@@ -2039,7 +2105,8 @@ window.PRODUCTS = [
    "combination": "dry",
    "dry": "yes",
    "sensitive": "yes",
-   "fungal": "no"
+   "fungal": "no",
+   "nofrag": "yes"
   }
  },
  {
@@ -2066,7 +2133,8 @@ window.PRODUCTS = [
    "combination": "yes",
    "dry": "yes",
    "sensitive": "yes",
-   "fungal": "yes"
+   "fungal": "yes",
+   "nofrag": "yes"
   }
  },
  {
@@ -2094,7 +2162,8 @@ window.PRODUCTS = [
    "combination": "yes",
    "dry": "yes",
    "sensitive": "yes",
-   "fungal": "yes"
+   "fungal": "yes",
+   "nofrag": "yes"
   }
  },
  {
@@ -2123,7 +2192,8 @@ window.PRODUCTS = [
    "combination": "yes",
    "dry": "yes",
    "sensitive": "yes",
-   "fungal": "no"
+   "fungal": "no",
+   "nofrag": "yes"
   }
  },
  {
@@ -2150,7 +2220,8 @@ window.PRODUCTS = [
    "combination": "yes",
    "dry": "yes",
    "sensitive": "slow",
-   "fungal": "yes"
+   "fungal": "yes",
+   "nofrag": "yes"
   },
   "warn": [
    "Sensitive skin: start 2–3 times a week"
@@ -2178,7 +2249,8 @@ window.PRODUCTS = [
    "combination": "yes",
    "dry": "yes",
    "sensitive": "yes",
-   "fungal": "no"
+   "fungal": "no",
+   "nofrag": "yes"
   }
  },
  {
@@ -2211,7 +2283,8 @@ window.PRODUCTS = [
    "combination": "yes",
    "dry": "yes",
    "sensitive": "yes",
-   "fungal": "no"
+   "fungal": "no",
+   "nofrag": "yes"
   }
  },
  {
@@ -2241,7 +2314,8 @@ window.PRODUCTS = [
    "combination": "yes",
    "dry": "yes",
    "sensitive": "yes",
-   "fungal": "no"
+   "fungal": "no",
+   "nofrag": "yes"
   }
  },
  {
@@ -2271,7 +2345,8 @@ window.PRODUCTS = [
    "combination": "yes",
    "dry": "yes",
    "sensitive": "no",
-   "fungal": "no"
+   "fungal": "no",
+   "nofrag": "no"
   }
  },
  {
@@ -2302,7 +2377,8 @@ window.PRODUCTS = [
    "combination": "yes",
    "dry": "yes",
    "sensitive": "yes",
-   "fungal": "no"
+   "fungal": "no",
+   "nofrag": "yes"
   }
  },
  {
@@ -2334,7 +2410,8 @@ window.PRODUCTS = [
    "combination": "yes",
    "dry": "yes",
    "sensitive": "yes",
-   "fungal": "yes"
+   "fungal": "yes",
+   "nofrag": "yes"
   }
  },
  {
@@ -2365,7 +2442,8 @@ window.PRODUCTS = [
    "combination": "yes",
    "dry": "yes",
    "sensitive": "yes",
-   "fungal": "no"
+   "fungal": "no",
+   "nofrag": "yes"
   }
  },
  {
@@ -2398,7 +2476,8 @@ window.PRODUCTS = [
    "combination": "yes",
    "dry": "yes",
    "sensitive": "no",
-   "fungal": "no"
+   "fungal": "no",
+   "nofrag": "no"
   }
  },
  {
@@ -2429,7 +2508,8 @@ window.PRODUCTS = [
    "combination": "yes",
    "dry": "yes",
    "sensitive": "yes",
-   "fungal": "no"
+   "fungal": "no",
+   "nofrag": "yes"
   }
  },
  {
@@ -2457,7 +2537,8 @@ window.PRODUCTS = [
    "combination": "yes",
    "dry": "yes",
    "sensitive": "no",
-   "fungal": "yes"
+   "fungal": "yes",
+   "nofrag": "yes"
   }
  },
  {
@@ -2493,7 +2574,8 @@ window.PRODUCTS = [
    "combination": "yes",
    "dry": "yes",
    "sensitive": "slow",
-   "fungal": "no"
+   "fungal": "no",
+   "nofrag": "yes"
   }
  },
  {
@@ -2532,7 +2614,8 @@ window.PRODUCTS = [
    "combination": "dry",
    "dry": "yes",
    "sensitive": "slow",
-   "fungal": "no"
+   "fungal": "no",
+   "nofrag": "yes"
   }
  },
  {
@@ -2571,7 +2654,8 @@ window.PRODUCTS = [
    "combination": "dry",
    "dry": "yes",
    "sensitive": "slow",
-   "fungal": "no"
+   "fungal": "no",
+   "nofrag": "yes"
   }
  },
  {
@@ -2608,7 +2692,8 @@ window.PRODUCTS = [
    "combination": "yes",
    "dry": "maybe",
    "sensitive": "no",
-   "fungal": "no"
+   "fungal": "no",
+   "nofrag": "no"
   }
  },
  {
@@ -2641,7 +2726,8 @@ window.PRODUCTS = [
    "combination": "yes",
    "dry": "yes",
    "sensitive": "slow",
-   "fungal": "no"
+   "fungal": "no",
+   "nofrag": "yes"
   }
  },
  {
@@ -2674,7 +2760,8 @@ window.PRODUCTS = [
    "combination": "yes",
    "dry": "yes",
    "sensitive": "slow",
-   "fungal": "no"
+   "fungal": "no",
+   "nofrag": "yes"
   }
  },
  {
@@ -2705,7 +2792,8 @@ window.PRODUCTS = [
    "combination": "yes",
    "dry": "yes",
    "sensitive": "slow",
-   "fungal": "no"
+   "fungal": "no",
+   "nofrag": "yes"
   }
  },
  {
@@ -2736,7 +2824,8 @@ window.PRODUCTS = [
    "combination": "yes",
    "dry": "yes",
    "sensitive": "maybe",
-   "fungal": "no"
+   "fungal": "no",
+   "nofrag": "no"
   }
  },
  {
@@ -2773,7 +2862,8 @@ window.PRODUCTS = [
    "combination": "dry",
    "dry": "yes",
    "sensitive": "yes",
-   "fungal": "no"
+   "fungal": "no",
+   "nofrag": "yes"
   }
  },
  {
@@ -2799,7 +2889,8 @@ window.PRODUCTS = [
    "combination": "yes",
    "dry": "yes",
    "sensitive": "yes",
-   "fungal": "maybe"
+   "fungal": "maybe",
+   "nofrag": "yes"
   }
  },
  {
@@ -2828,7 +2919,8 @@ window.PRODUCTS = [
    "combination": "yes",
    "dry": "yes",
    "sensitive": "no",
-   "fungal": "no"
+   "fungal": "no",
+   "nofrag": "no"
   }
  },
  {
@@ -2861,7 +2953,8 @@ window.PRODUCTS = [
    "combination": "yes",
    "dry": "yes",
    "sensitive": "no",
-   "fungal": "maybe"
+   "fungal": "maybe",
+   "nofrag": "no"
   }
  },
  {
@@ -2898,7 +2991,8 @@ window.PRODUCTS = [
    "combination": "dry",
    "dry": "yes",
    "sensitive": "no",
-   "fungal": "no"
+   "fungal": "no",
+   "nofrag": "no"
   }
  },
  {
@@ -2925,7 +3019,8 @@ window.PRODUCTS = [
    "combination": "yes",
    "dry": "yes",
    "sensitive": "yes",
-   "fungal": "no"
+   "fungal": "no",
+   "nofrag": "yes"
   }
  },
  {
@@ -2955,7 +3050,8 @@ window.PRODUCTS = [
    "combination": "yes",
    "dry": "yes",
    "sensitive": "yes",
-   "fungal": "no"
+   "fungal": "no",
+   "nofrag": "yes"
   }
  },
  {
@@ -2989,7 +3085,8 @@ window.PRODUCTS = [
    "combination": "yes",
    "dry": "yes",
    "sensitive": "yes",
-   "fungal": "no"
+   "fungal": "no",
+   "nofrag": "yes"
   }
  },
  {
@@ -3018,7 +3115,8 @@ window.PRODUCTS = [
    "combination": "yes",
    "dry": "yes",
    "sensitive": "yes",
-   "fungal": "no"
+   "fungal": "no",
+   "nofrag": "yes"
   }
  },
  {
@@ -3054,7 +3152,8 @@ window.PRODUCTS = [
    "combination": "yes",
    "dry": "yes",
    "sensitive": "no",
-   "fungal": "no"
+   "fungal": "no",
+   "nofrag": "no"
   }
  },
  {
@@ -3084,7 +3183,8 @@ window.PRODUCTS = [
    "combination": "yes",
    "dry": "yes",
    "sensitive": "slow",
-   "fungal": "yes"
+   "fungal": "yes",
+   "nofrag": "yes"
   },
   "warn": [
    "Sensitive skin: start 2–3 times a week"
@@ -3127,7 +3227,8 @@ window.PRODUCTS = [
    "combination": "dry",
    "dry": "yes",
    "sensitive": "slow",
-   "fungal": "no"
+   "fungal": "no",
+   "nofrag": "yes"
   }
  },
  {
@@ -3159,7 +3260,8 @@ window.PRODUCTS = [
    "combination": "yes",
    "dry": "yes",
    "sensitive": "no",
-   "fungal": "no"
+   "fungal": "no",
+   "nofrag": "no"
   }
  },
  {
@@ -3196,7 +3298,8 @@ window.PRODUCTS = [
    "combination": "dry",
    "dry": "yes",
    "sensitive": "slow",
-   "fungal": "no"
+   "fungal": "no",
+   "nofrag": "yes"
   }
  },
  {
@@ -3225,7 +3328,8 @@ window.PRODUCTS = [
    "combination": "yes",
    "dry": "yes",
    "sensitive": "yes",
-   "fungal": "yes"
+   "fungal": "yes",
+   "nofrag": "yes"
   }
  },
  {
@@ -3249,7 +3353,8 @@ window.PRODUCTS = [
    "combination": "yes",
    "dry": "yes",
    "sensitive": "yes",
-   "fungal": "no"
+   "fungal": "no",
+   "nofrag": "maybe"
   }
  },
  {
@@ -3277,7 +3382,8 @@ window.PRODUCTS = [
    "combination": "yes",
    "dry": "yes",
    "sensitive": "yes",
-   "fungal": "yes"
+   "fungal": "yes",
+   "nofrag": "yes"
   }
  },
  {
@@ -3305,7 +3411,8 @@ window.PRODUCTS = [
    "combination": "yes",
    "dry": "yes",
    "sensitive": "yes",
-   "fungal": "yes"
+   "fungal": "yes",
+   "nofrag": "yes"
   }
  },
  {
@@ -3336,7 +3443,8 @@ window.PRODUCTS = [
    "combination": "yes",
    "dry": "yes",
    "sensitive": "yes",
-   "fungal": "no"
+   "fungal": "no",
+   "nofrag": "yes"
   }
  }
 ];

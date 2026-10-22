@@ -904,7 +904,7 @@ const SKINS = [
   ["dry","Dry", p=>p.fit ? p.fit.dry!=="no" : fitsSkin(p,["dry"])],
   ["sensitive","Sensitive or red", p=>p.fit ? p.fit.sensitive!=="no" : (fitsSkin(p,["sensitive","redness"]) && !(p.flags||[]).some(f=>f==="fragrance"||f==="eo"))],
   ["fungal","Fungal-acne safe", p=>(p.tags||[]).includes("Fungal-acne safe")],
-  ["nofrag","Fragrance-free", p=>!!p.ingredients && !(p.flags||[]).some(f=>f==="fragrance"||f==="eo")],
+  ["nofrag","Fragrance-free", p=>p.fit && p.fit.nofrag ? p.fit.nofrag==="yes" : (!!p.ingredients && !(p.flags||[]).some(f=>f==="fragrance"||f==="eo"))],
   ["noniacin","Niacinamide-free", p=>!!p.ingredients && !p.niacinamide],
   ["preg","Pregnancy-friendly", p=>!(p.flags||[]).includes("retinoid") && !(p.ing||[]).includes("adapalene")]
 ];
