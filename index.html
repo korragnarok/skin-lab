@@ -295,6 +295,32 @@ ol.steps li::before{font-family:var(--display);font-size:1.5rem}
 .leftcol{min-width:0}
 #qnotes .notes{margin-top:1.2rem}
 #qnotes .note{grid-template-columns:1fr;gap:.15rem}
+.savebar{display:flex;flex-wrap:wrap;align-items:center;gap:.6rem;margin:-.2rem 0 1rem}
+.savebtn{font:inherit;font-size:.95rem;color:var(--fg);background:var(--surface);border:var(--pen);border-radius:var(--sketch);padding:.35rem .9rem;cursor:pointer;box-shadow:2px 2px 0 rgba(43,33,27,.18)}
+.savebtn:hover{background:var(--accent-soft)}
+.savemsg{font-size:.9rem;color:var(--good)}
+.printhead{display:none}
+@media print{
+  @page{margin:12mm}
+  body{background:#fff!important;padding:0!important;font-size:12pt}
+  nav.top,footer,#shop,#ingredients,#concerns,#mix,#barrier,#learn,.hero>.eyebrow,.hero h1,.hero .lede,#quiz,.savebar,.swap,.swaplbl,.colmore,select,.tape,.quiz::before,.week::before{display:none!important}
+  section{border:0!important;padding:0!important}
+  .printhead{display:block;margin:0 0 8pt;font-size:10pt;color:#555}
+  .builder{display:flex!important;flex-direction:column!important;margin:0!important;gap:8pt!important}
+  .result{order:1}
+  .leftcol{order:2}
+  #result .ampm{display:grid!important;grid-template-columns:1fr 1fr!important;gap:10pt!important}
+  #result .ampm .col{max-height:none!important;overflow:visible!important;box-shadow:none!important;transform:none!important}
+  #result .result-top{transform:none!important}
+  .shop{display:block!important;border:1px solid #999!important;break-inside:avoid;padding:4pt 6pt!important;max-width:none!important}
+  .shop img,.shop .tierdot{display:none!important}
+  .shop b,.shop small{display:block!important}
+  .shop::after{content:attr(href);display:block;font-size:8pt;color:#555}
+  .step-why{font-size:9.5pt}
+  #qnotes .notes{margin-top:10pt}
+  .note{break-inside:avoid}
+  .week{break-inside:avoid;box-shadow:none!important}
+}
 .colmore{position:sticky;bottom:-1.1rem;margin:0 -1.1rem -1.1rem;padding:.6rem 1.1rem .5rem;text-align:center;font-size:.85rem;color:var(--muted);background:linear-gradient(transparent,var(--surface) 45%)}
 .bsubmit{align-self:flex-start;font:inherit;font-size:1.1rem;color:var(--surface);background:var(--accent);border:var(--pen);border-radius:var(--sketch);padding:.5rem 1.1rem;cursor:pointer;box-shadow:2px 3px 0 rgba(43,33,27,.25)}
 .bsubmit:hover{background:var(--fg)}
@@ -342,6 +368,7 @@ ol.steps li::before{font-family:var(--display);font-size:1.5rem}
 
 <main class="wrap">
 <section class="hero" id="builder">
+  <div class="printhead">The House of Kor Skin Lab · skin.take24.co · My routine</div>
   <span class="eyebrow">The House of Kor · Skin Lab</span>
   <h1>Build a routine that fits <em>your</em> skin.</h1>
   <p class="lede">Answer six questions and get a morning and night routine built from products I actually recommend, the order to layer them in, and a weekly schedule for your actives. Tap any ingredient to learn what it does.</p>
@@ -655,6 +682,7 @@ const pick = (step, opts={}) => ranked(step, opts)[0] || null;
 
 /* The visitor's own swaps in the routine builder, remembered per step. */
 let SWAPS = (()=>{ try{ return JSON.parse(localStorage.getItem("korswaps")||"{}") || {}; }catch(e){ return {}; } })();
+try{ const r=new URLSearchParams(location.search).get("r"); if(r){ const j=JSON.parse(decodeURIComponent(escape(atob(r.replace(/-/g,"+").replace(/_/g,"/"))))); if(j && j.s) SWAPS = Object.assign({}, SWAPS, j.s); } }catch(e){}
 let KONLY = false;
 const isK = p => (p.tags||[]).includes("K-beauty");
 function choose(step, opts={}){
@@ -691,7 +719,9 @@ function chipGroup(el, name, opts, type, checked){
 
 /* ---------- quiz ---------- */
 const saved = (()=>{try{return JSON.parse(localStorage.getItem("korskin")||"null")}catch(e){return null}})();
-const start = Object.assign({type:"combination", concerns:["acne","darkspots"], level:"new", size:"full", budget:"basics", preg:false}, saved||{});
+const shared = (()=>{ try{ const r=new URLSearchParams(location.search).get("r"); if(!r) return null;
+  const j=JSON.parse(decodeURIComponent(escape(atob(r.replace(/-/g,"+").replace(/_/g,"/"))))); return j && j.a ? j : null; }catch(e){ return null; } })();
+const start = Object.assign({type:"combination", concerns:["acne","darkspots"], level:"new", size:"full", budget:"basics", preg:false}, (shared && shared.a) || saved || {});
 chipGroup($("#q-budget"),"budget",TIERS,"radio",[start.budget]);
 
 chipGroup($("#q-type"),"type",TYPES,"radio",[start.type]);
@@ -907,6 +937,7 @@ function render(){
   const short = {ret: r.ret ? (r.ret==="bakuchiol"?"Bakuchiol":"Retinoid") : "", exf:"Exfoliate", rec:"Recovery"};
   $("#result").innerHTML = `
     <div class="result-top"><h3>Your routine</h3><span class="tagline">${esc(r.headline)}</span></div>
+    <div class="savebar"><button type="button" class="savebtn" data-save="pdf">Save as PDF</button><button type="button" class="savebtn" data-save="link">Copy link to my routine</button><span class="savemsg" aria-live="polite"></span></div>
     <div class="ampm">
       <div class="col"><h4><span class="dot"></span>Morning</h4>${renderSteps(r.am)}</div>
       <div class="col pm"><h4><span class="dot"></span>Night</h4>${renderSteps(r.pm)}</div>
@@ -1124,6 +1155,27 @@ function renderMix(){
 $("#mix-a").addEventListener("change",renderMix); $("#mix-b").addEventListener("change",renderMix);
 
 render(); renderBoard(); renderShelf(); renderMix();
+
+/* ---------- save / share the routine ---------- */
+function routineLink(){
+  const a = answers();
+  const keys = [...document.querySelectorAll("#result [data-swap]")].map(s=>s.dataset.swap);
+  const s = {}; keys.forEach(k=>{ if(SWAPS[k]) s[k]=SWAPS[k]; });
+  const b64 = btoa(unescape(encodeURIComponent(JSON.stringify({a, s})))).replace(/\+/g,"-").replace(/\//g,"_").replace(/=+$/,"");
+  return location.origin + location.pathname + "?r=" + b64 + "#builder";
+}
+document.addEventListener("click", async e=>{
+  const b = e.target.closest("[data-save]"); if(!b) return;
+  const msg = b.parentElement.querySelector(".savemsg");
+  if(b.dataset.save==="pdf"){ window.print(); return; }
+  const url = routineLink();
+  try{
+    if(navigator.share && matchMedia("(pointer:coarse)").matches){ await navigator.share({title:"My skincare routine", url}); msg.textContent=""; return; }
+    await navigator.clipboard.writeText(url); msg.textContent = "Link copied. Open it anytime to see this routine.";
+  }catch(err){ if(err && err.name==="AbortError") return; window.prompt("Copy your routine link:", url); }
+});
+addEventListener("beforeprint", ()=>{ document.querySelectorAll("#result .ampm .col").forEach(c=>{ c.dataset.mh=c.style.maxHeight; c.style.maxHeight="none"; }); });
+addEventListener("afterprint", ()=>fitCols());
 
 /* ---------- builder: keep AM/PM boxes level with the quiz ---------- */
 function fitCols(){
