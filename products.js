@@ -381,7 +381,8 @@ window.PRODUCTS = [
   "warn": [
    "Not for acne-prone skin",
    "Combination skin: use on dry areas only"
-  ]
+  ],
+  "img": "img/prequel-barrier-therapy-moisturizer.webp"
  },
  {
   "name": "Vanicream Daily Facial Moisturizer",
