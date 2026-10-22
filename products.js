@@ -593,7 +593,7 @@ window.PRODUCTS = [
    "oily"
   ],
   "price": 1.67,
-  "link": "https://amzn.to/4BiTOJd",
+  "link": "https://link.amazon/B05wlgc9n",
   "ing": [
    "glycolic"
   ],
