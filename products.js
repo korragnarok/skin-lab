@@ -3028,6 +3028,39 @@ window.PRODUCTS = [
   }
  },
  {
+  "name": "Banila Co Clean It Zero Cleansing Balm",
+  "tier": "upgrade",
+  "step": "remover",
+  "skin": [
+   "all"
+  ],
+  "price": 4.77,
+  "link": "https://link.amazon/B0aCLn3HZ",
+  "tags": [
+   "Niacinamide-free",
+   "K-beauty"
+  ],
+  "ingredients": "Ethylhexyl Palmitate, Cetyl Ethylhexanoate, PEG-20 Glyceryl Triisostearate, PEG-10 Isostearate, Synthetic Wax, Onsen-Sui, Phenoxyethanol, Butylene Glycol, Lithospermum Erythrorhizon Root Extract, Tocopheryl Acetate, Fragrance, Ethylhexylglycerin, Water, 1,2-Hexanediol, Bambusa Vulgaris Leaf/Stem Extract, Aspalathus Linearis Extract, Angelica Archangelica Root Extract, Malpighia Glabra (Acerola) Fruit Extract, Polydiethyleneglycol Adipate/IPDI Copolymer, Acrylates/Ammonium Methacrylate Copolymer, Acrylates/Methoxy PEG-15 Methacrylate Copolymer",
+  "ingSource": "Kourtney",
+  "flags": [
+   "fragrance"
+  ],
+  "niacinamide": false,
+  "warn": [
+   "Contains fragrance"
+  ],
+  "fit": {
+   "oily": "yes",
+   "combination": "yes",
+   "dry": "yes",
+   "sensitive": "maybe",
+   "fungal": "no",
+   "nofrag": "no",
+   "noniacin": "yes",
+   "preg": "yes"
+  }
+ },
+ {
   "name": "Tatcha The Camellia Cleansing Oil",
   "tier": "splurge",
   "step": "remover",
