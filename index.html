@@ -883,8 +883,9 @@ function buildRoutine(a){
         avoid: a.level==="new" ? (p=>/0\.5|0\.3/.test(p.name)) : null})
     : null;
   const hasIng = (p,ids) => !!p && (p.ing||[]).some(x=>ids.includes(x));
-  const gentleExf = exf==="lactic"||exf==="mandelic" ? P("exfoliant",{skin:[], prefer:p=>hasIng(p,[exf]), avoid:p=>!hasIng(p,["lactic","mandelic"])}) : null;
-  const exfProd = exf==="salicylic" ? P("cleanser",{kind:"sa"}) : exf==="glycolic" ? P("exfoliant",{skin:[], prefer:p=>hasIng(p,["glycolic"])}) : (gentleExf && hasIng(gentleExf.prod,["lactic","mandelic"])) ? gentleExf : null;
+  const isGentle = p => !!p && (hasIng(p,["lactic","mandelic"]) || /gluconolactone/i.test((p.ingredients||"").split(",").slice(0,3).join())) && !hasIng(p,["glycolic"]);
+  const gentleExf = exf==="lactic"||exf==="mandelic" ? P("exfoliant",{skin:[], prefer:p=>hasIng(p,[exf]), avoid:p=>!isGentle(p)}) : null;
+  const exfProd = exf==="salicylic" ? P("cleanser",{kind:"sa"}) : exf==="glycolic" ? P("exfoliant",{skin:[], prefer:p=>hasIng(p,["glycolic"])}) : (gentleExf && isGentle(gentleExf.prod)) ? gentleExf : null;
 
   // AM
   am.push(step("Cleanse", T==="dry" ? "A splash of water is enough if your skin feels tight in the morning." : "Clears overnight oil without stripping.", null, gentleClean()));

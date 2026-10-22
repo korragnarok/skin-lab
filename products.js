@@ -693,6 +693,335 @@ window.PRODUCTS = [
   }
  },
  {
+  "name": "Prequel Multi Acid Milk Peel",
+  "tier": "basics",
+  "step": "exfoliant",
+  "skin": [
+   "normal",
+   "combination",
+   "oily",
+   "dry"
+  ],
+  "price": 3.03,
+  "link": "https://link.amazon/B03uyHBr8",
+  "ing": [
+   "glycolic",
+   "lactic",
+   "mandelic"
+  ],
+  "flags": [],
+  "niacinamide": false,
+  "ingredients": "Water (Aqua), Glycolic Acid, Sodium Hydroxide, Glycerin, Propanediol, Ethylhexyl Olivate, Hydroxyethyl Acrylate/Sodium Acryloyldimethyl Taurate Copolymer, C13-14 Isoalkane, C11-12 Isoalkane, Phytic Acid, Malic Acid, Mandelic Acid, Lactic Acid, Lipase, Protease, Squalane, Polyglyceryl-10 Stearate, C15-23 Alkane, Hydroxyacetophenone, Phenoxyethanol, Tricaprylin, Glyceryl Oleate, Ethylhexyl Polyhydroxystearate, Tetradecane, C13-14 Alkane, Decyl Glucoside, Maltodextrin, Xanthan Gum, Lecithin, Sclerotium Gum, Polyglyceryl-4 Oleate, Carrageenan, Silica",
+  "ingSource": "Kourtney",
+  "tags": [
+   "Niacinamide-free"
+  ],
+  "warn": [],
+  "fit": {
+   "oily": "yes",
+   "combination": "yes",
+   "dry": "yes",
+   "sensitive": "no",
+   "fungal": "no",
+   "nofrag": "yes",
+   "noniacin": "yes",
+   "preg": "yes"
+  }
+ },
+ {
+  "name": "Medik8 Press & Glow PHA Toner",
+  "tier": "upgrade",
+  "step": "exfoliant",
+  "skin": [
+   "normal",
+   "combination",
+   "oily",
+   "dry",
+   "sensitive"
+  ],
+  "price": 5.22,
+  "link": "https://link.amazon/B07Jh9iSE",
+  "ing": [],
+  "flags": [],
+  "niacinamide": false,
+  "ingredients": "Water, Gluconolactone, Glycerin, Hydrolyzed Opuntia Ficus-Indica Flower Extract, Euterpe Oleracea Fruit Extract, Aloe Barbadensis (Aloe Vera) Leaf Juice, Sodium Hydroxide, Sodium Citrate, Hydroxyacetophenone, Phenoxyethanol, Ethylhexylglycerin, Potassium Sorbate, Sodium Benzoate",
+  "ingSource": "Kourtney",
+  "tags": [
+   "Fungal-acne safe",
+   "Niacinamide-free"
+  ],
+  "warn": [],
+  "fit": {
+   "oily": "yes",
+   "combination": "yes",
+   "dry": "yes",
+   "sensitive": "yes",
+   "fungal": "yes",
+   "nofrag": "yes",
+   "noniacin": "yes",
+   "preg": "yes"
+  },
+  "note": "PHA (gluconolactone), the gentlest acid. Gentle enough for daily use."
+ },
+ {
+  "name": "Good Molecules Overnight Exfoliating Treatment",
+  "tier": "upgrade",
+  "step": "exfoliant",
+  "skin": [
+   "normal",
+   "combination",
+   "oily",
+   "dry"
+  ],
+  "price": 5.99,
+  "link": "https://link.amazon/B0cl2f7XM",
+  "ing": [
+   "glycolic",
+   "lactic",
+   "salicylic"
+  ],
+  "flags": [],
+  "niacinamide": false,
+  "ingredients": "Water, Glycolic Acid, Sodium Citrate, Propanediol, Glycerin, 1,2-Hexanediol, Lactic Acid, Xanthan Gum, Butylene Glycol, Salicylic Acid, Sodium Hyaluronate, Ethylhexylglycerin",
+  "ingSource": "Kourtney",
+  "tags": [
+   "Fungal-acne safe",
+   "Niacinamide-free"
+  ],
+  "warn": [],
+  "fit": {
+   "oily": "yes",
+   "combination": "yes",
+   "dry": "yes",
+   "sensitive": "no",
+   "fungal": "yes",
+   "nofrag": "yes",
+   "noniacin": "yes",
+   "preg": "yes"
+  }
+ },
+ {
+  "name": "The Ordinary Mandelic Acid 10% + HA",
+  "tier": "upgrade",
+  "step": "exfoliant",
+  "skin": [
+   "normal",
+   "combination",
+   "oily",
+   "dry",
+   "sensitive"
+  ],
+  "price": 7.8,
+  "link": "https://link.amazon/B04OPmrQG",
+  "ing": [
+   "mandelic"
+  ],
+  "flags": [],
+  "niacinamide": false,
+  "ingredients": "Propanediol, Aqua (Water), Mandelic Acid, Glycerin, Dimethyl Isosorbide, Sodium Hyaluronate Crosspolymer, Tasmannia Lanceolata Fruit/Leaf Extract, Pentylene Glycol, Polysorbate 20, Sodium Hydroxide, Ethylhexylglycerin, 1,2-Hexanediol, Caprylyl Glycol",
+  "ingSource": "Kourtney",
+  "tags": [
+   "Niacinamide-free"
+  ],
+  "warn": [
+   "Sensitive skin: start 2–3 times a week"
+  ],
+  "fit": {
+   "oily": "yes",
+   "combination": "yes",
+   "dry": "yes",
+   "sensitive": "slow",
+   "fungal": "maybe",
+   "nofrag": "yes",
+   "noniacin": "yes",
+   "preg": "yes"
+  }
+ },
+ {
+  "name": "The Ordinary Lactic Acid 5% + HA 2%",
+  "tier": "upgrade",
+  "step": "exfoliant",
+  "skin": [
+   "normal",
+   "combination",
+   "oily",
+   "dry",
+   "sensitive"
+  ],
+  "price": 8.1,
+  "link": "https://link.amazon/B0jckxmqu",
+  "ing": [
+   "lactic"
+  ],
+  "flags": [],
+  "niacinamide": false,
+  "ingredients": "Aqua (Water), Lactic Acid, Glycerin, Pentylene Glycol, Propanediol, Sodium Hyaluronate Crosspolymer, Tasmannia Lanceolata Fruit/Leaf Extract, Acacia Senegal Gum, Xanthan Gum, Isoceteth-20, Trisodium Ethylenediamine Disuccinate, Sodium Hydroxide, Ethylhexylglycerin, 1,2-Hexanediol, Caprylyl Glycol",
+  "ingSource": "Kourtney",
+  "tags": [
+   "Niacinamide-free"
+  ],
+  "warn": [
+   "Sensitive skin: start 2–3 times a week"
+  ],
+  "fit": {
+   "oily": "yes",
+   "combination": "yes",
+   "dry": "yes",
+   "sensitive": "slow",
+   "fungal": "maybe",
+   "nofrag": "yes",
+   "noniacin": "yes",
+   "preg": "yes"
+  }
+ },
+ {
+  "name": "The Ordinary Lactic Acid 10% + HA 2%",
+  "tier": "upgrade",
+  "step": "exfoliant",
+  "skin": [
+   "normal",
+   "combination",
+   "oily",
+   "dry"
+  ],
+  "price": 9.2,
+  "link": "https://link.amazon/B06sLzK08",
+  "ing": [
+   "lactic"
+  ],
+  "flags": [],
+  "niacinamide": false,
+  "ingredients": "Aqua (Water), Lactic Acid, Glycerin, Pentylene Glycol, Propanediol, Sodium Hydroxide, Sodium Hyaluronate Crosspolymer, Tasmannia Lanceolata Fruit/Leaf Extract, Hydroxyethylcellulose, Isoceteth-20, Trisodium Ethylenediamine Disuccinate, Ethylhexylglycerin, 1,2-Hexanediol, Caprylyl Glycol",
+  "ingSource": "Kourtney",
+  "tags": [
+   "Niacinamide-free"
+  ],
+  "warn": [],
+  "fit": {
+   "oily": "yes",
+   "combination": "yes",
+   "dry": "yes",
+   "sensitive": "no",
+   "fungal": "maybe",
+   "nofrag": "yes",
+   "noniacin": "yes",
+   "preg": "yes"
+  }
+ },
+ {
+  "name": "Paula's Choice 6% Mandelic + 2% Lactic Acid Liquid Exfoliant",
+  "tier": "splurge",
+  "step": "exfoliant",
+  "skin": [
+   "normal",
+   "combination",
+   "oily",
+   "dry",
+   "sensitive"
+  ],
+  "price": 12.33,
+  "link": "https://link.amazon/B0cCUy5Ug",
+  "ing": [
+   "mandelic",
+   "lactic"
+  ],
+  "flags": [],
+  "niacinamide": false,
+  "ingredients": "Water, 2,3-Butanediol, Mandelic Acid, Lactic Acid, Sodium Hydroxide, Myrica Cerifera (Bayberry) Fruit Extract, Akebia Quinata (Chocolate Vine) Stem Extract, Prunus Lannesiana (Cherry Blossom) Flower Extract, Lactobacillus Ferment Lysate, Saccharomyces Lysate, Achillea Millefolium Extract, Saccharide Isomerate, Arginine, Hydroxyacetophenone, Butylene Glycol, Sodium Phytate, Pentylene Glycol, Xanthan Gum, Citric Acid, Sodium Citrate, 1,2-Hexanediol, Caprylyl Glycol, Sodium Benzoate",
+  "ingSource": "Kourtney",
+  "tags": [
+   "Fungal-acne safe",
+   "Niacinamide-free"
+  ],
+  "warn": [
+   "Sensitive skin: start 2–3 times a week"
+  ],
+  "fit": {
+   "oily": "yes",
+   "combination": "yes",
+   "dry": "yes",
+   "sensitive": "slow",
+   "fungal": "yes",
+   "nofrag": "yes",
+   "noniacin": "yes",
+   "preg": "yes"
+  }
+ },
+ {
+  "name": "Naturium Multi-Bright Advanced Serum",
+  "tier": "splurge",
+  "step": "exfoliant",
+  "skin": [
+   "normal",
+   "combination",
+   "oily",
+   "dry"
+  ],
+  "price": 18,
+  "link": "https://link.amazon/B0cgkdBkS",
+  "ing": [
+   "lactic",
+   "glycolic"
+  ],
+  "flags": [],
+  "niacinamide": false,
+  "ingredients": "Aqua/Water/Eau, Propanediol, Lactic Acid, Glycerin, Glycolic Acid, Caprylic/Capric Triglyceride, Hydroxyethyl Acrylate/Sodium Acryloyldimethyl Taurate Copolymer, C11-12 Isoalkane, Sodium Hydroxide, Squalane, C15-23 Alkane, Arginine, Vaccinium Myrtillus Fruit Extract, Allantoin, Saccharum Officinarum (Sugarcane) Extract, Citrus Limon (Lemon) Fruit Extract, Citrus Aurantium Dulcis (Orange) Fruit Extract, Olea Europaea (Olive) Fruit Extract, Isodecyl Neopentanoate, Acer Saccharum (Sugar Maple) Extract, Bisabolol, Brassica Oleracea Acephala Leaf Extract, C13-14 Alkane, Decyl Glucoside, Hydroxyethylcellulose, Hydroxyacetophenone, Sodium Stearoyl Glutamate, Tetrasodium Glutamate Diacetate, Disodium Phosphate, Sodium Phosphate, Xanthan Gum, Tocopherol, Ethylhexylglycerin, Phenoxyethanol",
+  "ingSource": "Kourtney",
+  "tags": [
+   "Niacinamide-free"
+  ],
+  "warn": [],
+  "fit": {
+   "oily": "yes",
+   "combination": "yes",
+   "dry": "yes",
+   "sensitive": "no",
+   "fungal": "no",
+   "nofrag": "maybe",
+   "noniacin": "yes",
+   "preg": "yes"
+  }
+ },
+ {
+  "name": "Clinique Turnaround Accelerated Renewal Serum",
+  "tier": "splurge",
+  "step": "exfoliant",
+  "skin": [
+   "normal",
+   "combination",
+   "oily",
+   "dry",
+   "sensitive"
+  ],
+  "price": 60,
+  "link": "https://link.amazon/B07dAbsDk",
+  "ing": [
+   "mandelic",
+   "salicylic"
+  ],
+  "flags": [],
+  "niacinamide": false,
+  "ingredients": "Water\\Aqua\\Eau, Dimethicone, Polysilicone-11, Isododecane, Acetyl Glucosamine, Yeast Extract\\Faex\\Extrait De Levure, Sodium Hyaluronate, Glycine Soja (Soybean) Seed Extract, Saccharomyces Lysate Extract, Salvia Sclarea (Clary) Extract, Laminaria Saccharina Extract, Caffeine, Mandelic Acid, Polyglyceryl-3 Disiloxane Dimethicone, Butylene Glycol, Glycerin, Polyglyceryl-3 Polydimethylsiloxyethyl Dimethicone, Isohexadecane, Salicylic Acid, Caprylyl Glycol, Soy Amino Acids, Phosphatidylcholine, Stearamidopropyl Dimethylamine, Tin Oxide, Polysorbate 20, Laureth-12, Polysorbate 80, Stearic Acid, Sorbitan Oleate, Hexylene Glycol, Sodium Hydroxide, Acrylamide/Sodium Acryloyldimethyltaurate Copolymer, Ammonium Acryloyldimethyltaurate/Vp Copolymer, Tocopheryl Acetate, Bht, Disodium Edta, Phenoxyethanol, Potassium Sorbate, Sodium Benzoate, Titanium Dioxide (Ci 77891), Mica",
+  "ingSource": "Kourtney",
+  "tags": [
+   "Niacinamide-free"
+  ],
+  "warn": [
+   "Sensitive skin: start 2–3 times a week"
+  ],
+  "fit": {
+   "oily": "yes",
+   "combination": "yes",
+   "dry": "yes",
+   "sensitive": "slow",
+   "fungal": "no",
+   "nofrag": "yes",
+   "noniacin": "yes",
+   "preg": "yes"
+  },
+  "note": "Mild: the acids are low on the list. More of a smoothing serum than a strong exfoliant."
+ },
+ {
   "name": "Peach Slices Hypochlorous Acid Spray",
   "tier": "basics",
   "step": "mist",
