@@ -30,7 +30,8 @@ window.PRODUCTS = [
    "oily": "maybe",
    "combination": "dry",
    "dry": "yes",
-   "sensitive": "yes"
+   "sensitive": "yes",
+   "fungal": "no"
   },
   "warn": [
    "Combination skin: use on dry areas only"
@@ -69,7 +70,8 @@ window.PRODUCTS = [
    "oily": "no",
    "combination": "no",
    "dry": "yes",
-   "sensitive": "yes"
+   "sensitive": "yes",
+   "fungal": "no"
   }
  },
  {
@@ -94,7 +96,8 @@ window.PRODUCTS = [
    "oily": "yes",
    "combination": "yes",
    "dry": "layer",
-   "sensitive": "yes"
+   "sensitive": "yes",
+   "fungal": "yes"
   },
   "warn": [
    "Dry skin: layer a cream on top"
@@ -120,7 +123,8 @@ window.PRODUCTS = [
    "oily": "yes",
    "combination": "yes",
    "dry": "layer",
-   "sensitive": "yes"
+   "sensitive": "yes",
+   "fungal": "no"
   },
   "warn": [
    "Dry skin: layer a cream on top"
@@ -148,7 +152,8 @@ window.PRODUCTS = [
    "oily": "yes",
    "combination": "yes",
    "dry": "layer",
-   "sensitive": "yes"
+   "sensitive": "yes",
+   "fungal": "no"
   },
   "warn": [
    "Dry skin: layer a cream on top"
@@ -165,8 +170,8 @@ window.PRODUCTS = [
   "price": 11.76,
   "link": "https://amzn.to/485UcNN",
   "tags": [
-   "Fungal-acne safe",
-   "Niacinamide-free"
+   "Niacinamide-free",
+   "Fungal-acne safe"
   ],
   "img": "img/cocokind-electrolyte-water-cream.webp",
   "flags": [],
@@ -177,7 +182,8 @@ window.PRODUCTS = [
    "oily": "yes",
    "combination": "yes",
    "dry": "layer",
-   "sensitive": "yes"
+   "sensitive": "yes",
+   "fungal": "yes"
   },
   "warn": [
    "Dry skin: layer a cream on top"
@@ -208,7 +214,8 @@ window.PRODUCTS = [
    "oily": "yes",
    "combination": "yes",
    "dry": "layer",
-   "sensitive": "yes"
+   "sensitive": "yes",
+   "fungal": "yes"
   },
   "warn": [
    "Dry skin: layer a cream on top"
@@ -236,7 +243,8 @@ window.PRODUCTS = [
    "oily": "yes",
    "combination": "yes",
    "dry": "layer",
-   "sensitive": "yes"
+   "sensitive": "yes",
+   "fungal": "no"
   },
   "warn": [
    "Dry skin: layer a cream on top"
@@ -253,8 +261,8 @@ window.PRODUCTS = [
   "price": 5.03,
   "link": "https://amzn.to/4k6yrEO",
   "tags": [
-   "Fungal-acne safe",
-   "Niacinamide-free"
+   "Niacinamide-free",
+   "Fungal-acne safe"
   ],
   "img": "img/purito-oat-in-calming-gel-cream.webp",
   "flags": [],
@@ -265,7 +273,8 @@ window.PRODUCTS = [
    "oily": "yes",
    "combination": "yes",
    "dry": "layer",
-   "sensitive": "yes"
+   "sensitive": "yes",
+   "fungal": "yes"
   },
   "warn": [
    "Dry skin: layer a cream on top"
@@ -293,7 +302,8 @@ window.PRODUCTS = [
    "oily": "yes",
    "combination": "yes",
    "dry": "layer",
-   "sensitive": "yes"
+   "sensitive": "yes",
+   "fungal": "maybe"
   },
   "warn": [
    "Dry skin: layer a cream on top"
@@ -321,7 +331,8 @@ window.PRODUCTS = [
    "oily": "yes",
    "combination": "yes",
    "dry": "yes",
-   "sensitive": "yes"
+   "sensitive": "yes",
+   "fungal": "no"
   }
  },
  {
@@ -349,7 +360,8 @@ window.PRODUCTS = [
    "oily": "maybe",
    "combination": "yes",
    "dry": "yes",
-   "sensitive": "yes"
+   "sensitive": "yes",
+   "fungal": "no"
   }
  },
  {
@@ -375,7 +387,8 @@ window.PRODUCTS = [
    "oily": "maybe",
    "combination": "yes",
    "dry": "yes",
-   "sensitive": "yes"
+   "sensitive": "yes",
+   "fungal": "no"
   }
  },
  {
@@ -403,7 +416,8 @@ window.PRODUCTS = [
    "oily": "maybe",
    "combination": "yes",
    "dry": "yes",
-   "sensitive": "yes"
+   "sensitive": "yes",
+   "fungal": "yes"
   }
  },
  {
@@ -428,7 +442,8 @@ window.PRODUCTS = [
    "oily": "maybe",
    "combination": "dry",
    "dry": "yes",
-   "sensitive": "yes"
+   "sensitive": "yes",
+   "fungal": "no"
   },
   "warn": [
    "Combination skin: use on dry areas only"
@@ -469,7 +484,8 @@ window.PRODUCTS = [
    "oily": "no",
    "combination": "dry",
    "dry": "yes",
-   "sensitive": "yes"
+   "sensitive": "yes",
+   "fungal": "no"
   }
  },
  {
@@ -498,7 +514,8 @@ window.PRODUCTS = [
    "oily": "yes",
    "combination": "yes",
    "dry": "yes",
-   "sensitive": "no"
+   "sensitive": "no",
+   "fungal": "maybe"
   }
  },
  {
@@ -513,8 +530,8 @@ window.PRODUCTS = [
   "link": "https://amzn.to/4Bd09pP",
   "img": "img/peach-slices-hypochlorous-acid-spray.webp",
   "tags": [
-   "Fungal-acne safe",
-   "Niacinamide-free"
+   "Niacinamide-free",
+   "Fungal-acne safe"
   ],
   "flags": [],
   "niacinamide": false,
@@ -524,7 +541,8 @@ window.PRODUCTS = [
    "oily": "yes",
    "combination": "yes",
    "dry": "yes",
-   "sensitive": "yes"
+   "sensitive": "yes",
+   "fungal": "yes"
   }
  },
  {
@@ -548,7 +566,8 @@ window.PRODUCTS = [
    "oily": "yes",
    "combination": "yes",
    "dry": "maybe",
-   "sensitive": "yes"
+   "sensitive": "yes",
+   "fungal": "maybe"
   }
  },
  {
@@ -564,8 +583,8 @@ window.PRODUCTS = [
   "kind": "gentle",
   "img": "img/vanicream-foaming-cleanser.webp",
   "tags": [
-   "Fungal-acne safe",
-   "Niacinamide-free"
+   "Niacinamide-free",
+   "Fungal-acne safe"
   ],
   "ingredients": "Water, Glycerin, Coco-Glucoside, Sodium Cocoyl Glycinate, Acrylates Copolymer, Caprylyl Glycol, Mica, Sodium Chloride, 1, 2-Hexanediol, Titanium Dioxide, Sodium Hydroxide, Disodium EDTA",
   "ingSource": "Kourtney",
@@ -575,7 +594,8 @@ window.PRODUCTS = [
    "oily": "yes",
    "combination": "yes",
    "dry": "yes",
-   "sensitive": "yes"
+   "sensitive": "yes",
+   "fungal": "yes"
   }
  },
  {
@@ -599,7 +619,8 @@ window.PRODUCTS = [
    "oily": "yes",
    "combination": "yes",
    "dry": "maybe",
-   "sensitive": "yes"
+   "sensitive": "yes",
+   "fungal": "maybe"
   }
  },
  {
@@ -623,7 +644,8 @@ window.PRODUCTS = [
    "oily": "yes",
    "combination": "yes",
    "dry": "yes",
-   "sensitive": "yes"
+   "sensitive": "yes",
+   "fungal": "maybe"
   }
  },
  {
@@ -648,7 +670,8 @@ window.PRODUCTS = [
    "oily": "yes",
    "combination": "yes",
    "dry": "yes",
-   "sensitive": "yes"
+   "sensitive": "yes",
+   "fungal": "maybe"
   }
  },
  {
@@ -675,7 +698,8 @@ window.PRODUCTS = [
    "oily": "yes",
    "combination": "yes",
    "dry": "yes",
-   "sensitive": "yes"
+   "sensitive": "yes",
+   "fungal": "maybe"
   }
  },
  {
@@ -706,7 +730,8 @@ window.PRODUCTS = [
    "oily": "yes",
    "combination": "yes",
    "dry": "no",
-   "sensitive": "maybe"
+   "sensitive": "maybe",
+   "fungal": "maybe"
   }
  },
  {
@@ -726,8 +751,8 @@ window.PRODUCTS = [
   ],
   "img": "img/peach-slices-acne-clarifying-cleanser.webp",
   "tags": [
-   "Fungal-acne safe",
-   "Niacinamide-free"
+   "Niacinamide-free",
+   "Fungal-acne safe"
   ],
   "ingredients": "Water (Aqua), Glycerin, Sodium C14-16 Olefin Sulfonate, Cocamidopropyl Hydroxysultaine, Betaine, Sodium Chloride, Cucumis Sativus (Cucumber) Fruit Water, Sodium Hyaluronate, Centella Asiatica Extract, Malpighia Emarginata (Acerola) Fruit Extract, Sodium Benzoate, Butylene Glycol, Potassium Sorbate, Caprylyl Glycol, 1-2 Hexanediol, Sodium Hydroxide, Citric Acid, Ethylhexylglycerin, Phenoxyethanol",
   "ingSource": "Kourtney",
@@ -737,7 +762,8 @@ window.PRODUCTS = [
    "oily": "yes",
    "combination": "yes",
    "dry": "no",
-   "sensitive": "maybe"
+   "sensitive": "maybe",
+   "fungal": "yes"
   }
  },
  {
@@ -765,7 +791,8 @@ window.PRODUCTS = [
    "oily": "yes",
    "combination": "yes",
    "dry": "maybe",
-   "sensitive": "slow"
+   "sensitive": "slow",
+   "fungal": "maybe"
   },
   "warn": [
    "Sensitive skin: start 2–3 times a week"
@@ -796,7 +823,8 @@ window.PRODUCTS = [
    "oily": "yes",
    "combination": "yes",
    "dry": "maybe",
-   "sensitive": "slow"
+   "sensitive": "slow",
+   "fungal": "maybe"
   },
   "warn": [
    "Sensitive skin: start 2–3 times a week"
@@ -827,7 +855,8 @@ window.PRODUCTS = [
    "oily": "yes",
    "combination": "yes",
    "dry": "maybe",
-   "sensitive": "slow"
+   "sensitive": "slow",
+   "fungal": "maybe"
   },
   "warn": [
    "Sensitive skin: start 2–3 times a week"
@@ -858,7 +887,8 @@ window.PRODUCTS = [
    "oily": "yes",
    "combination": "yes",
    "dry": "no",
-   "sensitive": "no"
+   "sensitive": "no",
+   "fungal": "maybe"
   }
  },
  {
@@ -886,7 +916,8 @@ window.PRODUCTS = [
    "oily": "yes",
    "combination": "yes",
    "dry": "no",
-   "sensitive": "maybe"
+   "sensitive": "maybe",
+   "fungal": "yes"
   }
  },
  {
@@ -907,7 +938,9 @@ window.PRODUCTS = [
   "note": "A body wash. Great for chest and back; some people use it on the face too.",
   "img": "img/naturium-the-revealer-sulfur-body-wash.webp",
   "tags": [
-   "Niacinamide-free"
+   "Niacinamide-free",
+   "Fungal-acne safe",
+   "Helps fungal acne"
   ],
   "ingredients": "Aqua/Water/Eau, Sodium Cocoyl Isethionate, Cetearyl Alcohol, Cocamidopropyl Betaine, Acrylates Copolymer, Sulfur, Propanediol, Glycerin, Coco-Glucoside, Stearic Acid, Stearyl Alcohol, Potassium Cocoyl Glycinate, Acacia Senegal Gum, Aloe Barbadensis Leaf Juice, Potassium Cocoate, Maltooligosyl Glucoside, Salix Alba (Willow) Bark Extract, Inulin, Hydrogenated Starch Hydrolysate, Xanthan Gum, Tetrasodium Glutamate Diacetate, Pentylene Glycol, Caprylyl Glycol, Citric Acid, Potassium Sorbate, Sodium Benzoate, Sodium Hydroxide, Lactic Acid, Lecithin, 1, 2-Hexanediol, Ethylhexylglycerin, Phenoxyethanol",
   "ingSource": "Kourtney",
@@ -917,7 +950,8 @@ window.PRODUCTS = [
    "oily": "yes",
    "combination": "yes",
    "dry": "maybe",
-   "sensitive": "yes"
+   "sensitive": "yes",
+   "fungal": "helps"
   }
  },
  {
@@ -937,7 +971,9 @@ window.PRODUCTS = [
   ],
   "img": "img/prequel-redness-reform-sulfur-cleanser.webp",
   "tags": [
-   "Niacinamide-free"
+   "Niacinamide-free",
+   "Fungal-acne safe",
+   "Helps fungal acne"
   ],
   "ingredients": "Water (Aqua), Glycerin, Sodium Lauroyl Isethionate, Magnesium Aluminum Silicate, Decyl Glucoside, Cocamidopropyl Hydroxysultaine, Sulfur, Sodium Lauroyl Methyl Isethionate, Sodium Lauroamphoacetate, Azelaic Acid, Chamomilla Recutita (Matricaria) Flower Water, Osmanthus Fragrans Flower Extract, Quartz, Panthenol, Bisabolol, Aloe Barbadensis Leaf Juice, Centella Asiatica Extract, Polyglycerin-6, Saccharomyces/Zinc Ferment, Apricot Kernel Oil Polyglyceryl-6 Esters, Guaiazulene, Magnolol, Honokiol, Hydrolyzed Garcinia Mangostana Fruit Extract, Lauric Acid, Coconut Acid, Myristic Acid, Acacia Senegal Gum, Capric Acid, Xanthan Gum, Propanediol, Cocamide MIPA, Hydroxyacetophenone, Octenidine Hcl, Potassium Sorbate, Sodium Benzoate, Sodium Chloride, Sodium Polyacryloyldimethyl Taurate, Sodium Isethionate, Polyglyceryl-10 Oleate, Sorbitan Palmitate, Cetyl Phosphate, Potassium Hydroxide, Citric Acid",
   "ingSource": "Kourtney",
@@ -947,7 +983,8 @@ window.PRODUCTS = [
    "oily": "yes",
    "combination": "yes",
    "dry": "maybe",
-   "sensitive": "yes"
+   "sensitive": "yes",
+   "fungal": "helps"
   }
  },
  {
@@ -961,8 +998,8 @@ window.PRODUCTS = [
   "link": "https://amzn.to/4BgM7U3",
   "img": "img/bioderma-sensibio-h2o.webp",
   "tags": [
-   "Fungal-acne safe",
-   "Niacinamide-free"
+   "Niacinamide-free",
+   "Fungal-acne safe"
   ],
   "ingredients": "Aqua/Water/Eau, Peg-6 Caprylic/Capric Glycerides, Fructooligosaccharides, Mannitol, Xylitol, Rhamnose, Cucumis Sativus (Cucumber) Fruit Extract, Propylene Glycol, Cetrimonium Bromide, Disodium Edta",
   "ingSource": "Kourtney",
@@ -972,7 +1009,8 @@ window.PRODUCTS = [
    "oily": "yes",
    "combination": "yes",
    "dry": "yes",
-   "sensitive": "yes"
+   "sensitive": "yes",
+   "fungal": "yes"
   }
  },
  {
@@ -986,8 +1024,8 @@ window.PRODUCTS = [
   "link": "https://amzn.to/4zNbafZ",
   "img": "img/garnier-micellar-water.webp",
   "tags": [
-   "Fungal-acne safe",
-   "Niacinamide-free"
+   "Niacinamide-free",
+   "Fungal-acne safe"
   ],
   "ingredients": "Aqua / Water, Hexylene Glycol, Glycerin, Disodium Cocoamphodiacetate, Disodium EDTA, Poloxamer 184, Polyaminopropyl Biguanide",
   "ingSource": "Kourtney",
@@ -997,7 +1035,8 @@ window.PRODUCTS = [
    "oily": "yes",
    "combination": "yes",
    "dry": "yes",
-   "sensitive": "yes"
+   "sensitive": "yes",
+   "fungal": "yes"
   }
  },
  {
@@ -1021,7 +1060,8 @@ window.PRODUCTS = [
    "oily": "yes",
    "combination": "yes",
    "dry": "yes",
-   "sensitive": "yes"
+   "sensitive": "yes",
+   "fungal": "no"
   }
  },
  {
@@ -1045,7 +1085,8 @@ window.PRODUCTS = [
    "oily": "yes",
    "combination": "yes",
    "dry": "yes",
-   "sensitive": "yes"
+   "sensitive": "yes",
+   "fungal": "no"
   }
  },
  {
@@ -1076,7 +1117,8 @@ window.PRODUCTS = [
    "oily": "yes",
    "combination": "yes",
    "dry": "yes",
-   "sensitive": "maybe"
+   "sensitive": "maybe",
+   "fungal": "no"
   }
  },
  {
@@ -1100,7 +1142,8 @@ window.PRODUCTS = [
    "oily": "yes",
    "combination": "yes",
    "dry": "yes",
-   "sensitive": "yes"
+   "sensitive": "yes",
+   "fungal": "no"
   }
  },
  {
@@ -1129,7 +1172,8 @@ window.PRODUCTS = [
    "oily": "yes",
    "combination": "yes",
    "dry": "yes",
-   "sensitive": "maybe"
+   "sensitive": "maybe",
+   "fungal": "no"
   }
  },
  {
@@ -1153,7 +1197,8 @@ window.PRODUCTS = [
    "oily": "yes",
    "combination": "yes",
    "dry": "yes",
-   "sensitive": "yes"
+   "sensitive": "yes",
+   "fungal": "no"
   }
  },
  {
@@ -1171,8 +1216,8 @@ window.PRODUCTS = [
   "note": "Give it 12 weeks. Breakouts can flare before they improve.",
   "img": "img/differin-gel.webp",
   "tags": [
-   "Fungal-acne safe",
-   "Niacinamide-free"
+   "Niacinamide-free",
+   "Fungal-acne safe"
   ],
   "warn": [
    "Skip if pregnant or nursing",
@@ -1188,7 +1233,8 @@ window.PRODUCTS = [
    "oily": "yes",
    "combination": "yes",
    "dry": "yes",
-   "sensitive": "slow"
+   "sensitive": "slow",
+   "fungal": "yes"
   }
  },
  {
@@ -1206,8 +1252,8 @@ window.PRODUCTS = [
   "note": "Same active as Differin Gel, for less.",
   "img": "img/neutrogena-evenly-clear-adapalene.webp",
   "tags": [
-   "Fungal-acne safe",
-   "Niacinamide-free"
+   "Niacinamide-free",
+   "Fungal-acne safe"
   ],
   "warn": [
    "Skip if pregnant or nursing",
@@ -1223,7 +1269,8 @@ window.PRODUCTS = [
    "oily": "yes",
    "combination": "yes",
    "dry": "yes",
-   "sensitive": "slow"
+   "sensitive": "slow",
+   "fungal": "yes"
   }
  },
  {
@@ -1257,7 +1304,8 @@ window.PRODUCTS = [
    "oily": "yes",
    "combination": "yes",
    "dry": "maybe",
-   "sensitive": "no"
+   "sensitive": "no",
+   "fungal": "no"
   }
  },
  {
@@ -1285,7 +1333,8 @@ window.PRODUCTS = [
    "oily": "maybe",
    "combination": "yes",
    "dry": "yes",
-   "sensitive": "yes"
+   "sensitive": "yes",
+   "fungal": "no"
   }
  },
  {
@@ -1312,7 +1361,8 @@ window.PRODUCTS = [
    "oily": "yes",
    "combination": "yes",
    "dry": "yes",
-   "sensitive": "yes"
+   "sensitive": "yes",
+   "fungal": "no"
   }
  },
  {
@@ -1340,7 +1390,8 @@ window.PRODUCTS = [
    "oily": "yes",
    "combination": "yes",
    "dry": "yes",
-   "sensitive": "yes"
+   "sensitive": "yes",
+   "fungal": "no"
   }
  },
  {
@@ -1356,8 +1407,8 @@ window.PRODUCTS = [
   "note": "The budget growth factor pick.",
   "img": "img/the-ordinary-gf-15-solution.webp",
   "tags": [
-   "Fungal-acne safe",
-   "Niacinamide-free"
+   "Niacinamide-free",
+   "Fungal-acne safe"
   ],
   "flags": [],
   "niacinamide": false,
@@ -1367,7 +1418,8 @@ window.PRODUCTS = [
    "oily": "yes",
    "combination": "yes",
    "dry": "yes",
-   "sensitive": "yes"
+   "sensitive": "yes",
+   "fungal": "yes"
   }
  },
  {
@@ -1394,7 +1446,8 @@ window.PRODUCTS = [
    "oily": "yes",
    "combination": "yes",
    "dry": "yes",
-   "sensitive": "yes"
+   "sensitive": "yes",
+   "fungal": "yes"
   }
  },
  {
@@ -1426,7 +1479,8 @@ window.PRODUCTS = [
    "oily": "yes",
    "combination": "yes",
    "dry": "yes",
-   "sensitive": "slow"
+   "sensitive": "slow",
+   "fungal": "no"
   }
  },
  {
@@ -1458,7 +1512,8 @@ window.PRODUCTS = [
    "oily": "yes",
    "combination": "yes",
    "dry": "yes",
-   "sensitive": "slow"
+   "sensitive": "slow",
+   "fungal": "no"
   }
  },
  {
@@ -1490,7 +1545,8 @@ window.PRODUCTS = [
    "oily": "maybe",
    "combination": "yes",
    "dry": "yes",
-   "sensitive": "slow"
+   "sensitive": "slow",
+   "fungal": "no"
   }
  },
  {
@@ -1522,7 +1578,8 @@ window.PRODUCTS = [
    "oily": "yes",
    "combination": "yes",
    "dry": "yes",
-   "sensitive": "slow"
+   "sensitive": "slow",
+   "fungal": "no"
   }
  },
  {
@@ -1554,7 +1611,8 @@ window.PRODUCTS = [
    "oily": "yes",
    "combination": "yes",
    "dry": "yes",
-   "sensitive": "slow"
+   "sensitive": "slow",
+   "fungal": "no"
   }
  },
  {
@@ -1592,7 +1650,8 @@ window.PRODUCTS = [
    "oily": "no",
    "combination": "no",
    "dry": "yes",
-   "sensitive": "slow"
+   "sensitive": "slow",
+   "fungal": "no"
   }
  },
  {
@@ -1625,7 +1684,8 @@ window.PRODUCTS = [
    "oily": "yes",
    "combination": "yes",
    "dry": "yes",
-   "sensitive": "slow"
+   "sensitive": "slow",
+   "fungal": "no"
   }
  },
  {
@@ -1658,7 +1718,8 @@ window.PRODUCTS = [
    "oily": "yes",
    "combination": "yes",
    "dry": "yes",
-   "sensitive": "slow"
+   "sensitive": "slow",
+   "fungal": "no"
   }
  },
  {
@@ -1690,7 +1751,8 @@ window.PRODUCTS = [
    "oily": "yes",
    "combination": "yes",
    "dry": "yes",
-   "sensitive": "slow"
+   "sensitive": "slow",
+   "fungal": "no"
   }
  },
  {
@@ -1722,7 +1784,8 @@ window.PRODUCTS = [
    "oily": "yes",
    "combination": "yes",
    "dry": "yes",
-   "sensitive": "slow"
+   "sensitive": "slow",
+   "fungal": "no"
   }
  },
  {
@@ -1750,7 +1813,8 @@ window.PRODUCTS = [
    "oily": "yes",
    "combination": "yes",
    "dry": "yes",
-   "sensitive": "yes"
+   "sensitive": "yes",
+   "fungal": "no"
   }
  },
  {
@@ -1778,7 +1842,8 @@ window.PRODUCTS = [
    "oily": "yes",
    "combination": "yes",
    "dry": "yes",
-   "sensitive": "yes"
+   "sensitive": "yes",
+   "fungal": "no"
   }
  },
  {
@@ -1811,7 +1876,8 @@ window.PRODUCTS = [
    "oily": "yes",
    "combination": "yes",
    "dry": "maybe",
-   "sensitive": "yes"
+   "sensitive": "yes",
+   "fungal": "no"
   }
  },
  {
@@ -1843,7 +1909,8 @@ window.PRODUCTS = [
    "oily": "yes",
    "combination": "yes",
    "dry": "yes",
-   "sensitive": "yes"
+   "sensitive": "yes",
+   "fungal": "no"
   }
  },
  {
@@ -1876,7 +1943,8 @@ window.PRODUCTS = [
    "oily": "yes",
    "combination": "yes",
    "dry": "yes",
-   "sensitive": "no"
+   "sensitive": "no",
+   "fungal": "no"
   }
  },
  {
@@ -1904,7 +1972,8 @@ window.PRODUCTS = [
    "oily": "yes",
    "combination": "yes",
    "dry": "yes",
-   "sensitive": "yes"
+   "sensitive": "yes",
+   "fungal": "no"
   }
  },
  {
@@ -1933,7 +2002,8 @@ window.PRODUCTS = [
    "oily": "yes",
    "combination": "yes",
    "dry": "yes",
-   "sensitive": "yes"
+   "sensitive": "yes",
+   "fungal": "no"
   }
  },
  {
@@ -1968,7 +2038,8 @@ window.PRODUCTS = [
    "oily": "maybe",
    "combination": "dry",
    "dry": "yes",
-   "sensitive": "yes"
+   "sensitive": "yes",
+   "fungal": "no"
   }
  },
  {
@@ -1983,8 +2054,8 @@ window.PRODUCTS = [
   "link": "https://amzn.to/4hXVPDh",
   "img": "img/prequel-hypochlorous-spray.webp",
   "tags": [
-   "Fungal-acne safe",
-   "Niacinamide-free"
+   "Niacinamide-free",
+   "Fungal-acne safe"
   ],
   "flags": [],
   "niacinamide": false,
@@ -1994,7 +2065,8 @@ window.PRODUCTS = [
    "oily": "yes",
    "combination": "yes",
    "dry": "yes",
-   "sensitive": "yes"
+   "sensitive": "yes",
+   "fungal": "yes"
   }
  },
  {
@@ -2010,8 +2082,8 @@ window.PRODUCTS = [
   "note": "Cheaper per ounce in the 4 oz size.",
   "img": "img/tower-28-sos-spray.webp",
   "tags": [
-   "Fungal-acne safe",
-   "Niacinamide-free"
+   "Niacinamide-free",
+   "Fungal-acne safe"
   ],
   "flags": [],
   "niacinamide": false,
@@ -2021,7 +2093,8 @@ window.PRODUCTS = [
    "oily": "yes",
    "combination": "yes",
    "dry": "yes",
-   "sensitive": "yes"
+   "sensitive": "yes",
+   "fungal": "yes"
   }
  },
  {
@@ -2049,7 +2122,8 @@ window.PRODUCTS = [
    "oily": "yes",
    "combination": "yes",
    "dry": "yes",
-   "sensitive": "yes"
+   "sensitive": "yes",
+   "fungal": "no"
   }
  },
  {
@@ -2075,7 +2149,8 @@ window.PRODUCTS = [
    "oily": "yes",
    "combination": "yes",
    "dry": "yes",
-   "sensitive": "slow"
+   "sensitive": "slow",
+   "fungal": "yes"
   },
   "warn": [
    "Sensitive skin: start 2–3 times a week"
@@ -2102,7 +2177,8 @@ window.PRODUCTS = [
    "oily": "yes",
    "combination": "yes",
    "dry": "yes",
-   "sensitive": "yes"
+   "sensitive": "yes",
+   "fungal": "no"
   }
  },
  {
@@ -2134,7 +2210,8 @@ window.PRODUCTS = [
    "oily": "yes",
    "combination": "yes",
    "dry": "yes",
-   "sensitive": "yes"
+   "sensitive": "yes",
+   "fungal": "no"
   }
  },
  {
@@ -2163,7 +2240,8 @@ window.PRODUCTS = [
    "oily": "yes",
    "combination": "yes",
    "dry": "yes",
-   "sensitive": "yes"
+   "sensitive": "yes",
+   "fungal": "no"
   }
  },
  {
@@ -2192,7 +2270,8 @@ window.PRODUCTS = [
    "oily": "yes",
    "combination": "yes",
    "dry": "yes",
-   "sensitive": "no"
+   "sensitive": "no",
+   "fungal": "no"
   }
  },
  {
@@ -2222,7 +2301,8 @@ window.PRODUCTS = [
    "oily": "maybe",
    "combination": "yes",
    "dry": "yes",
-   "sensitive": "yes"
+   "sensitive": "yes",
+   "fungal": "no"
   }
  },
  {
@@ -2241,8 +2321,8 @@ window.PRODUCTS = [
   "tags": [
    "Mineral",
    "K-beauty",
-   "Fungal-acne safe",
-   "Niacinamide-free"
+   "Niacinamide-free",
+   "Fungal-acne safe"
   ],
   "img": "img/beauty-of-joseon-tinted-mineral-dayscreen.webp",
   "flags": [],
@@ -2253,7 +2333,8 @@ window.PRODUCTS = [
    "oily": "yes",
    "combination": "yes",
    "dry": "yes",
-   "sensitive": "yes"
+   "sensitive": "yes",
+   "fungal": "yes"
   }
  },
  {
@@ -2283,7 +2364,8 @@ window.PRODUCTS = [
    "oily": "yes",
    "combination": "yes",
    "dry": "yes",
-   "sensitive": "yes"
+   "sensitive": "yes",
+   "fungal": "no"
   }
  },
  {
@@ -2315,7 +2397,8 @@ window.PRODUCTS = [
    "oily": "maybe",
    "combination": "yes",
    "dry": "yes",
-   "sensitive": "no"
+   "sensitive": "no",
+   "fungal": "no"
   }
  },
  {
@@ -2345,7 +2428,8 @@ window.PRODUCTS = [
    "oily": "yes",
    "combination": "yes",
    "dry": "yes",
-   "sensitive": "yes"
+   "sensitive": "yes",
+   "fungal": "no"
   }
  },
  {
@@ -2372,7 +2456,8 @@ window.PRODUCTS = [
    "oily": "yes",
    "combination": "yes",
    "dry": "yes",
-   "sensitive": "no"
+   "sensitive": "no",
+   "fungal": "yes"
   }
  },
  {
@@ -2407,7 +2492,8 @@ window.PRODUCTS = [
    "oily": "yes",
    "combination": "yes",
    "dry": "yes",
-   "sensitive": "slow"
+   "sensitive": "slow",
+   "fungal": "no"
   }
  },
  {
@@ -2445,7 +2531,8 @@ window.PRODUCTS = [
    "oily": "no",
    "combination": "dry",
    "dry": "yes",
-   "sensitive": "slow"
+   "sensitive": "slow",
+   "fungal": "no"
   }
  },
  {
@@ -2483,7 +2570,8 @@ window.PRODUCTS = [
    "oily": "no",
    "combination": "dry",
    "dry": "yes",
-   "sensitive": "slow"
+   "sensitive": "slow",
+   "fungal": "no"
   }
  },
  {
@@ -2519,7 +2607,8 @@ window.PRODUCTS = [
    "oily": "maybe",
    "combination": "yes",
    "dry": "maybe",
-   "sensitive": "no"
+   "sensitive": "no",
+   "fungal": "no"
   }
  },
  {
@@ -2551,7 +2640,8 @@ window.PRODUCTS = [
    "oily": "yes",
    "combination": "yes",
    "dry": "yes",
-   "sensitive": "slow"
+   "sensitive": "slow",
+   "fungal": "no"
   }
  },
  {
@@ -2583,7 +2673,8 @@ window.PRODUCTS = [
    "oily": "maybe",
    "combination": "yes",
    "dry": "yes",
-   "sensitive": "slow"
+   "sensitive": "slow",
+   "fungal": "no"
   }
  },
  {
@@ -2613,7 +2704,8 @@ window.PRODUCTS = [
    "oily": "yes",
    "combination": "yes",
    "dry": "yes",
-   "sensitive": "slow"
+   "sensitive": "slow",
+   "fungal": "no"
   }
  },
  {
@@ -2643,7 +2735,8 @@ window.PRODUCTS = [
    "oily": "yes",
    "combination": "yes",
    "dry": "yes",
-   "sensitive": "maybe"
+   "sensitive": "maybe",
+   "fungal": "no"
   }
  },
  {
@@ -2679,7 +2772,8 @@ window.PRODUCTS = [
    "oily": "no",
    "combination": "dry",
    "dry": "yes",
-   "sensitive": "yes"
+   "sensitive": "yes",
+   "fungal": "no"
   }
  },
  {
@@ -2704,7 +2798,8 @@ window.PRODUCTS = [
    "oily": "yes",
    "combination": "yes",
    "dry": "yes",
-   "sensitive": "yes"
+   "sensitive": "yes",
+   "fungal": "maybe"
   }
  },
  {
@@ -2732,7 +2827,8 @@ window.PRODUCTS = [
    "oily": "yes",
    "combination": "yes",
    "dry": "yes",
-   "sensitive": "no"
+   "sensitive": "no",
+   "fungal": "no"
   }
  },
  {
@@ -2764,7 +2860,8 @@ window.PRODUCTS = [
    "oily": "yes",
    "combination": "yes",
    "dry": "yes",
-   "sensitive": "no"
+   "sensitive": "no",
+   "fungal": "maybe"
   }
  },
  {
@@ -2800,7 +2897,8 @@ window.PRODUCTS = [
    "oily": "no",
    "combination": "dry",
    "dry": "yes",
-   "sensitive": "no"
+   "sensitive": "no",
+   "fungal": "no"
   }
  },
  {
@@ -2826,7 +2924,8 @@ window.PRODUCTS = [
    "oily": "yes",
    "combination": "yes",
    "dry": "yes",
-   "sensitive": "yes"
+   "sensitive": "yes",
+   "fungal": "no"
   }
  },
  {
@@ -2855,7 +2954,8 @@ window.PRODUCTS = [
    "oily": "yes",
    "combination": "yes",
    "dry": "yes",
-   "sensitive": "yes"
+   "sensitive": "yes",
+   "fungal": "no"
   }
  },
  {
@@ -2888,7 +2988,8 @@ window.PRODUCTS = [
    "oily": "yes",
    "combination": "yes",
    "dry": "yes",
-   "sensitive": "yes"
+   "sensitive": "yes",
+   "fungal": "no"
   }
  },
  {
@@ -2916,7 +3017,8 @@ window.PRODUCTS = [
    "oily": "yes",
    "combination": "yes",
    "dry": "yes",
-   "sensitive": "yes"
+   "sensitive": "yes",
+   "fungal": "no"
   }
  },
  {
@@ -2951,7 +3053,8 @@ window.PRODUCTS = [
    "oily": "yes",
    "combination": "yes",
    "dry": "yes",
-   "sensitive": "no"
+   "sensitive": "no",
+   "fungal": "no"
   }
  },
  {
@@ -2967,8 +3070,8 @@ window.PRODUCTS = [
   ],
   "tags": [
    "Gentle starter",
-   "Fungal-acne safe",
-   "Niacinamide-free"
+   "Niacinamide-free",
+   "Fungal-acne safe"
   ],
   "note": "Uses 3-O-ethyl ascorbic acid, a stable, gentle form.",
   "img": "img/medik8-super-c.webp",
@@ -2980,7 +3083,8 @@ window.PRODUCTS = [
    "oily": "yes",
    "combination": "yes",
    "dry": "yes",
-   "sensitive": "slow"
+   "sensitive": "slow",
+   "fungal": "yes"
   },
   "warn": [
    "Sensitive skin: start 2–3 times a week"
@@ -3022,7 +3126,8 @@ window.PRODUCTS = [
    "oily": "no",
    "combination": "dry",
    "dry": "yes",
-   "sensitive": "slow"
+   "sensitive": "slow",
+   "fungal": "no"
   }
  },
  {
@@ -3053,7 +3158,8 @@ window.PRODUCTS = [
    "oily": "yes",
    "combination": "yes",
    "dry": "yes",
-   "sensitive": "no"
+   "sensitive": "no",
+   "fungal": "no"
   }
  },
  {
@@ -3089,7 +3195,8 @@ window.PRODUCTS = [
    "oily": "no",
    "combination": "dry",
    "dry": "yes",
-   "sensitive": "slow"
+   "sensitive": "slow",
+   "fungal": "no"
   }
  },
  {
@@ -3117,7 +3224,8 @@ window.PRODUCTS = [
    "oily": "yes",
    "combination": "yes",
    "dry": "yes",
-   "sensitive": "yes"
+   "sensitive": "yes",
+   "fungal": "yes"
   }
  },
  {
@@ -3140,7 +3248,8 @@ window.PRODUCTS = [
    "oily": "yes",
    "combination": "yes",
    "dry": "yes",
-   "sensitive": "yes"
+   "sensitive": "yes",
+   "fungal": "no"
   }
  },
  {
@@ -3167,7 +3276,8 @@ window.PRODUCTS = [
    "oily": "yes",
    "combination": "yes",
    "dry": "yes",
-   "sensitive": "yes"
+   "sensitive": "yes",
+   "fungal": "yes"
   }
  },
  {
@@ -3194,7 +3304,8 @@ window.PRODUCTS = [
    "oily": "yes",
    "combination": "yes",
    "dry": "yes",
-   "sensitive": "yes"
+   "sensitive": "yes",
+   "fungal": "yes"
   }
  },
  {
@@ -3224,7 +3335,8 @@ window.PRODUCTS = [
    "oily": "yes",
    "combination": "yes",
    "dry": "yes",
-   "sensitive": "yes"
+   "sensitive": "yes",
+   "fungal": "no"
   }
  }
 ];
