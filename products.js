@@ -3025,7 +3025,8 @@ window.PRODUCTS = [
    "nofrag": "yes",
    "noniacin": "yes",
    "preg": "yes"
-  }
+  },
+  "img": "img/beauty-of-joseon-radiance-cleansing-balm.webp"
  },
  {
   "name": "Banila Co Clean It Zero Cleansing Balm",
@@ -3058,7 +3059,8 @@ window.PRODUCTS = [
    "nofrag": "no",
    "noniacin": "yes",
    "preg": "yes"
-  }
+  },
+  "img": "img/banila-co-clean-it-zero-cleansing-balm.webp"
  },
  {
   "name": "Tatcha The Camellia Cleansing Oil",
