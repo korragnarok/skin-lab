@@ -715,7 +715,7 @@ function buildRoutine(a){
   if(C.has("redness")) sk.splice(1,0,"redness","sensitive");
   const touchy = sens || C.has("redness");
   const acneish = C.has("acne") || T==="oily";
-  const baseAvoid = p => (acneish && ((p.avoid||[]).includes("acne") || (p.fit && p.fit.oily==="no"))) || (T==="combination" && p.fit && p.fit.combination==="no") || (T==="dry" && p.fit && p.fit.dry==="no") || (touchy && p.fit && p.fit.sensitive==="no") || (touchy && (p.flags||[]).some(f=>f==="fragrance"||f==="eo")) || (a.preg && (p.flags||[]).includes("retinoid") && p.step!=="retinoid");
+  const baseAvoid = p => (acneish && ((p.avoid||[]).includes("acne") || (p.fit && p.fit.oily==="no"))) || (T==="combination" && p.fit && p.fit.combination==="no") || (T==="dry" && p.fit && p.fit.dry==="no") || (touchy && p.fit && p.fit.sensitive==="no") || (touchy && (p.flags||[]).some(f=>f==="fragrance"||f==="eo")) || (a.preg && (((p.flags||[]).includes("retinoid") && p.step!=="retinoid") || (p.fit && p.fit.preg==="maybe")));
   const P = (stepKey, o={}) => {
     const own = o.avoid;
     const avoid = p => baseAvoid(p) || (own ? own(p) : false);
@@ -905,8 +905,8 @@ const SKINS = [
   ["sensitive","Sensitive or red", p=>p.fit ? p.fit.sensitive!=="no" : (fitsSkin(p,["sensitive","redness"]) && !(p.flags||[]).some(f=>f==="fragrance"||f==="eo"))],
   ["fungal","Fungal-acne safe", p=>(p.tags||[]).includes("Fungal-acne safe")],
   ["nofrag","Fragrance-free", p=>p.fit && p.fit.nofrag ? p.fit.nofrag==="yes" : (!!p.ingredients && !(p.flags||[]).some(f=>f==="fragrance"||f==="eo"))],
-  ["noniacin","Niacinamide-free", p=>!!p.ingredients && !p.niacinamide],
-  ["preg","Pregnancy-friendly", p=>!(p.flags||[]).includes("retinoid") && !(p.ing||[]).includes("adapalene")]
+  ["noniacin","Niacinamide-free", p=>p.fit && p.fit.noniacin ? p.fit.noniacin==="yes" : (!!p.ingredients && !p.niacinamide)],
+  ["preg","Pregnancy-friendly", p=>p.fit && p.fit.preg ? p.fit.preg==="yes" : (!(p.flags||[]).includes("retinoid") && !(p.ing||[]).includes("adapalene"))]
 ];
 const KIND_LABEL = {sa:"Salicylic acid", bp:"Benzoyl peroxide", sulfur:"Sulfur", retinol:"Retinol", retinal:"Retinal", gentle:"", strong:"Strong"};
 let shopStep = "moisturizer", shopSkin = "any";
