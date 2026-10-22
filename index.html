@@ -295,6 +295,9 @@ ol.steps li::before{font-family:var(--display);font-size:1.5rem}
 .leftcol{min-width:0}
 #qnotes .notes{margin-top:1.2rem}
 #qnotes .note{grid-template-columns:1fr;gap:.15rem}
+.multi{margin-top:.5rem}
+.multitag{display:block;font-weight:700;font-size:.92rem}
+.multiwhy{display:block;color:var(--muted);font-size:.85rem;margin:.05rem 0 .3rem}
 .savebar{display:flex;flex-wrap:wrap;align-items:center;gap:.6rem;margin:-.2rem 0 1rem}
 .savebtn{font:inherit;font-size:.95rem;color:var(--fg);background:var(--surface);border:var(--pen);border-radius:var(--sketch);padding:.35rem .9rem;cursor:pointer;box-shadow:2px 2px 0 rgba(43,33,27,.18)}
 .savebtn:hover{background:var(--accent-soft)}
@@ -755,6 +758,7 @@ $("#quiz").addEventListener("submit", e=>e.preventDefault());
 /* ---------- routine logic ---------- */
 function buildRoutine(a){
   KONLY = !!a.kbeauty;
+  CTX = {T:a.type, sens: a.type==="sensitive" || a.concerns.includes("barrier") || a.concerns.includes("redness")};
   const C = new Set(a.concerns), T = a.type, sens = T==="sensitive" || C.has("barrier");
   const mel = C.has("melasma");
   const simple = a.size==="simple", tier = a.budget;
@@ -865,7 +869,10 @@ function buildRoutine(a){
   if(!simple && useHA) pm.push(step("Hydrate","On damp skin to prep for actives.","ha",null));
   if(ret||exf){
     const parts = [ret && ingBtn(ret), exf && ingBtn(exf)].filter(Boolean).join(" or ");
-    pm.push({label:"Tonight's active", why:`${parts}, depending on the night. Follow the weekly schedule below.`, ing:null, prod:null, multi:[retProd,exfProd].filter(Boolean)});
+    pm.push({label:"Tonight's active", why:`${parts}, depending on the night. Follow the weekly schedule below.`, ing:null, prod:null, multi:[
+      retProd && {sel:retProd, tag:(ret==="bakuchiol"?"Bakuchiol":"Retinoid")+" nights · "+BY[ret].name, why:BY[ret].does},
+      exfProd && {sel:exfProd, tag:"Exfoliant nights · "+BY[exf].name, why:BY[exf].does+(exf==="salicylic" ? " Use this wash in place of your regular cleanser on those nights." : "")}
+    ].filter(Boolean)});
   }
   if(useTxa && txaPM) pm.push(step("Spot fader", (useThia && thiaOK) ? "Tranexamic acid works on pigment from a different angle than thiamidol. Use it after cleansing, before moisturizer." : "Same tranexamic acid as the morning. Apply after cleansing, before moisturizer.","tranexamic",txaP()));
   if(!simple && C.has("lines")) pm.push(step("Repair","Growth factors and peptides support firmness and are gentle enough for any night.","peptides",P("treatment",{skin:[]})));
@@ -911,13 +918,19 @@ function swapper(sel){
     <select id="${id}" data-swap="${esc(sel.key)}">${groups}</select></label>`;
 }
 const warnLine = p => (p && p.warn && p.warn.length) ? `<span class="pwarn">${p.warn.map(esc).join(" · ")}</span>` : "";
-const pickBlock = sel => sel ? `<div class="pickblock">${shopLink(sel.prod)}${sel.noK ? `<span class="pwarn">No K-beauty pick for this step yet</span>` : ""}${warnLine(sel.prod)}${swapper(sel)}</div>` : "";
+let CTX = null; // the builder's current skin answers, so product notes only show when they apply
+const ctxWarn = p => {
+  if(!p || !p.warn || !CTX) return warnLine(p);
+  const w = p.warn.filter(x => !( (/^Combination skin:/.test(x) && CTX.T!=="combination") || (/^Dry skin:/.test(x) && CTX.T!=="dry") || (/^Sensitive skin:/.test(x) && !CTX.sens) ));
+  return w.length ? `<span class="pwarn">${w.map(esc).join(" · ")}</span>` : "";
+};
+const pickBlock = sel => sel ? `<div class="pickblock">${shopLink(sel.prod)}${sel.noK ? `<span class="pwarn">No K-beauty pick for this step yet</span>` : ""}${ctxWarn(sel.prod)}${swapper(sel)}</div>` : "";
 function renderSteps(list){
   return `<ol class="steps">${list.map(s=>`<li><div>
     <div class="step-name">${esc(s.label)}${s.ing?` · ${ingBtn(s.ing)}`:""}</div>
     <p class="step-why">${s.multi ? s.why : esc(s.why)}</p>
     ${pickBlock(s.prod)}
-    ${s.multi && s.multi.length ? `<div class="prods">${s.multi.map(pickBlock).join("")}</div>` : ""}
+    ${s.multi && s.multi.length ? `<div class="prods">${s.multi.map(m=>`<div class="multi"><span class="multitag">${esc(m.tag)}</span><span class="multiwhy">${esc(m.why)}</span>${pickBlock(m.sel)}</div>`).join("")}</div>` : ""}
   </div></li>`).join("")}</ol>`;
 }
 document.addEventListener("change",e=>{
