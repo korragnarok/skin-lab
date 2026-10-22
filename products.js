@@ -201,7 +201,7 @@ window.PRODUCTS = [
    "oily",
    "acne"
   ],
-  "price": 9.0,
+  "price": 9,
   "link": "https://amzn.to/4zKh01l",
   "img": "img/prequel-multi-quench-gel-cream.webp",
   "tags": [
@@ -365,19 +365,6 @@ window.PRODUCTS = [
   "niacinamide": false,
   "ingredients": "Water, Glycolic Acid, Rosa Damascena Flower Water, Centaurea Cyanus Flower Water, Aloe Barbadensis Leaf Water, Propanediol, Glycerin, Triethanolamine, Aminomethyl Propanol, Panax Ginseng Root Extract, Tasmannia Lanceolata Fruit/Leaf Extract, Aspartic Acid, Alanine, Glycine, Serine, Valine, Isoleucine, Proline, Threonine, Histidine, Phenylalanine, Glutamic Acid, Arginine, PCA, Sodium PCA, Sodium Lactate, Fructose, Glucose, Sucrose, Urea, Hexyl Nicotinate, Dextrin, Citric Acid, Polysorbate 20, Gellan Gum, Trisodium Ethylenediamine Disuccinate, Sodium Chloride, Hexylene Glycol, Potassium Sorbate, Sodium Benzoate, 1, 2-Hexanediol, Caprylyl Glycol",
   "ingSource": "https://skinsort.com/products/the-ordinary/glycolic-acid-7-toning-solution"
- },
- {
-  "name": "Puracyn Hypochlorous Spray",
-  "tier": "basics",
-  "step": "mist",
-  "skin": [
-   "acne",
-   "sensitive"
-  ],
-  "price": 3.0,
-  "link": "https://amzn.to/4eoORVr",
-  "img": "img/puracyn-hypochlorous-spray.webp",
-  "tags": []
  },
  {
   "name": "Peach Slices Hypochlorous Acid Spray",
@@ -649,7 +636,7 @@ window.PRODUCTS = [
    "sensitive",
    "redness"
   ],
-  "price": 3.0,
+  "price": 3,
   "link": "https://amzn.to/47va7Fi",
   "kind": "sulfur",
   "ing": [
@@ -1036,7 +1023,7 @@ window.PRODUCTS = [
   "tier": "basics",
   "step": "retinoid",
   "skin": [],
-  "price": 23.0,
+  "price": 23,
   "link": "https://amzn.to/47vA8Es",
   "kind": "retinol",
   "ing": [
@@ -1083,7 +1070,7 @@ window.PRODUCTS = [
   "tier": "basics",
   "step": "retinoid",
   "skin": [],
-  "price": 17.0,
+  "price": 17,
   "link": "https://amzn.to/47wG0xi",
   "kind": "retinal",
   "ing": [
@@ -1398,7 +1385,7 @@ window.PRODUCTS = [
    "acne",
    "sensitive"
   ],
-  "price": 12.0,
+  "price": 12,
   "link": "https://amzn.to/47xBzSM",
   "note": "Cheaper per ounce in the 4 oz size.",
   "img": "img/tower-28-sos-spray.webp",
@@ -1438,7 +1425,7 @@ window.PRODUCTS = [
   "tier": "upgrade",
   "step": "vitc",
   "skin": [],
-  "price": 22.0,
+  "price": 22,
   "link": "https://amzn.to/3TPJMPb",
   "ing": [
    "vitc"
@@ -1834,7 +1821,7 @@ window.PRODUCTS = [
   "tier": "upgrade",
   "step": "retinoid",
   "skin": [],
-  "price": 39.0,
+  "price": 39,
   "link": "https://amzn.to/4ywFB8U",
   "kind": "retinal",
   "ing": [
@@ -1873,7 +1860,7 @@ window.PRODUCTS = [
    "dry",
    "redness"
   ],
-  "price": 43.0,
+  "price": 43,
   "link": "https://amzn.to/4si8OmE",
   "ing": [
    "centella"
@@ -1896,7 +1883,7 @@ window.PRODUCTS = [
   "tier": "splurge",
   "step": "treatment",
   "skin": [],
-  "price": 69.0,
+  "price": 69,
   "link": "https://amzn.to/4Bh9wER",
   "ing": [
    "peptides"
@@ -1913,7 +1900,7 @@ window.PRODUCTS = [
   "tier": "splurge",
   "step": "vitc",
   "skin": [],
-  "price": 48.0,
+  "price": 48,
   "link": "https://amzn.to/4eidIKA",
   "ing": [
    "vitc"
@@ -1934,7 +1921,7 @@ window.PRODUCTS = [
   "tier": "splurge",
   "step": "vitc",
   "skin": [],
-  "price": 89.0,
+  "price": 89,
   "link": "https://amzn.to/4BjFf8n",
   "ing": [
    "vitc"
@@ -1945,28 +1932,6 @@ window.PRODUCTS = [
   "niacinamide": false,
   "ingredients": "Water, Bis-Glyceryl Ascorbate, Saccharomyces/Camellia Sinensis Leaf/Cladosiphon Okamuranus/Rice Ferment Filtrate, Propanediol, Butylene Glycol, Glycerin, Ascorbyl Tetraisopalmitate, Angelica Acutiloba Root Extract, Callicarpa Japonica Fruit Extract, Prunus Mume Fruit Extract, Crataegus Cuneata Fruit Extract, Pyrus Malus Fruit Extract, Citrus Paradisi Fruit Extract, Citrus Aurantium Dulcis Juice, Citrus Limon Juice, Citrus Aurantifolia Juice, Glycyrrhiza Glabra Root Extract, Scutellaria Baicalensis Root Extract, Artemisia Capillaris Flower Extract, Morus Alba Root Extract, Ziziphus Jujuba Fruit Extract, Sodium Hyaluronate, Lactic Acid, Sodium Citrate, Dipotassium Glycyrrhizate, Ammonium Acryloyldimethyltaurate/Carboxyethyl Acrylate Crosspolymer, Disodium EDTA, PPG-6-Decyltetradeceth-30, Ethylhexylglycerin, Phenoxyethanol",
   "ingSource": "https://skinsort.com/products/tatcha/violet-c-brightening-serum-20-vitamin-c-10-aha"
- },
- {
-  "name": "Glow Aloe Barrier Cream",
-  "tier": "splurge",
-  "step": "moisturizer",
-  "skin": [
-   "combination",
-   "acne",
-   "sensitive"
-  ],
-  "price": 30.77,
-  "link": "https://amzn.to/4dRJj5I",
-  "img": "img/glow-aloe-barrier-cream.webp",
-  "warn": [
-   "Contains fragrance"
-  ],
-  "flags": [
-   "fragrance"
-  ],
-  "niacinamide": true,
-  "ingredients": "Aloe Barbadensis Leaf Water, Water, Hydrogenated Polydecene, Isononyl Isononanoate, Glycerin, Polyglyceryl-4 Oleate, Niacinamide, Polyglyceryl-6 Oleate, 1, 2-Hexanediol, Magnesium Sulfate, Polyhydroxystearic Acid, Sorbitan Sesquioleate, Dipropylene Glycol, Hydroxyacetophenone, Parfum, Ethylhexylglycerin, Caprylyl Glycol, Adenosine, Disodium EDTA, Ceramide NP, Dipotassium Glycyrrhizate, Tocopherol",
-  "ingSource": "https://skinsort.com/products/glow/aloe-barrier-support-moisturizer"
  },
  {
   "name": "Tatcha The Dewy Skin Cream",
@@ -2001,7 +1966,7 @@ window.PRODUCTS = [
   "skin": [
    "all"
   ],
-  "price": 46.0,
+  "price": 46,
   "link": "https://amzn.to/47rVy5p",
   "ing": [
    "sunscreen"
@@ -2022,7 +1987,7 @@ window.PRODUCTS = [
    "sensitive",
    "mineral"
   ],
-  "price": 39.0,
+  "price": 39,
   "link": "https://amzn.to/3WhRguU",
   "ing": [
    "sunscreen"
@@ -2066,7 +2031,7 @@ window.PRODUCTS = [
   "tier": "splurge",
   "step": "vitc",
   "skin": [],
-  "price": 69.0,
+  "price": 69,
   "link": "https://amzn.to/4Ba2Nwi",
   "kind": "gentle",
   "ing": [
@@ -2088,7 +2053,7 @@ window.PRODUCTS = [
   "tier": "splurge",
   "step": "vitc",
   "skin": [],
-  "price": 78.0,
+  "price": 78,
   "link": "https://amzn.to/4scX8kY",
   "kind": "gentle",
   "ing": [
@@ -2116,7 +2081,7 @@ window.PRODUCTS = [
   "tier": "splurge",
   "step": "vitc",
   "skin": [],
-  "price": 80.0,
+  "price": 80,
   "link": "https://amzn.to/4BhJEIL",
   "kind": "gentle",
   "ing": [
@@ -2164,7 +2129,7 @@ window.PRODUCTS = [
   "tier": "splurge",
   "step": "retinoid",
   "skin": [],
-  "price": 46.0,
+  "price": 46,
   "link": "https://amzn.to/3UfH2L1",
   "kind": "retinal",
   "ing": [
