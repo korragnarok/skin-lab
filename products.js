@@ -3803,6 +3803,9 @@ window.PRODUCTS = [
    "Not for acne-prone skin",
    "Contains fragrance",
    "Contains drying alcohol"
+  ],
+  "ing": [
+   "thiamidol"
   ]
  },
  {

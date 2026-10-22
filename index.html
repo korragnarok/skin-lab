@@ -519,6 +519,10 @@ const CONCERNS = [
    what:"Overactive oil glands, usually strongest in the T-zone. Often goes with breakouts and visible pores.",
    hero:["niacinamide","salicylic"], support:["sulfur","adapalene","ha"],
    tip:"Stripping oil with harsh cleansers often makes skin produce more. Keep moisturizing."},
+  {id:"melasma", name:"Melasma", short:"Melasma",
+   what:"Larger brown or gray-brown patches, usually on the cheeks, forehead, or upper lip. Triggered by sun, heat, and hormones (it's common in pregnancy and on birth control).",
+   hero:["sunscreen","thiamidol","tranexamic","azelaic"], support:["niacinamide","arbutin","vitc"],
+   tip:"Melasma comes back easily. A tinted mineral sunscreen every day is the most important step, and gentle beats aggressive: irritation can make patches darker. A dermatologist can add prescription options."},
   {id:"barrier", name:"Damaged barrier", short:"Barrier repair",
    what:"Over-exfoliated or irritated skin that stings, feels tight, and reacts to everything.",
    hero:["ceramides","panthenol","centella","petrolatum"], support:["squalane","ha","niacinamide"],
@@ -574,8 +578,12 @@ const ING = [
   tip:"Start around 4–5% if you're sensitive. Some people find 10% stings."},
  {id:"tranexamic", name:"Tranexamic Acid", inci:"Tranexamic Acid", fam:"Brighteners", grp:null,
   does:"Interrupts the signals that trigger pigment. Good for stubborn dark spots and melasma-type patches.",
-  good:["darkspots"], pct:"2–5%", when:"AM or PM", preg:"ask",
-  tip:"Pairs well with niacinamide and sunscreen. Give it 8–12 weeks."},
+  good:["darkspots","melasma"], pct:"2–5%", when:"AM or PM", preg:"ask",
+  tip:"Pairs well with niacinamide, thiamidol, and sunscreen. Give it 8–12 weeks."},
+ {id:"thiamidol", name:"Thiamidol", inci:"Isobutylamido Thiazolyl Resorcinol", fam:"Brighteners", grp:null,
+  does:"Blocks human tyrosinase, the enzyme that makes pigment. One of the best-studied ingredients for melasma and stubborn dark spots.",
+  good:["darkspots","melasma"], pct:"Low %, brand formula", when:"AM and PM", preg:"ask",
+  tip:"Found in Eucerin's dark spot line. Pairs well with tranexamic acid, niacinamide, and daily sunscreen. Give it 8–12 weeks."},
  {id:"arbutin", name:"Alpha Arbutin", inci:"Alpha-Arbutin", fam:"Brighteners", grp:null,
   does:"Slows the enzyme that makes pigment, so dark spots fade gradually.",
   good:["darkspots","dullness"], pct:"1–2%", when:"AM or PM", preg:"ask",
@@ -718,6 +726,7 @@ $("#quiz").addEventListener("submit", e=>e.preventDefault());
 function buildRoutine(a){
   KONLY = !!a.kbeauty;
   const C = new Set(a.concerns), T = a.type, sens = T==="sensitive" || C.has("barrier");
+  const mel = C.has("melasma");
   const simple = a.size==="simple", tier = a.budget;
   const sk = [...SKIN_PREFS[T]];
   if(C.has("acne")) sk.unshift("acne");
@@ -776,13 +785,22 @@ function buildRoutine(a){
     else if(C.has("darkspots") && !C.has("dullness")) exf = "mandelic";
     else exf = "glycolic";
   }
-  const useC = ["darkspots","dullness","lines"].some(c=>C.has(c)) && !sens;
-  const useNia = ["acne","oiliness","texture","redness"].some(c=>C.has(c)) || (C.has("darkspots") && sens);
-  const useAz = C.has("redness") || (C.has("acne") && a.preg) || (C.has("darkspots") && sens && C.has("acne"));
-  const useTxa = C.has("darkspots") && !simple;
+  const useC = ["darkspots","dullness","lines","melasma"].some(c=>C.has(c)) && !sens;
+  const useNia = ["acne","oiliness","texture","redness"].some(c=>C.has(c)) || ((C.has("darkspots") || mel) && sens);
+  const useAz = C.has("redness") || (C.has("acne") && a.preg) || (C.has("darkspots") && sens && C.has("acne")) || (mel && sens);
+  const useThia = mel && !sens;  // final check against thiaOK below
+  const useTxa = (C.has("darkspots") || mel) && !simple;
+  const txaPM = mel;
   const useHA = C.has("dryness") || T==="dry";
 
   const easy = sens || a.level==="new";
+  const hasThia = p => !!p && /thiazolyl resorcinol/i.test(p.ingredients||"");
+  const hasTxa = p => !!p && /tranexamic/i.test(p.ingredients||"");
+  const thiaSel = mel ? P("spotfader",{skin:[], avoid:p=>!hasThia(p)}) : null;
+  const thiaOK = !!(thiaSel && hasThia(thiaSel.prod));
+  const thiaP = () => thiaOK ? thiaSel : null;
+  const txaTop = p => (p.ingredients||"").split(",").slice(0,6).some(x=>/tranexamic/i.test(x));
+  const txaP = () => P("spotfader",{skin:[], prefer:txaTop, avoid:p=>!hasTxa(p) || (sens && /Naturium Tranexamic/.test(p.name))});
   const vitcP = () => P("vitc",{skin:[], prefer: easy ? (p=>p.kind==="gentle") : null});
   const niaP = () => P("niacinamide",{skin:[], avoid: (easy || T!=="oily") ? (p=>p.kind==="strong") : null});
   const retProd = ret==="adapalene" ? P("acne",{skin:[], prefer:p=>!(p.ing||[]).includes("bp")})
@@ -798,17 +816,18 @@ function buildRoutine(a){
     am.push(step("Acne boost (2–3 mornings a week)","Swap in a benzoyl peroxide wash. Leave it on 1–2 minutes, then rinse.","bp",P("cleanser",{kind:"bp"})));
   }
   if(simple){
-    const pk = useC ? "vitc" : useNia ? "niacinamide" : useAz ? "azelaic" : useHA ? "ha" : null;
-    if(pk) am.push(step("Treat", BY[pk].does, pk, pk==="vitc" ? vitcP() : pk==="niacinamide" ? niaP() : null));
+    const pk = (useThia && thiaOK) ? "thiamidol" : mel ? "tranexamic" : useC ? "vitc" : useNia ? "niacinamide" : useAz ? "azelaic" : useHA ? "ha" : null;
+    if(pk) am.push(step("Treat", BY[pk].does, pk, pk==="vitc" ? vitcP() : pk==="niacinamide" ? niaP() : pk==="thiamidol" ? thiaP() : pk==="tranexamic" ? txaP() : null));
   } else {
     if(useHA) am.push(step("Hydrate","On damp skin, before anything thicker.","ha",null));
     if(useC) am.push(step("Antioxidant","Brightens and adds backup to your sunscreen.","vitc",vitcP()));
     if(useNia) am.push(step("Treat","Evens tone and keeps oil and redness in check.","niacinamide",niaP()));
-    if(useTxa) am.push(step("Spot fader","Targets stubborn dark spots alongside niacinamide.","tranexamic",P("spotfader",{skin:[], prefer:p=>(p.ing||[]).includes("tranexamic"), avoid: sens ? (p=>/Naturium Tranexamic/.test(p.name)) : null})));
+    if(useThia && thiaOK) am.push(step("Melasma treatment","Thiamidol slows pigment where melasma starts. Use it every morning.","thiamidol",thiaP()));
+    if(useTxa && (!txaPM || !(useThia && thiaOK))) am.push(step("Spot fader", mel ? "Tranexamic acid calms the signals that trigger melasma. Use it morning and night." : "Targets stubborn dark spots alongside niacinamide.","tranexamic",txaP()));
     if(useAz) am.push(step("Calm & clear","Azelaic acid handles redness, bumps, and marks at once.","azelaic",null));
   }
   am.push(step("Moisturize","Hydration that suits your skin type.",null,P("moisturizer")));
-  am.push(step("Sunscreen","Every morning, rain or shine. The last step, always.","sunscreen",P("sunscreen",{skin: sens ? ["mineral","sensitive"] : sk})));
+  am.push(step("Sunscreen", mel ? "A tinted mineral sunscreen is best for melasma: the iron oxides in the tint also block visible light, which can darken patches. Reapply when you're outside." : "Every morning, rain or shine. The last step, always.","sunscreen",P("sunscreen",{skin: (sens || mel) ? ["mineral","sensitive"] : sk, avoid: mel ? (p=>!(/tinted/i.test(p.name) || /iron oxide/i.test(p.ingredients||""))) : null})));
 
   // PM
   if(!simple) pm.push(step("First cleanse","Melts sunscreen and makeup so your cleanser can do its job.",null,P("remover",{skin:[]})));
@@ -818,6 +837,7 @@ function buildRoutine(a){
     const parts = [ret && ingBtn(ret), exf && ingBtn(exf)].filter(Boolean).join(" or ");
     pm.push({label:"Tonight's active", why:`${parts}, depending on the night. Follow the weekly schedule below.`, ing:null, prod:null, multi:[retProd,exfProd].filter(Boolean)});
   }
+  if(useTxa && txaPM) pm.push(step("Spot fader", (useThia && thiaOK) ? "Tranexamic acid works on pigment from a different angle than thiamidol. Use it after cleansing, before moisturizer." : "Same tranexamic acid as the morning. Apply after cleansing, before moisturizer.","tranexamic",txaP()));
   if(!simple && C.has("lines")) pm.push(step("Repair","Growth factors and peptides support firmness and are gentle enough for any night.","peptides",P("treatment",{skin:[]})));
   pm.push(step("Moisturize", ret ? "Buffers your active and cuts dryness." : "Locks everything in overnight.", "ceramides", P("moisturizer",{skin: T==="oily" ? sk : ["dry",...sk]})));
   if(!simple && (T==="dry" || C.has("dryness")) && !C.has("acne")) pm.push(step("Seal (optional)","A thin layer of repair balm on dry areas.","panthenol",P("repair",{skin:[]})));
@@ -841,6 +861,8 @@ function buildRoutine(a){
   if(a.preg) notes.push(["Pregnancy","Retinoids and leave-on salicylic acid are left out. Azelaic acid, lactic and mandelic acids, and sunscreen are common swaps. Please run your routine by your OB or midwife."]);
   if(C.has("acne")) notes.push(["See a pro","If breakouts are deep, painful, or leave scars, a dermatologist can prescribe stronger options."]);
   if(C.has("redness")) notes.push(["See a pro","Persistent flushing or bumps can be rosacea, which a dermatologist can treat."]);
+  if(mel) notes.push(["Melasma", (sens || !thiaOK) ? "My thiamidol pick isn't a match for your skin, so this routine uses tranexamic acid morning and night instead. Sun, heat, and irritation all make melasma darker, so keep things calm." : "Thiamidol in the morning, tranexamic acid at night. They work in different ways and are safe together, so you can also use both twice a day. Keep heat and irritation down: both can make patches darker."]);
+  if(mel) notes.push(["See a pro","Melasma is stubborn and tends to return. A dermatologist can add prescription options if it isn't fading after 3 months."]);
 
   const tn = TYPES.find(t=>t[0]===T)[1].toLowerCase();
   const cn = a.concerns.map(c=>CONCERNS.find(x=>x.id===c).short.toLowerCase());
@@ -906,7 +928,7 @@ const STEPS = [
   ["repair","Repair balms",[12,25]], ["mist","Hypochlorous mists",[4,10]], ["treatment","Growth factor serums",[25,45]]
 ].filter(([k])=>PRODUCTS.some(p=>p.step===k));
 const STEP_FOR_ING = {retinol:"retinoid", adapalene:"acne", glycolic:"exfoliant", salicylic:"cleanser", bp:"cleanser", sulfur:"cleanser",
-  niacinamide:"niacinamide", tranexamic:"spotfader", arbutin:"spotfader", vitc:"vitc", ha:"moisturizer", ceramides:"moisturizer", peptides:"treatment", centella:"repair", panthenol:"repair", sunscreen:"sunscreen"};
+  niacinamide:"niacinamide", tranexamic:"spotfader", thiamidol:"spotfader", arbutin:"spotfader", vitc:"vitc", ha:"moisturizer", ceramides:"moisturizer", peptides:"treatment", centella:"repair", panthenol:"repair", sunscreen:"sunscreen"};
 const fitsSkin = (p,ks) => !(p.skin && p.skin.length) || p.skin.some(k=>[...ks,"all"].includes(k));
 const SKINS = [
   ["any","Any skin", ()=>true],
@@ -1070,6 +1092,8 @@ const PAIR_RULES = {
   "niacinamide|retinol":["great","Niacinamide calms the redness and dryness retinol can cause."],
   "azelaic|niacinamide":["great","A strong team for redness, acne, and dark marks."],
   "niacinamide|tranexamic":["great","Both fade pigment through different pathways. A top pair for dark spots."],
+  "thiamidol|tranexamic":["great","A strong melasma pair: they fade pigment in different ways. Use both twice a day, or thiamidol in the morning and tranexamic acid at night."],
+  "niacinamide|thiamidol":["great","Safe to layer. Both help even out pigment."],
   "ceramides|retinol":["great","Ceramides buffer retinol and help your barrier through the adjustment period."],
   "adapalene|ceramides":["great","Ceramides buffer adapalene and help your barrier through the adjustment period."],
   "ha|retinol":["great","Hyaluronic acid adds hydration that offsets retinol dryness."],
