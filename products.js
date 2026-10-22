@@ -29,7 +29,8 @@ window.PRODUCTS = [
   "fit": {
    "oily": "maybe",
    "combination": "dry",
-   "dry": "yes"
+   "dry": "yes",
+   "sensitive": "yes"
   },
   "warn": [
    "Combination skin: use on dry areas only"
@@ -67,7 +68,8 @@ window.PRODUCTS = [
   "fit": {
    "oily": "no",
    "combination": "no",
-   "dry": "yes"
+   "dry": "yes",
+   "sensitive": "yes"
   }
  },
  {
@@ -91,7 +93,8 @@ window.PRODUCTS = [
   "fit": {
    "oily": "yes",
    "combination": "yes",
-   "dry": "layer"
+   "dry": "layer",
+   "sensitive": "yes"
   },
   "warn": [
    "Dry skin: layer a cream on top"
@@ -116,7 +119,8 @@ window.PRODUCTS = [
   "fit": {
    "oily": "yes",
    "combination": "yes",
-   "dry": "layer"
+   "dry": "layer",
+   "sensitive": "yes"
   },
   "warn": [
    "Dry skin: layer a cream on top"
@@ -143,7 +147,8 @@ window.PRODUCTS = [
   "fit": {
    "oily": "yes",
    "combination": "yes",
-   "dry": "layer"
+   "dry": "layer",
+   "sensitive": "yes"
   },
   "warn": [
    "Dry skin: layer a cream on top"
@@ -171,7 +176,8 @@ window.PRODUCTS = [
   "fit": {
    "oily": "yes",
    "combination": "yes",
-   "dry": "layer"
+   "dry": "layer",
+   "sensitive": "yes"
   },
   "warn": [
    "Dry skin: layer a cream on top"
@@ -201,7 +207,8 @@ window.PRODUCTS = [
   "fit": {
    "oily": "yes",
    "combination": "yes",
-   "dry": "layer"
+   "dry": "layer",
+   "sensitive": "yes"
   },
   "warn": [
    "Dry skin: layer a cream on top"
@@ -228,7 +235,8 @@ window.PRODUCTS = [
   "fit": {
    "oily": "yes",
    "combination": "yes",
-   "dry": "layer"
+   "dry": "layer",
+   "sensitive": "yes"
   },
   "warn": [
    "Dry skin: layer a cream on top"
@@ -256,7 +264,8 @@ window.PRODUCTS = [
   "fit": {
    "oily": "yes",
    "combination": "yes",
-   "dry": "layer"
+   "dry": "layer",
+   "sensitive": "yes"
   },
   "warn": [
    "Dry skin: layer a cream on top"
@@ -283,7 +292,8 @@ window.PRODUCTS = [
   "fit": {
    "oily": "yes",
    "combination": "yes",
-   "dry": "layer"
+   "dry": "layer",
+   "sensitive": "yes"
   },
   "warn": [
    "Dry skin: layer a cream on top"
@@ -310,7 +320,8 @@ window.PRODUCTS = [
   "fit": {
    "oily": "yes",
    "combination": "yes",
-   "dry": "yes"
+   "dry": "yes",
+   "sensitive": "yes"
   }
  },
  {
@@ -337,7 +348,8 @@ window.PRODUCTS = [
   "fit": {
    "oily": "maybe",
    "combination": "yes",
-   "dry": "yes"
+   "dry": "yes",
+   "sensitive": "yes"
   }
  },
  {
@@ -362,7 +374,8 @@ window.PRODUCTS = [
   "fit": {
    "oily": "maybe",
    "combination": "yes",
-   "dry": "yes"
+   "dry": "yes",
+   "sensitive": "yes"
   }
  },
  {
@@ -389,7 +402,8 @@ window.PRODUCTS = [
   "fit": {
    "oily": "maybe",
    "combination": "yes",
-   "dry": "yes"
+   "dry": "yes",
+   "sensitive": "yes"
   }
  },
  {
@@ -413,7 +427,8 @@ window.PRODUCTS = [
   "fit": {
    "oily": "maybe",
    "combination": "dry",
-   "dry": "yes"
+   "dry": "yes",
+   "sensitive": "yes"
   },
   "warn": [
    "Combination skin: use on dry areas only"
@@ -453,7 +468,8 @@ window.PRODUCTS = [
   "fit": {
    "oily": "no",
    "combination": "dry",
-   "dry": "yes"
+   "dry": "yes",
+   "sensitive": "yes"
   }
  },
  {
@@ -481,7 +497,8 @@ window.PRODUCTS = [
   "fit": {
    "oily": "yes",
    "combination": "yes",
-   "dry": "yes"
+   "dry": "yes",
+   "sensitive": "no"
   }
  },
  {
@@ -506,7 +523,8 @@ window.PRODUCTS = [
   "fit": {
    "oily": "yes",
    "combination": "yes",
-   "dry": "yes"
+   "dry": "yes",
+   "sensitive": "yes"
   }
  },
  {
@@ -529,7 +547,8 @@ window.PRODUCTS = [
   "fit": {
    "oily": "yes",
    "combination": "yes",
-   "dry": "maybe"
+   "dry": "maybe",
+   "sensitive": "yes"
   }
  },
  {
@@ -555,7 +574,8 @@ window.PRODUCTS = [
   "fit": {
    "oily": "yes",
    "combination": "yes",
-   "dry": "yes"
+   "dry": "yes",
+   "sensitive": "yes"
   }
  },
  {
@@ -578,7 +598,8 @@ window.PRODUCTS = [
   "fit": {
    "oily": "yes",
    "combination": "yes",
-   "dry": "maybe"
+   "dry": "maybe",
+   "sensitive": "yes"
   }
  },
  {
@@ -601,7 +622,8 @@ window.PRODUCTS = [
   "fit": {
    "oily": "yes",
    "combination": "yes",
-   "dry": "yes"
+   "dry": "yes",
+   "sensitive": "yes"
   }
  },
  {
@@ -625,7 +647,8 @@ window.PRODUCTS = [
   "fit": {
    "oily": "yes",
    "combination": "yes",
-   "dry": "yes"
+   "dry": "yes",
+   "sensitive": "yes"
   }
  },
  {
@@ -651,7 +674,8 @@ window.PRODUCTS = [
   "fit": {
    "oily": "yes",
    "combination": "yes",
-   "dry": "yes"
+   "dry": "yes",
+   "sensitive": "yes"
   }
  },
  {
@@ -681,7 +705,8 @@ window.PRODUCTS = [
   "fit": {
    "oily": "yes",
    "combination": "yes",
-   "dry": "no"
+   "dry": "no",
+   "sensitive": "maybe"
   }
  },
  {
@@ -711,7 +736,8 @@ window.PRODUCTS = [
   "fit": {
    "oily": "yes",
    "combination": "yes",
-   "dry": "no"
+   "dry": "no",
+   "sensitive": "maybe"
   }
  },
  {
@@ -738,8 +764,12 @@ window.PRODUCTS = [
   "fit": {
    "oily": "yes",
    "combination": "yes",
-   "dry": "maybe"
-  }
+   "dry": "maybe",
+   "sensitive": "slow"
+  },
+  "warn": [
+   "Sensitive skin: start 2–3 times a week"
+  ]
  },
  {
   "name": "Cetaphil Gentle Exfoliating SA Cleanser",
@@ -765,8 +795,12 @@ window.PRODUCTS = [
   "fit": {
    "oily": "yes",
    "combination": "yes",
-   "dry": "maybe"
-  }
+   "dry": "maybe",
+   "sensitive": "slow"
+  },
+  "warn": [
+   "Sensitive skin: start 2–3 times a week"
+  ]
  },
  {
   "name": "PanOxyl Creamy Wash",
@@ -792,8 +826,12 @@ window.PRODUCTS = [
   "fit": {
    "oily": "yes",
    "combination": "yes",
-   "dry": "maybe"
-  }
+   "dry": "maybe",
+   "sensitive": "slow"
+  },
+  "warn": [
+   "Sensitive skin: start 2–3 times a week"
+  ]
  },
  {
   "name": "PanOxyl Foaming Wash",
@@ -819,7 +857,8 @@ window.PRODUCTS = [
   "fit": {
    "oily": "yes",
    "combination": "yes",
-   "dry": "no"
+   "dry": "no",
+   "sensitive": "no"
   }
  },
  {
@@ -846,7 +885,8 @@ window.PRODUCTS = [
   "fit": {
    "oily": "yes",
    "combination": "yes",
-   "dry": "no"
+   "dry": "no",
+   "sensitive": "maybe"
   }
  },
  {
@@ -876,7 +916,8 @@ window.PRODUCTS = [
   "fit": {
    "oily": "yes",
    "combination": "yes",
-   "dry": "maybe"
+   "dry": "maybe",
+   "sensitive": "yes"
   }
  },
  {
@@ -905,7 +946,8 @@ window.PRODUCTS = [
   "fit": {
    "oily": "yes",
    "combination": "yes",
-   "dry": "maybe"
+   "dry": "maybe",
+   "sensitive": "yes"
   }
  },
  {
@@ -929,7 +971,8 @@ window.PRODUCTS = [
   "fit": {
    "oily": "yes",
    "combination": "yes",
-   "dry": "yes"
+   "dry": "yes",
+   "sensitive": "yes"
   }
  },
  {
@@ -953,7 +996,8 @@ window.PRODUCTS = [
   "fit": {
    "oily": "yes",
    "combination": "yes",
-   "dry": "yes"
+   "dry": "yes",
+   "sensitive": "yes"
   }
  },
  {
@@ -976,7 +1020,8 @@ window.PRODUCTS = [
   "fit": {
    "oily": "yes",
    "combination": "yes",
-   "dry": "yes"
+   "dry": "yes",
+   "sensitive": "yes"
   }
  },
  {
@@ -999,7 +1044,8 @@ window.PRODUCTS = [
   "fit": {
    "oily": "yes",
    "combination": "yes",
-   "dry": "yes"
+   "dry": "yes",
+   "sensitive": "yes"
   }
  },
  {
@@ -1029,7 +1075,8 @@ window.PRODUCTS = [
   "fit": {
    "oily": "yes",
    "combination": "yes",
-   "dry": "yes"
+   "dry": "yes",
+   "sensitive": "maybe"
   }
  },
  {
@@ -1052,7 +1099,8 @@ window.PRODUCTS = [
   "fit": {
    "oily": "yes",
    "combination": "yes",
-   "dry": "yes"
+   "dry": "yes",
+   "sensitive": "yes"
   }
  },
  {
@@ -1080,7 +1128,8 @@ window.PRODUCTS = [
   "fit": {
    "oily": "yes",
    "combination": "yes",
-   "dry": "yes"
+   "dry": "yes",
+   "sensitive": "maybe"
   }
  },
  {
@@ -1103,7 +1152,8 @@ window.PRODUCTS = [
   "fit": {
    "oily": "yes",
    "combination": "yes",
-   "dry": "yes"
+   "dry": "yes",
+   "sensitive": "yes"
   }
  },
  {
@@ -1125,7 +1175,8 @@ window.PRODUCTS = [
    "Niacinamide-free"
   ],
   "warn": [
-   "Skip if pregnant or nursing"
+   "Skip if pregnant or nursing",
+   "Sensitive skin: start 2–3 times a week"
   ],
   "flags": [
    "retinoid"
@@ -1136,7 +1187,8 @@ window.PRODUCTS = [
   "fit": {
    "oily": "yes",
    "combination": "yes",
-   "dry": "yes"
+   "dry": "yes",
+   "sensitive": "slow"
   }
  },
  {
@@ -1158,7 +1210,8 @@ window.PRODUCTS = [
    "Niacinamide-free"
   ],
   "warn": [
-   "Skip if pregnant or nursing"
+   "Skip if pregnant or nursing",
+   "Sensitive skin: start 2–3 times a week"
   ],
   "flags": [
    "retinoid"
@@ -1169,7 +1222,8 @@ window.PRODUCTS = [
   "fit": {
    "oily": "yes",
    "combination": "yes",
-   "dry": "yes"
+   "dry": "yes",
+   "sensitive": "slow"
   }
  },
  {
@@ -1202,7 +1256,8 @@ window.PRODUCTS = [
   "fit": {
    "oily": "yes",
    "combination": "yes",
-   "dry": "maybe"
+   "dry": "maybe",
+   "sensitive": "no"
   }
  },
  {
@@ -1229,7 +1284,8 @@ window.PRODUCTS = [
   "fit": {
    "oily": "maybe",
    "combination": "yes",
-   "dry": "yes"
+   "dry": "yes",
+   "sensitive": "yes"
   }
  },
  {
@@ -1255,7 +1311,8 @@ window.PRODUCTS = [
   "fit": {
    "oily": "yes",
    "combination": "yes",
-   "dry": "yes"
+   "dry": "yes",
+   "sensitive": "yes"
   }
  },
  {
@@ -1282,7 +1339,8 @@ window.PRODUCTS = [
   "fit": {
    "oily": "yes",
    "combination": "yes",
-   "dry": "yes"
+   "dry": "yes",
+   "sensitive": "yes"
   }
  },
  {
@@ -1308,7 +1366,8 @@ window.PRODUCTS = [
   "fit": {
    "oily": "yes",
    "combination": "yes",
-   "dry": "yes"
+   "dry": "yes",
+   "sensitive": "yes"
   }
  },
  {
@@ -1334,7 +1393,8 @@ window.PRODUCTS = [
   "fit": {
    "oily": "yes",
    "combination": "yes",
-   "dry": "yes"
+   "dry": "yes",
+   "sensitive": "yes"
   }
  },
  {
@@ -1350,7 +1410,8 @@ window.PRODUCTS = [
   ],
   "img": "img/good-molecules-retinol.webp",
   "warn": [
-   "Skip if pregnant or nursing"
+   "Skip if pregnant or nursing",
+   "Sensitive skin: start 2–3 times a week"
   ],
   "flags": [
    "retinoid"
@@ -1364,7 +1425,8 @@ window.PRODUCTS = [
   "fit": {
    "oily": "yes",
    "combination": "yes",
-   "dry": "yes"
+   "dry": "yes",
+   "sensitive": "slow"
   }
  },
  {
@@ -1380,7 +1442,8 @@ window.PRODUCTS = [
   ],
   "img": "img/skin1004-retinol-boosting-shot.webp",
   "warn": [
-   "Skip if pregnant or nursing"
+   "Skip if pregnant or nursing",
+   "Sensitive skin: start 2–3 times a week"
   ],
   "flags": [
    "retinoid"
@@ -1394,7 +1457,8 @@ window.PRODUCTS = [
   "fit": {
    "oily": "yes",
    "combination": "yes",
-   "dry": "yes"
+   "dry": "yes",
+   "sensitive": "slow"
   }
  },
  {
@@ -1411,7 +1475,8 @@ window.PRODUCTS = [
   "img": "img/olay-retinol-24.webp",
   "warn": [
    "May feel heavy on acne-prone skin",
-   "Skip if pregnant or nursing"
+   "Skip if pregnant or nursing",
+   "Sensitive skin: start 2–3 times a week"
   ],
   "flags": [
    "heavy",
@@ -1424,7 +1489,8 @@ window.PRODUCTS = [
   "fit": {
    "oily": "maybe",
    "combination": "yes",
-   "dry": "yes"
+   "dry": "yes",
+   "sensitive": "slow"
   }
  },
  {
@@ -1441,7 +1507,8 @@ window.PRODUCTS = [
   "img": "img/cerave-resurfacing-retinol-serum.webp",
   "warn": [
    "May feel heavy on acne-prone skin",
-   "Skip if pregnant or nursing"
+   "Skip if pregnant or nursing",
+   "Sensitive skin: start 2–3 times a week"
   ],
   "flags": [
    "heavy",
@@ -1454,7 +1521,8 @@ window.PRODUCTS = [
   "fit": {
    "oily": "yes",
    "combination": "yes",
-   "dry": "yes"
+   "dry": "yes",
+   "sensitive": "slow"
   }
  },
  {
@@ -1470,7 +1538,8 @@ window.PRODUCTS = [
   ],
   "img": "img/e-l-f-youth-boosting-advanced-retinoid.webp",
   "warn": [
-   "Skip if pregnant or nursing"
+   "Skip if pregnant or nursing",
+   "Sensitive skin: start 2–3 times a week"
   ],
   "flags": [
    "retinoid"
@@ -1484,7 +1553,8 @@ window.PRODUCTS = [
   "fit": {
    "oily": "yes",
    "combination": "yes",
-   "dry": "yes"
+   "dry": "yes",
+   "sensitive": "slow"
   }
  },
  {
@@ -1502,7 +1572,8 @@ window.PRODUCTS = [
   "img": "img/cosrx-the-retinol-0-5-oil.webp",
   "warn": [
    "Not for acne-prone skin",
-   "Skip if pregnant or nursing"
+   "Skip if pregnant or nursing",
+   "Sensitive skin: start 2–3 times a week"
   ],
   "flags": [
    "heavy",
@@ -1520,7 +1591,8 @@ window.PRODUCTS = [
   "fit": {
    "oily": "no",
    "combination": "no",
-   "dry": "yes"
+   "dry": "yes",
+   "sensitive": "slow"
   }
  },
  {
@@ -1538,7 +1610,8 @@ window.PRODUCTS = [
   "img": "img/beauty-of-joseon-retinal-eye-cream.webp",
   "warn": [
    "May feel heavy on acne-prone skin",
-   "Skip if pregnant or nursing"
+   "Skip if pregnant or nursing",
+   "Sensitive skin: start 2–3 times a week"
   ],
   "flags": [
    "heavy",
@@ -1551,7 +1624,8 @@ window.PRODUCTS = [
   "fit": {
    "oily": "yes",
    "combination": "yes",
-   "dry": "yes"
+   "dry": "yes",
+   "sensitive": "slow"
   }
  },
  {
@@ -1568,7 +1642,8 @@ window.PRODUCTS = [
   "note": "Lowest strength: a good first retinal.",
   "img": "img/naturium-retinal-serum-0-05.webp",
   "warn": [
-   "Skip if pregnant or nursing"
+   "Skip if pregnant or nursing",
+   "Sensitive skin: start 2–3 times a week"
   ],
   "flags": [
    "retinoid"
@@ -1582,7 +1657,8 @@ window.PRODUCTS = [
   "fit": {
    "oily": "yes",
    "combination": "yes",
-   "dry": "yes"
+   "dry": "yes",
+   "sensitive": "slow"
   }
  },
  {
@@ -1598,7 +1674,8 @@ window.PRODUCTS = [
   ],
   "img": "img/naturium-retinal-0-1.webp",
   "warn": [
-   "Skip if pregnant or nursing"
+   "Skip if pregnant or nursing",
+   "Sensitive skin: start 2–3 times a week"
   ],
   "flags": [
    "retinoid"
@@ -1612,7 +1689,8 @@ window.PRODUCTS = [
   "fit": {
    "oily": "yes",
    "combination": "yes",
-   "dry": "yes"
+   "dry": "yes",
+   "sensitive": "slow"
   }
  },
  {
@@ -1628,7 +1706,8 @@ window.PRODUCTS = [
   ],
   "img": "img/naturium-retinal-cream-0-15.webp",
   "warn": [
-   "Skip if pregnant or nursing"
+   "Skip if pregnant or nursing",
+   "Sensitive skin: start 2–3 times a week"
   ],
   "flags": [
    "retinoid"
@@ -1642,7 +1721,8 @@ window.PRODUCTS = [
   "fit": {
    "oily": "yes",
    "combination": "yes",
-   "dry": "yes"
+   "dry": "yes",
+   "sensitive": "slow"
   }
  },
  {
@@ -1669,7 +1749,8 @@ window.PRODUCTS = [
   "fit": {
    "oily": "yes",
    "combination": "yes",
-   "dry": "yes"
+   "dry": "yes",
+   "sensitive": "yes"
   }
  },
  {
@@ -1696,7 +1777,8 @@ window.PRODUCTS = [
   "fit": {
    "oily": "yes",
    "combination": "yes",
-   "dry": "yes"
+   "dry": "yes",
+   "sensitive": "yes"
   }
  },
  {
@@ -1728,7 +1810,8 @@ window.PRODUCTS = [
   "fit": {
    "oily": "yes",
    "combination": "yes",
-   "dry": "maybe"
+   "dry": "maybe",
+   "sensitive": "yes"
   }
  },
  {
@@ -1759,7 +1842,8 @@ window.PRODUCTS = [
   "fit": {
    "oily": "yes",
    "combination": "yes",
-   "dry": "yes"
+   "dry": "yes",
+   "sensitive": "yes"
   }
  },
  {
@@ -1791,7 +1875,8 @@ window.PRODUCTS = [
   "fit": {
    "oily": "yes",
    "combination": "yes",
-   "dry": "yes"
+   "dry": "yes",
+   "sensitive": "no"
   }
  },
  {
@@ -1818,7 +1903,8 @@ window.PRODUCTS = [
   "fit": {
    "oily": "yes",
    "combination": "yes",
-   "dry": "yes"
+   "dry": "yes",
+   "sensitive": "yes"
   }
  },
  {
@@ -1846,7 +1932,8 @@ window.PRODUCTS = [
   "fit": {
    "oily": "yes",
    "combination": "yes",
-   "dry": "yes"
+   "dry": "yes",
+   "sensitive": "yes"
   }
  },
  {
@@ -1880,7 +1967,8 @@ window.PRODUCTS = [
   "fit": {
    "oily": "maybe",
    "combination": "dry",
-   "dry": "yes"
+   "dry": "yes",
+   "sensitive": "yes"
   }
  },
  {
@@ -1905,7 +1993,8 @@ window.PRODUCTS = [
   "fit": {
    "oily": "yes",
    "combination": "yes",
-   "dry": "yes"
+   "dry": "yes",
+   "sensitive": "yes"
   }
  },
  {
@@ -1931,7 +2020,8 @@ window.PRODUCTS = [
   "fit": {
    "oily": "yes",
    "combination": "yes",
-   "dry": "yes"
+   "dry": "yes",
+   "sensitive": "yes"
   }
  },
  {
@@ -1958,7 +2048,8 @@ window.PRODUCTS = [
   "fit": {
    "oily": "yes",
    "combination": "yes",
-   "dry": "yes"
+   "dry": "yes",
+   "sensitive": "yes"
   }
  },
  {
@@ -1983,8 +2074,12 @@ window.PRODUCTS = [
   "fit": {
    "oily": "yes",
    "combination": "yes",
-   "dry": "yes"
-  }
+   "dry": "yes",
+   "sensitive": "slow"
+  },
+  "warn": [
+   "Sensitive skin: start 2–3 times a week"
+  ]
  },
  {
   "name": "Epii Pro Shot Vitamin C",
@@ -2006,7 +2101,8 @@ window.PRODUCTS = [
   "fit": {
    "oily": "yes",
    "combination": "yes",
-   "dry": "yes"
+   "dry": "yes",
+   "sensitive": "yes"
   }
  },
  {
@@ -2037,7 +2133,8 @@ window.PRODUCTS = [
   "fit": {
    "oily": "yes",
    "combination": "yes",
-   "dry": "yes"
+   "dry": "yes",
+   "sensitive": "yes"
   }
  },
  {
@@ -2065,7 +2162,8 @@ window.PRODUCTS = [
   "fit": {
    "oily": "yes",
    "combination": "yes",
-   "dry": "yes"
+   "dry": "yes",
+   "sensitive": "yes"
   }
  },
  {
@@ -2093,7 +2191,8 @@ window.PRODUCTS = [
   "fit": {
    "oily": "yes",
    "combination": "yes",
-   "dry": "yes"
+   "dry": "yes",
+   "sensitive": "no"
   }
  },
  {
@@ -2122,7 +2221,8 @@ window.PRODUCTS = [
   "fit": {
    "oily": "maybe",
    "combination": "yes",
-   "dry": "yes"
+   "dry": "yes",
+   "sensitive": "yes"
   }
  },
  {
@@ -2152,7 +2252,8 @@ window.PRODUCTS = [
   "fit": {
    "oily": "yes",
    "combination": "yes",
-   "dry": "yes"
+   "dry": "yes",
+   "sensitive": "yes"
   }
  },
  {
@@ -2181,7 +2282,8 @@ window.PRODUCTS = [
   "fit": {
    "oily": "yes",
    "combination": "yes",
-   "dry": "yes"
+   "dry": "yes",
+   "sensitive": "yes"
   }
  },
  {
@@ -2212,7 +2314,8 @@ window.PRODUCTS = [
   "fit": {
    "oily": "maybe",
    "combination": "yes",
-   "dry": "yes"
+   "dry": "yes",
+   "sensitive": "no"
   }
  },
  {
@@ -2241,7 +2344,8 @@ window.PRODUCTS = [
   "fit": {
    "oily": "yes",
    "combination": "yes",
-   "dry": "yes"
+   "dry": "yes",
+   "sensitive": "yes"
   }
  },
  {
@@ -2267,7 +2371,8 @@ window.PRODUCTS = [
   "fit": {
    "oily": "yes",
    "combination": "yes",
-   "dry": "yes"
+   "dry": "yes",
+   "sensitive": "no"
   }
  },
  {
@@ -2285,7 +2390,8 @@ window.PRODUCTS = [
   "img": "img/cocokind-beginner-retinol-gel.webp",
   "warn": [
    "May feel heavy on acne-prone skin",
-   "Skip if pregnant or nursing"
+   "Skip if pregnant or nursing",
+   "Sensitive skin: start 2–3 times a week"
   ],
   "flags": [
    "heavy",
@@ -2300,7 +2406,8 @@ window.PRODUCTS = [
   "fit": {
    "oily": "yes",
    "combination": "yes",
-   "dry": "yes"
+   "dry": "yes",
+   "sensitive": "slow"
   }
  },
  {
@@ -2318,7 +2425,8 @@ window.PRODUCTS = [
   "warn": [
    "Not for acne-prone skin",
    "Skip if pregnant or nursing",
-   "Combination skin: use on dry areas only"
+   "Combination skin: use on dry areas only",
+   "Sensitive skin: start 2–3 times a week"
   ],
   "flags": [
    "heavy",
@@ -2336,7 +2444,8 @@ window.PRODUCTS = [
   "fit": {
    "oily": "no",
    "combination": "dry",
-   "dry": "yes"
+   "dry": "yes",
+   "sensitive": "slow"
   }
  },
  {
@@ -2354,7 +2463,8 @@ window.PRODUCTS = [
   "warn": [
    "Not for acne-prone skin",
    "Skip if pregnant or nursing",
-   "Combination skin: use on dry areas only"
+   "Combination skin: use on dry areas only",
+   "Sensitive skin: start 2–3 times a week"
   ],
   "flags": [
    "heavy",
@@ -2372,7 +2482,8 @@ window.PRODUCTS = [
   "fit": {
    "oily": "no",
    "combination": "dry",
-   "dry": "yes"
+   "dry": "yes",
+   "sensitive": "slow"
   }
  },
  {
@@ -2407,7 +2518,8 @@ window.PRODUCTS = [
   "fit": {
    "oily": "maybe",
    "combination": "yes",
-   "dry": "maybe"
+   "dry": "maybe",
+   "sensitive": "no"
   }
  },
  {
@@ -2423,7 +2535,8 @@ window.PRODUCTS = [
   ],
   "img": "img/prequel-retinal.webp",
   "warn": [
-   "Skip if pregnant or nursing"
+   "Skip if pregnant or nursing",
+   "Sensitive skin: start 2–3 times a week"
   ],
   "flags": [
    "retinoid"
@@ -2437,7 +2550,8 @@ window.PRODUCTS = [
   "fit": {
    "oily": "yes",
    "combination": "yes",
-   "dry": "yes"
+   "dry": "yes",
+   "sensitive": "slow"
   }
  },
  {
@@ -2453,7 +2567,8 @@ window.PRODUCTS = [
   ],
   "img": "img/remedy-retinal.webp",
   "warn": [
-   "Skip if pregnant or nursing"
+   "Skip if pregnant or nursing",
+   "Sensitive skin: start 2–3 times a week"
   ],
   "flags": [
    "retinoid"
@@ -2467,7 +2582,8 @@ window.PRODUCTS = [
   "fit": {
    "oily": "maybe",
    "combination": "yes",
-   "dry": "yes"
+   "dry": "yes",
+   "sensitive": "slow"
   }
  },
  {
@@ -2483,7 +2599,8 @@ window.PRODUCTS = [
   ],
   "img": "img/celimax-vita-a-retinal-shot.webp",
   "warn": [
-   "Skip if pregnant or nursing"
+   "Skip if pregnant or nursing",
+   "Sensitive skin: start 2–3 times a week"
   ],
   "flags": [
    "retinoid"
@@ -2495,7 +2612,8 @@ window.PRODUCTS = [
   "fit": {
    "oily": "yes",
    "combination": "yes",
-   "dry": "yes"
+   "dry": "yes",
+   "sensitive": "slow"
   }
  },
  {
@@ -2524,7 +2642,8 @@ window.PRODUCTS = [
   "fit": {
    "oily": "yes",
    "combination": "yes",
-   "dry": "yes"
+   "dry": "yes",
+   "sensitive": "maybe"
   }
  },
  {
@@ -2559,7 +2678,8 @@ window.PRODUCTS = [
   "fit": {
    "oily": "no",
    "combination": "dry",
-   "dry": "yes"
+   "dry": "yes",
+   "sensitive": "yes"
   }
  },
  {
@@ -2583,7 +2703,8 @@ window.PRODUCTS = [
   "fit": {
    "oily": "yes",
    "combination": "yes",
-   "dry": "yes"
+   "dry": "yes",
+   "sensitive": "yes"
   }
  },
  {
@@ -2610,7 +2731,8 @@ window.PRODUCTS = [
   "fit": {
    "oily": "yes",
    "combination": "yes",
-   "dry": "yes"
+   "dry": "yes",
+   "sensitive": "no"
   }
  },
  {
@@ -2641,7 +2763,8 @@ window.PRODUCTS = [
   "fit": {
    "oily": "yes",
    "combination": "yes",
-   "dry": "yes"
+   "dry": "yes",
+   "sensitive": "no"
   }
  },
  {
@@ -2676,7 +2799,8 @@ window.PRODUCTS = [
   "fit": {
    "oily": "no",
    "combination": "dry",
-   "dry": "yes"
+   "dry": "yes",
+   "sensitive": "no"
   }
  },
  {
@@ -2701,7 +2825,8 @@ window.PRODUCTS = [
   "fit": {
    "oily": "yes",
    "combination": "yes",
-   "dry": "yes"
+   "dry": "yes",
+   "sensitive": "yes"
   }
  },
  {
@@ -2729,7 +2854,8 @@ window.PRODUCTS = [
   "fit": {
    "oily": "yes",
    "combination": "yes",
-   "dry": "yes"
+   "dry": "yes",
+   "sensitive": "yes"
   }
  },
  {
@@ -2761,7 +2887,8 @@ window.PRODUCTS = [
   "fit": {
    "oily": "yes",
    "combination": "yes",
-   "dry": "yes"
+   "dry": "yes",
+   "sensitive": "yes"
   }
  },
  {
@@ -2783,12 +2910,13 @@ window.PRODUCTS = [
   "img": "img/skinfix-targeted-brightening-serum.webp",
   "flags": [],
   "niacinamide": false,
-  "ingredients": "-Tetrahexyldecyl Ascorbate: An ultra-potent and stable form of vitamin C that visibly brightens and firms.-Tetrapeptide Solution: Biomimetic peptides that visibly reduce dark spots and discoloration.-PGA Peptide Solution: Peptides that hold up to 5000X their weight in water to restore bounce, Aqua/Water/Eau, Tetrahexyldecyl Ascorbate, Glycerin, Isopentyldiol, Aloe Barbadensis Leaf Juice, Hydrogenated Lecithin, Polyglyceryl-10 Laurate, Oligopeptide-1, Oligopeptide-2, Hexapeptide-11, Oligopeptide-3, Sclerotium Gum, Ferulic Acid, Propanediol, Tetrahydrodiferuloylmethane, Jojoba Oil/Macadamia Seed Oil Esters, Tocopheryl Acetate, Trisodium Ethylenediamine Disuccinate, Squalene, Caprylyl Glycol, Tocopherol, Polyglutamic Acid, Amylopectin, Pentylene Glycol, Citric Acid, Phytosteryl Macadamiate, Lecithin, Lithothamnion Calcareum Extract, Acetyl Glutamine, Lactic Acid, Phytosterols, Acetyl Tetrapeptide-2, Bacillus/Soybean Ferment Extract, Xanthan Gum, Sodium Hyaluronate, Folic Acid, Ethylhexylglycerin, Potassium Sorbate, Sodium Benzoate, Phenoxyethanol",
+  "ingredients": "Aqua/Water/Eau, Tetrahexyldecyl Ascorbate, Glycerin, Isopentyldiol, Aloe Barbadensis Leaf Juice, Hydrogenated Lecithin, Polyglyceryl-10 Laurate, Oligopeptide-1, Oligopeptide-2, Hexapeptide-11, Oligopeptide-3, Sclerotium Gum, Ferulic Acid, Propanediol, Tetrahydrodiferuloylmethane, Jojoba Oil/Macadamia Seed Oil Esters, Tocopheryl Acetate, Trisodium Ethylenediamine Disuccinate, Squalene, Caprylyl Glycol, Tocopherol, Polyglutamic Acid, Amylopectin, Pentylene Glycol, Citric Acid, Phytosteryl Macadamiate, Lecithin, Lithothamnion Calcareum Extract, Acetyl Glutamine, Lactic Acid, Phytosterols, Acetyl Tetrapeptide-2, Bacillus/Soybean Ferment Extract, Xanthan Gum, Sodium Hyaluronate, Folic Acid, Ethylhexylglycerin, Potassium Sorbate, Sodium Benzoate, Phenoxyethanol",
   "ingSource": "Kourtney",
   "fit": {
    "oily": "yes",
    "combination": "yes",
-   "dry": "yes"
+   "dry": "yes",
+   "sensitive": "yes"
   }
  },
  {
@@ -2822,7 +2950,8 @@ window.PRODUCTS = [
   "fit": {
    "oily": "yes",
    "combination": "yes",
-   "dry": "yes"
+   "dry": "yes",
+   "sensitive": "no"
   }
  },
  {
@@ -2845,13 +2974,17 @@ window.PRODUCTS = [
   "img": "img/medik8-super-c.webp",
   "flags": [],
   "niacinamide": false,
-  "ingredients": "30% Ethylated L-Ascorbic Acid (Vitamin C) SerumMethoxymethylbutanol, 3-O-Ethyl Ascorbic Acid, Propylene Glycol, Butylene Glycol, Pentylene Glycol, Ferulic Acid, Tetrahydrodiferuloylmethane, Aqua (Water), Tocopheryl Acetate",
+  "ingredients": "Methoxymethylbutanol, 3-O-Ethyl Ascorbic Acid, Propylene Glycol, Butylene Glycol, Pentylene Glycol, Ferulic Acid, Tetrahydrodiferuloylmethane, Aqua (Water), Tocopheryl Acetate",
   "ingSource": "Kourtney",
   "fit": {
    "oily": "yes",
    "combination": "yes",
-   "dry": "yes"
-  }
+   "dry": "yes",
+   "sensitive": "slow"
+  },
+  "warn": [
+   "Sensitive skin: start 2–3 times a week"
+  ]
  },
  {
   "name": "RoC Retinol Capsules",
@@ -2869,7 +3002,8 @@ window.PRODUCTS = [
   "warn": [
    "Not for acne-prone skin",
    "Skip if pregnant or nursing",
-   "Combination skin: use on dry areas only"
+   "Combination skin: use on dry areas only",
+   "Sensitive skin: start 2–3 times a week"
   ],
   "flags": [
    "heavy",
@@ -2887,7 +3021,8 @@ window.PRODUCTS = [
   "fit": {
    "oily": "no",
    "combination": "dry",
-   "dry": "yes"
+   "dry": "yes",
+   "sensitive": "slow"
   }
  },
  {
@@ -2917,7 +3052,8 @@ window.PRODUCTS = [
   "fit": {
    "oily": "yes",
    "combination": "yes",
-   "dry": "yes"
+   "dry": "yes",
+   "sensitive": "no"
   }
  },
  {
@@ -2935,7 +3071,8 @@ window.PRODUCTS = [
   "warn": [
    "Not for acne-prone skin",
    "Skip if pregnant or nursing",
-   "Combination skin: use on dry areas only"
+   "Combination skin: use on dry areas only",
+   "Sensitive skin: start 2–3 times a week"
   ],
   "flags": [
    "heavy",
@@ -2951,7 +3088,8 @@ window.PRODUCTS = [
   "fit": {
    "oily": "no",
    "combination": "dry",
-   "dry": "yes"
+   "dry": "yes",
+   "sensitive": "slow"
   }
  },
  {
@@ -2978,7 +3116,8 @@ window.PRODUCTS = [
   "fit": {
    "oily": "yes",
    "combination": "yes",
-   "dry": "yes"
+   "dry": "yes",
+   "sensitive": "yes"
   }
  },
  {
@@ -3000,7 +3139,8 @@ window.PRODUCTS = [
   "fit": {
    "oily": "yes",
    "combination": "yes",
-   "dry": "yes"
+   "dry": "yes",
+   "sensitive": "yes"
   }
  },
  {
@@ -3026,7 +3166,8 @@ window.PRODUCTS = [
   "fit": {
    "oily": "yes",
    "combination": "yes",
-   "dry": "yes"
+   "dry": "yes",
+   "sensitive": "yes"
   }
  },
  {
@@ -3052,7 +3193,8 @@ window.PRODUCTS = [
   "fit": {
    "oily": "yes",
    "combination": "yes",
-   "dry": "yes"
+   "dry": "yes",
+   "sensitive": "yes"
   }
  },
  {
@@ -3081,7 +3223,8 @@ window.PRODUCTS = [
   "fit": {
    "oily": "yes",
    "combination": "yes",
-   "dry": "yes"
+   "dry": "yes",
+   "sensitive": "yes"
   }
  }
 ];
