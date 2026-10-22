@@ -3000,6 +3000,34 @@ window.PRODUCTS = [
   }
  },
  {
+  "name": "Beauty of Joseon Radiance Cleansing Balm",
+  "tier": "upgrade",
+  "step": "remover",
+  "skin": [
+   "all"
+  ],
+  "price": 5.62,
+  "link": "https://link.amazon/B0ja7w0o8",
+  "tags": [
+   "Niacinamide-free",
+   "K-beauty"
+  ],
+  "ingredients": "Cetyl Ethylhexanoate, Caprylic/Capric Triglyceride, PEG-20 Glyceryl Triisostearate, Synthetic Wax, PEG-10 Isostearate, Lactobacillus/Soybean Ferment Extract, Hippophae Rhamnoides Oil, Oryza Sativa (Rice) Bran Oil, Oryza Sativa (Rice) Seed Water, Avena Sativa (Oat) Meal Extract, Coix Lacryma-Jobi Ma-Yuen Seed Extract, Oryza Sativa (Rice) Extract, Water, Sorbitan Sesquioleate, Glycerin, Propanediol, Butylene Glycol, 1,2-Hexanediol, Caprylyl Glycol, Ethylhexylglycerin",
+  "ingSource": "Kourtney",
+  "flags": [],
+  "niacinamide": false,
+  "fit": {
+   "oily": "yes",
+   "combination": "yes",
+   "dry": "yes",
+   "sensitive": "yes",
+   "fungal": "no",
+   "nofrag": "yes",
+   "noniacin": "yes",
+   "preg": "yes"
+  }
+ },
+ {
   "name": "Tatcha The Camellia Cleansing Oil",
   "tier": "splurge",
   "step": "remover",
