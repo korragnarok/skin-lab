@@ -715,12 +715,17 @@ function buildRoutine(a){
   if(C.has("redness")) sk.splice(1,0,"redness","sensitive");
   const touchy = sens || C.has("redness");
   const acneish = C.has("acne") || T==="oily";
-  const baseAvoid = p => (acneish && (p.avoid||[]).includes("acne")) || (touchy && (p.flags||[]).some(f=>f==="fragrance"||f==="eo")) || (a.preg && (p.flags||[]).includes("retinoid") && p.step!=="retinoid");
+  const baseAvoid = p => (acneish && ((p.avoid||[]).includes("acne") || (p.fit && p.fit.oily==="no"))) || (T==="combination" && p.fit && p.fit.combination==="no") || (touchy && (p.flags||[]).some(f=>f==="fragrance"||f==="eo")) || (a.preg && (p.flags||[]).includes("retinoid") && p.step!=="retinoid");
   const P = (stepKey, o={}) => {
     const own = o.avoid;
     const avoid = p => baseAvoid(p) || (own ? own(p) : false);
     const ownPrefer = o.prefer;
-    const prefer = (acneish && ["moisturizer","sunscreen"].includes(stepKey)) ? (p => !(p.flags||[]).includes("heavy") || (ownPrefer ? ownPrefer(p) : false)) : ownPrefer;
+    const fitPref = (acneish && ["moisturizer","sunscreen","repair","retinoid"].includes(stepKey)) || (T==="combination" && ["moisturizer","repair","retinoid"].includes(stepKey));
+    const prefer = fitPref ? (p => {
+        const okAcne = !acneish || (!(p.flags||[]).includes("heavy") && (!p.fit || p.fit.oily==="yes"));
+        const okCombo = T!=="combination" || !p.fit || p.fit.combination==="yes";
+        return (okAcne && okCombo) || (ownPrefer ? ownPrefer(p) : false);
+      }) : ownPrefer;
     return choose(stepKey, Object.assign({tier, skin:sk}, o, {avoid, prefer}));
   };
   const am = [], pm = [], notes = [];
@@ -892,8 +897,8 @@ const STEP_FOR_ING = {retinol:"retinoid", adapalene:"acne", glycolic:"exfoliant"
 const fitsSkin = (p,ks) => !(p.skin && p.skin.length) || p.skin.some(k=>[...ks,"all"].includes(k));
 const SKINS = [
   ["any","Any skin", ()=>true],
-  ["oily","Oily or acne-prone", p=>fitsSkin(p,["oily","acne"]) && !(p.avoid||[]).includes("acne")],
-  ["combination","Combination", p=>fitsSkin(p,["combination","normal"])],
+  ["oily","Oily or acne-prone", p=>(p.fit ? p.fit.oily!=="no" : fitsSkin(p,["oily","acne"])) && !(p.avoid||[]).includes("acne")],
+  ["combination","Combination", p=>p.fit ? p.fit.combination!=="no" : fitsSkin(p,["combination","normal"])],
   ["dry","Dry", p=>fitsSkin(p,["dry"])],
   ["sensitive","Sensitive or red", p=>fitsSkin(p,["sensitive","redness"]) && !(p.flags||[]).some(f=>f==="fragrance"||f==="eo")],
   ["fungal","Fungal-acne safe", p=>(p.tags||[]).includes("Fungal-acne safe")],

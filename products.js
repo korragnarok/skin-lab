@@ -25,7 +25,14 @@ window.PRODUCTS = [
   "flags": [],
   "niacinamide": false,
   "ingredients": "AQUA / WATER / EAU, GLYCERIN, CETEARYL ALCOHOL, CAPRYLIC/CAPRIC TRIGLYCERIDE, CETYL ALCOHOL, CETEARETH-20, PETROLATUM, POTASSIUM PHOSPHATE, CERAMIDE NP, CERAMIDE AP, CERAMIDE EOP, CARBOMER, DIMETHICONE, BEHENTRIMONIUM METHOSULFATE, SODIUM LAUROYL LACTYLATE, SODIUM HYALURONATE, CHOLESTEROL, PHENOXYETHANOL, DISODIUM EDTA, DIPOTASSIUM PHOSPHATE, TOCOPHEROL, PHYTOSPHINGOSINE, XANTHAN GUM, ETHYLHEXYLGLYCERIN",
-  "ingSource": "Kourtney"
+  "ingSource": "Kourtney",
+  "fit": {
+   "oily": "maybe",
+   "combination": "dry"
+  },
+  "warn": [
+   "Combination skin: use on dry areas only"
+  ]
  },
  {
   "name": "Zeroid Intensive Cream",
@@ -55,7 +62,11 @@ window.PRODUCTS = [
   "ingSource": "Kourtney",
   "avoid": [
    "acne"
-  ]
+  ],
+  "fit": {
+   "oily": "no",
+   "combination": "no"
+  }
  },
  {
   "name": "CeraVe Ultra-Light Moisturizing Gel",
@@ -74,7 +85,11 @@ window.PRODUCTS = [
   "flags": [],
   "niacinamide": true,
   "ingredients": "Aqua / Water / Eau, Glycerin, Niacinamide, Propanediol, Dimethicone, Isononyl Isononanoate, Ceramide Np, Ceramide Ap, Ceramide Eop, Carbomer, Dimethicone Crosspolymer, Cetearyl Alcohol, Behentrimonium Methosulfate, Triethyl Citrate, Silica, Sodium Hydroxide, Sodium Hyaluronate, Sodium Lauroyl Lactylate, Cholesterol, Phenoxyethanol, Tocopherol, Chlorphenesin, Caprylyl Glycol, Trisodium Ethylenediamine Disuccinate, Biosaccharide Gum-1, Xanthan Gum, Phytosphingosine, Benzoic Acid",
-  "ingSource": "Kourtney"
+  "ingSource": "Kourtney",
+  "fit": {
+   "oily": "yes",
+   "combination": "yes"
+  }
  },
  {
   "name": "Bubble Level Up Gel Moisturizer",
@@ -91,7 +106,11 @@ window.PRODUCTS = [
   "niacinamide": true,
   "ingredients": "water (aqua), glycerin, achillea millefolium flower extract, acrylates/c10-30 alkyl acrylate crosspolymer, ammonium acryloyldimethyltaurate/vp copolymer, cannabis sativa (hemp) seed oil, caprylic/capric triglyceride, ethylhexylglycerin, glucose, hydrolyzed pea protein, neopentyl glycol diheptanoate, niacinamide, oenothera biennis (evening primrose) oil, oleyl erucate, sodium chloride, sodium hydroxide, sodium phytate, sodium succinate, squalane, tocopherol, tocopheryl acetate, zinc pca, phenoxyethanol",
   "ingSource": "Kourtney",
-  "tags": []
+  "tags": [],
+  "fit": {
+   "oily": "yes",
+   "combination": "yes"
+  }
  },
  {
   "name": "Aestura Hydro Soothing Cream",
@@ -110,7 +129,11 @@ window.PRODUCTS = [
   "flags": [],
   "niacinamide": false,
   "ingredients": "Water / Aqua / Eau, Propanediol, Glycerin, Phenyl Trimethicone, Methyl Trimethicone, 1, 2-Hexanediol, Trehalose, Dicaprylyl Carbonate, Ammonium Acryloyldimethyltaurate/Vp Copolymer, Hydrogenated Lecithin, Hydrogenated Polyisobutene, Hydroxyethyl Acrylate/Sodium Acryloyldimethyl Taurate Copolymer, Cetearyl Alcohol, Acrylates/C10-30 Alkyl Acrylate Crosspolymer, Glyceryl Caprylate, Glyceryl Stearate, Tromethamine, Disodium Edta, Ethylhexylglycerin, Stearic Acid, Palmitic Acid, Polyglyceryl-3 Methylglucose Distearate, Sorbitan Isostearate, Mannitol, Arginine, Serine, Sucrose, Pca, Citrulline, Glycogen, Histidine Hcl, Alanine, Tocopherol, Hydroxypropyl Bispalmitamide Mea, Threonine, Glutamic Acid, Myristic Acid, Arachidic Acid, Lysine Hcl, Acrylates/Ammonium Methacrylate Copolymer, Cholesterol, Silica",
-  "ingSource": "Kourtney"
+  "ingSource": "Kourtney",
+  "fit": {
+   "oily": "yes",
+   "combination": "yes"
+  }
  },
  {
   "name": "Cocokind Electrolyte Water Cream",
@@ -130,7 +153,11 @@ window.PRODUCTS = [
   "flags": [],
   "niacinamide": false,
   "ingredients": "Water/Eau, Glycerin, Propanediol, Coco-Caprylate/Caprate, Caprylic/Capric Triglyceride, Sodium Acrylates Copolymer, Pentylene Glycol, Magnesium Pca, Sodium Pca, Zinc Pca, Manganese Pca, Beta-Glucan, Chlamydomonas Extract, Sea Water (Maris Aqua) (Eau De Mer), Ceramide Np, Lecithin, Caprylyl Glycol, Glyceryl Acrylate/Acrylic Acid Copolymer, Maltodextrin, Aloe Barbadensis Flower Extract, Curcuma Longa (Turmeric) Root Extract, Solanum Melongena (Eggplant) Fruit Extract, Ocimum Basilicum (Basil) Flower/Leaf Extract, Coccinia Indica Fruit Extract, Melia Azadirachta Leaf Extract, Melia Azadirachta Flower Extract, Corallina Officinalis Extract, Ocimum Sanctum Leaf Extract, Ethylhexylglycerin",
-  "ingSource": "Kourtney"
+  "ingSource": "Kourtney",
+  "fit": {
+   "oily": "yes",
+   "combination": "yes"
+  }
  },
  {
   "name": "CeraVe Hydrating HA Water Gel",
@@ -152,7 +179,11 @@ window.PRODUCTS = [
   "flags": [],
   "niacinamide": true,
   "ingredients": "AQUA / WATER / EAU, GLYCERIN, NIACINAMIDE, PROPANEDIOL, DIMETHICONE, ISONONYL ISONONANOATE, CERAMIDE NP, CERAMIDE AP, CERAMIDE EOP, CARBOMER, DIMETHICONE CROSSPOLYMER, CETEARYL ALCOHOL, BEHENTRIMONIUM METHOSULFATE, TRIETHYL CITRATE, SAFFLOWER GLUCOSIDE, SILICA, SODIUM HYDROXIDE, SODIUM HYALURONATE, SODIUM LAUROYL LACTYLATE, SODIUM CITRATE, CHOLESTEROL, PHENOXYETHANOL, TOCOPHEROL, CHLORPHENESIN, COPPER PCA, CAPRYLYL GLYCOL, TRISODIUM ETHYLENEDIAMINE DISUCCINATE, BIOSACCHARIDE GUM-1, XANTHAN GUM, PHYTOSPHINGOSINE, BENZOIC ACID",
-  "ingSource": "Kourtney"
+  "ingSource": "Kourtney",
+  "fit": {
+   "oily": "yes",
+   "combination": "yes"
+  }
  },
  {
   "name": "Aveeno Calm + Restore Oat Gel Moisturizer",
@@ -171,7 +202,11 @@ window.PRODUCTS = [
   "flags": [],
   "niacinamide": false,
   "ingredients": "Water, Glycerin, Dimethicone, Cetearyl Olivate, Avena Sativa (Oat) Kernel Flour, Sorbitan Olivate, Polyacrylamide, Synthetic Beeswax, Phenoxyethanol, C13-14 Isoparaffin, Butylene Glycol, Dimethicone Crosspolymer, Panthenol, Chlorphenesin, Dimethiconol, Carbomer, Laureth-7, Chrysanthemum Parthenium (Feverfew) Flower/Leaf/Stem Juice, Ethylhexylglycerin, Sodium Hydroxide, Avena Sativa (Oat) Kernel Extract, Centella Asiatica Extract",
-  "ingSource": "Kourtney"
+  "ingSource": "Kourtney",
+  "fit": {
+   "oily": "yes",
+   "combination": "yes"
+  }
  },
  {
   "name": "Purito Oat-in Calming Gel Cream",
@@ -191,7 +226,11 @@ window.PRODUCTS = [
   "flags": [],
   "niacinamide": false,
   "ingredients": "Avena Sativa (Oat) Seed Water (77%), Butylene Glycol, Glycerin, 2, 3-Butanediol, 1, 2-Hexanediol, Aqua/Water, Ammonium Acryloyldimethyltaurate/VP Copolymer, Squalane, Hydroxyacetophenone, Carbomer, Dipotassium Glycyrrhizate, Panthenol, Tromethamine, Ethylhexylglycerin, Inulin Lauryl Carbamate, Sodium Surfactin, Beta-Glucan",
-  "ingSource": "Kourtney"
+  "ingSource": "Kourtney",
+  "fit": {
+   "oily": "yes",
+   "combination": "yes"
+  }
  },
  {
   "name": "Prequel Multi-Quench Gel Cream",
@@ -210,7 +249,11 @@ window.PRODUCTS = [
   "flags": [],
   "niacinamide": false,
   "ingredients": "Water (Aqua), Dimethicone, Propanediol, Glycerin, Hydroxyethyl Acrylate/Sodium Acryloyldimethyl Taurate Copolymer, Polyglutamic Acid, Magnesium Aspartate, Zinc Gluconate, Sodium PCA, Ectoin, Xylitylglucoside, Anhydroxylitol, Copper Gluconate, Xylitol, Glucose, Spirulina Platensis Extract, Gardenia Florida Fruit Extract, Dimethicone Crosspolymer, Pentylene Glycol, Caprylyl Glycol, 1, 2-Hexanediol, Lecithin, Sodium Phytate, Trehalose, Maltodextrin, Cetyl Diglyceryl Tris(Trimethylsiloxy)silylethyl Dimethicone, Sorbitan Isostearate, Polysorbate 60, Acrylates/C10-30 Alkyl Acrylate Crosspolymer, Sclerotium Gum, Carrageenan, Xanthan Gum, Silica, Carbomer, Tocopherol, Hydroxyacetophenone, Phenoxyethanol, Sodium Citrate, Sodium Hydroxide, Citric Acid",
-  "ingSource": "Kourtney"
+  "ingSource": "Kourtney",
+  "fit": {
+   "oily": "yes",
+   "combination": "yes"
+  }
  },
  {
   "name": "Vanicream Daily Facial Moisturizer",
@@ -229,7 +272,11 @@ window.PRODUCTS = [
   "flags": [],
   "niacinamide": false,
   "ingredients": "Water, Squalane, Glycerin, Pentylene Glycol, Polyglyceryl-2 Stearate, Glyceryl Stearate, Stearyl Alcohol, Hyaluronic Acid, Ceramide EOP, Ceramide NG, Ceramide NP, Ceramide AS, Ceramide AP, Carnosine, Hydrogenated Lecithin, Phytosterols, Caprylyl Glycol, Polyacrylate Crosspolymer-11, 1, 2-Hexanediol",
-  "ingSource": "Kourtney"
+  "ingSource": "Kourtney",
+  "fit": {
+   "oily": "yes",
+   "combination": "yes"
+  }
  },
  {
   "name": "La Roche-Posay Toleriane Double Repair Face Moisturizer",
@@ -251,7 +298,11 @@ window.PRODUCTS = [
   "niacinamide": true,
   "ingredients": "aqua/water/eau, glycerin, squalane, dimethicone, zea mays starch/corn starch, niacinamide, ammonium polyacryloyldimethyl taurate, myristyl myristate, stearic acid, ceramide np, potassium cetyl phosphate, glyceryl stearate se, sodium hydroxide, myristic acid, palmitic acid, capryloyl glycine, caprylyl glycol, xanthan gum",
   "ingSource": "Kourtney",
-  "tags": []
+  "tags": [],
+  "fit": {
+   "oily": "maybe",
+   "combination": "yes"
+  }
  },
  {
   "name": "Aestura AtoBarrier 365 Cream",
@@ -271,7 +322,11 @@ window.PRODUCTS = [
   "niacinamide": true,
   "ingredients": "Water / Aqua / Eau, Butylene Glycol, Glycerin, Butylene Glycol Dicaprylate/Dicaprate, Cetyl Ethylhexanoate, Squalane, Pentaerythrityl Tetraisostearate, Dicaprylyl Carbonate, Behenyl Alcohol, Dimethicone, Hydroxypropyl Bispalmitamide Mea, Stearic Acid, Betaine, Mannitol, C14-22 Alcohols, Palmitic Acid, Hydroxypropyl Bislauramide Mea, Arachidyl Alcohol, Cholesterol, Polyacrylate-13, C12-20 Alkyl Glucoside, Allantoin, Arachidyl Glucoside, Niacinamide, Ceramide Np, Glyceryl Caprylate, Ethylhexylglycerin, Hydrogenated Polyisobutene, Carbomer, Tromethamine, Dimethiconol, Polyglyceryl-10 Laurate, Hydrogenated Lecithin, Ethylhexyl Palmitate, Acrylates/Ammonium Methacrylate Copolymer, Sorbitan Isostearate, Silica, Phytosphingosine, Sphingolipids, Arachidic Acid, Tocopherol, Oleic Acid",
   "ingSource": "Kourtney",
-  "tags": []
+  "tags": [],
+  "fit": {
+   "oily": "maybe",
+   "combination": "yes"
+  }
  },
  {
   "name": "Purito Mighty Bamboo Panthenol Cream",
@@ -293,7 +348,11 @@ window.PRODUCTS = [
   "flags": [],
   "niacinamide": true,
   "ingredients": "Water, Panthenol (10%), Squalane, Butylene Glycol, 1, 2-Hexanediol, Niacinamide, Bambusa Vulgaris Extract (3, 497 ppm), Hydrolyzed Jojoba Esters, Acrylates/C10-30 Alkyl Acrylate Crosspolymer, Ammonium Acryloyldimethyltaurate/VP Copolymer, Hydroxyacetophenone, Tromethamine, Dipotassium Glycyrrhizate, Ethylhexylglycerin, Xanthan Gum, Disodium EDTA, Sodium Hyaluronate, Madecassoside, Asiaticoside, Asiatic Acid, Madecassic Acid, Copper Tripeptide-1",
-  "ingSource": "Kourtney"
+  "ingSource": "Kourtney",
+  "fit": {
+   "oily": "maybe",
+   "combination": "yes"
+  }
  },
  {
   "name": "Vanicream Moisturizing Cream",
@@ -312,7 +371,14 @@ window.PRODUCTS = [
   "flags": [],
   "niacinamide": false,
   "ingredients": "purified water, petrolatum, sorbitol, cetearyl alcohol, propylene glycol, ceteareth-20, simethicone, glyceryl stearate, peg-30 stearate, sorbic acid, bht",
-  "ingSource": "Kourtney"
+  "ingSource": "Kourtney",
+  "fit": {
+   "oily": "maybe",
+   "combination": "dry"
+  },
+  "warn": [
+   "Combination skin: use on dry areas only"
+  ]
  },
  {
   "name": "La Roche-Posay Cicaplast Baume B5",
@@ -333,7 +399,8 @@ window.PRODUCTS = [
    "Niacinamide-free"
   ],
   "warn": [
-   "Not for acne-prone skin"
+   "Not for acne-prone skin",
+   "Combination skin: use on dry areas only"
   ],
   "flags": [
    "heavy"
@@ -343,7 +410,11 @@ window.PRODUCTS = [
   "ingSource": "Kourtney",
   "avoid": [
    "acne"
-  ]
+  ],
+  "fit": {
+   "oily": "no",
+   "combination": "dry"
+  }
  },
  {
   "name": "The Ordinary Glycolic Acid 7% Toner",
@@ -366,7 +437,11 @@ window.PRODUCTS = [
   "ingSource": "Kourtney",
   "tags": [
    "Niacinamide-free"
-  ]
+  ],
+  "fit": {
+   "oily": "yes",
+   "combination": "yes"
+  }
  },
  {
   "name": "Peach Slices Hypochlorous Acid Spray",
@@ -386,7 +461,11 @@ window.PRODUCTS = [
   "flags": [],
   "niacinamide": false,
   "ingredients": "Water, Hypochlorous Acid, Sodium Chloride. Electrolyzed Water",
-  "ingSource": "Kourtney"
+  "ingSource": "Kourtney",
+  "fit": {
+   "oily": "yes",
+   "combination": "yes"
+  }
  },
  {
   "name": "CeraVe Foaming Cleanser",
@@ -404,7 +483,11 @@ window.PRODUCTS = [
   "ingredients": "Aqua/Water/Eau, Cocamidopropyl Hydroxysultaine, Glycerin, Sodium Lauroyl Sarcosinate, Peg-150 Pentaerythrityl Tetrastearate, Niacinamide, Peg-6 Caprylic/Capric, Glycerides, Sodium Methyl Cocoyl Taurate, Propylene Glycol, Ceramide Np, Ceramide Ap, Ceramide Eop, Carbomer, Methylparaben, Sodium Chloride, Sodium Lauroyl Lactylate, Cholesterol, Disodium Edta, Propylparaben, Citric Acid, Tetrasodium Edta, Hydrolyzed, Hyaluronic Acid, Phytosphingosine, Xanthan Gum",
   "ingSource": "Kourtney",
   "flags": [],
-  "niacinamide": true
+  "niacinamide": true,
+  "fit": {
+   "oily": "yes",
+   "combination": "yes"
+  }
  },
  {
   "name": "Vanicream Foaming Cleanser",
@@ -425,7 +508,11 @@ window.PRODUCTS = [
   "ingredients": "Water, Glycerin, Coco-Glucoside, Sodium Cocoyl Glycinate, Acrylates Copolymer, Caprylyl Glycol, Mica, Sodium Chloride, 1, 2-Hexanediol, Titanium Dioxide, Sodium Hydroxide, Disodium EDTA",
   "ingSource": "Kourtney",
   "flags": [],
-  "niacinamide": false
+  "niacinamide": false,
+  "fit": {
+   "oily": "yes",
+   "combination": "yes"
+  }
  },
  {
   "name": "La Roche-Posay Toleriane Purifying Foaming",
@@ -443,7 +530,11 @@ window.PRODUCTS = [
   "ingredients": "2050752 15: aqua/water/eau, glycerin, coco-betaine, propanediol, sodium cocoyl glycinate, peg-120 methyl glucose dioleate, sodium hydroxide, sodium chloride, citric acid, ceramide np, niacinamide, disodium edta, hydroxyacetophenone, capryloyl glycine, caprylyl glycol, trisodium ethylenediamine disuccinate, pentylene glycol, acrylates copolymer, tocopherol. t70051836/1",
   "ingSource": "Kourtney",
   "flags": [],
-  "niacinamide": true
+  "niacinamide": true,
+  "fit": {
+   "oily": "yes",
+   "combination": "yes"
+  }
  },
  {
   "name": "Avène Tolerance Foaming Facial Cleanser",
@@ -461,7 +552,11 @@ window.PRODUCTS = [
   "ingredients": "Avène Thermal Spring Water (Avene Aqua), Glycerin, Water (Aqua), Coco-Glucoside, Sodium Cocoyl Glutamate, Algin, Citric Acid, Glyceryl Oleate, Glycol Distearate, Helianthus Annuus (Sunflower) Seed Oil, Hydrogenated Vegetable Glycerides Citrate, Niacinamide, Sodium Benzoate, Tocopherol, Xanthan Gum",
   "ingSource": "Kourtney",
   "flags": [],
-  "niacinamide": true
+  "niacinamide": true,
+  "fit": {
+   "oily": "yes",
+   "combination": "yes"
+  }
  },
  {
   "name": "La Roche-Posay Hydrating Gentle Cleanser",
@@ -480,7 +575,11 @@ window.PRODUCTS = [
   "ingredients": "Aqua / Water / Eau (La Roche-Posay Prebiotic Thermal Water), Glycerin, Pentaerythrityl Tetraethylhexanoate, Propylene Glycol, Ammonium Polyacryloyldimethyl Taurate, Polysorbate 60, Ceramide Np, Niacinamide, Sodium Chloride, Coco-Betaine, Disodium Edta, Caprylyl Glycol, Panthenol, T-Butyl Alcohol, Tocopherol",
   "ingSource": "Kourtney",
   "flags": [],
-  "niacinamide": true
+  "niacinamide": true,
+  "fit": {
+   "oily": "yes",
+   "combination": "yes"
+  }
  },
  {
   "name": "Byoma Milk Cleanser",
@@ -501,7 +600,11 @@ window.PRODUCTS = [
   "ingredients": "Aqua, Glycerin, Myristic Acid, Lauric Acid, Potassium Hydroxide, Butylene Glycol, Polyglyceryl-4 Caprate, Potassium Cocoyl Glycinate, Lauryl Hydroxysultaine, Glycol Distearate, Polyquaternium-7, Oryza Sativa (Rice) Extract, Glycol Stearate, Palmitic Acid, Prunus Amygdalus Dulcis (Sweet Almond) Fruit Extract, Saccharomyces/Rice Ferment Filtrate, Potassium Cocoate, Sodium PCA, Xanthan Gum, Hydroxyethylcellulose, Chondrus Crispus Extract, Stearic Acid, Sphingolipids, Sodium Chloride, Polyquaternium-67, 1, 2-Hexanediol, Sodium Polyacrylate, Disodium EDTA, Ceramide NP, Fructooligosaccharides, Sodium Benzoate, Viola Odorata Flower/Leaf Extract, Barosma Betulina Leaf Extract",
   "ingSource": "Kourtney",
   "flags": [],
-  "niacinamide": false
+  "niacinamide": false,
+  "fit": {
+   "oily": "yes",
+   "combination": "yes"
+  }
  },
  {
   "name": "PanOxyl Acne Gel Wash",
@@ -526,7 +629,11 @@ window.PRODUCTS = [
   "ingredients": "Salicylic Acid, 1, 2-Hexanediol, Allantoin, Aloe Barbadensis Leaf Juice, Aqua, Betaine, Camellia Sinensis Leaf Extract, Caprylyl Glycol, Citric Acid, Cocamidopropyl Hydroxysultaine, Decyl Glucoside, Glycerin, PEG-150 Distearate, Potassium Sorbate, Saccharide Isomerate, Sodium Benzoate, Sodium C14-16 Olefin Sulfonate, Sodium Chloride, Sodium Citrate, Sodium Hydroxide, Spirulina Platensis Extract, Zinc PCA",
   "ingSource": "Kourtney",
   "flags": [],
-  "niacinamide": false
+  "niacinamide": false,
+  "fit": {
+   "oily": "yes",
+   "combination": "yes"
+  }
  },
  {
   "name": "Peach Slices Acne Clarifying Cleanser",
@@ -551,7 +658,11 @@ window.PRODUCTS = [
   "ingredients": "Water (Aqua), Glycerin, Sodium C14-16 Olefin Sulfonate, Cocamidopropyl Hydroxysultaine, Betaine, Sodium Chloride, Cucumis Sativus (Cucumber) Fruit Water, Sodium Hyaluronate, Centella Asiatica Extract, Malpighia Emarginata (Acerola) Fruit Extract, Sodium Benzoate, Butylene Glycol, Potassium Sorbate, Caprylyl Glycol, 1-2 Hexanediol, Sodium Hydroxide, Citric Acid, Ethylhexylglycerin, Phenoxyethanol",
   "ingSource": "Kourtney",
   "flags": [],
-  "niacinamide": false
+  "niacinamide": false,
+  "fit": {
+   "oily": "yes",
+   "combination": "yes"
+  }
  },
  {
   "name": "CeraVe Renewing SA Cleanser",
@@ -573,7 +684,11 @@ window.PRODUCTS = [
   "ingredients": "Aqua/Water/Eau, Cocamidopropyl Hydroxysultaine, Glycerin, Sodium Lauroyl Sarcosinate, Niacinamide, Gluconolactone, Peg-150 Pentaerythrityl Tetrastearate, Sodium Methyl Cocoyl Taurate, Zea Mays Oil/Corn Oil, Ceramide Np, Ceramide Ap, Ceramide Eop, Carbomer, Calcium Gluconate, Sodium Chloride, Salicylic Acid, Sodium Benzoate, Sodium Lauroyl Lactylate, Cholecalciferol, Cholesterol, Phenoxyethanol, Disodium Edta, Tetrasodium Edta, Hydrolyzed Hyaluronic Acid, Phytosphingosine, Xanthan Gum, Ethylhexylglycerin",
   "ingSource": "Kourtney",
   "flags": [],
-  "niacinamide": true
+  "niacinamide": true,
+  "fit": {
+   "oily": "yes",
+   "combination": "yes"
+  }
  },
  {
   "name": "Cetaphil Gentle Exfoliating SA Cleanser",
@@ -595,7 +710,11 @@ window.PRODUCTS = [
   "ingredients": "Water, Glycerin, Cocamidopropyl Betaine, Coco Glucoside, Gluconolactone, Betaine, Peg-120 Methyl Glucose Dioleate, Sodium Cocoamphoacetate, Glycereth-26 Salicylic Acid, Sodium Chloride, Panthenol, Niacinamide, Mandelic Acid, Sodium Citrate, Sodium Hydroxide, Helianthus Annuus (Sunflower) Seed Oil, Tocopherol, Phenoxyethanol, Citric Acid, Ethylhexylglycerin, Disodium Edta, Pantolactone",
   "ingSource": "Kourtney",
   "flags": [],
-  "niacinamide": true
+  "niacinamide": true,
+  "fit": {
+   "oily": "yes",
+   "combination": "yes"
+  }
  },
  {
   "name": "PanOxyl Creamy Wash",
@@ -617,7 +736,11 @@ window.PRODUCTS = [
   "ingredients": "Benzoyl Peroxide, Carbomer Homopolymer Type C, Carbomer Interpolymer Type A, Decyl Glucoside, Dimethicone, Dioctyl Sodium Sulfosuccinate, Glycerin, Palmitic Acid, Polyacrylate Crosspolymer-6, Polyoxyl 40 Stearate, Propanediol, Purified Water, Silica, Sodium Chloride, Sodium Citrate, Sodium Hydroxide, Sodium Laurylglucosides Hydroxypropylsulfonate, Sorbitan Stearate, Sorbitol, Stearic Acid, T-Butyl Alcohol, Xanthan Gum",
   "ingSource": "Kourtney",
   "flags": [],
-  "niacinamide": false
+  "niacinamide": false,
+  "fit": {
+   "oily": "yes",
+   "combination": "yes"
+  }
  },
  {
   "name": "PanOxyl Foaming Wash",
@@ -639,7 +762,11 @@ window.PRODUCTS = [
   "ingredients": "Benzoyl Peroxide (10%), Carbomer Homopolymer Type C, Carbomer Interpolymer Type A, Decyl Glucoside, Dimethicone, Dioctyl Sodium Sulfosuccinate, Glycerin, Palmitic Acid, Polyacrylate Crosspolymer-6, Polyoxyl 40 Stearate, Propanediol, Purified Water, Silica, Sodium Chloride, Sodium Citrate, Sodium Hydroxide, Sodium Laurylglucosides Hydroxypropylsulfonate, Sorbitan Stearate, Stearic Acid, t-Butyl Alcohol, Xanthan Gum",
   "ingSource": "Kourtney",
   "flags": [],
-  "niacinamide": false
+  "niacinamide": false,
+  "fit": {
+   "oily": "yes",
+   "combination": "yes"
+  }
  },
  {
   "name": "CeraVe Acne Foaming Cream Cleanser",
@@ -661,7 +788,11 @@ window.PRODUCTS = [
   "ingredients": "Benzoyl Peroxide, Water, Glycerin, Propylene Glycol, Cocamidopropyl Hydroxysultaine, Sodium C14-16 Olefin Sulfonate, Xanthan Gum, Potassium Hydroxide, Ceramide NP, Ceramide AP, Ceramide EOP, Carbomer, Niacinamide, Glycolic Acid, Sodium Chloride, Sodium Citrate, Sodium Hyaluronate, Sodium Lauroyl Lactylate, Sodium Hydroxide, Cholesterol, Phenoxyethanol, Propanediol, Citric Acid, Tetrasodium EDTA, Diethylhexyl Sodium Sulfosuccinate, Phytosphingosine, Ethylhexylglycerin, Benzoic Acid",
   "ingSource": "Kourtney",
   "flags": [],
-  "niacinamide": true
+  "niacinamide": true,
+  "fit": {
+   "oily": "yes",
+   "combination": "yes"
+  }
  },
  {
   "name": "Naturium The Revealer Sulfur Body Wash",
@@ -686,7 +817,11 @@ window.PRODUCTS = [
   "ingredients": "Aqua/Water/Eau, Sodium Cocoyl Isethionate, Cetearyl Alcohol, Cocamidopropyl Betaine, Acrylates Copolymer, Sulfur, Propanediol, Glycerin, Coco-Glucoside, Stearic Acid, Stearyl Alcohol, Potassium Cocoyl Glycinate, Acacia Senegal Gum, Aloe Barbadensis Leaf Juice, Potassium Cocoate, Maltooligosyl Glucoside, Salix Alba (Willow) Bark Extract, Inulin, Hydrogenated Starch Hydrolysate, Xanthan Gum, Tetrasodium Glutamate Diacetate, Pentylene Glycol, Caprylyl Glycol, Citric Acid, Potassium Sorbate, Sodium Benzoate, Sodium Hydroxide, Lactic Acid, Lecithin, 1, 2-Hexanediol, Ethylhexylglycerin, Phenoxyethanol",
   "ingSource": "Kourtney",
   "flags": [],
-  "niacinamide": false
+  "niacinamide": false,
+  "fit": {
+   "oily": "yes",
+   "combination": "yes"
+  }
  },
  {
   "name": "Prequel Redness Reform Sulfur Cleanser",
@@ -710,7 +845,11 @@ window.PRODUCTS = [
   "ingredients": "Water (Aqua), Glycerin, Sodium Lauroyl Isethionate, Magnesium Aluminum Silicate, Decyl Glucoside, Cocamidopropyl Hydroxysultaine, Sulfur, Sodium Lauroyl Methyl Isethionate, Sodium Lauroamphoacetate, Azelaic Acid, Chamomilla Recutita (Matricaria) Flower Water, Osmanthus Fragrans Flower Extract, Quartz, Panthenol, Bisabolol, Aloe Barbadensis Leaf Juice, Centella Asiatica Extract, Polyglycerin-6, Saccharomyces/Zinc Ferment, Apricot Kernel Oil Polyglyceryl-6 Esters, Guaiazulene, Magnolol, Honokiol, Hydrolyzed Garcinia Mangostana Fruit Extract, Lauric Acid, Coconut Acid, Myristic Acid, Acacia Senegal Gum, Capric Acid, Xanthan Gum, Propanediol, Cocamide MIPA, Hydroxyacetophenone, Octenidine Hcl, Potassium Sorbate, Sodium Benzoate, Sodium Chloride, Sodium Polyacryloyldimethyl Taurate, Sodium Isethionate, Polyglyceryl-10 Oleate, Sorbitan Palmitate, Cetyl Phosphate, Potassium Hydroxide, Citric Acid",
   "ingSource": "Kourtney",
   "flags": [],
-  "niacinamide": false
+  "niacinamide": false,
+  "fit": {
+   "oily": "yes",
+   "combination": "yes"
+  }
  },
  {
   "name": "Bioderma Sensibio H2O",
@@ -729,7 +868,11 @@ window.PRODUCTS = [
   "ingredients": "Aqua/Water/Eau, Peg-6 Caprylic/Capric Glycerides, Fructooligosaccharides, Mannitol, Xylitol, Rhamnose, Cucumis Sativus (Cucumber) Fruit Extract, Propylene Glycol, Cetrimonium Bromide, Disodium Edta",
   "ingSource": "Kourtney",
   "flags": [],
-  "niacinamide": false
+  "niacinamide": false,
+  "fit": {
+   "oily": "yes",
+   "combination": "yes"
+  }
  },
  {
   "name": "Garnier Micellar Water",
@@ -748,7 +891,11 @@ window.PRODUCTS = [
   "ingredients": "Aqua / Water, Hexylene Glycol, Glycerin, Disodium Cocoamphodiacetate, Disodium EDTA, Poloxamer 184, Polyaminopropyl Biguanide",
   "ingSource": "Kourtney",
   "flags": [],
-  "niacinamide": false
+  "niacinamide": false,
+  "fit": {
+   "oily": "yes",
+   "combination": "yes"
+  }
  },
  {
   "name": "The INKEY List Oat Cleansing Balm",
@@ -766,7 +913,11 @@ window.PRODUCTS = [
   "ingredients": "Prunus Amygdalus Dulcis (Sweet Almond) Oil, PEG-20 Glyceryl Triisostearate, Avena Sativa (Oat) Kernel Oil, Cera Microcristallina, Helianthus Annuus (Sunflower) Seed Wax, Sorbitan Olivate, Polyglyceryl-10 Stearate, Polyglyceryl-6 Caprylate, Polyglyceryl-4 Caprate, Jojoba Esters, Phenoxyethanol, Aqua (Water), Hippophae Rhamnoides (Seaberry) Fruit Oil, Tocopherol, Polyglycerin-3, Acacia Decurrens (Early Green Wattle) Flower Wax, Helianthus Annuus (Sunflower) Seed Oil, Ascorbyl Palmitate",
   "ingSource": "Kourtney",
   "flags": [],
-  "niacinamide": false
+  "niacinamide": false,
+  "fit": {
+   "oily": "yes",
+   "combination": "yes"
+  }
  },
  {
   "name": "Haruharu Wonder Black Rice Cleansing Oil",
@@ -784,7 +935,11 @@ window.PRODUCTS = [
   "ingredients": "Oryza Sativa (Rice) Bran Oil, Caprylic/Capric Triglyceride, Helianthus Annuus (Sunflower) Seed Oil, Olea Europaea (Olive) Fruit Oil, Sorbeth-30 Tetraoleate, Simmondsia Chinensis (Jojoba) Seed Oil, Macadamia Integrifolia Seed Oil, Tocopherol, Ethylhexylglycerin",
   "ingSource": "Kourtney",
   "flags": [],
-  "niacinamide": false
+  "niacinamide": false,
+  "fit": {
+   "oily": "yes",
+   "combination": "yes"
+  }
  },
  {
   "name": "SKIN1004 Light Cleansing Oil",
@@ -809,7 +964,11 @@ window.PRODUCTS = [
    "fragrance",
    "eo"
   ],
-  "niacinamide": false
+  "niacinamide": false,
+  "fit": {
+   "oily": "yes",
+   "combination": "yes"
+  }
  },
  {
   "name": "Prequel Cleansing Oil",
@@ -827,7 +986,11 @@ window.PRODUCTS = [
   "ingredients": "Cetyl Ethylhexanoate, Helianthus Annuus (Sunflower) Seed Oil, Sorbeth-30 Tetraoleate, PEG-20 Glyceryl Triisostearate, PEG-10 Isostearate, Oryza Sativa (Rice) Bran Oil, Linoleic Acid, Linolenic Acid, Centella Asiatica Leaf Extract, Sorbitan Sesquioleate, Lecithin, Tocopherol",
   "ingSource": "Kourtney",
   "flags": [],
-  "niacinamide": false
+  "niacinamide": false,
+  "fit": {
+   "oily": "yes",
+   "combination": "yes"
+  }
  },
  {
   "name": "Orien Mugwort Zero Film Cleansing Oil",
@@ -850,7 +1013,11 @@ window.PRODUCTS = [
   "flags": [
    "fragrance"
   ],
-  "niacinamide": false
+  "niacinamide": false,
+  "fit": {
+   "oily": "yes",
+   "combination": "yes"
+  }
  },
  {
   "name": "Biodance Collagen Oil Cleanser",
@@ -868,7 +1035,11 @@ window.PRODUCTS = [
   "ingredients": "Ethylhexyl Palmitate, Cetyl Ethylhexanoate, Polyglyceryl-10 Diisostearate, Polyglyceryl-6 Dicaprate, Sorbitan Sesquioleate, Polyglyceryl-2 Laurate, Water, Pyrus Communis (Pear) Fruit Extract, Rosa Damascena Flower Water, Iris Florentina Root Extract, Cucumis Melo (Melon) Seed Extract, Hedera Helix (Ivy) Leaf/Stem Extract, Caprylyl Glycol, Vitis Vinifera (Grape) Seed Oil, Helianthus Annuus (Sunflower) Seed Oil, Simmondsia Chinensis (Jojoba) Seed Oil, Ethylhexylglycerin, 1, 2-Hexanediol, Butylene Glycol, Collagen Extract, Acetyl Hexapeptide-8, Tocopherol, Oligopeptide-1, Copper Tripeptide-1, Palmitoyl Pentapeptide-4, Palmitoyl Tripeptide-5, Tripeptide-1, Hexapeptide-9, Palmitoyl Tripeptide-38, Pentapeptide-4, Hexapeptide-12",
   "ingSource": "Kourtney",
   "flags": [],
-  "niacinamide": false
+  "niacinamide": false,
+  "fit": {
+   "oily": "yes",
+   "combination": "yes"
+  }
  },
  {
   "name": "Differin Gel",
@@ -896,7 +1067,11 @@ window.PRODUCTS = [
   ],
   "niacinamide": false,
   "ingredients": "Adapalene, Carbomer 940, Edetate Disodium, Methylparaben, Poloxamer 182, Propylene Glycol, Purified Water, Sodium Hydroxide, hydrochloric acid",
-  "ingSource": "Kourtney"
+  "ingSource": "Kourtney",
+  "fit": {
+   "oily": "yes",
+   "combination": "yes"
+  }
  },
  {
   "name": "Neutrogena Evenly Clear Adapalene",
@@ -924,7 +1099,11 @@ window.PRODUCTS = [
   ],
   "niacinamide": false,
   "ingredients": "adapalene, usp, carbomer homopolymer type c, edetate disodium, methylparaben, poloxamer 182, propylene glycol, purified water, hydrochloric acid, sodium hydroxide",
-  "ingSource": "Kourtney"
+  "ingSource": "Kourtney",
+  "fit": {
+   "oily": "yes",
+   "combination": "yes"
+  }
  },
  {
   "name": "Differin Epiduo Acne Gel",
@@ -952,7 +1131,11 @@ window.PRODUCTS = [
   "ingSource": "Kourtney",
   "tags": [
    "Niacinamide-free"
-  ]
+  ],
+  "fit": {
+   "oily": "yes",
+   "combination": "yes"
+  }
  },
  {
   "name": "Aveeno Positively Radiant Vitamin C Serum",
@@ -974,7 +1157,11 @@ window.PRODUCTS = [
   "niacinamide": true,
   "ingredients": "Water, Niacinamide, Glycerin, Acetyl Glucosamine, Pentylene Glycol, Dimethicone, Ascorbyl Glucoside, Avena Sativa (Oat) Kernel Extract, Hydroxyethyl Acrylate/Sodium Acryloyldimethyl Taurate Copolymer, Sodium Hydroxide, Phenoxyethanol, Isopropyl Myristate, Xanthan Gum, Dimethiconol, Squalane, Disodium EDTA, Polysorbate 60, Ethylhexylglycerin",
   "ingSource": "Kourtney",
-  "tags": []
+  "tags": [],
+  "fit": {
+   "oily": "maybe",
+   "combination": "yes"
+  }
  },
  {
   "name": "Bubble Vitamin C",
@@ -995,7 +1182,11 @@ window.PRODUCTS = [
   "flags": [],
   "niacinamide": true,
   "ingredients": "Water (Aqua), Sodium Ascorbyl Phosphate, Coco-Caprylate/Caprate, Glycerin, Niacinamide, Alpha-Arbutin, Tranexamic Acid, Ceramide NP, Ceramide AP, Ceramide AS, Cholesterol, Ceramide NS, Ceramide EOP, Xanthan Gum, Brassica Campestris Seed Oil, Ethylhexylglycerin, Glycyrrhiza Glabra (Licorice) Root Extract, Polyglyceryl-3 Diisostearate, Sorbitan Isostearate, Hydrogenated Lecithin, Althaea Officinalis (Marshmallow) Root Extract, Oryza Sativa (Rice) Bran Extract, Dipropylene Glycol, Glyceryl Stearate, Hydroxyethyl Acrylate/Sodium Acryloyldimethyl Taurate Copolymer, Sodium Polyacryloyldimethyl Taurate, Sodium Polyacrylate, Sucrose Distearate, Phenoxyethanol",
-  "ingSource": "Kourtney"
+  "ingSource": "Kourtney",
+  "fit": {
+   "oily": "yes",
+   "combination": "yes"
+  }
  },
  {
   "name": "Vanicream Vitamin C",
@@ -1017,7 +1208,11 @@ window.PRODUCTS = [
   "flags": [],
   "niacinamide": false,
   "ingredients": "Water, Glycerin, Diisooctyl Succinate, Tetrahexyldecyl Ascorbate, Pentylene Glycol, Polyglyceryl-2 Stearate, Carnosine, Ceramide NP, Ceramide EOP, Ceramide AP, Ceramide NG, Ceramide AS, Phytosterols, Glyceryl Stearate, Stearyl Alcohol, Hydrogenated Lecithin, 1, 2-Hexanediol, Polyacrylate Crosspolymer-6, Citric Acid, Caprylyl Glycol",
-  "ingSource": "Kourtney"
+  "ingSource": "Kourtney",
+  "fit": {
+   "oily": "yes",
+   "combination": "yes"
+  }
  },
  {
   "name": "The Ordinary GF 15% Solution",
@@ -1038,7 +1233,11 @@ window.PRODUCTS = [
   "flags": [],
   "niacinamide": false,
   "ingredients": "Aqua/Water/Eau, Butylene Glycol, Nicotiana Benthamiana Hexapeptide-40 Sh-Oligopeptide-1, Nicotiana Benthamiana Hexapeptide-40 Sh-Polypeptide-76, Nicotiana Benthamiana Octapeptide-30 Sh-Oligopeptide-2, Sclerotium Gum, Glycerin, Trisodium Ethylenediamine Disuccinate, Citric Acid, Sodium Citrate, Phenoxyethanol, Chlorphenesin",
-  "ingSource": "Kourtney"
+  "ingSource": "Kourtney",
+  "fit": {
+   "oily": "yes",
+   "combination": "yes"
+  }
  },
  {
   "name": "SKIN1004 10% Niacinamide",
@@ -1059,7 +1258,11 @@ window.PRODUCTS = [
   "flags": [],
   "niacinamide": true,
   "ingredients": "Water, Butylene Glycol, Niacinamide, 1, 2-Hexanediol, Ascorbyl Glucoside, Propanediol, Carbomer, Methylpropanediol, Tromethamine, Xanthan Gum, Tranexamic Acid, Centella Asiatica Extract, Polyglutamic Acid, Hydrolyzed Sponge, Disodium EDTA, Citric Acid, Sodium DNA, Ethylhexylglycerin, Tocopheryl Acetate, Panthenol, Madecassoside",
-  "ingSource": "Kourtney"
+  "ingSource": "Kourtney",
+  "fit": {
+   "oily": "yes",
+   "combination": "yes"
+  }
  },
  {
   "name": "Good Molecules Retinol",
@@ -1084,7 +1287,11 @@ window.PRODUCTS = [
   "ingSource": "Kourtney",
   "tags": [
    "Niacinamide-free"
-  ]
+  ],
+  "fit": {
+   "oily": "yes",
+   "combination": "yes"
+  }
  },
  {
   "name": "SKIN1004 Retinol Boosting Shot",
@@ -1109,7 +1316,11 @@ window.PRODUCTS = [
   "ingSource": "Kourtney",
   "tags": [
    "Niacinamide-free"
-  ]
+  ],
+  "fit": {
+   "oily": "yes",
+   "combination": "yes"
+  }
  },
  {
   "name": "Olay Retinol 24",
@@ -1134,7 +1345,11 @@ window.PRODUCTS = [
   "niacinamide": true,
   "ingredients": "water dimethicone glycerin distarch phosphate dimethicone crosspolymer retinol, retinyl propionate, niacinamide, palmitoyl dipeptide-7, palmitoyl pentapeptide-4, tripeptide-3, carnosine, hydroxyacetophenone, butylene glycol, c13-14 isoalkane, dimethiconol, laureth-4, laureth-7, disodium edta, polyacrylamide, acrylates/c10-30 alkyl acrylate crosspolymer, phenoxyethanol, titanium dioxide vitamin b3, triple collagen peptide",
   "ingSource": "Kourtney",
-  "tags": []
+  "tags": [],
+  "fit": {
+   "oily": "maybe",
+   "combination": "yes"
+  }
  },
  {
   "name": "CeraVe Resurfacing Retinol Serum",
@@ -1159,7 +1374,11 @@ window.PRODUCTS = [
   "niacinamide": true,
   "ingredients": "Aqua/Water/Eau, Propanediol, Dimethicone, Cetearyl Ethylhexanoate, Niacinamide, Ammonium Polyacryloyldimethyl Taurate, Dipotassium Glycyrrhizate, Hydrogenated Lecithin, Potassium Phosphate, Ceramide Np, Ceramide Ap, Ceramide Eop, Carbomer, Cetearyl Alcohol, Behentrimonium Methosulfate, Dimethiconol, Lecithin, Sodium Citrate, Retinol, Sodium Hyaluronate, Sodium Lauroyl Lactylate, Cholesterol, Phenoxyethanol, Alcohol, Isopropyl Myristate, Caprylyl Glycol, Citric Acid, Trisodium Ethylenediamine Disuccinate, Pentylene Glycol, Phytosphingosine, Xanthan Gum, Polysorbate 20, Ethylhexylglycerin (Code F.I.L. D233672/1)",
   "ingSource": "Kourtney",
-  "tags": []
+  "tags": [],
+  "fit": {
+   "oily": "yes",
+   "combination": "yes"
+  }
  },
  {
   "name": "e.l.f. Youth Boosting Advanced Retinoid",
@@ -1184,7 +1403,11 @@ window.PRODUCTS = [
   "ingSource": "Kourtney",
   "tags": [
    "Niacinamide-free"
-  ]
+  ],
+  "fit": {
+   "oily": "yes",
+   "combination": "yes"
+  }
  },
  {
   "name": "COSRX The Retinol 0.5 Oil",
@@ -1215,7 +1438,11 @@ window.PRODUCTS = [
   ],
   "avoid": [
    "acne"
-  ]
+  ],
+  "fit": {
+   "oily": "no",
+   "combination": "no"
+  }
  },
  {
   "name": "Beauty of Joseon Retinal Eye Cream",
@@ -1241,7 +1468,11 @@ window.PRODUCTS = [
   "niacinamide": true,
   "ingredients": "Water, Glycerin, Dipropylene Glycol, Caprylic/Capric Triglyceride, 1, 2-Hexanediol, Butylene Glycol Dicaprylate/Dicaprate, Niacinamide, Pentaerythrityl Tetraethylhexanoate, Cetearyl Alcohol, Cetearyl Olivate, Sorbitan Olivate, Butylene Glycol, Hydrogenated Lecithin, Panax Ginseng Root Extract, Carbomer, Glyceryl Stearate, Tromethamine, Macadamia Ternifolia Seed Oil, Ethylhexylglycerin, Adenosine, Cholesterol, Dextrin, Polyglyceryl-10 Oleate, Theobroma Cacao (Cocoa) Extract, Disodium EDTA, Brassica Campestris (Rapeseed) Sterols, Phytosteryl/Behenyl/Octyldodecyl Lauroyl Glutamate, Retinal, Silica, Aluminum/Magnesium Hydroxide Stearate, Sodium Hyaluronate, Tocopherol, Potassium Cetyl Phosphate, Pentaerythrityl Tetra-di-t-butyl Hydroxyhydrocinnamate, Ceramide NP, Palmitoyl Tripeptide-5",
   "ingSource": "Kourtney",
-  "tags": []
+  "tags": [],
+  "fit": {
+   "oily": "yes",
+   "combination": "yes"
+  }
  },
  {
   "name": "Naturium Retinal Serum 0.05%",
@@ -1267,7 +1498,11 @@ window.PRODUCTS = [
   "ingSource": "Kourtney",
   "tags": [
    "Niacinamide-free"
-  ]
+  ],
+  "fit": {
+   "oily": "yes",
+   "combination": "yes"
+  }
  },
  {
   "name": "Naturium Retinal 0.1%",
@@ -1292,7 +1527,11 @@ window.PRODUCTS = [
   "ingSource": "Kourtney",
   "tags": [
    "Niacinamide-free"
-  ]
+  ],
+  "fit": {
+   "oily": "yes",
+   "combination": "yes"
+  }
  },
  {
   "name": "Naturium Retinal Cream 0.15%",
@@ -1317,7 +1556,11 @@ window.PRODUCTS = [
   "ingSource": "Kourtney",
   "tags": [
    "Niacinamide-free"
-  ]
+  ],
+  "fit": {
+   "oily": "yes",
+   "combination": "yes"
+  }
  },
  {
   "name": "Cetaphil Daily Moisturizer with Sunscreen",
@@ -1339,7 +1582,11 @@ window.PRODUCTS = [
   "ingSource": "Kourtney",
   "tags": [
    "Niacinamide-free"
-  ]
+  ],
+  "fit": {
+   "oily": "yes",
+   "combination": "yes"
+  }
  },
  {
   "name": "CeraVe Ultra-Light Moisturizing Lotion with Sunscreen",
@@ -1361,7 +1608,11 @@ window.PRODUCTS = [
   "flags": [],
   "niacinamide": false,
   "ingredients": "AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE, WATER, C12-15 ALKYL BENZOATE, GLYCERYL STEARATE SE, METHYL METHACRYLATE CROSSPOLYMER, GLYCERIN, PENTYLENE GLYCOL, CERAMIDE NP, CERMAIDE AP, CERAMIDE EOP, CARBOMER, SODIUM ACRYLOYLDIMETHYLTAURATE / VP CROSSPOLYMER, SODIUM LAUROYL LACTYLATE, SODIUM HYALURONATE, CHOLESTEROL, PHENOXYETHANOL, DISODIUM EDTA, HYDROXYACETOPHENONE, CITRIC ACID, PHYTOSPHINGOSINE, XANTHUM GUM, T-BUTYL ALCOHOL, ETHYLHEXYLGLYCERIN",
-  "ingSource": "Kourtney"
+  "ingSource": "Kourtney",
+  "fit": {
+   "oily": "yes",
+   "combination": "yes"
+  }
  },
  {
   "name": "La Roche-Posay Anthelios Clear Skin",
@@ -1388,7 +1639,11 @@ window.PRODUCTS = [
   ],
   "niacinamide": false,
   "ingredients": "Avobenzone, Homosalate, Octisalate, Octocrylene, Water, Silica, Dicaprylyl Carbonate, Styrene/Acrylates Copolymer, Butyloctyl Salicylate, Methyl Methacrylate Crosspolymer, Nylon-12, PEG-100 Stearate, Glyceryl Stearate, Perlite, Beeswax, Ammonium Polyacryloyldimethyl Taurate, Phenoxyethanol, PEG-8 Laurate, Behenyl Alcohol, Sodium Stearoyl Glutamate, Chlorphenesin, P-Anisic Acid, Xanthan Gum, Tocopherol, Disodium EDTA, Arachidyl Alcohol, Diethylhexyl Syringylidenemalonate, Propylene Glycol, Cassia Alata Leaf Extract, Maltodextrin, Stearyl Alcohol, T-Butyl Alcohol, Caprylic/Capric Triglyceride",
-  "ingSource": "Kourtney"
+  "ingSource": "Kourtney",
+  "fit": {
+   "oily": "yes",
+   "combination": "yes"
+  }
  },
  {
   "name": "Purito Daily Soft Touch Sunscreen",
@@ -1414,7 +1669,11 @@ window.PRODUCTS = [
   "flags": [],
   "niacinamide": false,
   "ingredients": "Water, Propanediol, Dibutyl Adipate, Dicaprylyl Carbonate, Diethylamino Hydroxybenzoyl Hexyl Benzoate, Ethylhexyl Triazone, Bis-Ethylhexyloxyphenol Methoxyphenyl Triazine, Amylopectin, Butylene Glycol, Methylene Bis-Benzotriazolyl Tetramethylbutylphenol, Glycerin, Behenyl Alcohol, Poly C10-30 Alkyl Acrylate, Polyglyceryl-3 Methylglucose Distearate, Sodium Acrylates Crosspolymer-2, Carbomer, Tromethamine, Decyl Glucoside, Acrylates/C10-30 Alkyl Acrylate Crosspolymer, (-)-alpha-bisabolol, Panthenol, Caprylhydroxamic Acid, Centella Asiatica Extract, Tocopherol, Ceramide NP, Dipropylene Glycol, Cholesterol, Propylene Glycol, Xanthan Gum, Glyceryl Stearate, Ceramide AS, Ceramide AP, Ceramide NS, Hydrogenated Lecithin, Ceramide EOP",
-  "ingSource": "Kourtney"
+  "ingSource": "Kourtney",
+  "fit": {
+   "oily": "yes",
+   "combination": "yes"
+  }
  },
  {
   "name": "TIRTIR Hydro UV Shield",
@@ -1441,7 +1700,11 @@ window.PRODUCTS = [
   ],
   "niacinamide": false,
   "ingredients": "Water (Aqua), Homosalate, Octocrylene, Ethylhexyl salicylate, Butyl methoxydibenzoylmethane, Dipropylene glycol, Methyl methacrylate crosspolymer, Glyceryl polymethacrylate, Propylene glycol, Ceteareth-20, Butyloctyl salicylate, Acrylates copolymer, Ethylhexyl methoxycrylene, Polysorbate 60, Sorbitan stearate, Caprylyl glycol, Cetearyl olivate, Panthenol, Sorbitan olivate, Acrylates/C10-30 alkyl acrylate crosspolymer, Ethylhexylglycerin, Sodium acrylate/Sodium acryloyldimethyl taurate copolymer, Tromethamine, Fragrance (Parfum), 1, 2-Hexanediol, Isohexadecane, Tocopheryl acetate, Ammonium acryloyldimethyltaurate/VP copolymer, Propanediol, Butylene glycol, Aloe barbadensis leaf extract, Polysorbate 80, Trisodium ethylenediamine disuccinate, Xanthan gum, Glycerin, Hydrolyzed collagen, Hyaluronic acid, Sodium hyaluronate, Hydrolyzed hyaluronic acid, Sorbitan oleate",
-  "ingSource": "Kourtney"
+  "ingSource": "Kourtney",
+  "fit": {
+   "oily": "yes",
+   "combination": "yes"
+  }
  },
  {
   "name": "CeraVe Invisible Mineral Sunscreen",
@@ -1463,7 +1726,11 @@ window.PRODUCTS = [
   "flags": [],
   "niacinamide": true,
   "ingredients": "titanium dioxide(2.66%), zinc oxide(15.35%), water, c15-19 alkane, glycerin, dicaprylyl carbonate, niacinamide, propanediol, cetearyl isononanoate, polyhydroxystearic acid, dimethicone, ethylhexyl methoxycrylene, cellulose, triethylhexanoin, isohexadecane, triethoxycaprylylsilane, steareth-20, silica, steareth-2, ceramide np, ceramide ap, ceramide eop, carbomer, glyceryl stearate, cetearyl alcohol, behentrimonium methosulfate, triethyl citrate, sodium lauroyl lactylate, cholesterol, aluminum stearate, alumina, chlorphenesin, tocopherol, hydroxyacetophenone, caprylyl glycol, caprylic/capric triglyceride, citric acid, diethylhexyl syringylidenemalonate, panthenol, xanthan gum, phytosphingosine, polysorbate 20, acrylates/c10-30 alkyl acrylate crosspolymer, benzoic acid",
-  "ingSource": "Kourtney"
+  "ingSource": "Kourtney",
+  "fit": {
+   "oily": "yes",
+   "combination": "yes"
+  }
  },
  {
   "name": "Neutrogena Ultra Sheer Mineral",
@@ -1486,7 +1753,11 @@ window.PRODUCTS = [
   "flags": [],
   "niacinamide": false,
   "ingredients": "water, caprylic/capric triglyceride, glycerin, butyloctyl salicylate, ethylhexyl methoxycrylene, vp/hexadecene copolymer, dimethicone, steareth-21, calcium sodium borosilicate, triacontanyl pvp, polyhydroxystearic acid, aluminum hydroxide, stearic acid, triethoxycaprylylsilane, cetearyl olivate, phenoxyethanol, sodium chloride, xanthan gum, ethylhexylglycerin, sorbitan olivate, chlorphenesin, caprylyl glycol, tocopheryl acetate, disodium edta, titanium dioxide, zinc oxide",
-  "ingSource": "Kourtney"
+  "ingSource": "Kourtney",
+  "fit": {
+   "oily": "yes",
+   "combination": "yes"
+  }
  },
  {
   "name": "Avène Cicalfate+",
@@ -1507,14 +1778,19 @@ window.PRODUCTS = [
    "Niacinamide-free"
   ],
   "warn": [
-   "May feel heavy on acne-prone skin"
+   "May feel heavy on acne-prone skin",
+   "Combination skin: use on dry areas only"
   ],
   "flags": [
    "heavy"
   ],
   "niacinamide": false,
   "ingredients": "avene thermal spring water (avene aqua), caprylic/capric triglyceride, mineral oil (paraffinum liquidum), glycerin, hydrogenated vegetable oil, zinc oxide, propylene glycol, polyglyceryl-2 sesquiisostearate, peg-22/dodecyl glycol copolymer, aluminum stearate, aquaphilus dolomaie ferment filtrate, arginine, beeswax (cera alba), copper sulfate, magnesium stearate, magnesium sulfate, microcrystalline wax (cera microcristallina), tromethamine, zinc sulfate",
-  "ingSource": "Kourtney"
+  "ingSource": "Kourtney",
+  "fit": {
+   "oily": "maybe",
+   "combination": "dry"
+  }
  },
  {
   "name": "Prequel Hypochlorous Spray",
@@ -1534,7 +1810,11 @@ window.PRODUCTS = [
   "flags": [],
   "niacinamide": false,
   "ingredients": "Pure Water (Aqua), Hypochlorous Acid, Sodium Chloride",
-  "ingSource": "Kourtney"
+  "ingSource": "Kourtney",
+  "fit": {
+   "oily": "yes",
+   "combination": "yes"
+  }
  },
  {
   "name": "Tower 28 SOS Spray",
@@ -1555,7 +1835,11 @@ window.PRODUCTS = [
   "flags": [],
   "niacinamide": false,
   "ingredients": "Water, Sodium Chloride, Hypochlorous Acid",
-  "ingSource": "Kourtney"
+  "ingSource": "Kourtney",
+  "fit": {
+   "oily": "yes",
+   "combination": "yes"
+  }
  },
  {
   "name": "Remedy 15% Vitamin C Complex",
@@ -1577,7 +1861,11 @@ window.PRODUCTS = [
   "flags": [],
   "niacinamide": false,
   "ingredients": "Water(Aqua), 3-O-Ethyl Ascorbic Acid, Glycerin, Propanediol, Squalane, C12-15 Alkyl Lactate, Butylene Glycol, Aloe Barbadensis Leaf Juice, Polyglyceryl-10 Laurate, Hydrolyzed Hyaluronic Acid, Allantoin, Panthenol, Escin, Ruscus Aculeatus Root Extract, Ammonium Glycyrrhizate, Centella Asiatica Leaf Extract, Hydrolyzed Yeast Protein, Calendula Officinalis Flower Extract, Tocopheryl Acetate, Acetyl Zingerone, Superoxide Dismutase, Ergothioneine, Plankton Extract, Spirulina Platensis Extract, Bifida Ferment Lysate, Ferulic Acid, Ectoin, 1, 2-Hexanediol, Curcuma Longa (Turmeric) Root Extract, Glycyrrhiza Glabra (Licorice) Root Extract, Camellia Sinensis Leaf Extract, Hydroxyacetophenone, Trisodium Ethylenediamine Disuccinate, Sodium Citrate, Citric Acid, Sodium Hydroxide, Sodium Benzoate, Potassium Sorbate, Leuconostoc/Radish Root Ferment Filtrate, Phenoxyethanol, Ethylhexylglycerin",
-  "ingSource": "Kourtney"
+  "ingSource": "Kourtney",
+  "fit": {
+   "oily": "yes",
+   "combination": "yes"
+  }
  },
  {
   "name": "Prequel Vitamin C",
@@ -1597,7 +1885,11 @@ window.PRODUCTS = [
   "flags": [],
   "niacinamide": true,
   "ingredients": "Water (Aqua), Propanediol, Ascorbic Acid, Ethoxydiglycol, Isopentyldiol, Ferulic Acid, Ergothioneine, Inulin, Niacinamide, Hydroxyacetophenone, Aminomethyl Propanol, 1, 2-Hexanediol, Caprylyl Glycol, Mannitol",
-  "ingSource": "Kourtney"
+  "ingSource": "Kourtney",
+  "fit": {
+   "oily": "yes",
+   "combination": "yes"
+  }
  },
  {
   "name": "Epii Pro Shot Vitamin C",
@@ -1615,7 +1907,11 @@ window.PRODUCTS = [
   "niacinamide": true,
   "ingredients": "Water, 3-O-Ethyl Ascorbic Acid, Glycerin, Dipropylene Glycol, Hydrogenated Poly(C6-14 Olefin), 1, 2-Hexanediol, Caffeine, Ethylhexyl Stearate, Niacinamide, Cetyl Ethylhexanoate, Butylene Glycol, Glyceryl Stearate SE, Panthenol, Tranexamic Acid, Glutathione, Nonapeptide-1, Cynanchum Atratum Extract, Sodium Hyaluronate, Tremella Fuciformis (Mushroom) Extract, Acrylates/C10-30 Alkyl Acrylate Crosspolymer, Tocopheryl Acetate, Sodium Acrylate/Sodium Acryloyldimethyl Taurate Copolymer, Ferulic Acid, Isohexadecane, Melia Azadirachta Leaf Extract, Sodium Polyacryloyldimethyl Taurate, Melia Azadirachta Flower Extract, Curcuma Longa (Turmeric) Root Extract, Hydrogenated Lecithin, Disodium Edta, Ethylhexylglycerin, Sodium Stearoyl Glutamate, Adenosine, Sorbitan Oleate, Ocimum Sanctum Leaf Extract, Xanthan Gum, Centella Asiatica Extract, Ficus Carica (Fig) Fruit Extract, Ceramide NP, Corallina Officinalis Extract, Pentaerythrityl Distearate, Citric Acid, Polysorbate 80, Tocopherol",
   "ingSource": "Kourtney",
-  "tags": []
+  "tags": [],
+  "fit": {
+   "oily": "yes",
+   "combination": "yes"
+  }
  },
  {
   "name": "Dr. Rejuall Advanced Ceramide Cream",
@@ -1641,7 +1937,11 @@ window.PRODUCTS = [
   "niacinamide": true,
   "ingredients": "Water (Aqua/Eau), Dimethicone, Butylene Glycol, Glycerin, Squalane, Hydrogenated Polydecene, Niacinamide, Panthenol, Propanediol, Sorbitol, Trimethylpentaphenyl Trisiloxane, Cetyl PEG/PPG-10/1 Dimethicone, 1, 2-Hexanediol, Tapioca Starch, Candida Bombicola/Glucose/Methyl Rapeseedate Ferment, Butyrospermum Parkii (Shea) Butter, Limnanthes Alba (Meadowfoam) Seed Oil, Macadamia Ternifolia Seed Oil, Hydrolyzed Collagen Extract, Caprylic/Capric Triglyceride, Magnesium Sulfate, Caprylyl Glycol, Trehalose, Ethylhexylglycerin, Allantoin, Beta-Sitosterol, Adenosine, Trisodium Ethylenediamine Disuccinate, Phytosterols, Biosaccharide Gum-1, Madecassoside, Ceramide NP, Pentaerythrityl Tetra-di-t-butyl Hydroxyhydrocinnamate, Triisopropanolamine, Tocopherol, PEG-10 Dimethicone, Cetearyl Alcohol",
   "ingSource": "Kourtney",
-  "tags": []
+  "tags": [],
+  "fit": {
+   "oily": "yes",
+   "combination": "yes"
+  }
  },
  {
   "name": "SKIN1004 Biotica Enrich Cream",
@@ -1664,7 +1964,11 @@ window.PRODUCTS = [
   "niacinamide": true,
   "ingredients": "Water, Glycerin, Diglycerin, 1, 2-Hexanediol, Butylene Glycol, Niacinamide, Polyglyceryl-3 Distearate, Caprylic/Capric Triglyceride, Neopentyl Glycol Diheptanoate, Hydrogenated Poly(C6-14 Olefin), Isostearyl Isostearate, Pentaerythrityl Tetraisostearate, Heptyl Undecylenate, Bis-Diglyceryl Polyacyladipate-2, Glyceryl Stearate, C14-22 Alcohols, Centella Asiatica Extract(6, 108 ppm), Butyrospermum Parkii (Shea) Butter, Cetearyl Alcohol, Polyglyceryl-2 Stearate, Sodium Acrylate/Sodium Acryloyldimethyl Taurate Copolymer, Glyceryl Stearate Citrate, Arginine, Stearyl Alcohol, Polyisobutene, C12-20 Alkyl Glucoside, Squalane, Sodium Polyacrylate, Acrylates/C10-30 Alkyl Acrylate Crosspolymer, Carbomer, Sodium Surfactin, Hydroxystearic Acid, Ethylhexylglycerin, Adenosine, Hydrogenated Lecithin, Sorbitan Oleate, Caprylyl/Capryl Glucoside, Macadamia Ternifolia Seed Oil, Sodium Hyaluronate, Moringa Oleifera Seed Oil, Sodium Phytate, Ceramide NP, Dextrin, Theobroma Cacao (Cocoa) Extract, Glyceryl Acrylate/Acrylic Acid Copolymer, Polyglyceryl-10 Myristate, Phytosphingosine, Stearic Acid, Lactobacillus Ferment(10 ppm), Madecassic Acid(8ppm), Asiaticoside(8 ppm), Sucrose Distearate, Asiatic Acid(4 ppm), Phytosterols, Lauric Acid, Polyglutamic Acid",
   "ingSource": "Kourtney",
-  "tags": []
+  "tags": [],
+  "fit": {
+   "oily": "yes",
+   "combination": "yes"
+  }
  },
  {
   "name": "Epii Double Up Cream",
@@ -1687,7 +1991,11 @@ window.PRODUCTS = [
   "niacinamide": true,
   "ingredients": "[Inner] Water, Squalane, Butylene Glycol, Glycerin, Vinyl Dimethicone, 1, 2-Hexanediol, Dipropylene Glycol, Methylpropanediol, Niacinamide, Propanediol, Betaine, Ectoin, Panthenol, Sodium Hyaluronate, Cetearyl Olivate, Sorbitan Olivate, Melia Azadirachta Flower Extract, Melia Azadirachta Leaf Extract, Coccinia Indica Fruit Extract, Adenosine, Ammonium Acryloyldimethyltaurate/Vp Copolymer, Acrylates/C10-30 Alkyl Acrylate Crosspolymer, Disodium Edta, Solanum Melongena (Eggplant) Fruit Extract, Ocimum Sanctum Leaf Extract, Corallina Officinalis Extract, Curcuma Longa (Turmeric) Root Extract, Ethylhexylglycerin, Polyquaternium-51, Sodium Stearoyl Glutamate, Tromethamine, Aniba Rosodora (Rosewood) Wood Oil [Outer] Water, Squalane, Glycerin, Panthenol, 1, 2-Hexanediol, Niacinamide, Ammonium Acryloyldimethyltaurate/Vp Copolymer, Sodium Hyaluronate, Allantoin, Betaine, Adenosine, Acrylates/C10-30 Alkyl Acrylate Crosspolymer, Tromethamine, Ethylhexylglycerin",
   "ingSource": "Kourtney",
-  "tags": []
+  "tags": [],
+  "fit": {
+   "oily": "yes",
+   "combination": "yes"
+  }
  },
  {
   "name": "Bioderma Sensibio AR Cream",
@@ -1711,7 +2019,11 @@ window.PRODUCTS = [
   ],
   "niacinamide": false,
   "ingredients": "Aqua/Water/Eau, Glycerin, C15-19 Alkane, C10-18 Triglycerides, Dipropylene Glycol, Glyceryl Stearate Citrate, Helianthus Annuus (Sunflower) Seed Wax, Pentylene Glycol, Squalane, Sucrose Stearate, Corn Starch Modified, Cocos Nucifera (Coconut) Oil, Maltooligosyl Glucoside, Glyceryl Caprylate/Caprate, Sclerotium Gum, Glycyrrhetinic Acid, Hydrogenated Starch Hydrolysate, Xanthan Gum, 1-Methylhydantoin-2-Imide, Phytosphingosine, Sodium Citrate, Citric Acid, Mannitol, Xylitol, O-Cymen-5-Ol, Benzotriazolyl Dodecyl P-Cresol, Rhamnose, Tocopherol, Helianthus Annuus (Sunflower) Seed Oil. [BI 2087]",
-  "ingSource": "Kourtney"
+  "ingSource": "Kourtney",
+  "fit": {
+   "oily": "maybe",
+   "combination": "yes"
+  }
  },
  {
   "name": "Beauty of Joseon Tinted Mineral Dayscreen",
@@ -1736,7 +2048,11 @@ window.PRODUCTS = [
   "flags": [],
   "niacinamide": false,
   "ingredients": "Water, Zinc Oxide, Dimethicone, Methyl Trimethicone, Titanium Dioxide, Isododecane, Butyloctyl Salicylate, Propanediol, Dicaprylyl Ether, Lauryl PEG-10 Tris(Trimethylsiloxy)silylethyl Dimethicone, PEG/PPG-18/18 Dimethicone, Trimethylsiloxysilicate, Propylheptyl Caprylate, Dimethicone/Vinyl Dimethicone Crosspolymer, Synthetic Fluorphlogopite, Iron Oxides (CI 77492), Magnesium Sulfate, Triethoxycaprylylsilane, Disteardimonium Hectorite, Dimethiconol, Trisiloxane, 1, 2-Hexanediol, Polymethylsilsesquioxane, Lauryl Polyglyceryl-3 Polydimethylsiloxyethyl Dimethicone, Aluminum Hydroxide, Iron Oxides (CI 77491), Glyceryl Caprylate, Caprylyl Glycol, Iron Oxides (CI 77499), Ethylhexylglycerin, Adenosine, Lactobacillus/Rice Ferment, Tocopherol, Ceramide NP",
-  "ingSource": "Kourtney"
+  "ingSource": "Kourtney",
+  "fit": {
+   "oily": "yes",
+   "combination": "yes"
+  }
  },
  {
   "name": "Beauty of Joseon Relief Sun",
@@ -1760,7 +2076,11 @@ window.PRODUCTS = [
   "flags": [],
   "niacinamide": true,
   "ingredients": "Water, Dibutyl Adipate, Propanediol, Diethylamino Hydroxybenzoyl Hexyl Benzoate, Polymethylsilsesquioxane, Ethylhexyl Triazone, Niacinamide, Methylene Bis-Benzotriazolyl Tetramethylbutylphenol, Coco-Caprylate/Caprate, Caprylyl Methicone, Diethylhexyl Butamido Triazone, Glycerin, 1, 2-Hexanediol, Butylene Glycol, Pentylene Glyco, Behenyl Alcohol, Poly C10-30 Alkyl Acrylate, Polyglyceryl-3 Methylglucose Distearate, Decyl Glucoside, Oryza Sativa (Rice) Extract, Tromethamine, Carbomer, Acrylates/C10-30 Alkyl Acrylate Crosspolymer, Sodium Stearoyl Glutamate, Polyacrylate Crosspolymer-6, Ethylhexylglycerin, Adenosine, Xanthan Gum, T-Butyl Alcohol, Tocopherol, Oryza Sativa (Rice) Germ Extract, Camellia Sinensis Leaf Extract, Lactobacillus/Rice Ferment, Lactobacillus/Pumpkin Ferment Extract, Monascus/Rice Ferment, Bacillus/Soybean Ferment Extract, Saccharum Officinarum (Sugarcane) Extract, Aspergillus Ferment, Macrocystis Pyrifera (Kelp) Extract, Cocos Nucifera (Coconut) Fruit Extrac, Panax Ginseng Root Extract, Saccharomyces/Rice Ferment Filtrate",
-  "ingSource": "Kourtney"
+  "ingSource": "Kourtney",
+  "fit": {
+   "oily": "yes",
+   "combination": "yes"
+  }
  },
  {
   "name": "Round Lab Birch Juice Sunscreen",
@@ -1786,7 +2106,11 @@ window.PRODUCTS = [
   ],
   "niacinamide": true,
   "ingredients": "Water, Butyloctyl Salicylate, Propanediol, Acrylates Copolymer, Butylene Glycol, Caprylyl Methicone, Polyglyceryl-3 Distearate, Benzotriazolyl Dodecyl P-Cresol, Niacinamide, Diethylhexyl 2, 6-Naphthalate, Polymethylsilsesquioxane, Glycerin, Calcium Aluminum Borosilicate, 1, 2-Hexanediol, Poly C10-30 Alkyl Acrylate, Pentylene Glycol, Cetearyl Alcohol, Tromethamine, Methylpropanediol, Glyceryl Stearate Citrate, Betula Platyphylla Japonica Juice, Acrylates/C10-30 Alkyl Acrylate Crosspolymer, Carbomer, Ethylhexyiglycerin, Artemisia Annua Extract, Anthemis Nobilis Flower Oil, Sodium Stearoyl Glutamate, Glyceryl Polymetha-crylate, Triethoxycaprylylsilane, Pinus Sylvestris Leaf Oil, Sparassis Crispa Extract, Polyether-1, Allantoin, Di-propylene Glycol, Glyceryl Glucoside, Biosaccharide Gum-1, Tocopherol, Portulaca Oleracea Extract, Sodium Hyaluronate, Hyaluronic Acid, Ascorbic Acid, Avobenzone, Homosalate, Octisalate",
-  "ingSource": "Kourtney"
+  "ingSource": "Kourtney",
+  "fit": {
+   "oily": "maybe",
+   "combination": "yes"
+  }
  },
  {
   "name": "Haruharu Wonder Black Rice Sunscreen",
@@ -1810,7 +2134,11 @@ window.PRODUCTS = [
   "flags": [],
   "niacinamide": true,
   "ingredients": "Water, Dibutyl Adipate, Propanediol, Butyloctyl Salicylate, Ethylhexyl Triazone, Terephthalylidene Dicamphor Sulfonic Acid, Glycerin, Niacinamide, Tromethamine, Polyglyceryl-3 Distearate, 1, 2-Hexanediol, Pentylene Glycol, Diethylamino Hydroxybenzoyl Hexyl Benzoate, Cetearyl Alcohol, Caprylyl Methicone, Polysilicone-15, Stellaria Media (Chickweed) Extract, Helianthus Annuus (Sunflower) Flower Extract, Vaccinium Vitis-Idaea Fruit Extract, Oryza Sativa (Rice) Extract, Bellis Perennis (Daisy) Flower Extract, Houttuynia Cordata Extract, Oryza Sativa (Rice) Bran Oil, Hydrogenated Lecithin, Polymethylsilsesquioxane, Palmitic Acid, Butylene Glycol, Stearic Acid, Glyceryl Stearate, Bis-Ethylhexyloxyphenol Methoxyphenyl Triazine, Potassium Cetyl Phosphate, Poly C10-30 Alkyl Acrylate, Methylpropanediol, Carbomer, Ammonium Acryloyldimethyltaurate/VP Copolymer, Acrylates/C10-30 Alkyl Acrylate Crosspolymer, Glyceryl Stearate Citrate, Ethylhexylglycerin, Adenosine, Polyether-1, Myristic Acid, Biosaccharide Gum-1, Tocopherol, Moringa Oleifera Seed Oil, Ceramide NP, Phytosphingosine, Phenethyl Alcohol, Sodium Chloride, Disodium Phosphate, Potassium Chloride, Potassium Phosphate",
-  "ingSource": "Kourtney"
+  "ingSource": "Kourtney",
+  "fit": {
+   "oily": "yes",
+   "combination": "yes"
+  }
  },
  {
   "name": "COSRX The Niacinamide 15 Serum",
@@ -1831,7 +2159,11 @@ window.PRODUCTS = [
   "flags": [],
   "niacinamide": true,
   "ingredients": "Water, Pentylene Glycol, Niacinamide(15%), Butylene Glycol, Acetyl Glucosamine, 1, 2-hexanediol, Zinc Pca, Trehalose, Xanthan Gum, Pullulan, Allantoin, Ethylhexylglycerin, Sodium Phytate, Citric Acid, Tocopherol",
-  "ingSource": "Kourtney"
+  "ingSource": "Kourtney",
+  "fit": {
+   "oily": "yes",
+   "combination": "yes"
+  }
  },
  {
   "name": "Cocokind Beginner Retinol Gel",
@@ -1859,7 +2191,11 @@ window.PRODUCTS = [
   "ingSource": "Kourtney",
   "tags": [
    "Niacinamide-free"
-  ]
+  ],
+  "fit": {
+   "oily": "yes",
+   "combination": "yes"
+  }
  },
  {
   "name": "COSRX Retinol 0.1 Cream",
@@ -1875,7 +2211,8 @@ window.PRODUCTS = [
   "img": "img/cosrx-retinol-0-1-cream.webp",
   "warn": [
    "Not for acne-prone skin",
-   "Skip if pregnant or nursing"
+   "Skip if pregnant or nursing",
+   "Combination skin: use on dry areas only"
   ],
   "flags": [
    "heavy",
@@ -1889,7 +2226,11 @@ window.PRODUCTS = [
   ],
   "avoid": [
    "acne"
-  ]
+  ],
+  "fit": {
+   "oily": "no",
+   "combination": "dry"
+  }
  },
  {
   "name": "COSRX Retinol 0.3 Cream",
@@ -1905,7 +2246,8 @@ window.PRODUCTS = [
   "img": "img/cosrx-retinol-0-3-cream.webp",
   "warn": [
    "Not for acne-prone skin",
-   "Skip if pregnant or nursing"
+   "Skip if pregnant or nursing",
+   "Combination skin: use on dry areas only"
   ],
   "flags": [
    "heavy",
@@ -1919,7 +2261,11 @@ window.PRODUCTS = [
   ],
   "avoid": [
    "acne"
-  ]
+  ],
+  "fit": {
+   "oily": "no",
+   "combination": "dry"
+  }
  },
  {
   "name": "La Roche-Posay Retinol B3 Serum",
@@ -1949,7 +2295,11 @@ window.PRODUCTS = [
   "niacinamide": true,
   "ingredients": "Aqua/Water/Eau, Glycerin, Cyclohexasiloxane, Alcohol Denat, Pentylene Glycol, Niacinamide, Dimethicone, Glycine Soja Oil / Soybean Oil, Ppg-6-Decyltetradeceth-30, Sodium Hyaluronate, Retinol, Adenosine, Ammoniumpolyacryloyldimethyltaurate, Caprylyl Glycol, Citric Acid, Trisodium Ethylenediamine Disuccinate, Xanthan Gum, Polysilicone-11, Retinyl Palmitate, Tocopherol, Phenoxyethanol, Parfum/ Fragrance",
   "ingSource": "Kourtney",
-  "tags": []
+  "tags": [],
+  "fit": {
+   "oily": "maybe",
+   "combination": "yes"
+  }
  },
  {
   "name": "Prequel Retinal",
@@ -1974,7 +2324,11 @@ window.PRODUCTS = [
   "ingSource": "Kourtney",
   "tags": [
    "Niacinamide-free"
-  ]
+  ],
+  "fit": {
+   "oily": "yes",
+   "combination": "yes"
+  }
  },
  {
   "name": "Remedy Retinal",
@@ -1999,7 +2353,11 @@ window.PRODUCTS = [
   "ingSource": "Kourtney",
   "tags": [
    "Niacinamide-free"
-  ]
+  ],
+  "fit": {
+   "oily": "maybe",
+   "combination": "yes"
+  }
  },
  {
   "name": "Celimax Vita-A Retinal Shot",
@@ -2022,7 +2380,11 @@ window.PRODUCTS = [
   "niacinamide": true,
   "ingredients": "Water, Butylene Glycol, Glycerin, Caprylic/Capric Triglyceride, Cetearyl Alcohol, Niacinamide, Diisostearyl Malate, 1, 2-Hexanediol, Polypropylsilsesquioxane, Panthenol, Cetearyl Olivate, Cetearyl Glucoside, Sorbitan Olivate, Hydroxyethyl Acrylate/Sodium Acryloyldimethyl Taurate Copolymer, Lecithin, Carbomer, Arginine, Dimethicone/Vinyl Dimethicone Crosspolymer, Tocopherol, Retinal, Xanthan Gum, Ethylhexylglycerin, Adenosine, Sorbitan Isostearate, Sodium Lactate, Hydrolyzed Sponge, Disodium EDTA, Polysorbate 20, Ascorbic Acid, Glucose, Palmitoyl Tripeptide-1, Palmitoyl Tetrapeptide-7",
   "ingSource": "Kourtney",
-  "tags": []
+  "tags": [],
+  "fit": {
+   "oily": "yes",
+   "combination": "yes"
+  }
  },
  {
   "name": "Tatcha The Camellia Cleansing Oil",
@@ -2046,7 +2408,11 @@ window.PRODUCTS = [
   "flags": [
    "fragrance"
   ],
-  "niacinamide": false
+  "niacinamide": false,
+  "fit": {
+   "oily": "yes",
+   "combination": "yes"
+  }
  },
  {
   "name": "Dr. Jart+ Cicapair",
@@ -2064,7 +2430,8 @@ window.PRODUCTS = [
   ],
   "img": "img/dr-jart-cicapair.webp",
   "warn": [
-   "Not for acne-prone skin"
+   "Not for acne-prone skin",
+   "Combination skin: use on dry areas only"
   ],
   "flags": [
    "heavy"
@@ -2075,7 +2442,11 @@ window.PRODUCTS = [
   "tags": [],
   "avoid": [
    "acne"
-  ]
+  ],
+  "fit": {
+   "oily": "no",
+   "combination": "dry"
+  }
  },
  {
   "name": "DRMTLGY Needle-less Growth Factor Serum",
@@ -2094,7 +2465,11 @@ window.PRODUCTS = [
   "ingSource": "Kourtney",
   "tags": [
    "Niacinamide-free"
-  ]
+  ],
+  "fit": {
+   "oily": "yes",
+   "combination": "yes"
+  }
  },
  {
   "name": "Avène Vitamin C",
@@ -2116,7 +2491,11 @@ window.PRODUCTS = [
   "niacinamide": true,
   "ingredients": "Avene Thermal Spring Water (Avene Aqua), Glycerin, Niacinamide, Pentylene Glycol, C9-12 Alkane, Caprylic/Capric Triglyceride, Pentaery-Thrityl Tetracaprylate/ Tetrecaprate, Ascorbyl Glucoside, Bakuchiol, 1, 2 Hexandiol, Acacia Senegal Gum, Butylene Glycol, Citric Acid, Coco-Caprylate/Caprate, Fragrance (Parfum), Glyceryl Behenate, Glyceryl Dibehenate, Sodium Citrate, Sodium Dilauramidoglutamide Lysine, Sodium Hyaluronate, Sodium Hydroxide, Tocopheryl Glucoside, Tribehenin, Water (Aqua), Xanthan Gum",
   "ingSource": "Kourtney",
-  "tags": []
+  "tags": [],
+  "fit": {
+   "oily": "yes",
+   "combination": "yes"
+  }
  },
  {
   "name": "Tatcha Brightening Serum",
@@ -2142,7 +2521,11 @@ window.PRODUCTS = [
   "ingSource": "Kourtney",
   "tags": [
    "Niacinamide-free"
-  ]
+  ],
+  "fit": {
+   "oily": "yes",
+   "combination": "yes"
+  }
  },
  {
   "name": "Tatcha The Dewy Skin Cream",
@@ -2160,7 +2543,8 @@ window.PRODUCTS = [
   ],
   "warn": [
    "Not for acne-prone skin",
-   "Contains fragrance"
+   "Contains fragrance",
+   "Combination skin: use on dry areas only"
   ],
   "flags": [
    "fragrance",
@@ -2171,7 +2555,11 @@ window.PRODUCTS = [
   "ingSource": "Kourtney",
   "avoid": [
    "acne"
-  ]
+  ],
+  "fit": {
+   "oily": "no",
+   "combination": "dry"
+  }
  },
  {
   "name": "EltaMD UV Clear Broad-Spectrum",
@@ -2191,7 +2579,11 @@ window.PRODUCTS = [
   "niacinamide": true,
   "ingredients": "Zinc Oxide, Octinoxate, Purified Water, Cyclomethicone, Niacinamide, Octyldodecyl Neopentanoate, Hydroxyethyl Acrylate/Sodium Acryloyldimethyl Taurate Copolymer, Polyisobutene, PEG-7 Trimethylolpropane Coconut Ether, Sodium Hyaluronate, Tocopheryl Acetate, Lactic Acid, Oleth-3 Phosphate, Phenoxyethanol, Butylene Glycol, Iodopropynyl Butylcarbamate, Triethoxycaprylylsilane",
   "ingSource": "Kourtney",
-  "tags": []
+  "tags": [],
+  "fit": {
+   "oily": "yes",
+   "combination": "yes"
+  }
  },
  {
   "name": "Shiseido Mineral Sunscreen",
@@ -2214,7 +2606,11 @@ window.PRODUCTS = [
   "flags": [],
   "niacinamide": false,
   "ingredients": "TITANIUM DIOXIDE, ZINC OXIDE, DIMETHICONE, WATER, DIISOPROPYL SEBACATE, DIPHENYLSILOXY PHENYL TRIMETHICONE, DIPROPYLENE GLYCOL, GLYCERIN, SORBITAN SESQUIISOSTEARATE, POLYHYDROXYSTEARIC ACID, LAURYL PEG-9 POLYDIMETHYLSILOXYETHYL DIMETHICONE, SILICA, AMINOETHANESULFINIC ACID, THIOTAURINE, SCUTELLARIA BAICALENSIS ROOT EXTRACT, PAEONIA ALBIFLORA ROOT EXTRACT, SODIUM HYALURONATE, DIPOTASSIUM GLYCYRRHIZATE, GINKGO BILOBA LEAF EXTRACT, PEG/PPG-14/7 DIMETHYL ETHER, ONONIS SPINOSA ROOT EXTRACT, CAMELLIA JAPONICA FLOWER EXTRACT, GARCINIA MANGOSTANA BARK EXTRACT, TREHALOSE, SPIRULINA PLATENSIS EXTRACT, SOLUBLE COLLAGEN, ALUMINUM HYDROXIDE, TRIETHOXYCAPRYLYLSILANE, STEARIC ACID, DISTEARDIMONIUM HECTORITE, BUTYLENE GLYCOL, TRISODIUM EDTA, ISOSTEARIC ACID, SODIUM CITRATE, CITRIC ACID, SODIUM METABISULFITE, PRUNUS YEDOENSIS LEAF EXTRACT, SYZYGIUM JAMBOS LEAF EXTRACT, TOCOPHEROL, MICA, DISODIUM PHOSPHATE, RIBOFLAVIN, ERGOTHIONEINE, SODIUM PHOSPHATE, PHENOXYETHANOL, BENZOIC ACID, TITANIUM DIOXIDE",
-  "ingSource": "Kourtney"
+  "ingSource": "Kourtney",
+  "fit": {
+   "oily": "yes",
+   "combination": "yes"
+  }
  },
  {
   "name": "Kiehl's Mineral Sunscreen",
@@ -2241,7 +2637,11 @@ window.PRODUCTS = [
   ],
   "niacinamide": true,
   "ingredients": "Titanium Dioxide, Zinc Oxide, Water, C15-19 Alkane, Glycerin, Dicaprylyl Carbonate, Niacinamide, Propanediol, Cetearyl Isononanoate, Polyhydroxystearic Acid, Dimethicone, Ethylhexyl Methoxycrylene, Cellulose, Triethylhexanoin, Isohexadecane, Triethoxycaprylylsilane, Steareth-20, Silica, Glycine Soja (Soybean) Oil, Aloe Barbadensis Leaf Juice Powder, Centella Asiatica Extract, Steareth-2, Bisabolol, Glyceryl Stearate, Cetearyl Alcohol, Alumina, Aluminum Stearate, Hydroxyacetophenone, Caprylic/Capric Triglyceride, Caprylyl Glycol, Citric Acid, Xanthan Gum, Panthenol, Polysorbate 20, Acrylates/C10-30 Alkyl Acrylate Crosspolymer, Tocopherol, Diethylhexyl Syringylidenemalonate, Chlorphenesin",
-  "ingSource": "Kourtney"
+  "ingSource": "Kourtney",
+  "fit": {
+   "oily": "yes",
+   "combination": "yes"
+  }
  },
  {
   "name": "Skinfix Targeted Brightening Serum",
@@ -2263,7 +2663,11 @@ window.PRODUCTS = [
   "flags": [],
   "niacinamide": false,
   "ingredients": "-Tetrahexyldecyl Ascorbate: An ultra-potent and stable form of vitamin C that visibly brightens and firms.-Tetrapeptide Solution: Biomimetic peptides that visibly reduce dark spots and discoloration.-PGA Peptide Solution: Peptides that hold up to 5000X their weight in water to restore bounce, Aqua/Water/Eau, Tetrahexyldecyl Ascorbate, Glycerin, Isopentyldiol, Aloe Barbadensis Leaf Juice, Hydrogenated Lecithin, Polyglyceryl-10 Laurate, Oligopeptide-1, Oligopeptide-2, Hexapeptide-11, Oligopeptide-3, Sclerotium Gum, Ferulic Acid, Propanediol, Tetrahydrodiferuloylmethane, Jojoba Oil/Macadamia Seed Oil Esters, Tocopheryl Acetate, Trisodium Ethylenediamine Disuccinate, Squalene, Caprylyl Glycol, Tocopherol, Polyglutamic Acid, Amylopectin, Pentylene Glycol, Citric Acid, Phytosteryl Macadamiate, Lecithin, Lithothamnion Calcareum Extract, Acetyl Glutamine, Lactic Acid, Phytosterols, Acetyl Tetrapeptide-2, Bacillus/Soybean Ferment Extract, Xanthan Gum, Sodium Hyaluronate, Folic Acid, Ethylhexylglycerin, Potassium Sorbate, Sodium Benzoate, Phenoxyethanol",
-  "ingSource": "Kourtney"
+  "ingSource": "Kourtney",
+  "fit": {
+   "oily": "yes",
+   "combination": "yes"
+  }
  },
  {
   "name": "Medik8 C-Tetra Advanced",
@@ -2292,7 +2696,11 @@ window.PRODUCTS = [
   ],
   "niacinamide": false,
   "ingredients": "Simmondsia Chinensis (Jojoba) Seed Oil, Cyclopentasiloxane, Cyclohexasiloxane, Tetrahexyldecyl Ascorbate, Citrus Grandis (Grapefruit) Peel Oil, Tocopheryl Acetate, PPG-12/SMDI Copolymer, Limonene, Citral, Linalool, Geraniol",
-  "ingSource": "Kourtney"
+  "ingSource": "Kourtney",
+  "fit": {
+   "oily": "yes",
+   "combination": "yes"
+  }
  },
  {
   "name": "Medik8 Super C",
@@ -2315,7 +2723,11 @@ window.PRODUCTS = [
   "flags": [],
   "niacinamide": false,
   "ingredients": "30% Ethylated L-Ascorbic Acid (Vitamin C) SerumMethoxymethylbutanol, 3-O-Ethyl Ascorbic Acid, Propylene Glycol, Butylene Glycol, Pentylene Glycol, Ferulic Acid, Tetrahydrodiferuloylmethane, Aqua (Water), Tocopheryl Acetate",
-  "ingSource": "Kourtney"
+  "ingSource": "Kourtney",
+  "fit": {
+   "oily": "yes",
+   "combination": "yes"
+  }
  },
  {
   "name": "RoC Retinol Capsules",
@@ -2332,7 +2744,8 @@ window.PRODUCTS = [
   "img": "img/roc-retinol-capsules.webp",
   "warn": [
    "Not for acne-prone skin",
-   "Skip if pregnant or nursing"
+   "Skip if pregnant or nursing",
+   "Combination skin: use on dry areas only"
   ],
   "flags": [
    "heavy",
@@ -2346,7 +2759,11 @@ window.PRODUCTS = [
   ],
   "avoid": [
    "acne"
-  ]
+  ],
+  "fit": {
+   "oily": "no",
+   "combination": "dry"
+  }
  },
  {
   "name": "Maelove Moonlight Advanced Retinal",
@@ -2371,7 +2788,11 @@ window.PRODUCTS = [
   "niacinamide": true,
   "ingredients": "Aloe Barbadensis Leaf Juice, Aqua (Water), Niacinamide, Cyclodextrin, Glycerin, Caprylic/Capric Triglyceride, Gluconolactone, Squalane, Bisabolol (L-alpha), Ceramide-NP, Michelia Alba (Magnolia) Flower Oil, Hamamelis Virginiana (Witch Hazel) Water, Camellia Oleifera (Green Tea) Leaf Extract, Rubus Chamaemorus (Cloud Berry) Seed Oil, Sodium Hyaluronate, Tocopheryl Acetate (D-alpha), Vaccinium Macrocarpon (Cranberry) Fruit Extract, Retinal (Retinaldehyde), Polygonum Cuspidatum Extract, Pentylene Glycol, Maltodextrin, Lonicera Japonica (Honeysuckle) Flower Extract, Lonicera Caprifolium (Honeysuckle) Flower Extract, Xanthan Gum, Sodium Benzoate, Sodium Gluconate, Polysorbate 20, Citrus Grandis (Grapefruit) Peel Oil, Citrus Aurantium Dulcis (Orange) Peel Oil, Citrus Aurantium Bergamia (Bergamot) Fruit Oil, Alcohol, Alcohol Denat",
   "ingSource": "Kourtney",
-  "tags": []
+  "tags": [],
+  "fit": {
+   "oily": "yes",
+   "combination": "yes"
+  }
  },
  {
   "name": "Avène RetrinAL Intensive Corrective Cream",
@@ -2387,7 +2808,8 @@ window.PRODUCTS = [
   "img": "img/avene-retrinal-intensive-corrective-cream.webp",
   "warn": [
    "Not for acne-prone skin",
-   "Skip if pregnant or nursing"
+   "Skip if pregnant or nursing",
+   "Combination skin: use on dry areas only"
   ],
   "flags": [
    "heavy",
@@ -2399,7 +2821,11 @@ window.PRODUCTS = [
   "tags": [],
   "avoid": [
    "acne"
-  ]
+  ],
+  "fit": {
+   "oily": "no",
+   "combination": "dry"
+  }
  },
  {
   "name": "Naturium Tranexamic Topical Acid 5%",
@@ -2421,7 +2847,11 @@ window.PRODUCTS = [
   "flags": [],
   "niacinamide": true,
   "ingredients": "Water, Isopentyldiol, Tranexamic Acid, Propanediol, Citric Acid, Kojic Acid, Niacinamide, Hydroxyacetophenone, Isododecane, Polyacrylate Crosspolymer-6, Glycyrrhiza Glabra (Licorice) Root Extract, Panthenol, Glycerin, Xanthan Gum, Tremella Fuciformis Sporocarp Extract, Phenoxyethanol, Ethylhexylglycerin, Betaine, Sodium Hyaluronate, Sodium Phytate, Potassium Sorbate, Tocopherol",
-  "ingSource": "Kourtney"
+  "ingSource": "Kourtney",
+  "fit": {
+   "oily": "yes",
+   "combination": "yes"
+  }
  },
  {
   "name": "Celimax Pore + Dark Spot Brightening Cream",
@@ -2438,7 +2868,11 @@ window.PRODUCTS = [
   "niacinamide": true,
   "ingredients": "Water, Glycerin, Butylene Glycol, Niacinamide, Tranexamic Acid, 1, 2-Hexanediol, Methylpropanediol, Vinyl Dimethicone, Glycereth-26, Isononyl Isononanoate, Propanediol, Cetearyl Olivate, Sorbitan Olivate, Polysorbate 20, Sodium Acrylate/Sodium Acryloyldimethyl Taurate Copolymer, Isohexadecane, Hydroxyethyl Acrylate/Sodium Acryloyldimethyl Taurate Copolymer, Ammonium Acryloyldimethyltaurate/VP Copolymer, Ethylhexylglycerin, Eriobotrya Japonica Leaf Extract, Polysorbate 80, Disodium EDTA, Carbomer, Sorbitan Oleate, Mentha Viridis (Spearmint) Extract, Tromethamine, Sorbitan Isostearate, Polysorbate 60, Bisabolol, Sodium Hyaluronate, Tocopherol",
   "ingSource": "Kourtney",
-  "tags": []
+  "tags": [],
+  "fit": {
+   "oily": "yes",
+   "combination": "yes"
+  }
  },
  {
   "name": "COSRX Alpha-Arbutin Discoloration Care Serum",
@@ -2459,7 +2893,11 @@ window.PRODUCTS = [
   "flags": [],
   "niacinamide": true,
   "ingredients": "Water / Aqua / Eau, Propanediol, Glycerin, Niacinamide, Tranexamic Acid, Acetyl Glucosamine, Alpha-Arbutin, 1, 2-Hexanediol, Dimethicone, Dimethyl Isosorbide, Diethoxyethyl Succinate, Butylene Glycol, Citric Acid, Alcohol, Sodium Polyacryloyldimethyl Taurate, Hydrogenated Lecithin, Xanthan Gum, Sodium Metabisulfite, Disodium Edta, Ethylhexylglycerin, Dextrin, Theobroma Cacao (Cocoa) Extract, Sodium Citrate, Madecassoside, Sodium Methyl Stearoyl Taurate, Sodium Hyaluronate, Tocopherol, Hydrolyzed Hyaluronic Acid, Sodium Hyaluronate Crosspolymer, Hyaluronic Acid, Ferulic Acid, Glycyrrhiza Glabra (Licorice) Root Extract, Panthenol, Arginine, Methyl Trimethicone, Allantoin, Glutathione, Sodium Acetylated Hyaluronate",
-  "ingSource": "Kourtney"
+  "ingSource": "Kourtney",
+  "fit": {
+   "oily": "yes",
+   "combination": "yes"
+  }
  },
  {
   "name": "SKIN1004 Tone Balancing Capsule Cream",
@@ -2480,7 +2918,11 @@ window.PRODUCTS = [
   "ingSource": "Kourtney",
   "tags": [
    "Fungal-acne safe"
-  ]
+  ],
+  "fit": {
+   "oily": "yes",
+   "combination": "yes"
+  }
  },
  {
   "name": "Paula's Choice Discoloration Repair Serum",
@@ -2504,6 +2946,10 @@ window.PRODUCTS = [
   "niacinamide": true,
   "ingredients": "Water, Niacinamide, Glycerin, Tranexamic Acid, C13-15 Alkane, Caprylic/Capric Triglyceride, Dicaprylyl Carbonate, Ethyl Macadamiate, Behenyl Alcohol, Glyceryl Stearate, Butylene Glycol, Silybum Marianum Seed Oil, Tocopherol, Lactobacillus/Coconut Fruit Juice Ferment Filtrate, Lecithin, Bakuchiol, Xanthan Gum, Caprylyl Glycol, Hydrogenated Lecithin, Allantoin, Glycine Soja Oil, Hexylene Glycol, Boerhavia Diffusa Root Extract, Glycine Soja Sterols, Citric Acid, Sodium Phytate, Malic Acid, Phenoxyethanol, Ethylhexylglycerin",
   "ingSource": "Kourtney",
-  "tags": []
+  "tags": [],
+  "fit": {
+   "oily": "yes",
+   "combination": "yes"
+  }
  }
 ];
