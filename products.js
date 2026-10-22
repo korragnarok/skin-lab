@@ -655,6 +655,44 @@ window.PRODUCTS = [
   }
  },
  {
+  "name": "Good Molecules Mandelic Acid Serum",
+  "tier": "upgrade",
+  "step": "exfoliant",
+  "skin": [
+   "normal",
+   "combination",
+   "oily",
+   "dry",
+   "sensitive"
+  ],
+  "price": 9.99,
+  "link": "https://link.amazon/B00ODIJUq",
+  "ing": [
+   "mandelic"
+  ],
+  "flags": [],
+  "niacinamide": false,
+  "ingredients": "Water, Mandelic Acid, Dimethyl Isosorbide, Propanediol, Potassium Hydroxide, Phytic Acid, Gluconolactone, Sodium Hyaluronate, Polyacrylate Crosspolymer-6, Allantoin, Caprylyl Glyceryl Ether, Sclerotium Gum, Sodium Polyacryloyldimethyl Taurate, Succinoglycan, Caprylhydroxamic Acid, Xanthan Gum",
+  "ingSource": "Kourtney",
+  "tags": [
+   "Fungal-acne safe",
+   "Niacinamide-free"
+  ],
+  "warn": [
+   "Sensitive skin: start 2–3 times a week"
+  ],
+  "fit": {
+   "oily": "yes",
+   "combination": "yes",
+   "dry": "yes",
+   "sensitive": "slow",
+   "fungal": "yes",
+   "nofrag": "yes",
+   "noniacin": "yes",
+   "preg": "yes"
+  }
+ },
+ {
   "name": "Peach Slices Hypochlorous Acid Spray",
   "tier": "basics",
   "step": "mist",
