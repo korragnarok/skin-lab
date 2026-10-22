@@ -91,8 +91,11 @@ window.PRODUCTS = [
   "fit": {
    "oily": "yes",
    "combination": "yes",
-   "dry": "maybe"
-  }
+   "dry": "layer"
+  },
+  "warn": [
+   "Dry skin: layer a cream on top"
+  ]
  },
  {
   "name": "Bubble Level Up Gel Moisturizer",
@@ -113,8 +116,11 @@ window.PRODUCTS = [
   "fit": {
    "oily": "yes",
    "combination": "yes",
-   "dry": "maybe"
-  }
+   "dry": "layer"
+  },
+  "warn": [
+   "Dry skin: layer a cream on top"
+  ]
  },
  {
   "name": "Aestura Hydro Soothing Cream",
@@ -137,8 +143,11 @@ window.PRODUCTS = [
   "fit": {
    "oily": "yes",
    "combination": "yes",
-   "dry": "maybe"
-  }
+   "dry": "layer"
+  },
+  "warn": [
+   "Dry skin: layer a cream on top"
+  ]
  },
  {
   "name": "Cocokind Electrolyte Water Cream",
@@ -162,8 +171,11 @@ window.PRODUCTS = [
   "fit": {
    "oily": "yes",
    "combination": "yes",
-   "dry": "maybe"
-  }
+   "dry": "layer"
+  },
+  "warn": [
+   "Dry skin: layer a cream on top"
+  ]
  },
  {
   "name": "CeraVe Hydrating HA Water Gel",
@@ -189,8 +201,11 @@ window.PRODUCTS = [
   "fit": {
    "oily": "yes",
    "combination": "yes",
-   "dry": "maybe"
-  }
+   "dry": "layer"
+  },
+  "warn": [
+   "Dry skin: layer a cream on top"
+  ]
  },
  {
   "name": "Aveeno Calm + Restore Oat Gel Moisturizer",
@@ -213,8 +228,11 @@ window.PRODUCTS = [
   "fit": {
    "oily": "yes",
    "combination": "yes",
-   "dry": "maybe"
-  }
+   "dry": "layer"
+  },
+  "warn": [
+   "Dry skin: layer a cream on top"
+  ]
  },
  {
   "name": "Purito Oat-in Calming Gel Cream",
@@ -238,8 +256,11 @@ window.PRODUCTS = [
   "fit": {
    "oily": "yes",
    "combination": "yes",
-   "dry": "maybe"
-  }
+   "dry": "layer"
+  },
+  "warn": [
+   "Dry skin: layer a cream on top"
+  ]
  },
  {
   "name": "Prequel Multi-Quench Gel Cream",
@@ -262,8 +283,11 @@ window.PRODUCTS = [
   "fit": {
    "oily": "yes",
    "combination": "yes",
-   "dry": "maybe"
-  }
+   "dry": "layer"
+  },
+  "warn": [
+   "Dry skin: layer a cream on top"
+  ]
  },
  {
   "name": "Vanicream Daily Facial Moisturizer",
