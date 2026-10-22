@@ -391,7 +391,7 @@ ol.steps li::before{font-family:var(--display);font-size:1.5rem}
   <div class="printhead">The House of Kor Skin Lab · skin.take24.co · My routine</div>
   <span class="eyebrow">The House of Kor · Skin Lab</span>
   <h1>Build a routine that fits <em>your</em> skin.</h1>
-  <p class="lede">Answer six questions and get a morning and night routine built from products I actually recommend, the order to layer them in, and a weekly schedule for your actives. Tap any ingredient to learn what it does.</p>
+  <p class="lede">Answer seven questions and get a morning and night routine built from products I actually recommend, the order to layer them in, and a weekly schedule for your actives. Tap any ingredient to learn what it does.</p>
 
   <div class="builder">
     <div class="leftcol">
@@ -417,7 +417,11 @@ ol.steps li::before{font-family:var(--display);font-size:1.5rem}
         <div class="chips" id="q-budget"></div>
       </fieldset>
       <fieldset>
-        <legend>6. Anything else</legend>
+        <legend>6. Time of year</legend>
+        <div class="chips" id="q-season"></div>
+      </fieldset>
+      <fieldset>
+        <legend>7. Anything else</legend>
         <label class="toggle" for="q-preg"><input type="checkbox" id="q-preg"> Pregnant, trying, or nursing</label>
         <label class="toggle" for="q-kbeauty"><input type="checkbox" id="q-kbeauty"> K-beauty products only</label>
       </fieldset>
@@ -743,6 +747,8 @@ const shared = (()=>{ try{ const r=new URLSearchParams(location.search).get("r")
   const j=JSON.parse(decodeURIComponent(escape(atob(r.replace(/-/g,"+").replace(/_/g,"/"))))); return j && j.a ? j : null; }catch(e){ return null; } })();
 const start = Object.assign({type:"combination", concerns:["acne","darkspots"], level:"new", size:"full", budget:"basics", preg:false}, (shared && shared.a) || saved || {});
 chipGroup($("#q-budget"),"budget",TIERS,"radio",[start.budget]);
+const SEASONS = [["any","Year-round"],["warm","Spring & summer (humid)"],["cold","Fall & winter (dry)"]];
+chipGroup($("#q-season"),"season",SEASONS,"radio",[start.season || "any"]);
 
 chipGroup($("#q-type"),"type",TYPES,"radio",[start.type]);
 chipGroup($("#q-concerns"),"concern",CONCERNS.filter(c=>c.id!=="barrier").map(c=>[c.id,c.short]).concat([["barrier","Irritated skin"]]),"checkbox",start.concerns);
@@ -758,6 +764,7 @@ function answers(){
     level: $('input[name="level"]:checked')?.value || "new",
     size: $('input[name="size"]:checked')?.value || "full",
     budget: $('input[name="budget"]:checked')?.value || "basics",
+    season: $('input[name="season"]:checked')?.value || "any",
     preg: $("#q-preg").checked,
     kbeauty: $("#q-kbeauty").checked
   };
@@ -778,6 +785,9 @@ function buildRoutine(a){
   CTX = {T:a.type, sens: a.type==="sensitive" || a.concerns.includes("barrier") || a.concerns.includes("redness")};
   const C = new Set(a.concerns), T = a.type, sens = T==="sensitive" || C.has("barrier");
   const mel = C.has("melasma");
+  const warm = a.season==="warm", cold = a.season==="cold";
+  const heavy = p => (p.flags||[]).includes("heavy");
+  const gel = p => !!(p.fit && p.fit.dry==="layer");
   const simple = a.size==="simple", tier = a.budget;
   const sk = [...SKIN_PREFS[T]];
   if(C.has("acne")) sk.unshift("acne");
@@ -842,7 +852,7 @@ function buildRoutine(a){
   const useThia = mel && !sens;  // final check against thiaOK below
   const useTxa = (C.has("darkspots") || mel) && !simple;
   const txaPM = mel;
-  const useHA = C.has("dryness") || T==="dry";
+  const useHA = C.has("dryness") || T==="dry" || cold;
 
   const easy = sens || a.level==="new";
   const hasThia = p => !!p && /thiazolyl resorcinol/i.test(p.ingredients||"");
@@ -877,8 +887,8 @@ function buildRoutine(a){
     if(useTxa && (!txaPM || !(useThia && thiaOK))) am.push(step("Spot fader", mel ? "Tranexamic acid calms the signals that trigger melasma. Use it morning and night." : "Targets stubborn dark spots alongside niacinamide.","tranexamic",txaP()));
     if(useAz) am.push(step("Calm & clear","Azelaic acid handles redness, bumps, and marks at once.","azelaic",null));
   }
-  am.push(step("Moisturize","Hydration that suits your skin type.",null,P("moisturizer")));
-  am.push(step("Sunscreen", mel ? "A tinted mineral sunscreen is best for melasma: the iron oxides in the tint also block visible light, which can darken patches. Reapply when you're outside." : "Every morning, rain or shine. The last step, always.","sunscreen",P("sunscreen",{skin: (sens || mel) ? ["mineral","sensitive"] : sk, avoid: mel ? (p=>!(/tinted/i.test(p.name) || /iron oxide/i.test(p.ingredients||""))) : null})));
+  am.push(step("Moisturize", warm ? "Humid days need less. A light gel layer is plenty." : cold && T!=="oily" ? "Cold, dry air pulls water out of skin, so go a little richer." : "Hydration that suits your skin type.",null,P("moisturizer",{avoid: warm ? heavy : (cold && T!=="oily") ? gel : null})));
+  am.push(step("Sunscreen", mel ? "A tinted mineral sunscreen is best for melasma: the iron oxides in the tint also block visible light, which can darken patches. Reapply when you're outside." : "Every morning, rain or shine. The last step, always.","sunscreen",P("sunscreen",{skin: (sens || mel) ? ["mineral","sensitive"] : sk, avoid: mel ? (p=>!(/tinted/i.test(p.name) || /iron oxide/i.test(p.ingredients||""))) : warm ? heavy : null})));
 
   // PM
   if(!simple) pm.push(step("First cleanse","Melts sunscreen and makeup so your cleanser can do its job.",null,P("remover",{skin:[]})));
@@ -893,14 +903,14 @@ function buildRoutine(a){
     ].filter(Boolean)});
   }
   if(!simple && C.has("lines")) pm.push(step("Repair","Growth factors and peptides support firmness and are gentle enough for any night.","peptides",P("treatment",{skin:[]})));
-  pm.push(step("Moisturize", ret ? "Buffers your active and cuts dryness." : "Locks everything in overnight.", "ceramides", P("moisturizer",{skin: T==="oily" ? sk : ["dry",...sk]})));
-  if(!simple && (T==="dry" || C.has("dryness")) && !C.has("acne")) pm.push(step("Seal (optional)","A thin layer of repair balm on dry areas.","panthenol",P("repair",{skin:[]})));
+  pm.push(step("Moisturize", ret ? "Buffers your active and cuts dryness." : "Locks everything in overnight.", "ceramides", P("moisturizer",{skin: T==="oily" ? sk : ["dry",...sk], avoid: warm ? heavy : (cold && T!=="oily") ? gel : null})));
+  if(!simple && !warm && (T==="dry" || C.has("dryness") || (cold && T!=="oily")) && !C.has("acne")) pm.push(step("Seal (optional)", cold ? "A thin layer of repair balm on dry or chapped spots, especially in winter." : "A thin layer of repair balm on dry areas.","panthenol",P("repair",{skin:[]})));
 
   // Weekly schedule
   let retN = 0, exfN = 0;
   const L = a.level;
   if(ret){ retN = {new:2,some:3,pro:4}[L]; if(sens) retN = Math.max(1,retN-1); if(ret==="bakuchiol") retN = {new:4,some:5,pro:5}[L]; }
-  if(exf){ exfN = ret ? {new:1,some:1,pro:2}[L] : {new:2,some:2,pro:3}[L]; if(sens) exfN = Math.min(exfN,1); }
+  if(exf){ exfN = ret ? {new:1,some:1,pro:2}[L] : {new:2,some:2,pro:3}[L]; if(sens) exfN = Math.min(exfN,1); if(cold && exfN>1) exfN -= 1; }
   const nights = Array(7).fill("rec");
   const retPos = {1:[2],2:[0,3],3:[0,2,4],4:[0,2,4,6],5:[0,1,3,4,6]}[retN] || [];
   retPos.forEach(i=>nights[i]="ret");
@@ -909,6 +919,8 @@ function buildRoutine(a){
 
   // Notes
   notes.unshift(["Go slow","Add one new active at a time, about two weeks apart. Patch test on your jaw for 2–3 days first."]);
+  if(warm) notes.push(["Summer","Humidity means you need less moisturizer but more sunscreen. Reapply every 2 hours outdoors and after sweating, and rinse off sweat soon after workouts."]);
+  if(cold) notes.push(["Winter","Cold air and indoor heat dry skin out. Use lukewarm water, put moisturizer on while skin is still damp, and run a humidifier at night if you can. Exfoliating is cut back a night to protect your barrier."]);
   if(ret && ret!=="bakuchiol") notes.push(["Retinoid tip","Use a pea-size amount on dry skin. Dryness or a few extra breakouts in weeks 2–8 are normal. If it stings, apply moisturizer first."]);
   if(exf) notes.push(["Sun sensitivity","Exfoliants and retinoids make skin more sensitive to the sun. Daily sunscreen is non-negotiable."]);
   if(useC && C.has("acne")) notes.push(["Don't stack",`Keep benzoyl peroxide and vitamin C apart. BP breaks vitamin C down, so use them on different mornings.`]);
@@ -920,7 +932,7 @@ function buildRoutine(a){
 
   const tn = TYPES.find(t=>t[0]===T)[1].toLowerCase();
   const cn = a.concerns.map(c=>CONCERNS.find(x=>x.id===c).short.toLowerCase());
-  const headline = `For ${tn} skin${cn.length?` focused on ${cn.join(", ").replace(/, ([^,]*)$/," & $1")}`:""} · ${TIER_NAME[tier]}${a.kbeauty?" · K-beauty":""}`;
+  const headline = `For ${tn} skin${cn.length?` focused on ${cn.join(", ").replace(/, ([^,]*)$/," & $1")}`:""} · ${TIER_NAME[tier]}${warm?" · Summer":cold?" · Winter":""}${a.kbeauty?" · K-beauty":""}`;
   return {am, pm, nights, ret, exf, notes, headline, retSel: retProd, exfSel: exfProd};
 }
 
