@@ -3768,6 +3768,44 @@ window.PRODUCTS = [
   }
  },
  {
+  "name": "Eucerin Radiant Tone Dual Serum",
+  "tier": "upgrade",
+  "step": "spotfader",
+  "skin": [],
+  "price": 39.97,
+  "link": "https://link.amazon/B01YxZPyG",
+  "img": "img/eucerin-radiant-tone-dual-serum.webp",
+  "note": "Uses Thiamidol, one of the best-studied dark spot ingredients.",
+  "tags": [
+   "Niacinamide-free"
+  ],
+  "ingredients": "Water, Alcohol Denat., Butylene Glycol, Glycerin, Isopropyl Palmitate, Cetearyl Isononanoate, Diisopropyl Adipate, Propylheptyl Caprylate, Cetearyl Alcohol, Distarch Phosphate, Sodium Hyaluronate, Tocopherol, Sodium Ascorbyl Phosphate, Isobutylamido Thiazolyl Resorcinol, Glycyrrhiza Inflata Root Extract, Glucosylrutin, Isoquercitrin, Glycine Soja (Soybean) Oil, Glyceryl Stearate, Hydroxypropyl Starch Phosphate, Dimethicone, Dehydroxanthan Gum, Sodium Stearoyl Glutamate, Xanthan Gum, Gellan Gum, Sodium Chloride, Phenoxyethanol, Ethylhexylglycerin, Trisodium EDTA, Citric Acid, Fragrance",
+  "ingSource": "Kourtney",
+  "flags": [
+   "fragrance",
+   "alcohol"
+  ],
+  "niacinamide": false,
+  "fit": {
+   "oily": "no",
+   "combination": "maybe",
+   "dry": "maybe",
+   "sensitive": "no",
+   "fungal": "no",
+   "nofrag": "no",
+   "noniacin": "yes",
+   "preg": "yes"
+  },
+  "avoid": [
+   "acne"
+  ],
+  "warn": [
+   "Not for acne-prone skin",
+   "Contains fragrance",
+   "Contains drying alcohol"
+  ]
+ },
+ {
   "name": "Paula's Choice Discoloration Repair Serum",
   "tier": "splurge",
   "step": "spotfader",
