@@ -703,7 +703,7 @@ const SKIN_PREFS = {
 };
 /* Products for a step, best first: right tier first, then the closest tier; skin match breaks ties. */
 function ranked(step, opts={}){
-  const {tier="basics", skin=[], kind=null, prefer=null, avoid=null} = opts;
+  const {tier="basics", skin=[], kind=null, prefer=null, avoid=null, bonus=null} = opts;
   let pool = PRODUCTS.filter(p=>p.step===step && (!kind || (Array.isArray(kind)?kind:[kind]).includes(p.kind)));
   if(avoid) pool = pool.filter(p=>!avoid(p));
   const score = p => {
@@ -711,6 +711,7 @@ function ranked(step, opts={}){
     skin.forEach((k,i)=>{ if((p.skin||[]).includes(k)) s += 4 - Math.min(i,3); });
     if((p.skin||[]).includes("all")) s += 2;
     if(prefer && prefer(p)) s += 6;
+    if(bonus && bonus(p)) s += 5;
     return s;
   };
   return pool.slice().sort((a,b)=>score(b)-score(a) || a.price-b.price);
@@ -903,7 +904,7 @@ function buildRoutine(a){
     if(useTxa && (!txaPM || !(useThia && thiaOK))) am.push(step("Spot fader", mel ? "Tranexamic acid calms the signals that trigger melasma. Use it morning and night." : "Targets stubborn dark spots alongside niacinamide.","tranexamic",txaP()));
     if(useAz) am.push(step("Calm & clear","Azelaic acid handles redness, bumps, and marks at once.","azelaic",null));
   }
-  am.push(step("Moisturize", warm ? "Humid days need less. A light gel layer is plenty." : cold && T!=="oily" ? "Cold, dry air pulls water out of skin, so go a little richer." : "Hydration that suits your skin type.",null,P("moisturizer",{avoid: warm ? heavy : (cold && T!=="oily") ? gel : null})));
+  am.push(step("Moisturize", warm ? "Humid days need less. A light gel layer is plenty." : cold && T!=="oily" ? "Cold, dry air pulls water out of skin, so go a little richer." : "Hydration that suits your skin type.",null,P("moisturizer",{bonus: warm ? gel : null, avoid: warm ? heavy : (cold && T!=="oily") ? gel : null})));
   am.push(step("Sunscreen", mel ? "A tinted mineral sunscreen is best for melasma: the iron oxides in the tint also block visible light, which can darken patches. Reapply when you're outside." : "Every morning, rain or shine. The last step, always.","sunscreen",P("sunscreen",{skin: (sens || mel) ? ["mineral","sensitive"] : sk, avoid: mel ? (p=>!(/tinted/i.test(p.name) || /iron oxide/i.test(p.ingredients||""))) : warm ? heavy : null})));
 
   // PM
@@ -919,7 +920,7 @@ function buildRoutine(a){
     ].filter(Boolean)});
   }
   if(!simple && C.has("lines")) pm.push(step("Repair","Growth factors and peptides support firmness and are gentle enough for any night.","peptides",P("treatment",{skin:[]})));
-  pm.push(step("Moisturize", ret ? "Buffers your active and cuts dryness." : "Locks everything in overnight.", "ceramides", P("moisturizer",{skin: T==="oily" ? sk : ["dry",...sk], avoid: warm ? heavy : (cold && T!=="oily") ? gel : null})));
+  pm.push(step("Moisturize", ret ? "Buffers your active and cuts dryness." : "Locks everything in overnight.", "ceramides", P("moisturizer",{skin: T==="oily" ? sk : ["dry",...sk], bonus: warm ? gel : null, avoid: warm ? heavy : (cold && T!=="oily") ? gel : null})));
   if(!simple && !warm && (T==="dry" || C.has("dryness") || (cold && T!=="oily")) && !C.has("acne")) pm.push(step("Seal (optional)", cold ? "A thin layer of repair balm on dry or chapped spots, especially in winter." : "A thin layer of repair balm on dry areas.","panthenol",P("repair",{skin:[]})));
 
   // Weekly schedule

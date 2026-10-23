@@ -3013,6 +3013,45 @@ window.PRODUCTS = [
   }
  },
  {
+  "name": "Clinique Moisture Surge 100H",
+  "tier": "upgrade",
+  "step": "moisturizer",
+  "skin": [
+   "normal",
+   "combination",
+   "oily",
+   "dry",
+   "sensitive"
+  ],
+  "price": 21.19,
+  "link": "https://link.amazon/B0fgeN7kO",
+  "ing": [
+   "ha",
+   "peptides"
+  ],
+  "flags": [],
+  "niacinamide": false,
+  "ingredients": "Water\\Aqua\\Eau, Dimethicone, Butylene Glycol, Glycerin, Trisiloxane, Trehalose, Sucrose, Ammonium Acryloyldimethyltaurate/Vp Copolymer, Hydroxyethyl Urea, Camellia Sinensis (Green Tea) Leaf Extract, Silybum Marianum (Lady's Thistle) Extract, Betula Alba (Birch) Bark Extract, Saccharomyces Lysate Extract, Aloe Barbadensis Leaf Water, Aloe Barbadensis Leaf Extract, Thermus Thermophillus Ferment, Caffeine, Sorbitol, Palmitoyl Hexapeptide-12, Sodium Hyaluronate, Caprylyl Glycol, Oleth-10, Sodium Polyaspartate, Aloe Barbadensis Leaf Polysaccharides, Lactobacillus Ferment Lysate, Saccharide Isomerate, Hydrogenated Lecithin, Tocopheryl Acetate, Acrylates/C10-30 Alkyl Acrylate Crosspolymer, Glyceryl Polymethacrylate, Tromethamine, PEG-8, Hexylene Glycol, Magnesium Ascorbyl Phosphate, Citric Acid, BHT, Disodium EDTA, Sodium Citrate, Potassium Sorbate, Sodium Benzoate, Phenoxyethanol, Red 4 (CI 14700), Yellow 5 (CI 19140)",
+  "ingSource": "Kourtney",
+  "note": "A light gel cream that works well in humid weather.",
+  "tags": [
+   "Niacinamide-free"
+  ],
+  "warn": [
+   "Dry skin: layer a cream on top"
+  ],
+  "fit": {
+   "oily": "yes",
+   "combination": "yes",
+   "dry": "layer",
+   "sensitive": "yes",
+   "fungal": "maybe",
+   "nofrag": "yes",
+   "noniacin": "yes",
+   "preg": "yes"
+  }
+ },
+ {
   "name": "Dr. Rejuall Advanced Ceramide Cream",
   "tier": "upgrade",
   "step": "moisturizer",
@@ -3829,6 +3868,46 @@ window.PRODUCTS = [
    "dry": "yes",
    "sensitive": "no",
    "fungal": "maybe",
+   "nofrag": "no",
+   "noniacin": "yes",
+   "preg": "yes"
+  }
+ },
+ {
+  "name": "Tatcha The Water Cream",
+  "tier": "splurge",
+  "step": "moisturizer",
+  "skin": [
+   "normal",
+   "combination",
+   "oily"
+  ],
+  "price": 43.53,
+  "link": "https://link.amazon/B0blw1rlM",
+  "ing": [
+   "ha"
+  ],
+  "flags": [
+   "fragrance"
+  ],
+  "niacinamide": false,
+  "ingredients": "Aqua/Water/Eau, Saccharomyces/Rice Ferment Filtrate, Dimethicone, Propanediol, Glycerin, Diglycerin, Diphenylsiloxy Phenyl Trimethicone, Camellia Sinensis Leaf Extract, Cladosiphon Okamuranus Extract, Peg-9 Polydimethylsiloxyethyl Dimethicone, Gold, Belamcanda Chinensis Root Extract, Rosa Multiflora Fruit Extract, Houttuynia Cordata Extract, Sophora Angustifolia Root Extract, Sodium Hyaluronate, Lecithin, Pistacia Lentiscus (Mastic) Gum, Sodium Chloride, Sodium Citrate, Mica, Tin Oxide, Dimethicone/Peg-10/15 Crosspolymer, Dimethicone/Phenyl Vinyl Dimethicone Crosspolymer, Tocopherol, Butylene Glycol, Ethylhexylglycerin, Dipropylene Glycol, Parfum/Fragrance, Alcohol, Phenoxyethanol, Limonene, Linalool, Titanium Dioxide (Ci 77891)",
+  "ingSource": "Kourtney",
+  "note": "A light, oil-free water cream for summer.",
+  "tags": [
+   "Fungal-acne safe",
+   "Niacinamide-free"
+  ],
+  "warn": [
+   "Contains fragrance",
+   "Dry skin: layer a cream on top"
+  ],
+  "fit": {
+   "oily": "yes",
+   "combination": "yes",
+   "dry": "layer",
+   "sensitive": "no",
+   "fungal": "yes",
    "nofrag": "no",
    "noniacin": "yes",
    "preg": "yes"
