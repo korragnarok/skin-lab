@@ -4963,5 +4963,45 @@ window.PRODUCTS = [
    "noniacin": "yes",
    "preg": "yes"
   }
+ },
+ {
+  "name": "Medik8 Press & Clear 2% BHA Tonic",
+  "tier": "upgrade",
+  "step": "exfoliant",
+  "skin": [
+   "normal",
+   "combination",
+   "oily",
+   "acne"
+  ],
+  "price": 7.6,
+  "link": "https://link.amazon/B0eKeBJ62",
+  "ing": [
+   "salicylic",
+   "tranexamic"
+  ],
+  "flags": [],
+  "niacinamide": false,
+  "ingSource": "Kourtney",
+  "img": "img/medik8-press-clear-bha.webp",
+  "note": "2% salicylic acid leave-on with tranexamic acid, for clogged pores and post-acne marks.",
+  "tags": [
+   "Fungal-acne safe",
+   "Niacinamide-free"
+  ],
+  "warn": [
+   "Sensitive skin: start 2–3 times a week"
+  ],
+  "ingredients": "Aqua (Water), Propanediol, Glycereth-26, Salicylic Acid, Tranexamic Acid, Dimethyl Isosorbide, Cyclodextrin, Aloe Barbadensis (Aloe Vera) Leaf Juice, Saccharomyces Ferment Filtrate, Lecithin, Oryza Sativa Lees Extract, Xanthan Gum, Ethylhexylglycerin, Butylene Glycol, Sclerotium Gum, 1,2-Hexanediol, Pullulan, Disodium EDTA, Sodium Hydroxide, Polyacrylate Crosspolymer-6, Phenoxyethanol, Buteth-3, Hydroxyacetophenone, Sodium Metabisulfite, Sodium Benzotriazolyl Butylphenol Sulfonate, Tributyl Citrate, Potassium Sorbate, Silica, Sodium Benzoate, Citric Acid.",
+  "fit": {
+   "oily": "yes",
+   "combination": "yes",
+   "dry": "maybe",
+   "sensitive": "slow",
+   "fungal": "yes",
+   "nofrag": "yes",
+   "noniacin": "yes",
+   "preg": "maybe"
+  }
  }
 ];
