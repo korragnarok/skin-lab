@@ -770,6 +770,45 @@ window.PRODUCTS = [
   "img": "img/prequel-multi-acid-milk-peel.webp"
  },
  {
+  "name": "Naturium BHA Liquid Exfoliant 2%",
+  "tier": "upgrade",
+  "step": "exfoliant",
+  "skin": [
+   "normal",
+   "combination",
+   "oily",
+   "acne"
+  ],
+  "price": 4.75,
+  "link": "https://link.amazon/B047SF7Nb",
+  "ing": [
+   "salicylic"
+  ],
+  "flags": [],
+  "niacinamide": false,
+  "ingredients": "Water, Butylene Glycol, Propanediol, Salicylic Acid, Sodium Polyacrylate, Citric Acid, Glycerin, Diglycerin, Citrus Glauca Fruit Extract, Microcitrus Australasica Fruit Extract, Microcitrus Australis Fruit Extract, Hydroxyacetophenone, Carrageenan, Phenoxyethanol, Sodium Phytate, Caprylyl Glycol, Phenylpropanol, Tocopherol",
+  "ingSource": "Kourtney",
+  "img": "img/naturium-bha-liquid-exfoliant-2.webp",
+  "note": "2% salicylic acid leave-on for clogged pores and blackheads.",
+  "tags": [
+   "Fungal-acne safe",
+   "Niacinamide-free"
+  ],
+  "warn": [
+   "Sensitive skin: start 2–3 times a week"
+  ],
+  "fit": {
+   "oily": "yes",
+   "combination": "yes",
+   "dry": "maybe",
+   "sensitive": "slow",
+   "fungal": "yes",
+   "nofrag": "yes",
+   "noniacin": "yes",
+   "preg": "maybe"
+  }
+ },
+ {
   "name": "Medik8 Press & Glow PHA Toner",
   "tier": "upgrade",
   "step": "exfoliant",

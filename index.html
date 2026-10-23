@@ -886,7 +886,10 @@ function buildRoutine(a){
   const hasIng = (p,ids) => !!p && (p.ing||[]).some(x=>ids.includes(x));
   const isGentle = p => !!p && (hasIng(p,["lactic","mandelic"]) || /gluconolactone/i.test((p.ingredients||"").split(",").slice(0,3).join())) && !hasIng(p,["glycolic"]);
   const gentleExf = exf==="lactic"||exf==="mandelic" ? P("exfoliant",{skin:[], prefer:p=>hasIng(p,[exf]), avoid:p=>!isGentle(p)}) : null;
-  const exfProd = exf==="salicylic" ? P("cleanser",{kind:"sa"}) : exf==="glycolic" ? P("exfoliant",{skin:[], prefer:p=>hasIng(p,["glycolic"])}) : (gentleExf && isGentle(gentleExf.prod)) ? gentleExf : null;
+  const isBHA = p => !!p && p.step==="exfoliant" && hasIng(p,["salicylic"]) && !hasIng(p,["glycolic","lactic","mandelic"]);
+  const bhaSel = exf==="salicylic" ? P("exfoliant",{skin:[], avoid:p=>!isBHA(p)}) : null;
+  const bhaOK = !!(bhaSel && isBHA(bhaSel.prod) && TIER_ORDER[bhaSel.prod.tier] <= TIER_ORDER[tier]);
+  const exfProd = exf==="salicylic" ? (bhaOK ? bhaSel : P("cleanser",{kind:"sa"})) : exf==="glycolic" ? P("exfoliant",{skin:[], prefer:p=>hasIng(p,["glycolic"])}) : (gentleExf && isGentle(gentleExf.prod)) ? gentleExf : null;
 
   // AM
   am.push(step("Cleanse", T==="dry" ? "A splash of water is enough if your skin feels tight in the morning." : "Clears overnight oil without stripping.", null, gentleClean()));
@@ -916,7 +919,7 @@ function buildRoutine(a){
     const parts = [ret && ingBtn(ret), exf && ingBtn(exf)].filter(Boolean).join(" or ");
     pm.push({label:"Tonight's active", why:`${parts}, depending on the night. Follow the weekly schedule below.`, ing:null, prod:null, multi:[
       retProd && {sel:retProd, tag:(ret==="bakuchiol"?"Bakuchiol":"Retinoid")+" nights · "+BY[ret].name, why:BY[ret].does},
-      exfProd && {sel:exfProd, tag:"Exfoliant nights · "+BY[exf].name, why:BY[exf].does+(exf==="salicylic" ? " Use this wash in place of your regular cleanser on those nights." : "")}
+      exfProd && {sel:exfProd, tag:"Exfoliant nights · "+BY[exf].name, why:BY[exf].does+(exf==="salicylic" ? (exfProd.prod && exfProd.prod.step==="cleanser" ? " Use this wash in place of your regular cleanser on those nights." : " Swipe or pat it on after cleansing, then moisturize.") : "")}
     ].filter(Boolean)});
   }
   if(!simple && C.has("lines")) pm.push(step("Repair","Growth factors and peptides support firmness and are gentle enough for any night.","peptides",P("treatment",{skin:[]})));
