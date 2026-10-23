@@ -3777,6 +3777,46 @@ window.PRODUCTS = [
   }
  },
  {
+  "name": "Tatcha Indigo Overnight Repair Cream",
+  "tier": "splurge",
+  "step": "repair",
+  "skin": [
+   "dry",
+   "sensitive",
+   "redness"
+  ],
+  "price": 55.29,
+  "link": "https://link.amazon/B0a3n7kU0",
+  "ing": [
+   "ceramides",
+   "ha"
+  ],
+  "flags": [
+   "heavy"
+  ],
+  "niacinamide": false,
+  "ingredients": "Aqua/Water/Eau, Dimethicone, Diglycerin, Saccharomyces/Rice Ferment Filtrate, Glycerin, Diphenylsiloxy Phenyl Trimethicone, Butylene Glycol, Neopentyl Glycol Diethylhexanoate, Diisostearyl Malate, Peg-10 Dimethicone, Disteardimonium Hectorite, Propanediol, Ophiopogon Japonicus Root Extract, Polygonum Tinctorium Leaf/Stem Extract, Sargassum Vulgare Extract, Saccharomyces Ferment Filtrate, Salvia Miltiorrhiza Root Extract, Camellia Sinensis Leaf Extract, Cladosiphon Okamuranus Extract, Sodium Hyaluronate, Phytosterols, Ceramide Ng, Hydrogenated Lecithin, Palmitic Acid, Linoleic Acid, Lauryl Peg-9 Polydimethylsiloxyethyl Dimethicone, Cetyl Alcohol, Maltodextrin, Magnesium Sulfate, Tocopherol, Ethylhexylglycerin, Phenoxyethanol",
+  "ingSource": "Kourtney",
+  "note": "A rich overnight barrier cream for redness and irritation. Fragrance-free.",
+  "tags": [
+   "Niacinamide-free"
+  ],
+  "warn": [
+   "Not for acne-prone skin",
+   "Combination skin: use on dry areas only"
+  ],
+  "fit": {
+   "oily": "no",
+   "combination": "dry",
+   "sensitive": "yes",
+   "dry": "yes",
+   "fungal": "no",
+   "nofrag": "yes",
+   "noniacin": "yes",
+   "preg": "yes"
+  }
+ },
+ {
   "name": "DRMTLGY Needle-less Growth Factor Serum",
   "tier": "splurge",
   "step": "treatment",
