@@ -878,7 +878,8 @@ window.PRODUCTS = [
    "nofrag": "yes",
    "noniacin": "yes",
    "preg": "yes"
-  }
+  },
+  "img": "img/the-ordinary-mandelic-acid-10-ha.webp"
  },
  {
   "name": "The Ordinary Lactic Acid 5% + HA 2%",
@@ -915,8 +916,7 @@ window.PRODUCTS = [
    "nofrag": "yes",
    "noniacin": "yes",
    "preg": "yes"
-  },
-  "img": "img/the-ordinary-lactic-acid-5-ha-2.webp"
+  }
  },
  {
   "name": "The Ordinary Lactic Acid 10% + HA 2%",
@@ -1184,7 +1184,8 @@ window.PRODUCTS = [
    "nofrag": "yes",
    "noniacin": "yes",
    "preg": "yes"
-  }
+  },
+  "img": "img/la-roche-posay-glycolic-b5-10-serum.webp"
  },
  {
   "name": "Peach Slices Hypochlorous Acid Spray",
