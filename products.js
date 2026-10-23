@@ -4858,5 +4858,110 @@ window.PRODUCTS = [
    "noniacin": "no",
    "preg": "yes"
   }
+ },
+ {
+  "name": "Tatcha The Indigo Cleansing Balm",
+  "tier": "splurge",
+  "step": "remover",
+  "skin": [
+   "all",
+   "sensitive"
+  ],
+  "price": 20.53,
+  "link": "https://link.amazon/B08huWhK7",
+  "img": "img/tatcha-the-indigo-cleansing-balm.webp",
+  "tags": [
+   "Niacinamide-free"
+  ],
+  "note": "Fragrance-free melting balm that removes makeup and sunscreen.",
+  "ingredients": "Caprylic/Capric Triglyceride, Ethylhexyl Palmitate, Polyglyceryl-6 Dicaprate, Synthetic Wax, Polyethylene, Polyglyceryl-2 Caprate, Aqua/Water/Eau, Pentylene Glycol, Indigofera Tinctoria Extract, Polygonum Tinctorium Leaf/Stem Extract, Polyglyceryl-2 Sesquioleate, Butylene Glycol, Saccharomyces/Rice Ferment Filtrate, Camellia Sinensis Leaf Extract, Cladosiphon Okamuranus Extract, Nelumbo Nucifera Flower Extract, Propanediol, Oryza Sativa (Rice) Bran Oil, Tocopherol, Ethylhexylglycerin, Phenoxyethanol, Tin Oxide, Mica, Titanium Dioxide (Ci 77891).",
+  "ingSource": "Kourtney",
+  "flags": [],
+  "niacinamide": false,
+  "fit": {
+   "oily": "yes",
+   "combination": "yes",
+   "dry": "yes",
+   "noniacin": "yes",
+   "preg": "yes",
+   "sensitive": "yes",
+   "fungal": "no",
+   "nofrag": "yes"
+  }
+ },
+ {
+  "name": "Tatcha The Rice Wash",
+  "tier": "splurge",
+  "step": "cleanser",
+  "skin": [
+   "normal",
+   "dry",
+   "combination"
+  ],
+  "price": 10.0,
+  "link": "https://link.amazon/B0gV20dvU",
+  "kind": "gentle",
+  "img": "img/tatcha-the-rice-wash.webp",
+  "tags": [
+   "Niacinamide-free"
+  ],
+  "note": "Gentle, skin-softening daily cleanser with a light rice-powder polish.",
+  "ingredients": "Aqua/Water/Eau, Microcrystalline Cellulose, Propanediol, Sodium Cocoyl Glutamate, Glycerin, Acrylates Copolymer, Sodium Caproyl Methyltaurate, Coco-Betaine, Parfum/Fragrance, Saccharomyces/Camellia Sinensis Leaf/Cladosiphon Okamuranus/Rice Ferment Filtrate*, Oryza Sativa (Rice) Powder, Chondrus Crispus Extract, Sodium Hyaluronate, Betaphycus Gelatinum Extract, Lauryl Glucoside, Potassium Hydroxide, Polyquaternium-39, Sodium Carbonate, Gluconolactone, Citrus Aurantium Bergamia Peel Oil, Citrus Limon Peel Oil, Lavandula Oil/Extract, Limonene, Linalool, Linalyl Acetate, Pinene, Phenoxyethanol, Ethylhexylglycerin, Sodium Benzoate, Alcohol.",
+  "ingSource": "Kourtney",
+  "warn": [
+   "Contains fragrance and citrus/lavender oils"
+  ],
+  "flags": [
+   "fragrance",
+   "eo"
+  ],
+  "niacinamide": false,
+  "fit": {
+   "oily": "yes",
+   "combination": "yes",
+   "dry": "yes",
+   "noniacin": "yes",
+   "preg": "yes",
+   "sensitive": "maybe",
+   "fungal": "maybe",
+   "nofrag": "no"
+  }
+ },
+ {
+  "name": "Tatcha The Matcha Foam",
+  "tier": "splurge",
+  "step": "cleanser",
+  "skin": [
+   "oily",
+   "combination"
+  ],
+  "price": 8.0,
+  "link": "https://link.amazon/B0fZLfAPv",
+  "kind": "gentle",
+  "img": "img/tatcha-the-matcha-foam.webp",
+  "tags": [
+   "Niacinamide-free"
+  ],
+  "note": "Oil-balancing gel cleanser for oily and combination skin.",
+  "ingredients": "Aqua/water/eau, Glycerin, Sodium Cocoamphoacetate, Potassium Cocoyl Glycinate, Potassium Cocoate, Sodium Methyl Cocoyl Taurate, Acrylates Copolymer, Hydroxypropyl Starch Phosphate, Camellia Sinensis Seed Oil, Parfum/fragrance, Saccharomyces/rice Ferment Filtrate, Camellia Sinensis Leaf Extract, Cladosiphon Okamuranus Extract, Inulin, Lauryl Glucoside, Hydrogenated Starch Hydrolysate, Butylene Glycol, Fructose, Illite, Propanediol, Dipotassium Glycyrrhizate, Polyquaternium-39, Alcohol, Sodium Carbonate, Citric Acid, Ethylhexylglycerin, Sodium Benzoate, Chlorphenesin, Phenoxyethanol, Citrus Aurantium Bergamia Peel Oil, Linalyl Acetate, Linalool, Citrus Limon Peel Oil, Pinene, Limonene, Yellow 5 (CI 19140), Blue 1 (CI 42090), Red 33 (CI 17200)",
+  "ingSource": "Kourtney",
+  "warn": [
+   "Contains fragrance and citrus oils"
+  ],
+  "flags": [
+   "fragrance",
+   "eo"
+  ],
+  "niacinamide": false,
+  "fit": {
+   "oily": "yes",
+   "combination": "yes",
+   "dry": "maybe",
+   "sensitive": "maybe",
+   "fungal": "no",
+   "nofrag": "no",
+   "noniacin": "yes",
+   "preg": "yes"
+  }
  }
 ];
