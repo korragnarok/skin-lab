@@ -1278,6 +1278,44 @@ window.PRODUCTS = [
   }
  },
  {
+  "name": "Cocokind Milky-Soft Face & Body Cleanser",
+  "tier": "basics",
+  "step": "cleanser",
+  "kind": "gentle",
+  "skin": [
+   "normal",
+   "combination",
+   "oily",
+   "dry",
+   "sensitive"
+  ],
+  "price": 1.53,
+  "link": "https://link.amazon/B04sk2vUI",
+  "ing": [
+   "ceramides"
+  ],
+  "flags": [],
+  "niacinamide": false,
+  "ingredients": "Water (Aqua) (Eau), Glycerin, Sodium Cocoyl Isethionate, Sodium Lauroyl Methyl Isethionate, Cocamidopropyl Hydroxysultaine, Polyacrylate Crosspolymer-6, Ceramide Np, Ceramide Ng, Ceramide Ap, Ceramide Eop, Ceramide As, Tocopherol, Rosmarinus Officinalis (Rosemary) Leaf Extract, Helianthus Annuus (Sunflower) Extract, Oryza Sativa (Rice) Bran Extract, Laminaria Digitata Extract, Glycolipids, Cholesterol, Acacia Senegal Gum, Hydrogenated Lecithin, Xanthan Gum, Saccharide Isomerate, Caprylyl Glycol, Cetyl-Pg Hydroxyethyl Palmitamide, Glycol Distearate, Sodium Methyl Cocoyl Taurate, 1,2-Hexanediol, Sodium Citrate, Sodium Phytate, Trisodium Ethylenediamine Disuccinate, Potassium Sorbate, Sodium Benzoate, Citric Acid",
+  "ingSource": "Kourtney",
+  "note": "A non-stripping milky gel with 5 ceramides. Great for dry winter skin.",
+  "tags": [
+   "Niacinamide-free"
+  ],
+  "warn": [],
+  "fit": {
+   "oily": "yes",
+   "combination": "yes",
+   "dry": "yes",
+   "sensitive": "yes",
+   "fungal": "maybe",
+   "nofrag": "yes",
+   "noniacin": "yes",
+   "preg": "yes"
+  },
+  "img": "img/cocokind-milky-soft-face-body-cleanser.webp"
+ },
+ {
   "name": "La Roche-Posay Toleriane Purifying Foaming",
   "tier": "upgrade",
   "step": "cleanser",
