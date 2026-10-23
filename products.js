@@ -916,7 +916,8 @@ window.PRODUCTS = [
    "nofrag": "yes",
    "noniacin": "yes",
    "preg": "yes"
-  }
+  },
+  "img": "img/the-ordinary-lactic-acid-5-ha-2.webp"
  },
  {
   "name": "The Ordinary Lactic Acid 10% + HA 2%",
