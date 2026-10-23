@@ -950,7 +950,8 @@ window.PRODUCTS = [
    "nofrag": "yes",
    "noniacin": "yes",
    "preg": "yes"
-  }
+  },
+  "img": "img/the-ordinary-lactic-acid-10-ha-2.webp"
  },
  {
   "name": "Paula's Choice 6% Mandelic + 2% Lactic Acid Liquid Exfoliant",
@@ -1144,7 +1145,8 @@ window.PRODUCTS = [
    "nofrag": "yes",
    "noniacin": "yes",
    "preg": "yes"
-  }
+  },
+  "img": "img/cerave-renewing-nightly-exfoliating-treatment.webp"
  },
  {
   "step": "exfoliant",
