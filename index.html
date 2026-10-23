@@ -876,6 +876,7 @@ function buildRoutine(a){
   const thiaP = () => thiaOK ? thiaSel : null;
   const txaTop = p => (p.ingredients||"").split(",").slice(0,6).some(x=>/tranexamic/i.test(x));
   const txaP = () => P("spotfader",{skin:[], prefer:txaTop, avoid:p=>!hasTxa(p) || (sens && /Naturium Tranexamic/.test(p.name))});
+  const azP = () => P("azelaic",{skin:[], prefer: easy ? (p=>p.fit && p.fit.sensitive==="yes") : null});
   const vitcP = () => P("vitc",{skin:[], prefer: easy ? (p=>p.kind==="gentle") : null});
   const niaP = () => P("niacinamide",{skin:[], avoid: (easy || T!=="oily") ? (p=>p.kind==="strong") : null});
   const retProd = ret==="adapalene" ? P("acne",{skin:[], prefer:p=>!(p.ing||[]).includes("bp")})
@@ -898,14 +899,14 @@ function buildRoutine(a){
   }
   if(simple){
     const pk = (useThia && thiaOK) ? "thiamidol" : mel ? "tranexamic" : useC ? "vitc" : useNia ? "niacinamide" : useAz ? "azelaic" : useHA ? "ha" : null;
-    if(pk) am.push(step("Treat", BY[pk].does, pk, pk==="vitc" ? vitcP() : pk==="niacinamide" ? niaP() : pk==="thiamidol" ? thiaP() : pk==="tranexamic" ? txaP() : null));
+    if(pk) am.push(step("Treat", BY[pk].does, pk, pk==="vitc" ? vitcP() : pk==="niacinamide" ? niaP() : pk==="thiamidol" ? thiaP() : pk==="tranexamic" ? txaP() : pk==="azelaic" ? azP() : null));
   } else {
     if(useHA) am.push(step("Hydrate","On damp skin, before anything thicker.","ha",null));
     if(useC) am.push(step("Antioxidant","Brightens and adds backup to your sunscreen.","vitc",vitcP()));
     if(useNia) am.push(step("Treat","Evens tone and keeps oil and redness in check.","niacinamide",niaP()));
     if(useThia && thiaOK) am.push(step("Melasma treatment","Thiamidol slows pigment where melasma starts. Use it every morning.","thiamidol",thiaP()));
     if(useTxa && (!txaPM || !(useThia && thiaOK))) am.push(step("Spot fader", mel ? "Tranexamic acid calms the signals that trigger melasma. Use it morning and night." : "Targets stubborn dark spots alongside niacinamide.","tranexamic",txaP()));
-    if(useAz) am.push(step("Calm & clear","Azelaic acid handles redness, bumps, and marks at once.","azelaic",null));
+    if(useAz) am.push(step("Calm & clear","Azelaic acid handles redness, bumps, and marks at once.","azelaic",azP()));
   }
   am.push(step("Moisturize", warm ? "Humid days need less. A light gel layer is plenty." : cold && T!=="oily" ? "Cold, dry air pulls water out of skin, so go a little richer." : "Hydration that suits your skin type.",null,P("moisturizer",{bonus: warm ? gel : null, avoid: warm ? heavy : (cold && T!=="oily") ? gel : null})));
   am.push(step("Sunscreen", mel ? "A tinted mineral sunscreen is best for melasma: the iron oxides in the tint also block visible light, which can darken patches. Reapply when you're outside." : "Every morning, rain or shine. The last step, always.","sunscreen",P("sunscreen",{skin: (sens || mel) ? ["mineral","sensitive"] : sk, bonus: mel ? (p=>/tinted/i.test(p.name) || /iron oxide/i.test(p.ingredients||"")) : null, bonusW: mel ? 40 : 5, avoid: warm ? heavy : null})));
@@ -1021,10 +1022,10 @@ function render(){
 const STEPS = [
   ["cleanser","Cleansers",[2,null]], ["remover","Makeup removers",[4,8]], ["moisturizer","Moisturizers",[12,25]],
   ["sunscreen","Sunscreen",[10,25]], ["vitc","Vitamin C",[25,45]], ["retinoid","Retinol & retinal",[25,45]],
-  ["niacinamide","Niacinamide",[25,45]], ["spotfader","Dark spot serums",[25,45]], ["acne","Acne treatments",[25,45]], ["exfoliant","Exfoliants",[4,10]],
+  ["niacinamide","Niacinamide",[25,45]], ["spotfader","Dark spot serums",[25,45]], ["acne","Acne treatments",[25,45]], ["azelaic","Azelaic acid",[15,30]], ["exfoliant","Exfoliants",[4,10]],
   ["repair","Repair balms",[12,25]], ["mist","Hypochlorous mists",[4,10]], ["treatment","Growth factor serums",[25,45]]
 ].filter(([k])=>PRODUCTS.some(p=>p.step===k));
-const STEP_FOR_ING = {retinol:"retinoid", adapalene:"acne", glycolic:"exfoliant", salicylic:"cleanser", bp:"cleanser", sulfur:"cleanser",
+const STEP_FOR_ING = {retinol:"retinoid", adapalene:"acne", azelaic:"azelaic", lactic:"exfoliant", mandelic:"exfoliant", glycolic:"exfoliant", salicylic:"cleanser", bp:"cleanser", sulfur:"cleanser",
   niacinamide:"niacinamide", tranexamic:"spotfader", thiamidol:"spotfader", arbutin:"spotfader", vitc:"vitc", ha:"moisturizer", ceramides:"moisturizer", peptides:"treatment", centella:"repair", panthenol:"repair", sunscreen:"sunscreen"};
 const fitsSkin = (p,ks) => !(p.skin && p.skin.length) || p.skin.some(k=>[...ks,"all"].includes(k));
 const SKINS = [

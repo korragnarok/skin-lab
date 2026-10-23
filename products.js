@@ -584,6 +584,252 @@ window.PRODUCTS = [
   }
  },
  {
+  "step": "azelaic",
+  "skin": [
+   "normal",
+   "combination",
+   "oily",
+   "dry",
+   "sensitive",
+   "redness",
+   "acne"
+  ],
+  "flags": [],
+  "niacinamide": false,
+  "ingSource": "Kourtney",
+  "warn": [],
+  "name": "Good Molecules 10% Azelaic Acid Treatment",
+  "tier": "basics",
+  "price": 11.99,
+  "link": "https://link.amazon/B00T3Ew0s",
+  "ing": [
+   "azelaic"
+  ],
+  "img": "img/good-molecules-10-azelaic-acid-treatment.webp",
+  "ingredients": "Aqua/Water/Eau, Caprylic/Capric/Succinic Triglyceride, Azelaic Acid, Sorbitan Laurate, C18-20 Glycol Isostearate, Pentylene Glycol, Glycerin, Glycol Distearate, Behenyl Alcohol, Butylene Glycol, Passiflora Edulis Seed Oil, Polyacrylate Crosspolymer-11, Sodium Polyacryloyldimethyl Taurate, Arginine, Bisabolol, Ethylhexylglycerin, Centella Asiatica Leaf Vesicles, Zingiber Officinale (Ginger) Root Extract, Tocopherol",
+  "fit": {
+   "oily": "yes",
+   "combination": "yes",
+   "dry": "yes",
+   "sensitive": "yes",
+   "fungal": "no",
+   "nofrag": "yes",
+   "noniacin": "yes",
+   "preg": "yes"
+  },
+  "tags": [
+   "Niacinamide-free"
+  ]
+ },
+ {
+  "step": "azelaic",
+  "skin": [
+   "normal",
+   "combination",
+   "oily",
+   "dry",
+   "sensitive",
+   "redness",
+   "acne"
+  ],
+  "flags": [],
+  "niacinamide": false,
+  "ingSource": "Kourtney",
+  "warn": [
+   "Sensitive skin: start 2–3 times a week"
+  ],
+  "name": "The Ordinary Azelaic Acid Suspension 10%",
+  "tier": "basics",
+  "price": 12.2,
+  "link": "https://link.amazon/B0cez9Jjh",
+  "ing": [
+   "azelaic"
+  ],
+  "img": "img/the-ordinary-azelaic-acid-suspension-10.webp",
+  "ingredients": "Aqua (Water), Isodecyl Neopentanoate, Dimethicone, Azelaic Acid, Dimethicone/Bis-Isobutyl PPG-20 Crosspolymer, Dimethyl Isosorbide, Hydroxyethyl Acrylate/Sodium Acryloyldimethyl Taurate Copolymer, Polysilicone-11, Isohexadecane, Tocopherol, Trisodium Ethylenediamine Disuccinate, Isoceteth-20, Polysorbate 60, Triethanolamine, Ethoxydiglycol, Phenoxyethanol, Chlorphenesin",
+  "note": "Can tingle for the first week or two.",
+  "fit": {
+   "oily": "yes",
+   "combination": "yes",
+   "dry": "yes",
+   "sensitive": "slow",
+   "fungal": "no",
+   "nofrag": "yes",
+   "noniacin": "yes",
+   "preg": "yes"
+  },
+  "tags": [
+   "Niacinamide-free"
+  ]
+ },
+ {
+  "step": "azelaic",
+  "skin": [
+   "normal",
+   "combination",
+   "oily",
+   "dry",
+   "sensitive",
+   "redness",
+   "acne"
+  ],
+  "flags": [],
+  "niacinamide": false,
+  "ingSource": "Kourtney",
+  "warn": [
+   "Sensitive skin: start 2–3 times a week"
+  ],
+  "name": "Bubble Dream Fade 10% Azelaic Acid Serum",
+  "tier": "basics",
+  "price": 14.97,
+  "link": "https://link.amazon/A04nqljwr",
+  "ing": [
+   "azelaic",
+   "salicylic",
+   "bakuchiol"
+  ],
+  "img": "img/bubble-dream-fade-10-azelaic-acid-serum.webp",
+  "ingredients": "Aqua/Water/Eau, Azelaic Acid, Glycerin, Rice Oil Glycereth-8 Esters, Caprylic/Capric Triglyceride, Glyceryl Stearate SE, Coco-Caprylate/Caprate, Coconut Alkanes, Polyglyceryl-3 Oleate, Polyglyceryl-10 Mono/Dioleate, Phenoxyethanol, Salicylic Acid, Sodium Polyacrylate, Xanthan Gum, Trisodium Ethylenediamine Disuccinate, Acrylates/C10-30 Alkyl Acrylate Crosspolymer, Oryza Sativa (Rice) Bran Extract, Cetyl Palmitate, Allantoin, Ethylhexylglycerin, Tocopheryl Acetate, Bakuchiol, Sodium Hydroxide, Glyceryl Behenate, Pentylene Glycol, Sodium Stearoyl Glutamate, Phosphatidylglycerol, Sodium Chloride",
+  "fit": {
+   "oily": "yes",
+   "combination": "yes",
+   "dry": "yes",
+   "sensitive": "slow",
+   "fungal": "no",
+   "nofrag": "yes",
+   "noniacin": "yes",
+   "preg": "maybe"
+  },
+  "tags": [
+   "Niacinamide-free"
+  ]
+ },
+ {
+  "step": "azelaic",
+  "skin": [
+   "normal",
+   "combination",
+   "oily",
+   "dry",
+   "sensitive",
+   "redness",
+   "acne"
+  ],
+  "flags": [],
+  "niacinamide": false,
+  "ingSource": "Kourtney",
+  "warn": [],
+  "name": "SKIN1004 Madagascar Centella Azelaic Acid 10 Ampoule",
+  "tier": "upgrade",
+  "price": 19.79,
+  "link": "https://link.amazon/B0aWIUkRI",
+  "ing": [
+   "azelaic",
+   "centella",
+   "panthenol"
+  ],
+  "img": "img/skin1004-madagascar-centella-azelaic-acid-10-ampoule.webp",
+  "ingredients": "Water, Azelaic Acid, Hydroxypropyl Cyclodextrin, Disodium Phosphate, Pentylene Glycol, Propanediol, Potassium Azeloyl Diglycinate, Maltodextrin, Azelamide MEA, Panthenol, Butylene Glycol, 1,2-Hexanediol, Glycerin, Ethylhexylglycerin, Allantoin, Centella Asiatica Extract, Melia Azadirachta Leaf Extract, Biosaccharide Gum-1, Sodium Hyaluronate, Melia Azadirachta Flower Extract, Beta-Glucan, Centella Asiatica Leaf Extract, Phellinus Linteus Extract, Tocopherol, Citric Acid, Sodium Citrate, Glycyrrhiza Glabra (Licorice) Root Extract",
+  "note": "A lightweight, soothing azelaic ampoule with centella.",
+  "fit": {
+   "oily": "yes",
+   "combination": "yes",
+   "dry": "yes",
+   "sensitive": "yes",
+   "fungal": "yes",
+   "nofrag": "yes",
+   "noniacin": "yes",
+   "preg": "yes"
+  },
+  "tags": [
+   "K-beauty",
+   "Fungal-acne safe",
+   "Niacinamide-free"
+  ]
+ },
+ {
+  "step": "azelaic",
+  "skin": [
+   "normal",
+   "combination",
+   "oily",
+   "dry",
+   "sensitive",
+   "redness",
+   "acne"
+  ],
+  "flags": [],
+  "niacinamide": true,
+  "ingSource": "Kourtney",
+  "warn": [
+   "Sensitive skin: start 2–3 times a week"
+  ],
+  "name": "REMEDY 15% Azelaic Acid Complex Serum",
+  "tier": "upgrade",
+  "price": 24.99,
+  "link": "https://link.amazon/B08QfYTeT",
+  "ing": [
+   "azelaic",
+   "niacinamide"
+  ],
+  "img": "img/remedy-15-azelaic-acid-complex-serum.webp",
+  "ingredients": "Water (Aqua), Azelaic Acid, Ethoxydiglycol, Sodium Hydroxide, Propanediol, Pentylene Glycol, Potassium Azeloyl Diglycinate, Niacinamide, Butylene Glycol, 1,2-Hexanediol, Acetyl Glucosamine, Glycerin, Beta-Glucan, Sodium Hyaluronate, Xanthan Gum, Centella Asiatica Extract, Sodium Metabisulfite, Camellia Sinensis Leaf Extract, Glycyrrhiza Glabra (Licorice) Root Extract, Cyanocobalamin, Tocopherol, Phenoxyethanol, Ethylhexylglycerin",
+  "fit": {
+   "oily": "yes",
+   "combination": "yes",
+   "dry": "yes",
+   "sensitive": "slow",
+   "fungal": "yes",
+   "nofrag": "yes",
+   "noniacin": "no",
+   "preg": "yes"
+  },
+  "tags": [
+   "Fungal-acne safe"
+  ]
+ },
+ {
+  "step": "azelaic",
+  "skin": [
+   "normal",
+   "combination",
+   "oily",
+   "dry",
+   "sensitive",
+   "redness",
+   "acne"
+  ],
+  "flags": [],
+  "niacinamide": false,
+  "ingSource": "Kourtney",
+  "warn": [
+   "Sensitive skin: start 2–3 times a week"
+  ],
+  "name": "Paula's Choice 10% Azelaic Acid Booster",
+  "tier": "splurge",
+  "price": 42,
+  "link": "https://link.amazon/B090jlXvC",
+  "ing": [
+   "azelaic",
+   "salicylic"
+  ],
+  "img": "img/paulas-choice-10-azelaic-acid-booster.webp",
+  "ingredients": "Water (Aqua), Azelaic Acid, C12-15 Alkyl Benzoate, Caprylic/Capric Triglyceride, Methyl Glucose Sesquistearate, Glycerin, Cetearyl Alcohol, Glyceryl Stearate, Dimethicone, Salicylic Acid, Adenosine, Glycyrrhiza Glabra (Licorice) Root Extract, Boerhavia Diffusa Root Extract, Allantoin, Bisabolol, Cyclopentasiloxane, Xanthan Gum, Sclerotium Gum, Propanediol, Butylene Glycol, Phenoxyethanol",
+  "fit": {
+   "oily": "yes",
+   "combination": "yes",
+   "dry": "yes",
+   "sensitive": "slow",
+   "fungal": "no",
+   "nofrag": "yes",
+   "noniacin": "yes",
+   "preg": "maybe"
+  },
+  "tags": [
+   "Niacinamide-free"
+  ]
+ },
+ {
   "name": "The Ordinary Glycolic Acid 7% Toner",
   "tier": "basics",
   "step": "exfoliant",
