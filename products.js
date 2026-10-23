@@ -652,7 +652,8 @@ window.PRODUCTS = [
    "nofrag": "maybe",
    "noniacin": "yes",
    "preg": "yes"
-  }
+  },
+  "img": "img/byoma-brightening-toner.webp"
  },
  {
   "step": "exfoliant",
@@ -689,7 +690,8 @@ window.PRODUCTS = [
    "nofrag": "yes",
    "noniacin": "no",
    "preg": "yes"
-  }
+  },
+  "img": "img/good-molecules-glycolic-exfoliating-toner.webp"
  },
  {
   "name": "Good Molecules Mandelic Acid Serum",
@@ -727,7 +729,8 @@ window.PRODUCTS = [
    "nofrag": "yes",
    "noniacin": "yes",
    "preg": "yes"
-  }
+  },
+  "img": "img/good-molecules-mandelic-acid-serum.webp"
  },
  {
   "name": "Prequel Multi Acid Milk Peel",
@@ -763,7 +766,8 @@ window.PRODUCTS = [
    "nofrag": "yes",
    "noniacin": "yes",
    "preg": "yes"
-  }
+  },
+  "img": "img/prequel-multi-acid-milk-peel.webp"
  },
  {
   "name": "Medik8 Press & Glow PHA Toner",
@@ -798,7 +802,8 @@ window.PRODUCTS = [
    "noniacin": "yes",
    "preg": "yes"
   },
-  "note": "PHA (gluconolactone), the gentlest acid. Gentle enough for daily use."
+  "note": "PHA (gluconolactone), the gentlest acid. Gentle enough for daily use.",
+  "img": "img/medik8-press-glow-pha-toner.webp"
  },
  {
   "name": "Good Molecules Overnight Exfoliating Treatment",
@@ -835,7 +840,8 @@ window.PRODUCTS = [
    "nofrag": "yes",
    "noniacin": "yes",
    "preg": "yes"
-  }
+  },
+  "img": "img/good-molecules-overnight-exfoliating-treatment.webp"
  },
  {
   "name": "The Ordinary Mandelic Acid 10% + HA",
@@ -909,7 +915,8 @@ window.PRODUCTS = [
    "nofrag": "yes",
    "noniacin": "yes",
    "preg": "yes"
-  }
+  },
+  "img": "img/the-ordinary-lactic-acid-5-ha-2.webp"
  },
  {
   "name": "The Ordinary Lactic Acid 10% + HA 2%",
@@ -982,7 +989,8 @@ window.PRODUCTS = [
    "nofrag": "yes",
    "noniacin": "yes",
    "preg": "yes"
-  }
+  },
+  "img": "img/paulas-choice-6-mandelic-2-lactic-acid-liquid-exfoliant.webp"
  },
  {
   "name": "Naturium Multi-Bright Advanced Serum",
@@ -1017,7 +1025,8 @@ window.PRODUCTS = [
    "nofrag": "maybe",
    "noniacin": "yes",
    "preg": "yes"
-  }
+  },
+  "img": "img/naturium-multi-bright-advanced-serum.webp"
  },
  {
   "name": "Clinique Turnaround Accelerated Renewal Serum",
@@ -1056,7 +1065,8 @@ window.PRODUCTS = [
    "noniacin": "yes",
    "preg": "yes"
   },
-  "note": "Mild: the acids are low on the list. More of a smoothing serum than a strong exfoliant."
+  "note": "Mild: the acids are low on the list. More of a smoothing serum than a strong exfoliant.",
+  "img": "img/clinique-turnaround-accelerated-renewal-serum.webp"
  },
  {
   "name": "DRMTLGY Lactic Acid 12% Refining Serum",
@@ -1093,7 +1103,8 @@ window.PRODUCTS = [
    "nofrag": "no",
    "noniacin": "yes",
    "preg": "yes"
-  }
+  },
+  "img": "img/drmtlgy-lactic-acid-12-refining-serum.webp"
  },
  {
   "step": "exfoliant",
@@ -3049,7 +3060,8 @@ window.PRODUCTS = [
    "nofrag": "yes",
    "noniacin": "yes",
    "preg": "yes"
-  }
+  },
+  "img": "img/clinique-moisture-surge-100h.webp"
  },
  {
   "name": "Dr. Rejuall Advanced Ceramide Cream",
@@ -3814,7 +3826,8 @@ window.PRODUCTS = [
    "nofrag": "yes",
    "noniacin": "yes",
    "preg": "yes"
-  }
+  },
+  "img": "img/tatcha-indigo-overnight-repair-cream.webp"
  },
  {
   "name": "DRMTLGY Needle-less Growth Factor Serum",
@@ -3951,7 +3964,8 @@ window.PRODUCTS = [
    "nofrag": "no",
    "noniacin": "yes",
    "preg": "yes"
-  }
+  },
+  "img": "img/tatcha-the-water-cream.webp"
  },
  {
   "name": "Tatcha The Dewy Skin Cream",
